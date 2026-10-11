@@ -1,0 +1,26 @@
+/* Admissions · Visit & book a tour */
+
+.pill{display:inline-flex;align-items:center;gap:6px;min-height:35px;padding:0 13px;border-radius:999px;background:#F6F8FB;border:1px solid #DCE2EB;color:#1A2740;font-size:14px;font-weight:700;white-space:nowrap;box-sizing:border-box}
+.pill svg{color:#1F3659;flex:none}
+.tgrid{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:28px;align-items:start}
+@media (max-width:920px){.tgrid{grid-template-columns:minmax(0,1fr)}}
+.fcard{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:20px;padding:29px clamp(18px,2.6vw,30px);box-sizing:border-box;display:flex;flex-direction:column;min-width:0}
+.side{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:20px;padding:22px clamp(18px,2vw,24px) 24px;box-sizing:border-box;min-width:0}
+.shd{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 12px}
+.shd h2{font-size:19px;font-weight:700;display:flex;align-items:center;gap:10px}
+.shd .num{width:27px;height:27px;font-size:14px}
+.camp{position:relative;display:flex;flex-direction:column;align-items:stretch;width:100%;padding:0;margin:0;background:#FFFFFF;border-radius:14px;border:2px solid;overflow:hidden;cursor:pointer;text-align:left;font:inherit;color:#1A2740;box-sizing:border-box}
+.cph{display:block;height:110px;overflow:hidden;background:#DCE2EB}
+.cph img{width:100%;height:100%;object-fit:cover;display:block}
+.ring{width:24px;height:24px;border-radius:50%;border:2px solid;box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;flex:none;color:#FFFFFF}
+.dchip{width:118px;min-height:59px;border-radius:12px;border:2px solid;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;padding:6px 8px;margin:0;box-sizing:border-box;font:inherit;text-align:center}
+.lbl,.field .lbl{font-size:14px;font-weight:700;color:#1A2740;line-height:1.2}
+.gchip{min-width:47px;min-height:34px;padding:0 14px;margin:0;border-radius:999px;border:1.5px solid;font:inherit;font-size:14px;font-weight:700;cursor:pointer;box-sizing:border-box}
+.lbtn{background:none;border:0;padding:0;margin:0;font:inherit;font-weight:700;color:#1A2740;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1.5px;cursor:pointer}
+.xrow{display:grid;grid-template-columns:38px minmax(0,1.1fr) minmax(0,1fr);align-items:center;gap:0 12px}
+.xrow .tile{width:38px;height:38px;border-radius:10px}
+.xl{font-size:13.5px;font-weight:700;color:#1A2740;line-height:1.3}
+.xn{font-size:13px;color:#5E6878;line-height:1.35}
+.map{position:relative;flex:1 1 340px;max-width:100%;height:200px;border-radius:14px;overflow:hidden;background:#E6ECF2;border:1px solid #DCE2EB;box-sizing:border-box}
+
+body{margin:0}

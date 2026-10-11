@@ -1,0 +1,23 @@
+/* Admissions · How to apply */
+
+.icard{background:#F6F8FB;border:1px solid #DCE2EB;border-radius:12px;padding:15px 16px;display:flex;align-items:center;gap:12px;box-sizing:border-box;min-width:0}
+.t44{width:44px;height:44px}
+.doc{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:14px;padding:17px 12px 17px;display:flex;flex-direction:column;align-items:center;text-align:center;box-sizing:border-box}
+.steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.srow{display:flex;gap:24px}
+.scol{flex:1 1 auto;min-width:0;padding-bottom:28px}
+.srow:last-child .scol{padding-bottom:8px}
+.srail{flex:none;width:52px;margin-left:6px;display:flex;flex-direction:column;align-items:center;padding-top:5px}
+.snum{width:52px;height:52px;border-radius:50%;background:#E7A11C;color:#1A2740;font-size:21px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.sline{flex:1 1 auto;width:2px;background:#DCE2EB;margin-top:6px}
+.scard{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:14px;padding:21px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:16px 20px;box-sizing:border-box}
+.smain{flex:999 1 340px;min-width:0;display:flex;flex-direction:column}
+.saside{flex:1 1 240px;max-width:100%;background:#F6F8FB;border:1px solid #DCE2EB;border-radius:12px;padding:14px 15px 16px;display:flex;flex-direction:column;gap:5px;box-sizing:border-box}
+.stile{width:36px;height:36px;border-radius:9px}
+.pm{border-radius:999px;padding:0 10px;font-size:12px}
+.sit{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:14px;padding:18px 20px 18px;display:flex;gap:12px;align-items:flex-start;box-sizing:border-box;min-width:0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.notify{border:1.5px dashed #C9D2DE;border-radius:12px;background:#FFFFFF;padding:15px 20px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;box-sizing:border-box}
+@media (max-width:640px){.pm{white-space:normal;line-height:1.35;padding:3px 10px}.srail{width:40px}.snum{width:40px;height:40px;font-size:17px}.srow{gap:12px}.scard{padding:18px}}
+
+body{margin:0}

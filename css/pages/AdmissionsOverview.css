@@ -1,0 +1,8 @@
+/* Admissions · Overview */
+
+.stat{display:flex;align-items:center;gap:14px;padding:4px 16px}
+.step{position:relative;padding:28px 20px 20px;display:flex;flex-direction:column;gap:8px}
+.step .num{position:absolute;top:-14px;left:18px;width:30px;height:30px;font-size:15px}
+.check{width:22px;height:22px;border-radius:50%;background:#E2F3EA;color:#1C6B43;display:inline-flex;align-items:center;justify-content:center;flex:none}
+
+body{margin:0}

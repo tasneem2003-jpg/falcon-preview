@@ -1,0 +1,10 @@
+/* Menu on a phone */
+
+.mhead{position:sticky;top:0;z-index:2;height:62px;box-sizing:border-box;background:#13233F;padding:0 16px 0 8px;display:flex;align-items:center;justify-content:space-between}
+.closebtn{display:inline-flex;align-items:center;gap:6px;min-height:44px;min-width:44px;padding:0 14px 0 10px;border:1px solid rgba(255,255,255,0.6);border-radius:8px;color:#FFFFFF;font-size:15px;font-weight:600;text-decoration:none;box-sizing:border-box}
+.closebtn:hover{background:rgba(255,255,255,0.1);color:#FFFFFF}
+.grp{width:100%;min-height:58px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0;margin:0;background:none;border:0;font:inherit;font-size:18px;font-weight:600;color:#1A2740;text-align:left;cursor:pointer}
+.sub{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:46px;padding:0 12px;border-radius:8px;color:#243044;font-size:16px;font-weight:500;text-decoration:none}
+.sub:hover{background:#EEF2F7;color:#1A2740}
+.qtile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-height:86px;padding:10px 6px;border:1px solid #DCE2EB;border-radius:12px;background:#FFFFFF;color:#1A2740;font-size:14px;font-weight:600;text-decoration:none;text-align:center;box-sizing:border-box}
+.qtile:hover{border-color:#1F3659;color:#1A2740}

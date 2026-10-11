@@ -1,0 +1,22 @@
+/* About Us · Our campus */
+
+.sec{display:flex;flex-direction:column;margin-top:40px;scroll-margin-top:16px}
+.cpill{position:absolute;top:14px;left:14px;display:inline-flex;align-items:center;min-height:28px;padding:0 12px;border-radius:999px;background:#FFFFFF;color:#1A2740;font-size:12px;font-weight:800;letter-spacing:.06em}
+.pmini{border-radius:999px;padding:0 10px;min-height:26px}
+.check{width:22px;height:22px;border-radius:50%;background:#E2F3EA;color:#1C6B43;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.checks li{display:flex;align-items:flex-start;gap:10px;font-size:16px;line-height:1.45;color:#243044}
+.checks .check{margin-top:0}
+.info{list-style:none;margin:0;padding:0}
+.info li{display:flex;align-items:flex-start;gap:14px;padding:14px 20px;border-bottom:1px solid #DCE2EB}
+.info li:last-child{border-bottom:0}
+.info .k{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5A6478;line-height:1.3}
+.info .v{font-size:16px;line-height:1.5;color:#243044}
+.info .txt{display:flex;flex-direction:column;gap:3px;min-width:0;padding-top:1px}
+.ph{font-style:italic;color:#5E6878}
+.ext{font-weight:700;color:#1A2740;text-decoration:none;font-size:15px}.ext:hover{text-decoration:underline}
+.cap{font-size:13.5px;color:#5E6878;padding:10px 14px 12px;line-height:1.4}
+.ctitle{font-size:16px;font-weight:700;color:#1A2740}
+@media (max-width:600px){.panel{padding:24px 18px 26px}.info li{padding:14px 16px}}
+
+body{margin:0}

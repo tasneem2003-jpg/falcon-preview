@@ -1,0 +1,28 @@
+/* Community · Falcon Store (new) */
+
+.st-wrap{max-width:1224px;margin:0 auto;padding-inline:24px;box-sizing:border-box}
+.st-bar{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 20px}
+.st-cart{position:relative;display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:0 11px 0 10px;border:1px solid rgba(255,255,255,.55);border-radius:8px;background:transparent;color:#FFFFFF;font-size:14px;font-weight:700;cursor:pointer;box-sizing:border-box}
+.st-cart:hover{border-color:#FFFFFF}
+.st-count{position:absolute;top:-7px;right:-7px;min-width:20px;height:20px;padding:0 5px;border-radius:999px;background:#E7A11C;color:#1A2740;font-size:11.5px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box}
+.st-search{position:relative;width:260px;max-width:100%}
+.st-search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:#5E6878;pointer-events:none}
+.st-search input{width:100%;min-height:39px;padding:0 12px 0 31px;border:1px solid #DCE2EB;border-radius:8px;background:#FFFFFF;color:#1A2740;font-size:14.5px;box-sizing:border-box}
+.st-search input::placeholder{color:#5E6878}
+.st-info{display:flex;align-items:center;gap:13px;padding:12px 14px;border-radius:12px;text-decoration:none;color:#243044}
+.st-info:hover{border-color:#1F3659;color:#243044}
+.st-tile{width:36px;height:36px;border-radius:8px;background:#E8ECF3;color:#1F3659;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.st-tab{min-height:46px;padding:0 16px;border:0;border-bottom:3px solid transparent;background:none;font-size:15px;font-weight:600;cursor:pointer;box-sizing:border-box;white-space:nowrap}
+.st-tab:hover{color:#1A2740}
+.st-sort{position:relative;display:inline-flex}
+.st-sort select{appearance:none;-webkit-appearance:none;min-height:37px;padding:0 26px 0 11px;border:1px solid #DCE2EB;border-radius:8px;background:#FFFFFF;color:#243044;font-size:14.5px;cursor:pointer}
+.st-sort svg{position:absolute;right:12px;top:50%;transform:translateY(-50%);pointer-events:none}
+.st-grid{margin-top:16px;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(220px,100%),1fr));gap:20px 19px}
+.st-card{border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.st-img{position:relative;height:262px;background:#EEF1F6;display:flex;align-items:center;justify-content:center}
+.st-badge{position:absolute;left:10px;top:9px;min-height:21px;padding:0 8px;border-radius:5px;background:#FFFFFF;color:#1A2740;font-size:12px;font-weight:600;display:inline-flex;align-items:center}
+.st-body{padding:10px 14px 15px;display:flex;flex-direction:column;gap:14px}
+.st-ph{margin-top:22px;padding:36px 20px;border:1px dashed #CBD3DF;border-radius:12px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
+.st-chips .chip{font-size:14px}
+@media (max-width:600px){.st-panel{padding:22px 16px 24px}.st-img{height:210px}.st-tab{padding:0 8px}.st-tabs{gap:0 2px!important}}
+.st-foot a{color:#FFFFFF;font-weight:700;text-decoration:none}.st-foot a:hover{text-decoration:underline}

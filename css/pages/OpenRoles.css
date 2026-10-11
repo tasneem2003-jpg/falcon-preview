@@ -1,0 +1,16 @@
+/* Careers · Open roles (new) */
+
+.jtile{width:56px;height:56px;flex:none;border-radius:12px;background:#EEF2F7;color:#1F3659;display:inline-flex;align-items:center;justify-content:center}
+.rowbtn{min-height:42px;padding:0 16px;font-size:16px;font-weight:600}
+@media (max-width:560px){.jtile{width:44px;height:44px;border-radius:10px}}
+.cnt{margin-left:6px;opacity:.72;font-weight:500}
+.point{display:flex;flex-direction:column;gap:6px}
+@media (max-width:600px){.intro{align-items:flex-start!important;text-align:left!important;padding:8px 0 28px!important}.intro>div{justify-content:flex-start!important}}
+.pager{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 20px;margin-top:22px;padding-top:20px;border-top:1px solid #DCE2EB}
+.pg{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:44px;min-height:44px;padding:0 12px;border-radius:8px;border:1px solid #DCE2EB;background:#FFFFFF;color:#1A2740;font-size:15px;font-weight:600;cursor:pointer;box-sizing:border-box}
+.pg:hover{border-color:#1F3659}
+.pg-on,.pg-on:hover{background:#1F3659;border-color:#1F3659;color:#FFFFFF}
+.pg-off,.pg-off:hover{color:#A3ACBA;border-color:#E3E8EF;background:#FAFBFD;cursor:default}
+@media (max-width:560px){.pg-word{display:none}}
+
+body{margin:0}

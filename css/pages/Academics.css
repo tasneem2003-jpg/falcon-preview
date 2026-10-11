@@ -1,0 +1,15 @@
+/* Academics · Overview */
+
+.stat{display:flex;align-items:center;gap:14px;padding:4px 16px}
+.check{width:22px;height:22px;border-radius:50%;background:#E2F3EA;color:#1C6B43;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.ticks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:15px}
+.ticks li{display:flex;align-items:center;gap:10px}
+.pill-on-photo{position:absolute;top:14px;left:14px;display:inline-flex;align-items:center;min-height:28px;padding:0 12px;border-radius:999px;background:#FFFFFF;color:#1A2740;font-size:12px;font-weight:800;letter-spacing:.06em}
+.fine{font-size:13.5px;line-height:1.6;color:#5E6878}
+@media (max-width:760px){
+  .hero-photo{position:relative!important;width:100%!important;height:220px;clip-path:none!important}
+  .hero-copy{min-height:0!important;padding-top:32px!important;padding-bottom:44px!important}
+}
+.subj:hover{border-color:#1F3659}.subj:hover h3{text-decoration:underline}
+
+body{margin:0}

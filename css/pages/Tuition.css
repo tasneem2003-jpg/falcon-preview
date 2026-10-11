@@ -1,0 +1,34 @@
+/* Admissions · Tuition & financial aid */
+
+.anc{display:inline-flex;align-items:center;min-height:45px;padding-top:3px;border-bottom:3px solid transparent;box-sizing:border-box;color:#5E6878;font-size:14px;font-weight:700;text-decoration:none;white-space:nowrap}
+.anc:hover{color:#1A2740}
+.anc-on,.anc-on:hover{color:#1A2740;border-bottom-color:#E7A11C}
+.sec{display:flex;flex-direction:column;scroll-margin-top:16px}
+.sec-h{font-size:30px;font-weight:700}
+.sec-sub{font-size:16px;color:#5E6878;margin-top:1px}
+.ck{width:20px;height:20px;border-radius:50%;background:#E2F3EA;color:#1C6B43;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.ck-plus{background:#FDF1D8;color:#865A06}
+.pc{padding:24px 28px 25px;display:flex;flex-direction:column;border-radius:16px}
+.loc{display:inline-flex;align-items:center;gap:5px;min-height:22px;padding:0 10px;border-radius:999px;background:#EEF2F7;color:#1A2740;font-size:13px;font-weight:700;white-space:nowrap}
+.big{font-size:46px;font-weight:800;color:#1A2740;letter-spacing:-0.03em;line-height:1}
+.inc{list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;font-size:14.5px;line-height:22px;color:#243044}
+.inc li{display:flex;align-items:center;gap:11px;min-height:22px}
+.pill{min-height:33px;padding:0 15px;margin:0;border-radius:999px;border:1.5px solid rgba(255,255,255,.42);background:transparent;color:#FFFFFF;font-size:14.5px;font-weight:700;line-height:1;cursor:pointer;white-space:nowrap}
+.pill:hover{border-color:#FFFFFF}
+.pill-on,.pill-on:hover{background:#FFFFFF;border-color:#FFFFFF;color:#1A2740}
+.clabel{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#B9C7D9;line-height:1.4}
+.ln{display:flex;justify-content:space-between;gap:16px;font-size:14px;line-height:23px;color:#DCE4EF}
+.plan{position:relative;padding:19px 24px 23px;display:flex;flex-direction:column;border-radius:16px}
+.pbadge{position:absolute;top:-11px;left:20px;display:inline-flex;align-items:center;height:21px;padding:0 9px;border-radius:999px;font-size:11.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+.confirm{display:inline-flex;align-items:center;height:18px;padding:0 6px;border-radius:5px;border:1px solid #EBCB8B;background:#FDF1D8;color:#865A06;font-size:11.5px;font-weight:700;letter-spacing:.04em;line-height:1;white-space:nowrap;box-sizing:border-box}
+.code{display:inline-flex;align-items:center;min-height:24px;padding:0 9px;border:1px dashed #AEB7C5;border-radius:6px;background:#FFFFFF;color:#3D4A60;font-family:"SFMono-Regular",Menlo,Consolas,"Liberation Mono",monospace;font-size:14px;font-weight:700;letter-spacing:.06em;box-sizing:border-box}
+.stp{display:flex;align-items:flex-start;gap:13px}
+.stp .num{width:36px;height:36px;font-size:15px}
+.val{width:118px;min-height:74px;border-radius:12px;background:#EEF2F7;display:flex;flex-direction:column;align-items:center;justify-content:center;flex:none}
+.svc{padding:18px 18px 14px;display:flex;flex-direction:column;border-radius:16px}
+.stile{width:44px;height:44px;border-radius:11px;background:#EEF2F7;color:#1F3659;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.sprice{display:flex;flex-wrap:wrap;align-items:center;gap:4px 6px;margin-top:4px}
+.sprice b{font-size:18px;font-weight:700;color:#1A2740;line-height:1.3}
+.sprice span{font-size:13px;font-weight:700;color:#5E6878}
+
+body{margin:0}

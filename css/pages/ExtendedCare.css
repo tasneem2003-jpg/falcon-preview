@@ -1,0 +1,8 @@
+/* Admissions · Extended Care (new) */
+
+.fact{background:#F6F8FB;border:1px solid #DCE2EB;border-radius:15px;padding:19px 22px;display:flex;flex-direction:column;box-sizing:border-box}
+.know{display:flex;align-items:center;gap:18px}
+@media (max-width:600px){.know{align-items:flex-start}.kl{font-size:17px!important}.kn{font-size:16px!important}}
+.ktile{width:55px;height:55px;border-radius:13px;background:#EEF2F7;color:#1F3659;display:inline-flex;align-items:center;justify-content:center;flex:none}
+
+body{margin:0}
