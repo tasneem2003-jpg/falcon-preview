@@ -2,7 +2,7 @@
 
 This folder is a static HTML and CSS copy of every page in the "Falcon Academy Website Redesign" design canvas. It was exported on 11 October 2026.
 
-Open `index.html` to see a list of all 50 pages. Every page opens on its own in a browser, with no server or build step needed.
+Open `index.html` to see a list of all 56 pages. Every page opens on its own in a browser, with no server or build step needed.
 
 ## What's in the folder
 
@@ -13,10 +13,12 @@ Open `index.html` to see a list of all 50 pages. Every page opens on its own in 
 | `css/base.css` | Styles shared by most pages: colors, buttons, cards, tabs and type |
 | `css/pages/<Page>.css` | Styles used by one page only |
 | `assets/img/` | 53 photos and logos, named after their descriptions |
+| `js/site.js` | A small script that highlights the current section in “On this page” menus while you scroll |
 
 ## Things to know
 
-- **The pages are static.** Each page was saved as it looks when it first opens, so controls that changed the page in the canvas no longer work. This affects filters, tabs, accordions, the mobile menu and forms. Pages with controls like these: Accreditation, AdmissionsOverview, AfterSchool, AfterSchoolLive, AfterSchoolLiveV2, CalendarEvents, CalendarMonth, Faculty, JobApply, Main, MenuMobile, News, OpenRoles, OurStory, PhotoAlbum, PhotosVideos, Policies, PolicyHonesty, Store, SummerCamp, Tuition, VideosTab and VisitTour. A developer needs to add JavaScript, or WordPress or Elementor widgets, for these.
+- **Menus.** The top menu shows each section’s pages when you hover over it or move to it with the keyboard. This uses CSS only.
+- **The pages are static.** Each page was saved as it looks when it first opens, so controls that changed the page in the canvas no longer work. This affects filters, tabs, accordions, the mobile menu and forms. Pages with controls like these: Accreditation, AdmissionsOverview, AfterSchool, AfterSchoolLive, AfterSchoolLiveV2, CalendarEvents, CalendarMonth, Faculty, JobApply, Main, MenuMobile, News, OpenRoles, OurStory, PhotoAlbum, PhotosVideos, Policies, Store, SummerCamp, Tuition, VideosTab and VisitTour. A developer needs to add JavaScript, or WordPress or Elementor widgets, for these.
 - **Most layout styles are inline.** The design tool writes spacing, colors and layout as `style="…"` attributes on each element. Shared classes are in `css/base.css`, but a production build should move the repeated inline styles into CSS classes.
 - **Fonts** load from Google Fonts (Inter), so pages need an internet connection to show the right font.
 - **Placeholders.** Text in square brackets, such as `[Photo: …]` or `[Confirm with admissions]`, marks content the school still has to provide or confirm.

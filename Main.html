@@ -41,17 +41,103 @@
     <div style="max-width: 1224px; margin: 0px auto; padding: 0px 24px; min-height: 76px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 28px;">
       <a href="Main.html" aria-label="Falcon Academy home" style="display: block; line-height: 0; margin-left: -10px;"><img src="assets/img/falcon-academy-2.svg" alt="Falcon Academy" style="height: 62px; width: auto; display: block;"></a>
       <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 32px;">
-        <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 0px 26px; align-self: stretch;">
+        <nav aria-label="Main" class="fa-nav" style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 0px 26px; align-self: stretch;">
+          <style>
+            .fa-nav .dd{position:relative;display:flex}
+            .fa-nav .dd-menu{display:none;position:absolute;top:100%;left:-16px;z-index:50;min-width:250px;padding:8px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;box-shadow:0 14px 32px rgba(19,35,63,.18);flex-direction:column;gap:2px}
+            .fa-nav .dd:hover .dd-menu,.fa-nav .dd:focus-within .dd-menu{display:flex}
+            .fa-nav .dd-menu a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:0 12px;border-radius:8px;color:#1A2740;font-size:14.5px;font-weight:600;text-decoration:none;white-space:nowrap}
+            .fa-nav .dd-menu a:hover,.fa-nav .dd-menu a:focus-visible{background:#EEF2F7}
+            .fa-nav .dd-menu small{font-size:12.5px;font-weight:500;color:#5E6878}
+            .fa-nav .caret{margin-left:6px;opacity:.7}
+          </style>
           
-            <a href="Main.html" aria-current="page" style="display: inline-flex; align-items: center; min-height: 76px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid rgb(231, 161, 28); font-size: 14.5px; font-weight: 600; color: rgb(231, 161, 28); text-decoration: none;">Home</a>
+            <div class="dd">
+              <a href="Main.html" aria-current="page" style="display: inline-flex; align-items: center; min-height: 76px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid rgb(231, 161, 28); font-size: 14.5px; font-weight: 600; color: rgb(231, 161, 28); text-decoration: none;">Home</a>
+              
+            </div>
           
-            <a href="OurStory.html" aria-current="false" style="display: inline-flex; align-items: center; min-height: 76px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; font-size: 14.5px; font-weight: 600; color: rgb(230, 234, 241); text-decoration: none;">About Us</a>
+            <div class="dd">
+              <a href="OurStory.html" aria-current="false" style="display: inline-flex; align-items: center; min-height: 76px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; font-size: 14.5px; font-weight: 600; color: rgb(230, 234, 241); text-decoration: none;">About Us<svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+              
+                <div class="dd-menu" role="group" aria-label="About Us pages">
+                  
+                    <a href="OurStory.html">Our Story<small></small></a>
+                  
+                    <a href="Leadership.html">Leadership<small></small></a>
+                  
+                    <a href="Faculty.html">Faculty &amp; Staff<small></small></a>
+                  
+                    <a href="Campuses.html">Our Campus<small></small></a>
+                  
+                </div>
+              
+            </div>
           
-            <a href="Academics.html" aria-current="false" style="display: inline-flex; align-items: center; min-height: 76px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; font-size: 14.5px; font-weight: 600; color: rgb(230, 234, 241); text-decoration: none;">Academics</a>
+            <div class="dd">
+              <a href="Academics.html" aria-current="false" style="display: inline-flex; align-items: center; min-height: 76px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; font-size: 14.5px; font-weight: 600; color: rgb(230, 234, 241); text-decoration: none;">Academics<svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+              
+                <div class="dd-menu" role="group" aria-label="Academics pages">
+                  
+                    <a href="Academics.html">Overview<small></small></a>
+                  
+                    <a href="Curriculum.html">Curriculum<small>9 subjects</small></a>
+                  
+                    <a href="PrimaryYears.html">Primary Years<small>KG–Grade 5</small></a>
+                  
+                    <a href="MiddleYears.html">Middle Years<small>Grades 6–8</small></a>
+                  
+                    <a href="HighSchool.html">High School<small>Grades 9–12</small></a>
+                  
+                    <a href="DualEnrollment.html">Dual Enrollment<small>NOVA</small></a>
+                  
+                    <a href="ArabicIslamic.html">Arabic &amp; Islamic Studies<small>Every grade</small></a>
+                  
+                    <a href="Accreditation.html">Accreditation<small>IB · Cognia</small></a>
+                  
+                </div>
+              
+            </div>
           
-            <a href="AdmissionsOverview.html" aria-current="false" style="display: inline-flex; align-items: center; min-height: 76px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; font-size: 14.5px; font-weight: 600; color: rgb(230, 234, 241); text-decoration: none;">Admissions</a>
+            <div class="dd">
+              <a href="AdmissionsOverview.html" aria-current="false" style="display: inline-flex; align-items: center; min-height: 76px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; font-size: 14.5px; font-weight: 600; color: rgb(230, 234, 241); text-decoration: none;">Admissions<svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+              
+                <div class="dd-menu" role="group" aria-label="Admissions pages">
+                  
+                    <a href="AdmissionsOverview.html">Overview<small></small></a>
+                  
+                    <a href="HowToApply.html">How to Apply<small></small></a>
+                  
+                    <a href="VisitTour.html">Visit &amp; Book a Tour<small></small></a>
+                  
+                    <a href="Tuition.html">Tuition &amp; Financial Aid<small></small></a>
+                  
+                </div>
+              
+            </div>
           
-            <a href="CalendarEvents.html" aria-current="false" style="display: inline-flex; align-items: center; min-height: 76px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; font-size: 14.5px; font-weight: 600; color: rgb(230, 234, 241); text-decoration: none;">Community</a>
+            <div class="dd">
+              <a href="CalendarEvents.html" aria-current="false" style="display: inline-flex; align-items: center; min-height: 76px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; font-size: 14.5px; font-weight: 600; color: rgb(230, 234, 241); text-decoration: none;">Community<svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+              
+                <div class="dd-menu" role="group" aria-label="Community pages">
+                  
+                    <a href="CalendarEvents.html">Calendar &amp; Events<small></small></a>
+                  
+                    <a href="News.html">News &amp; Announcements<small></small></a>
+                  
+                    <a href="PhotosVideos.html">Photos &amp; Videos<small></small></a>
+                  
+                    <a href="ParentVoices.html">Parent Voices<small></small></a>
+                  
+                    <a href="Store.html">Falcon Store<small></small></a>
+                  
+                    <a href="AfterSchool.html">After School &amp; Weekend<small>Clubs</small></a>
+                  
+                    <a href="SummerCamp.html">Summer Camp<small>Ages 5–13</small></a>
+                  
+                </div>
+              
+            </div>
           
         </nav>
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px;">
@@ -649,5 +735,6 @@
     </nav>
     <div style="display: flex; flex-wrap: wrap; gap: 0px 6px; color: rgb(198, 206, 219);"><span>Front office:</span><a href="tel:5718001382" style="color: rgb(255, 255, 255); font-weight: 700; text-decoration: none;">571-800-1382</a></div>
   </div></footer></div></div></div>
+<script src="js/site.js" defer></script>
 </body>
 </html>
