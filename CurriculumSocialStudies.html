@@ -208,20 +208,70 @@
     </div>
   </main>
 
-  <div><footer style="font-family: Inter, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; background: rgb(19, 35, 63); color: rgb(255, 255, 255); font-size: 14px; line-height: 1.5;">
-  <div style="max-width: 1224px; margin: 0px auto; padding: 28px 24px 30px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 16px 40px;">
-    <div style="display: flex; flex-direction: column; gap: 2px;">
-      <strong style="font-weight: 700;">Falcon Academy</strong>
-      <span style="color: rgb(198, 206, 219);">IB Candidate School · Chantilly &amp; Ashburn, VA</span>
+  <div><footer class="fa-foot" style="font-family: Inter, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; background: rgb(19, 35, 63); color: rgb(255, 255, 255); font-size: 14.5px; line-height: 1.5;">
+  <style>
+    .fa-foot a{color:#FFFFFF;text-decoration:none}
+    .fa-foot a:hover{text-decoration:underline;text-underline-offset:3px}
+    .fa-foot a:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:4px}
+    .fa-foot .cols{display:grid;grid-template-columns:1.1fr 1fr 1fr 1.3fr 0.9fr;gap:28px 28px}
+    .fa-foot h2{margin:0 0 10px;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#E7A11C}
+    .fa-foot .muted{color:#B9C4D6}
+    .fa-foot ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+    .fa-foot .soc{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.1)}
+    .fa-foot .soc:hover{background:rgba(255,255,255,.2)}
+    @media (max-width:980px){.fa-foot .cols{grid-template-columns:repeat(2,minmax(0,1fr))}.fa-foot .brand{grid-column:1 / -1}}
+    @media (max-width:560px){.fa-foot .cols{grid-template-columns:minmax(0,1fr)}}
+  </style>
+  <div style="max-width: 1224px; margin: 0px auto; padding: 40px 24px 0px; box-sizing: border-box;">
+    <div class="cols">
+      <div class="brand" style="display: flex; flex-direction: column; gap: 12px;">
+        <a href="Main.html" aria-label="Falcon Academy home" style="display: block; line-height: 0; align-self: flex-start; margin-left: -8px;"><img src="assets/img/falcon-academy-2.svg" alt="Falcon Academy" style="height: 56px; width: auto; display: block;"></a>
+        <p class="muted" style="margin: 0px;">IB Candidate School<br>Kindergarten to Grade 11</p>
+        <div style="display: flex; gap: 8px;">
+          <a class="soc" href="https://www.facebook.com/FalconAcademy.official" aria-label="Falcon Academy on Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H7.3v3.2h2.8V22z"></path></svg></a>
+          <a class="soc" href="https://www.instagram.com/falconacademy.official" aria-label="Falcon Academy on Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.3 6.7h.01"></path></svg></a>
+          <a class="soc" href="https://www.linkedin.com/company/falconacademy-usa/" aria-label="Falcon Academy on LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 8.8h3.8V21H3.6zM5.5 2.9a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4zM9.8 8.8h3.6v1.7h.1c.5-.9 1.7-2 3.6-2 3.8 0 4.5 2.5 4.5 5.8V21h-3.8v-6c0-1.4 0-3.3-2-3.3s-2.3 1.6-2.3 3.2V21H9.8z"></path></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h2>Chantilly campus</h2>
+        <p class="muted" style="margin: 0px 0px 4px;">Kindergarten – Grade 5</p>
+        <p style="margin: 0px;">42851 Smallwood Terrace<br>Chantilly, VA 20152</p>
+        <a href="https://maps.app.goo.gl/FS7gxAob7ZPM9opg6" style="display: inline-block; margin-top: 6px; font-weight: 600; color: rgb(240, 194, 103);">Directions ›</a>
+      </div>
+
+      <div>
+        <h2>Ashburn campus</h2>
+        <p class="muted" style="margin: 0px 0px 4px;">Grades 6 – 11</p>
+        <p style="margin: 0px;">20577 Ashburn Road<br>Ashburn, VA 20147</p>
+        <a href="https://maps.app.goo.gl/b3g9sQHwovCVjpXQ9" style="display: inline-block; margin-top: 6px; font-weight: 600; color: rgb(240, 194, 103);">Directions ›</a>
+      </div>
+
+      <div>
+        <h2>Contact</h2>
+        <p class="muted" style="margin: 0px;">Questions about our curriculum? Call:</p>
+        <a href="tel:5718001382" style="display: inline-block; font-size: 17px; font-weight: 700; margin-top: 2px;">571-800-1382</a>
+        <a href="mailto:admissions@falconacademy.org" style="display: block; margin-top: 4px; word-break: break-word;">admissions@falconacademy.org</a>
+        <a href="Contact.html" style="display: inline-block; margin-top: 6px; font-weight: 600; color: rgb(240, 194, 103);">Contact us ›</a>
+      </div>
+
+      <nav aria-label="Quick links">
+        <h2>Quick links</h2>
+        <ul>
+          <li><a href="https://portal.edumagined.com/falconacademy/">Parent Portal</a></li>
+          <li><a href="CalendarEvents.html">Calendar</a></li>
+          <li><a href="VisitTour.html">Book a Tour</a></li>
+          <li><a href="Careers.html">Careers</a></li>
+          <li><a href="Policies.html">School Policies</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav aria-label="Footer" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; color: rgb(198, 206, 219);">
-      <a href="Contact.html" style="color: rgb(255, 255, 255); font-weight: 700; text-decoration: none;">Contact Us</a><span aria-hidden="true">·</span>
-      <a href="CalendarEvents.html" style="color: rgb(198, 206, 219); text-decoration: none;">Calendar</a><span aria-hidden="true">·</span>
-      <a href="Careers.html" style="color: rgb(198, 206, 219); text-decoration: none;">Careers</a><span aria-hidden="true">·</span>
-      <a href="https://portal.edumagined.com/falconacademy/" style="color: rgb(198, 206, 219); text-decoration: none;">Parent Portal</a><span aria-hidden="true">·</span>
-      <a href="Policies.html" style="color: rgb(198, 206, 219); text-decoration: none;">Policies</a>
-    </nav>
-    <div style="display: flex; flex-wrap: wrap; gap: 0px 6px; color: rgb(198, 206, 219);"><span>Questions about our curriculum? Call:</span><a href="tel:5718001382" style="color: rgb(255, 255, 255); font-weight: 700; text-decoration: none;">571-800-1382</a></div>
+
+    <div style="margin-top: 32px; padding: 16px 0px 20px; border-top: 1px solid rgba(255, 255, 255, 0.14); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; font-size: 13px; color: rgb(185, 196, 214);">
+      <span>© 2026 Falcon Academy. All rights reserved.</span>
+      <span>Falcon Academy admits students without discrimination. <a href="PolicyAdmissions.html" style="color: rgb(255, 255, 255); text-decoration: underline; text-underline-offset: 3px;">Admissions Policy</a></span>
+    </div>
   </div></footer></div></div></div>
 <script src="js/site.js" defer></script>
 </body>
