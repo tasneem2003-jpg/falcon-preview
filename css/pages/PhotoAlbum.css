@@ -34,5 +34,6 @@
 .consent svg{vertical-align:-2px;margin-right:7px;color:#8A5A00}
 .consent a{margin-left:6px;color:#1F3659;white-space:nowrap}
 @media (max-width: 640px){.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+[hidden]{display:none!important}
 
 body{margin:0}

@@ -1,5 +1,6 @@
 /* Community · Calendar (month view) */
 
+.vbtn[aria-pressed="true"]{background:#E6EAF1!important;border-color:#E6EAF1!important}
 .vbtn{position:relative;width:42px;height:42px;border-radius:8px;border:1px solid #DCE2EB;background:#FFFFFF;color:#3D4A60;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;padding:0;box-sizing:border-box}
 .vbtn:hover::after{content:attr(data-tip);position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:#3B3F46;color:#FFFFFF;font-size:13px;font-weight:500;line-height:1;padding:8px 10px;border-radius:6px;white-space:nowrap;pointer-events:none}
 .arrow{width:40px;height:40px;border:0;background:none;color:#243044;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;border-radius:8px}.arrow:hover{background:#EEF2F7}
@@ -14,5 +15,6 @@
 .menu{position:absolute;top:calc(100% + 6px);background:#FFFFFF;border:1px solid #DCE2EB;border-radius:10px;box-shadow:0 10px 30px rgba(19,35,63,.12);padding:6px;display:flex;flex-direction:column;z-index:5;min-width:230px}
 .menu a,.menu button{display:flex;align-items:center;gap:10px;min-height:42px;padding:0 12px;border-radius:8px;border:0;background:none;color:#1A2740;font-size:15px;font-weight:500;text-decoration:none;cursor:pointer;text-align:left}
 .menu a:hover,.menu button:hover{background:#EEF2F7}
+[hidden]{display:none!important}
 
 body{margin:0}

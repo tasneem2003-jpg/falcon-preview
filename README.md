@@ -13,12 +13,12 @@ Open `index.html` to see a list of all 56 pages. Every page opens on its own in 
 | `css/base.css` | Styles shared by most pages: colors, buttons, cards, tabs and type |
 | `css/pages/<Page>.css` | Styles used by one page only |
 | `assets/img/` | 53 photos and logos, named after their descriptions |
-| `js/site.js` | A small script that highlights the current section in “On this page” menus while you scroll |
+| `js/site.js` | A small script for the filters, tabs and paging, and for highlighting the current section in “On this page” menus |
 
 ## Things to know
 
 - **Menus.** The top menu shows each section’s pages when you hover over it or move to it with the keyboard. This uses CSS only.
-- **The pages are static.** Each page was saved as it looks when it first opens, so controls that changed the page in the canvas no longer work. This affects filters, tabs, accordions, the mobile menu and forms. Pages with controls like these: Accreditation, AdmissionsOverview, AfterSchool, AfterSchoolLive, AfterSchoolLiveV2, CalendarEvents, CalendarMonth, Feedback, JobApply, MenuMobile, News, OpenRoles, OurStory, PhotoAlbum, PhotosVideos, Policies, Store, Tuition, VideosTab and VisitTour. The photo picker in the Home page hero works without JavaScript. A developer needs to add JavaScript, or WordPress or Elementor widgets, for these.
+- **Filters work.** `js/site.js` makes the filters, tabs, search, sorting, "Show more" and paging work on the Store, Calendar (list, month and card views), News, Open roles, Policies, Photos & Videos, Photo album and After School pages. Each page lists every item in the HTML and the script only shows and hides them, using `data-` attributes. Forms (application, feedback, tour booking) and the Tuition calculator still only show their first state; a developer needs to connect those.
 - **Most layout styles are inline.** The design tool writes spacing, colors and layout as `style="…"` attributes on each element. Shared classes are in `css/base.css`, but a production build should move the repeated inline styles into CSS classes.
 - **Fonts** load from Google Fonts (Inter), so pages need an internet connection to show the right font.
 - **Placeholders.** Text in square brackets, such as `[Photo: …]` or `[Confirm with admissions]`, marks content the school still has to provide or confirm.

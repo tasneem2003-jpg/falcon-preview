@@ -146,7 +146,7 @@
     </div>
   </div></header></div>
 
-  <main class="wrap-card" style="padding-top: 18px; padding-bottom: 48px; display: flex; flex-direction: column; gap: 14px;">
+  <main data-fx="" class="wrap-card" style="padding-top: 18px; padding-bottom: 48px; display: flex; flex-direction: column; gap: 14px;">
     <nav class="crumb" aria-label="Breadcrumb"><a href="Main.html">Home</a><span aria-hidden="true">›</span><span aria-current="page">School Policies</span></nav>
 
     <section class="panel" aria-labelledby="pol-title" style="display: flex; flex-direction: column;">
@@ -170,32 +170,32 @@
         <div class="search field">
           <label for="pol-q">Search policies</label>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg>
-          <input id="pol-q" class="input" type="search" placeholder="For example: grades, Arabic, photos" value="">
+          <input id="pol-q" class="input" type="search" placeholder="For example: grades, Arabic, photos" data-f="q" value="">
         </div>
         <div class="filt">
           <span class="filt-lbl" id="ap-lbl">Applies to</span>
           <div class="chips" role="group" aria-labelledby="ap-lbl">
             
-              <button type="button" class="chip chip-on" aria-pressed="true">All</button>
+              <button type="button" class="chip chip-on" aria-pressed="true" data-f="stage" data-v="all">All</button>
             
-              <button type="button" class="chip " aria-pressed="false">KG–Grade 5</button>
+              <button type="button" class="chip " aria-pressed="false" data-f="stage" data-v="pyp">KG–Grade 5</button>
             
-              <button type="button" class="chip " aria-pressed="false">Grades 6–8</button>
+              <button type="button" class="chip " aria-pressed="false" data-f="stage" data-v="myp">Grades 6–8</button>
             
-              <button type="button" class="chip " aria-pressed="false">Grades 9–12</button>
+              <button type="button" class="chip " aria-pressed="false" data-f="stage" data-v="hs">Grades 9–12</button>
             
           </div>
         </div>
       </div>
-      <p class="sr" aria-live="polite">7 policies shown</p>
+      <p class="sr" aria-live="polite" data-count="" data-tpl="{n} policies shown">7 policies shown</p>
 
       
-        <section class="grp" aria-labelledby="g-ib">
+        <section class="grp" aria-labelledby="g-ib" data-group="">
           <h2 id="g-ib" class="label rule" style="font-size: 14px; letter-spacing: 0.07em;">IB programme policies</h2>
           <p class="grp-note">Every IB school publishes these five policies. They apply to the Primary Years (KG–Grade 5) and Middle Years (Grades 6–8) programmes.</p>
           <ul class="plist">
             
-              <li class="pol" id="assessment">
+              <li class="pol" id="assessment" data-item="" data-k-stage="pyp myp" data-text="Assessment Policy How teachers check learning in the Primary and Middle Years, how IB criteria scores turn into grades, and when you get report cards and conferences. grades grading report card marks map test exam criteria conference">
                 <div class="pol-main">
                   <div class="pol-top">
                     <h3><a href="PolicyAssessment.html">Assessment Policy</a></h3>
@@ -215,7 +215,7 @@
                 </div>
               </li>
             
-              <li class="pol" id="honesty">
+              <li class="pol" id="honesty" data-item="" data-k-stage="pyp myp" data-text="Academic Honesty Policy What doing your own work means at Falcon, what counts as copying or plagiarism (including AI tools), and what happens if it occurs. cheating plagiarism copying ai integrity homework consequences">
                 <div class="pol-main">
                   <div class="pol-top">
                     <h3><a href="PolicyHonesty.html">Academic Honesty Policy</a></h3>
@@ -235,7 +235,7 @@
                 </div>
               </li>
             
-              <li class="pol" id="language">
+              <li class="pol" id="language" data-item="" data-k-stage="pyp myp" data-text="Language Policy How we teach English and Arabic, how we value each family’s home language, and the support for students still learning English. arabic english esl ell multilingual home language quran">
                 <div class="pol-main">
                   <div class="pol-top">
                     <h3><a href="PolicyLanguage.html">Language Policy</a></h3>
@@ -255,7 +255,7 @@
                 </div>
               </li>
             
-              <li class="pol" id="inclusion">
+              <li class="pol" id="inclusion" data-item="" data-k-stage="pyp myp" data-text="Inclusion Policy How we support every learner, including students with disabilities and multilingual learners, and how families help plan that support. special education sped disability learning support accommodations iep 504 gifted">
                 <div class="pol-main">
                   <div class="pol-top">
                     <h3><a href="PolicyInclusion.html">Inclusion Policy</a></h3>
@@ -275,7 +275,7 @@
                 </div>
               </li>
             
-              <li class="pol" id="admissions">
+              <li class="pol" id="admissions" data-item="" data-k-stage="any" data-text="Admissions Policy Who can apply, our commitment to admit students without discrimination, and how we welcome students with special education needs. apply application enroll enrollment admission discrimination">
                 <div class="pol-main">
                   <div class="pol-top">
                     <h3><a href="PolicyAdmissions.html">Admissions Policy</a></h3>
@@ -298,12 +298,12 @@
           </ul>
         </section>
       
-        <section class="grp" aria-labelledby="g-hs">
+        <section class="grp" aria-labelledby="g-hs" data-group="">
           <h2 id="g-hs" class="label rule" style="font-size: 14px; letter-spacing: 0.07em;">High school</h2>
           <p class="grp-note">For students in Grades 9–12 and their families.</p>
           <ul class="plist">
             
-              <li class="pol" id="highschool">
+              <li class="pol" id="highschool" data-item="" data-k-stage="hs" data-text="High School Academic Policies &amp; Disclosures How Early College and Dual Enrollment with Northern Virginia Community College (NOVA) works, and what Falcon and NOVA are each responsible for. nova dual enrollment college credit early college transcript">
                 <div class="pol-main">
                   <div class="pol-top">
                     <h3><a href="PolicyHighSchool.html">High School Academic Policies &amp; Disclosures</a></h3>
@@ -326,12 +326,12 @@
           </ul>
         </section>
       
-        <section class="grp" aria-labelledby="g-comms">
+        <section class="grp" aria-labelledby="g-comms" data-group="">
           <h2 id="g-comms" class="label rule" style="font-size: 14px; letter-spacing: 0.07em;">Communications &amp; privacy</h2>
           <p class="grp-note">For families, staff, volunteers and partners who share school news, photos or videos.</p>
           <ul class="plist">
             
-              <li class="pol" id="marketing">
+              <li class="pol" id="marketing" data-item="" data-k-stage="any" data-text="Marketing &amp; Communications Policy How the school uses student photos, names and videos, its rules for social media, and how to ask for a photo or post to be removed. photo photos picture video privacy social media marketing remove consent">
                 <div class="pol-main">
                   <div class="pol-top">
                     <h3><a href="PolicyMarketing.html">Marketing &amp; Communications Policy</a></h3>
@@ -355,7 +355,13 @@
         </section>
       
 
-      
+      <div data-empty="" hidden="">
+        <div class="empty">
+          <p style="font-size: 17px; font-weight: 600; color: rgb(36, 48, 68);">No policy matches your search.</p>
+          <p class="muted">Try a different word, or ask the front office and we’ll point you to the right policy.</p>
+          <button type="button" class="btn btn-outline" data-reset="" style="min-height: 42px; padding: 0px 16px;">Show all policies</button>
+        </div>
+      </div>
 
       <div class="more-box">
         <div class="mb">

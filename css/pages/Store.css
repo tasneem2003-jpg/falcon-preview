@@ -49,3 +49,4 @@
 .st-foot a{color:#FFFFFF;text-decoration:none}.st-foot a:hover{text-decoration:underline}
 .st-foot h2{margin:0 0 8px;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#E7A11C}
 @media (max-width:640px){.st-hgrid{padding-top:36px;padding-bottom:40px}.st-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.st-body{padding:10px}.st-name{font-size:14.5px}}
+[hidden]{display:none!important}

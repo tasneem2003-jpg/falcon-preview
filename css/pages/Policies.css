@@ -44,5 +44,6 @@
 .mb a{margin-top:4px;font-size:14.5px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @media (max-width:760px){.qa{grid-template-columns:minmax(0,1fr)}.more-box{grid-template-columns:minmax(0,1fr)}.panel{padding:22px 16px 26px}.tools{padding:14px}}
+[hidden]{display:none!important}
 
 body{margin:0}

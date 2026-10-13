@@ -12,5 +12,6 @@
 .pg-on,.pg-on:hover{background:#1F3659;border-color:#1F3659;color:#FFFFFF}
 .pg-off,.pg-off:hover{color:#A3ACBA;border-color:#E3E8EF;background:#FAFBFD;cursor:default}
 @media (max-width:560px){.pg-word{display:none}}
+[hidden]{display:none!important}
 
 body{margin:0}
