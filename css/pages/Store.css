@@ -4,9 +4,6 @@
 .st-wrap{max-width:1224px;margin:0 auto;padding-inline:24px;box-sizing:border-box}
 .st-strip{background:#E7A11C;color:#1A2740;font-size:12.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;text-align:center;padding:8px 16px;line-height:1.35}
 .st-bar{min-height:72px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 20px}
-.st-nav{display:flex;flex-wrap:wrap;align-items:center;gap:2px 4px}
-.st-nav a{display:inline-flex;align-items:center;min-height:40px;padding:0 12px;border-radius:8px;color:#D5DCE7;font-size:14.5px;font-weight:600;text-decoration:none}
-.st-nav a:hover{background:rgba(255,255,255,.08);color:#FFFFFF}
 .st-cart{position:relative;display:inline-flex;align-items:center;gap:7px;min-height:42px;padding:0 14px;border:0;border-radius:8px;background:#FFFFFF;color:#13233F;font-size:14.5px;font-weight:700;cursor:pointer;box-sizing:border-box}
 .st-cart:hover{background:#F1F4F8}
 .st-count{min-width:22px;height:22px;padding:0 6px;border-radius:999px;background:#E7A11C;color:#1A2740;font-size:12px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box}
