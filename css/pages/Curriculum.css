@@ -13,15 +13,15 @@
 .stages span{display:inline-flex;align-items:center;min-height:24px;padding:0 9px;border-radius:999px;background:#EEF2F7;color:#3D4A60;font-size:12.5px;font-weight:700}
 .scard .more{margin-top:auto;font-size:15px}
 .further{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-.fcard{background:#FFFFFF;border:1px solid #DCE2EB;border-top:4px solid #E7A11C;border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
+.fcard{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:8px}
 .fcard h3{font-size:17px;font-weight:700}
 .fcard p{font-size:14.5px;line-height:1.55;color:#4B5566}
 .fcard .more{margin-top:auto;font-size:14.5px}
 .layout{display:flex;flex-wrap:wrap;align-items:flex-start;gap:28px 40px}
 .side{flex:1 1 220px;max-width:260px;position:sticky;top:16px;display:flex;flex-direction:column;gap:2px}
 .side .lbl{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5A6478;padding:0 12px 8px}
-.side a{display:flex;align-items:center;gap:10px;min-height:40px;padding:0 12px;border-left:3px solid #DCE2EB;color:#5E6878;font-size:14.5px;font-weight:600;text-decoration:none}
-.side a:hover{color:#1A2740;border-left-color:#8C9AB0}
+.side a{display:flex;align-items:center;gap:10px;min-height:40px;padding:0 12px;border-left:3px solid transparent;color:#5E6878;font-size:14.5px;font-weight:600;text-decoration:none}
+.side a:hover{color:#1A2740;background:#F1F4F8}
 .side a.on{color:#1A2740;border-left-color:#E7A11C;background:#FFFFFF}
 .doc{flex:999 1 560px;min-width:0;max-width:760px;display:flex;flex-direction:column;gap:12px}
 .toc{display:flex;flex-wrap:wrap;gap:8px}

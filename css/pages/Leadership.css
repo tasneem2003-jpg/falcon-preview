@@ -2,19 +2,16 @@
 
 .anav{display:flex;flex-wrap:wrap;gap:8px}
 .anav .chip{min-height:36px;padding:0 14px;font-size:13.5px}
-.lede{font-size:16px;line-height:1.42;color:#5E6878;max-width:640px}
-.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(400px,100%),1fr));gap:20px}
-.pcard{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;padding:18px 20px 18px 18px;box-sizing:border-box;display:flex;flex-wrap:wrap;align-items:flex-start;gap:16px 18px}
-.pphoto{width:132px;height:155px;flex:none;border-radius:10px;border:1px solid #E6EAF1;box-sizing:border-box;background:#EEF2F7;object-fit:cover;object-position:50% 20%;display:block}
-.ptext{flex:1 1 220px;min-width:0;display:flex;flex-direction:column;align-items:flex-start}
-.pname{font-size:20px;font-weight:700;color:#243044;line-height:1.4}
-.prow{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;margin-top:4px}
-.prole{font-size:15px;font-weight:600;color:#243044;line-height:1.4}
-.ptag{min-height:22px;padding:0 7px;font-size:12.5px}
-.pbio{font-size:15px;line-height:1.5;color:#4B5566;margin-top:8px}
-.li{display:inline-flex;align-items:center;gap:6px;min-height:28px;margin-top:8px;font-size:13.5px;font-weight:700;color:#2F5DA8;text-decoration:none}
-.li:hover{color:#1F3659;text-decoration:underline}
-.gbox{background:#E6EAF1;border-radius:12px;padding:18px 18px 18px 20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 20px}
+.lede{font-size:16px;line-height:1.5;color:#5E6878;max-width:680px}
+.tgrid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(200px,100%),1fr));gap:18px}
+.tcard{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.tphoto{position:relative;aspect-ratio:4 / 4.4;background:#EEF2F7;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.tphoto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 12%;display:block}
+.tini{width:84px;height:84px;border-radius:50%;background:#1F3659;color:#FFFFFF;display:inline-flex;align-items:center;justify-content:center;font-size:27px;font-weight:700;letter-spacing:.03em}
+.ttext{padding:13px 15px 15px;display:flex;flex-direction:column;gap:3px;border-top:1px solid #E6EAF1}
+.tname{font-size:16.5px;font-weight:700;color:#1A2740;line-height:1.3}
+.trole{font-size:14.5px;line-height:1.4;color:#5E6878}
+.gbox{background:#E6EAF1;border-radius:12px;padding:18px 19px 18px 20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 20px}
 .gbtn{min-height:42px;padding:0 18px;font-size:14.5px;font-weight:600;border-color:#DCE2EB}
 
 body{margin:0}
