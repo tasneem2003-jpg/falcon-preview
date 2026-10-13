@@ -21,7 +21,7 @@
 .usp a{color:#F0B545;text-decoration:none}
 @media (max-width:480px){.usp{grid-template-columns:minmax(0,1fr)}}
 .kstats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:#FFFFFF;border:1px solid #DCE2EB;border-radius:16px;box-shadow:0 8px 24px rgba(19,35,63,.06)}
-.kstat{padding:26px 26px 24px;display:flex;flex-direction:column;border-left:1px solid #E6EAF1;min-width:0}
+.kstat{padding:26px 22px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;border-left:1px solid #E6EAF1;min-width:0}
 .kstat:first-child{border-left:0}
 .knum{font-size:44px;font-weight:800;line-height:1;letter-spacing:-0.03em;color:#13233F}
 .knum span{color:#E7A11C}
