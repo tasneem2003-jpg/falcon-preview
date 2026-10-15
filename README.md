@@ -18,7 +18,7 @@ Open `index.html` to see a list of all 56 pages. Every page opens on its own in 
 ## Things to know
 
 - **Menus.** The top menu shows each section’s pages when you hover over it or move to it with the keyboard. This uses CSS only.
-- **Filters work.** `js/site.js` makes the filters, tabs, search, sorting, "Show more" and paging work on the Store, Calendar (list, month and card views), News, Open roles, Policies, Photos & Videos, Photo album and After School pages. Each page lists every item in the HTML and the script only shows and hides them, using `data-` attributes. Forms (application, feedback, tour booking) and the Tuition calculator still only show their first state; a developer needs to connect those.
+- **Filters work.** `js/site.js` makes the filters, tabs, search, sorting, "Show more" and paging work on the Store, Calendar (list, month and card views), News, Open roles, Policies, Photos & Videos, Photo album and After School pages, and the Tuition calculator and its questions list. Each page lists every item in the HTML and the script only shows and hides them, using `data-` attributes. Forms (application, feedback, tour booking) still only show their first state; a developer needs to connect those.
 - **Most layout styles are inline.** The design tool writes spacing, colors and layout as `style="…"` attributes on each element. Shared classes are in `css/base.css`, but a production build should move the repeated inline styles into CSS classes.
 - **Fonts** load from Google Fonts (Inter), so pages need an internet connection to show the right font.
 - **Placeholders.** Text in square brackets, such as `[Photo: …]` or `[Confirm with admissions]`, marks content the school still has to provide or confirm.

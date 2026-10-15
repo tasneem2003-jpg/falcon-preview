@@ -344,3 +344,78 @@
     apply();
   });
 })();
+
+/* Tuition calculator: children and payment plan. Same numbers as the design. */
+(function () {
+  var root = document.querySelector('[data-calc="tuition"]');
+  if (!root) return;
+  var st = { kids: 2, plan: 'monthly' };
+  var on = root.querySelector('[data-kids][aria-pressed="true"]'); if (on) st.kids = +on.getAttribute('data-kids');
+  on = root.querySelector('[data-plan][aria-pressed="true"]'); if (on) st.plan = on.getAttribute('data-plan');
+  var lineTpl = root.querySelector('[data-lines] .ln');
+  function fmt(v) { return '$' + String(v).replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
+  function line(label, extra, value) {
+    var p = lineTpl.cloneNode(true), spans = p.querySelectorAll(':scope > span');
+    spans[0].innerHTML = '';
+    spans[0].appendChild(document.createTextNode(label));
+    var ex = document.createElement('span'); ex.style.display = 'inline-block'; ex.textContent = extra;
+    spans[0].appendChild(ex);
+    spans[1].textContent = value;
+    return p;
+  }
+  function apply() {
+    root.querySelectorAll('[data-kids]').forEach(function (b) {
+      var x = +b.getAttribute('data-kids') === st.kids;
+      b.classList.toggle('pill-on', x); b.setAttribute('aria-pressed', x ? 'true' : 'false');
+    });
+    root.querySelectorAll('[data-plan]').forEach(function (b) {
+      var x = b.getAttribute('data-plan') === st.plan;
+      b.classList.toggle('pill-on', x); b.setAttribute('aria-pressed', x ? 'true' : 'false');
+    });
+    var n = st.kids, tuition = 0, box = root.querySelector('[data-lines]');
+    box.innerHTML = '';
+    for (var k = 1; k <= n; k++) {
+      var t = k === 1 ? 13350 : 12900;
+      tuition += t;
+      box.appendChild(line('Child ' + k + ' tuition ', k === 1 ? '' : '(−$450 sibling)', fmt(t)));
+    }
+    var disc = st.plan === 'full' ? Math.ceil((tuition * 5 - 50) / 100) : 0;
+    if (disc) box.appendChild(line('Pay-in-full discount ', '(5% of tuition)', '−' + fmt(disc)));
+    box.appendChild(line('Books & technology ', '× ' + n, fmt(600 * n)));
+    var total = tuition - disc + 600 * n;
+    var plans = {
+      monthly: [total / 10, 'per month · Aug 15 – May 15'],
+      two: [total / 2, 'per payment · Aug 15 & Jan 15'],
+      full: [total, 'once · by Aug 1']
+    }[st.plan];
+    root.querySelector('[data-amount]').textContent = fmt(Math.round(plans[0]));
+    root.querySelector('[data-unit]').textContent = plans[1];
+    root.querySelector('[data-total]').textContent = fmt(total);
+  }
+  root.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-kids],[data-plan]');
+    if (!b) return;
+    if (b.hasAttribute('data-kids')) st.kids = +b.getAttribute('data-kids'); else st.plan = b.getAttribute('data-plan');
+    apply();
+  });
+})();
+
+/* Question lists: one answer open at a time. */
+(function () {
+  document.querySelectorAll('[data-faq]').forEach(function (item) {
+    var btn = item.querySelector('button[aria-expanded]');
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      var open = btn.getAttribute('aria-expanded') !== 'true';
+      item.parentNode.querySelectorAll('[data-faq]').forEach(function (other) {
+        var b = other.querySelector('button[aria-expanded]'), a = b.closest('h3').nextElementSibling;
+        var me = other === item && open;
+        b.setAttribute('aria-expanded', me ? 'true' : 'false');
+        if (a) a.hidden = !me;
+        other.style.border = me ? '1.5px solid #1A2740' : '1px solid #DCE2EB';
+        var bar = b.querySelectorAll('svg path')[1];
+        if (bar) bar.style.opacity = me ? '0' : '1';
+      });
+    });
+  });
+})();
