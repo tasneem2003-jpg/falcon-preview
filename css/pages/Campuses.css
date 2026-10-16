@@ -1,4 +1,4 @@
-/* About Us · Our campus */
+/* About Us · Our campuses */
 
 .sec{display:flex;flex-direction:column;margin-top:40px;scroll-margin-top:16px}
 .cpill{position:absolute;top:14px;left:14px;display:inline-flex;align-items:center;min-height:28px;padding:0 12px;border-radius:999px;background:#FFFFFF;color:#1A2740;font-size:12px;font-weight:800;letter-spacing:.06em}
