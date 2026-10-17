@@ -221,8 +221,215 @@
     <section id="catalog" class="sec" aria-labelledby="h-cat" data-filter-root="clubs">
       <div class="sec-head">
         <h2 id="h-cat">Choose an activity</h2>
-        <p>24 clubs in 8 areas. Pick an area, then your child’s grade and a day, to see the clubs they can join.</p>
+        <p>24 clubs in 8 areas. Browse by activity area, or see the whole week at a glance.</p>
       </div>
+      <div class="viewseg" role="group" aria-label="How to show the clubs">
+        <button type="button" class="seg-on" aria-pressed="true" data-view="area">By activity area</button>
+        <button type="button" class="" aria-pressed="false" data-view="day">Week at a glance</button>
+      </div>
+
+      <div data-panel="day" hidden="">
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div class="filters">
+            <div class="frow" role="group" aria-label="Grade">
+              <span class="flbl" aria-hidden="true">Grade</span>
+              
+                <button type="button" class="chip chip-on" aria-pressed="true" data-f="grade" data-v="all">All grades</button>
+              
+                <button type="button" class="chip " aria-pressed="false" data-f="grade" data-v="k5">KG–5</button>
+              
+                <button type="button" class="chip " aria-pressed="false" data-f="grade" data-v="g68">Grades 6–8</button>
+              
+                <button type="button" class="chip " aria-pressed="false" data-f="grade" data-v="g911">Grades 9–12</button>
+              
+            </div>
+          </div>
+          <div class="week" role="table" aria-label="Clubs by day">
+            
+              <div class="wrow " role="row" data-wrow="">
+                <div class="wday" role="rowheader"><b>Monday</b><small>After school</small></div>
+                <div class="wcols" role="cell">
+                  
+                    <div class="wgrp" data-wgrp="">
+                      <p class="wgl">KG–Grade 5 · Chantilly</p>
+                      
+                        <div class="wclub" data-wclub="" data-g="0-5"><span class="wdot t-teal" aria-hidden="true"></span><div><b>Turkish Language &amp; Culture</b><small>Emine Kilic · $35 / day</small></div></div>
+                      
+                        <div class="wclub" data-wclub="" data-g="0-5"><span class="wdot t-purple" aria-hidden="true"></span><div><b>Visual &amp; Digital Arts</b><small>Sule Cetil · $35 / day</small></div></div>
+                      
+                    </div>
+                  
+                    <div class="wgrp" data-wgrp="">
+                      <p class="wgl">Grades 6–12 · Ashburn</p>
+                      
+                        <div class="wclub" data-wclub="" data-g="6-12"><span class="wdot t-blue" aria-hidden="true"></span><div><b>STEM</b><small>Camden · $35 / day</small></div></div>
+                      
+                        <div class="wclub" data-wclub="" data-g="6-12"><span class="wdot t-blue" aria-hidden="true"></span><div><b>Solar &amp; Wind Energy</b><small>Rida Ahsan · $35 / day</small></div></div>
+                      
+                    </div>
+                  
+                  <p class="wnone" hidden="" data-wnone="">No clubs for this grade on this day.</p>
+                </div>
+              </div>
+            
+              <div class="wrow " role="row" data-wrow="">
+                <div class="wday" role="rowheader"><b>Tuesday</b><small>After school</small></div>
+                <div class="wcols" role="cell">
+                  
+                    <div class="wgrp" data-wgrp="">
+                      <p class="wgl">KG–Grade 5 · Chantilly</p>
+                      
+                        <div class="wclub" data-wclub="" data-g="0-5"><span class="wdot t-blue" aria-hidden="true"></span><div><b>STEM</b><small>Camden · $35 / day</small></div></div>
+                      
+                        <div class="wclub" data-wclub="" data-g="0-5"><span class="wdot t-purple" aria-hidden="true"></span><div><b>Traditional Crafts</b><small>Sule Cetil · $35 / day</small></div></div>
+                      
+                    </div>
+                  
+                    <div class="wgrp" data-wgrp="">
+                      <p class="wgl">Grades 6–12 · Ashburn</p>
+                      
+                        <div class="wclub" data-wclub="" data-g="6-12"><span class="wdot t-teal" aria-hidden="true"></span><div><b>French Language &amp; Culture</b><small>Alia Raviola · $35 / day</small></div></div>
+                      
+                        <div class="wclub" data-wclub="" data-g="6-12"><span class="wdot t-green" aria-hidden="true"></span><div><b>Basketball</b><small>[Instructor] · $35 / day</small></div></div>
+                      
+                    </div>
+                  
+                  <p class="wnone" hidden="" data-wnone="">No clubs for this grade on this day.</p>
+                </div>
+              </div>
+            
+              <div class="wrow " role="row" data-wrow="">
+                <div class="wday" role="rowheader"><b>Wednesday</b><small>After school</small></div>
+                <div class="wcols" role="cell">
+                  
+                    <div class="wgrp" data-wgrp="">
+                      <p class="wgl">KG–Grade 5 · Chantilly</p>
+                      
+                        <div class="wclub" data-wclub="" data-g="0-5"><span class="wdot t-amber" aria-hidden="true"></span><div><b>Culinary Arts</b><small>Rabia Nur Demir · $35 / day</small></div></div>
+                      
+                    </div>
+                  
+                    <div class="wgrp" data-wgrp="">
+                      <p class="wgl">Grades 6–12 · Ashburn</p>
+                      
+                        <div class="wclub" data-wclub="" data-g="6-12"><span class="wdot t-green" aria-hidden="true"></span><div><b>Running Club</b><small>Alia Raviola · $35 / day</small></div></div>
+                      
+                        <div class="wclub" data-wclub="" data-g="6-12"><span class="wdot t-green" aria-hidden="true"></span><div><b>Self-Defense &amp; Martial Arts (girls)</b><small>[Instructor] · $35 / day</small></div></div>
+                      
+                    </div>
+                  
+                  <p class="wnone" hidden="" data-wnone="">No clubs for this grade on this day.</p>
+                </div>
+              </div>
+            
+              <div class="wrow " role="row" data-wrow="">
+                <div class="wday" role="rowheader"><b>Thursday</b><small>After school</small></div>
+                <div class="wcols" role="cell">
+                  
+                    <div class="wgrp" data-wgrp="">
+                      <p class="wgl">KG–Grade 5 · Chantilly</p>
+                      
+                        <div class="wclub" data-wclub="" data-g="0-5"><span class="wdot t-teal" aria-hidden="true"></span><div><b>Spanish Language &amp; Culture</b><small>Alia Raviola · $35 / day</small></div></div>
+                      
+                    </div>
+                  
+                    <div class="wgrp" data-wgrp="">
+                      <p class="wgl">Grades 6–12 · Ashburn</p>
+                      
+                        <div class="wclub" data-wclub="" data-g="6-12"><span class="wdot t-blue" aria-hidden="true"></span><div><b>NASA / Aerospace</b><small>Rida Ahsan · $35 / day</small></div></div>
+                      
+                    </div>
+                  
+                  <p class="wnone" hidden="" data-wnone="">No clubs for this grade on this day.</p>
+                </div>
+              </div>
+            
+              <div class="wrow " role="row" data-wrow="">
+                <div class="wday" role="rowheader"><b>Friday</b><small>After school</small></div>
+                <div class="wcols" role="cell">
+                  
+                    <div class="wgrp" data-wgrp="">
+                      <p class="wgl">KG–Grade 5 · Chantilly</p>
+                      
+                        <div class="wclub" data-wclub="" data-g="0-5"><span class="wdot t-slate" aria-hidden="true"></span><div><b>Logic Games</b><small>Mehmet Sonmez · $35 / day</small></div></div>
+                      
+                        <div class="wclub" data-wclub="" data-g="0-5"><span class="wdot t-green" aria-hidden="true"></span><div><b>Self-Defense &amp; Martial Arts (girls)</b><small>[Instructor] · $35 / day</small></div></div>
+                      
+                    </div>
+                  
+                    <div class="wgrp" data-wgrp="">
+                      <p class="wgl">Grades 6–12 · Ashburn</p>
+                      
+                        <div class="wclub" data-wclub="" data-g="6-12"><span class="wdot t-amber" aria-hidden="true"></span><div><b>Culinary Arts</b><small>Rabia Nur Demir · $35 / day</small></div></div>
+                      
+                        <div class="wclub" data-wclub="" data-g="6-12"><span class="wdot t-teal" aria-hidden="true"></span><div><b>Turkish Language &amp; Culture</b><small>Emine Kilic · $35 / day</small></div></div>
+                      
+                    </div>
+                  
+                  <p class="wnone" hidden="" data-wnone="">No clubs for this grade on this day.</p>
+                </div>
+              </div>
+            
+              <div class="wrow wrow-we" role="row" data-wrow="">
+                <div class="wday" role="rowheader"><b>Saturday</b><small>Weekend</small></div>
+                <div class="wcols" role="cell">
+                  
+                    <div class="wgrp" data-wgrp="">
+                      <p class="wgl">Weekend clubs · Ashburn</p>
+                      
+                        <div class="wclub" data-wclub="" data-g="9-12"><span class="wdot t-blue" aria-hidden="true"></span><div><b>Humanoid AI Programming</b><small>Grades 9–12 · 9:00 AM – 12:00 PM · $50 / day</small></div></div>
+                      
+                        <div class="wclub" data-wclub="" data-g="6-8"><span class="wdot t-blue" aria-hidden="true"></span><div><b>MathCON Prep</b><small>Grades 6–8 · 9:00 – 11:00 AM · $25 / day [confirm]</small></div></div>
+                      
+                        <div class="wclub" data-wclub="" data-g="0-12"><span class="wdot t-purple" aria-hidden="true"></span><div><b>Music &amp; School Band</b><small>KG–Grade 12 · 9:00 – 11:00 AM · $299 / semester</small></div></div>
+                      
+                    </div>
+                  
+                  <p class="wnone" hidden="" data-wnone="">No clubs for this grade on this day.</p>
+                </div>
+              </div>
+            
+              <div class="wrow wrow-we" role="row" data-wrow="">
+                <div class="wday" role="rowheader"><b>Sunday</b><small>Weekend</small></div>
+                <div class="wcols" role="cell">
+                  
+                    <div class="wgrp" data-wgrp="">
+                      <p class="wgl">Weekend clubs · Ashburn</p>
+                      
+                        <div class="wclub" data-wclub="" data-g="4-8"><span class="wdot t-blue" aria-hidden="true"></span><div><b>VEX Robotics</b><small>Grades 4–8 · 10:00 AM – 1:00 PM · $50 / day</small></div></div>
+                      
+                        <div class="wclub" data-wclub="" data-g="3-12"><span class="wdot t-purple" aria-hidden="true"></span><div><b>Ebru Water Marbling</b><small>Grades 3–12 · 11:00 AM – 1:00 PM · $50 / day</small></div></div>
+                      
+                        <div class="wclub" data-wclub="" data-g="5-12"><span class="wdot t-amber" aria-hidden="true"></span><div><b>Culinary Arts Around the World</b><small>Grades 5–12 · 1:00 – 4:00 PM · $50 / day</small></div></div>
+                      
+                    </div>
+                  
+                  <p class="wnone" hidden="" data-wnone="">No clubs for this grade on this day.</p>
+                </div>
+              </div>
+            
+              <div class="wrow wrow-soon" role="row" data-wrow="">
+                <div class="wday" role="rowheader"><b>Coming soon</b><small>Dates to be announced</small></div>
+                <div class="wcols" role="cell">
+                  
+                    <div class="wgrp" data-wgrp="">
+                      <p class="wgl">Competition clubs</p>
+                      
+                        <div class="wclub" data-wclub="" data-g="6-8"><span class="wdot t-blue" aria-hidden="true"></span><div><b>Future City</b><small>Grades 6–8 · [Price]</small></div></div>
+                      
+                    </div>
+                  
+                  <p class="wnone" hidden="" data-wnone="">No clubs for this grade on this day.</p>
+                </div>
+              </div>
+            
+          </div>
+          <p class="ph" style="font-size: 14px;">Weekday clubs run after school [Time]. Prices: $35 a weekday club, $50 a weekend club.</p>
+        </div>
+      </div>
+
+      <div data-panel="area">
+        <div style="display: flex; flex-direction: column; gap: 14px;">
       <p class="act-hint"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11V6a2 2 0 0 1 4 0v5M13 10V4a2 2 0 0 1 4 0v8M17 11a2 2 0 0 1 4 0v3a8 8 0 0 1-8 8h-1a7 7 0 0 1-6-3l-3-4a2 2 0 0 1 3-2l2 2V8a2 2 0 0 1 4 0"></path></svg>Tap an area to see its clubs. Tap it again to see all.</p>
       <div class="acts-grid" role="group" aria-label="Activity area">
         
@@ -627,6 +834,8 @@
           <p style="font-size: 17px; font-weight: 600; color: rgb(36, 48, 68);">No clubs match these choices.</p>
           <p class="muted">Try another day or grade, or see every club.</p>
           <button type="button" class="btn btn-outline" data-reset="" style="min-height: 42px; padding: 0px 16px;">Show all clubs</button>
+        </div>
+      </div>
         </div>
       </div>
     </section>
