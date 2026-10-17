@@ -48,7 +48,8 @@
   var GRADES = { all: null, k5: [0, 5], g68: [6, 8], g911: [9, 11] };
 
   document.querySelectorAll('[data-filter-root="clubs"]').forEach(function (root) {
-    var st = { type: 'all', grade: 'all', day: 'all' };
+    var st = { type: 'all', grade: 'all', day: 'all', campus: 'all' };
+    function inCampus(el) { return st.campus === 'all' || el.getAttribute('data-campus') === st.campus; }
 
     function inGrade(el) {
       var r = GRADES[st.grade];
@@ -66,14 +67,14 @@
 
       var items = root.querySelectorAll('[data-item]'), shown = 0;
       items.forEach(function (it) {
-        var ok = (st.type === 'all' || it.getAttribute('data-type') === st.type) && inGrade(it) &&
+        var ok = (st.type === 'all' || it.getAttribute('data-type') === st.type) && inGrade(it) && inCampus(it) &&
           (st.day === 'all' || it.getAttribute('data-day') === st.day);
         it.hidden = !ok;
         if (ok) shown++;
       });
       var count = root.querySelector('[data-count]');
       if (count) count.textContent = shown === items.length ? 'Showing all ' + items.length + ' clubs' : 'Showing ' + shown + ' of ' + items.length + ' clubs';
-      var all = st.type === 'all' && st.grade === 'all' && st.day === 'all';
+      var all = st.type === 'all' && st.grade === 'all' && st.day === 'all' && st.campus === 'all';
       root.querySelectorAll('.reset[data-reset]').forEach(function (b) { b.hidden = all; });
       root.querySelectorAll('[data-empty]').forEach(function (e) { e.hidden = shown > 0; });
 
@@ -81,7 +82,7 @@
         var any = false;
         row.querySelectorAll('[data-wgrp]').forEach(function (g) {
           var vis = 0;
-          g.querySelectorAll('[data-wclub]').forEach(function (c) { c.hidden = !inGrade(c); if (!c.hidden) vis++; });
+          g.querySelectorAll('[data-wclub]').forEach(function (c) { c.hidden = !inGrade(c) || !inCampus(c); if (!c.hidden) vis++; });
           g.hidden = vis === 0;
           if (vis) any = true;
         });
@@ -100,7 +101,7 @@
         return;
       }
       if (e.target.closest('[data-reset]')) {
-        st.type = st.grade = st.day = 'all';
+        st.type = st.grade = st.day = st.campus = 'all';
         apply();
         return;
       }
