@@ -420,3 +420,110 @@
     });
   });
 })();
+
+/* Falcon Academy static site: calm entrance motion. The first section (hero) settles in on load; other blocks fade up as they scroll into view, cards one after another. Works in every browser; off for reduced motion. */
+(function () {
+  if (!('IntersectionObserver' in window)) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var html = document.documentElement;
+  var SKIP = 'header, footer, nav, .fw, .mx, [hidden]';
+  var picked = [];
+
+  function css(el) { return window.getComputedStyle(el); }
+  function skip(el) {
+    if (el.matches(SKIP) || el.closest('header, footer')) return true;
+    var c = css(el);
+    if (c.display === 'none' || c.position === 'fixed' || c.position === 'sticky') return true;
+    return !!el.querySelector('[style*="sticky"], .jump, .subtabs');
+  }
+  function mark(el, delay) {
+    if (skip(el) || picked.indexOf(el) > -1) return;
+    el.style.setProperty('--rd', delay + 'ms');
+    el.classList.add('rv');
+    picked.push(el);
+  }
+  function isGroup(el) {
+    var kids = el.children;
+    if (kids.length < 2) return false;
+    var d = css(el).display;
+    if (d.indexOf('grid') < 0 && d.indexOf('flex') < 0) return false;
+    if (css(el).flexDirection === 'column' && d.indexOf('flex') > -1) return false;
+    if (css(el).overflowX === 'auto' || css(el).overflowX === 'scroll') return false;
+    return true;
+  }
+
+  var sections = Array.prototype.filter.call(document.querySelectorAll('section'), function (s) {
+    return !s.closest('header, footer') && !s.parentElement.closest('section');
+  });
+  if (!sections.length) return;
+
+  // 1. Hero: the text settles in line by line, the photo eases out of a slight zoom
+  var hero = sections[0];
+  var h1 = hero.querySelector('h1');
+  if (h1) {
+    var block = h1.parentElement;
+    Array.prototype.forEach.call(block.children, function (el, i) {
+      if (el.tagName !== 'INPUT' && el.tagName !== 'STYLE') mark(el, 80 + Math.min(i, 6) * 110);
+    });
+  }
+  Array.prototype.forEach.call(hero.querySelectorAll('img'), function (img) {
+    var p = img.parentElement, ov = css(p).overflow;
+    if (img.getBoundingClientRect().width >= window.innerWidth * 0.4 && (ov === 'hidden' || ov === 'clip') && css(img).animationName === 'none')
+      img.classList.add('rv-kb');
+  });
+
+  // 2. Every other section: its blocks fade up; rows of cards come in one after another
+  sections.slice(1).forEach(function (s) {
+    var wrap = s.querySelector(':scope > .wrap') || s;
+    Array.prototype.forEach.call(wrap.children, function (el) {
+      if (el.tagName === 'STYLE' || el.tagName === 'INPUT' || el.tagName === 'SCRIPT') return;
+      if (isGroup(el)) {
+        var n = 0;
+        Array.prototype.forEach.call(el.children, function (k) {
+          if (k.tagName === 'STYLE' || k.tagName === 'INPUT') return;
+          mark(k, Math.min(n++, 5) * 90);
+        });
+      } else {
+        mark(el, 0);
+      }
+    });
+  });
+
+  html.classList.add('mo');
+
+  // 3. Reveal on entry, then remove the classes so hover effects and fixed overlays behave as before
+  function show(el) {
+    var i = picked.indexOf(el);
+    if (i < 0) return;
+    picked.splice(i, 1);
+    io.unobserve(el);
+    el.classList.add('in');
+    var wait = 1000 + (parseInt(el.style.getPropertyValue('--rd'), 10) || 0);
+    setTimeout(function () {
+      el.classList.remove('rv', 'in');
+      el.style.removeProperty('--rd');
+    }, wait);
+  }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) show(e.target); });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0 });
+  picked.forEach(function (el) { io.observe(el); });
+
+  // Safety net: anything that has reached (or passed) the screen is shown, even if the observer missed it
+  var ticking = false;
+  function sweep() {
+    ticking = false;
+    var line = window.innerHeight * 0.95;
+    picked.slice().forEach(function (el) {
+      var r = el.getBoundingClientRect();
+      if (r.top < line && (r.width || r.height)) show(el);
+    });
+    if (!picked.length) { window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); document.removeEventListener('click', onScroll); document.removeEventListener('change', onScroll); }
+  }
+  function onScroll() { if (!ticking) { ticking = true; window.requestAnimationFrame(sweep); setTimeout(sweep, 400); } }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  document.addEventListener('click', onScroll);
+  document.addEventListener('change', onScroll);
+  setTimeout(sweep, 600);
+})();
