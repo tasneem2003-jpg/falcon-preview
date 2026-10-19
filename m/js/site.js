@@ -457,20 +457,44 @@
   });
   if (!sections.length) return;
 
-  // 1. Hero: the text settles in line by line, the photo eases out of a slight zoom
+  // 1. Hero: the photo stays still; the text arrives in order of importance:
+  //    headline (with its small badge), then the check items one by one, then the buttons, then the note
+  //    Timing follows the motion guides (Material, Carbon, Fluent, NN/g): order of importance, decelerating
+  //    "entrance" easing, small travel, longer time for bigger elements; stretched to the calm end for a once-per-visit moment.
+  //    [start ms, duration ms, travel px]
+  var phone = window.innerWidth < 641;
+  var HERO = phone
+    ? { badge: [100, 600, 6], title: [250, 800, 12], list: [900, 600, 8], item: 100, btns: [1600, 600, 8], btn: 100, note: [2000, 500, 0] }
+    : { badge: [150, 700, 8], title: [300, 900, 16], list: [1000, 700, 12], item: 120, btns: [1800, 700, 10], btn: 120, note: [2300, 600, 0] };
   var hero = sections[0];
   var h1 = hero.querySelector('h1');
+  function heroMark(el, d, dur, tr) {
+    mark(el, d);
+    el.classList.add('rv-h');
+    el.style.setProperty('--rdur', dur + 'ms');
+    el.style.setProperty('--rtr', tr + 'px');
+  }
   if (h1) {
-    var block = h1.parentElement;
-    Array.prototype.forEach.call(block.children, function (el, i) {
-      if (el.tagName !== 'INPUT' && el.tagName !== 'STYLE') mark(el, 150 + Math.min(i, 6) * 170);
+    var kids = Array.prototype.filter.call(h1.parentElement.children, function (el) {
+      return el.tagName !== 'INPUT' && el.tagName !== 'STYLE';
+    });
+    var at = kids.indexOf(h1);
+    kids.forEach(function (el, i) {
+      var c;
+      if (i < at) { c = HERO.badge; return heroMark(el, c[0], c[1], c[2]); }
+      if (el === h1) { c = HERO.title; return heroMark(el, c[0], c[1], c[2]); }
+      if (el.querySelector('.btn, a[class*="btn"]')) {
+        c = HERO.btns;
+        Array.prototype.forEach.call(el.children.length ? el.children : [el], function (p, j) { heroMark(p, c[0] + j * HERO.btn, c[1], c[2]); });
+      } else if (el.children.length > 1) {
+        c = HERO.list;
+        Array.prototype.forEach.call(el.children, function (p, j) { heroMark(p, c[0] + j * HERO.item, c[1], c[2]); });
+      } else {
+        c = HERO.note;
+        heroMark(el, c[0], c[1], c[2]);
+      }
     });
   }
-  Array.prototype.forEach.call(hero.querySelectorAll('img'), function (img) {
-    var p = img.parentElement, ov = css(p).overflow;
-    if (img.getBoundingClientRect().width >= window.innerWidth * 0.4 && (ov === 'hidden' || ov === 'clip') && css(img).animationName === 'none')
-      img.classList.add('rv-kb');
-  });
 
   // 2. Every other section: its blocks fade up; rows of cards come in one after another
   sections.slice(1).forEach(function (s) {
@@ -500,8 +524,10 @@
     el.classList.add('in');
     var wait = 1600 + (parseInt(el.style.getPropertyValue('--rd'), 10) || 0);
     setTimeout(function () {
-      el.classList.remove('rv', 'in');
+      el.classList.remove('rv', 'in', 'rv-h');
       el.style.removeProperty('--rd');
+      el.style.removeProperty('--rdur');
+      el.style.removeProperty('--rtr');
     }, wait);
   }
   var io = new IntersectionObserver(function (entries) {

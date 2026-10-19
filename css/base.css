@@ -68,6 +68,9 @@ a.card,a.pcard,a.scard,a.icard,a.acard,a.fcard,a.ccard,a.prog,a.post,a.tl-card,a
         the hero text settles in line by line and its photo eases out of a slight zoom. In the canvas preview a CSS-only version runs. */
   html.mo .rv{opacity:0;translate:0 24px;transition:opacity 1.1s var(--m-reveal) var(--rd,0ms),translate 1.4s var(--m-reveal) var(--rd,0ms)}
   html.mo .rv.in{opacity:1;translate:0 0}
+  /* hero text: each line has its own start, duration and travel (set by site.js); gentle "entrance" curve with no jolt */
+  html.mo .rv.rv-h{translate:0 var(--rtr,12px);transition:opacity var(--rdur,.7s) cubic-bezier(0,0,.3,1) var(--rd,0ms),translate var(--rdur,.7s) cubic-bezier(0,0,.3,1) var(--rd,0ms)}
+  html.mo .rv.rv-h.in{translate:0 0}
   html.mo .rv-kb{animation:mKb 3.6s var(--m-reveal) both}
   @keyframes mKb{from{scale:1.06}to{scale:1}}
   @keyframes mRise{from{opacity:0;translate:0 16px}to{opacity:1;translate:0 0}}
