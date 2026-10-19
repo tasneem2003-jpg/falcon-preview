@@ -13,131 +13,160 @@
 </head>
 <body>
 <div><div style="background: rgb(241, 244, 248);">
-  <div><header style="font-family: Inter, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; line-height: 1.4;">
-  <div style="background: rgb(19, 35, 63);">
-    <div style="max-width: 1224px; margin: 0px auto; padding: 0px 24px; min-height: 40px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 2px 24px; font-size: 13.5px;">
-      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2px 16px;">
-        <nav aria-label="Utility" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2px 16px;">
-          <a href="Campuses.html" style="display: inline-flex; align-items: center; min-height: 36px; color: rgb(198, 206, 219); font-weight: 500; text-decoration: none;">Our Campuses</a>
-          <span aria-hidden="true" style="width: 1px; height: 16px; background: rgba(255, 255, 255, 0.22);"></span>
-          <a href="Careers.html" style="display: inline-flex; align-items: center; min-height: 36px; color: rgb(198, 206, 219); font-weight: 500; text-decoration: none; box-shadow: transparent 0px -2px 0px inset;">Careers</a>
-          <span aria-hidden="true" style="width: 1px; height: 16px; background: rgba(255, 255, 255, 0.22);"></span>
-          <a href="Policies.html" style="display: inline-flex; align-items: center; min-height: 36px; color: rgb(255, 255, 255); font-weight: 700; text-decoration: none; box-shadow: rgb(231, 161, 28) 0px -2px 0px inset;">Policies</a>
-          <span aria-hidden="true" style="width: 1px; height: 16px; background: rgba(255, 255, 255, 0.22);"></span>
-          <a href="Contact.html" style="display: inline-flex; align-items: center; min-height: 36px; color: rgb(198, 206, 219); font-weight: 500; text-decoration: none; box-shadow: transparent 0px -2px 0px inset;">Contact Us</a>
-        </nav>
-        <span aria-hidden="true" style="width: 1px; height: 16px; background: rgba(255, 255, 255, 0.22);"></span>
-        <div style="display: flex; align-items: center; gap: 2px;">
-          <a href="https://www.facebook.com/FalconAcademy.official" aria-label="Falcon Academy on Facebook" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 36px; color: rgb(230, 234, 241);"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H7.3v3.2h2.8V22z"></path></svg></a>
-          <a href="https://www.linkedin.com/company/falconacademy-usa/" aria-label="Falcon Academy on LinkedIn" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 36px; color: rgb(230, 234, 241);"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 8.8h3.8V21H3.6zM5.5 2.9a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4zM9.8 8.8h3.6v1.7h.1c.5-.9 1.7-2 3.6-2 3.8 0 4.5 2.5 4.5 5.8V21h-3.8v-6c0-1.4 0-3.3-2-3.3s-2.3 1.6-2.3 3.2V21H9.8z"></path></svg></a>
-          <a href="https://www.instagram.com/falconacademy.official" aria-label="Falcon Academy on Instagram" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 36px; color: rgb(230, 234, 241);"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.3 6.7h.01"></path></svg></a>
-        </div>
-      </div>
-    </div>
+  <div><header class="fw" style="font-family: Inter, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; line-height: 1.4;">
+  <style>
+    .fw{position:relative;height:112px;background:#FFFFFF;box-shadow:0 6px 16px rgba(19,35,63,.08);z-index:40}
+    .fw a{text-decoration:none}
+    .fw-logo{position:absolute;left:max(38px, calc(50% - 598px));top:18px;display:block;line-height:0;z-index:2}
+    .fw-logo img{height:76px;width:auto;display:block}
+    .fw-quick{position:absolute;right:max(48px, calc(50% - 588px));top:0;height:46px;display:flex;align-items:center;gap:14px;font-size:13.5px;z-index:2}
+    .fw-quick a{position:relative;display:inline-flex;align-items:center;min-height:32px;color:#3D4A60;font-weight:500;animation:fwDrop .45s ease-out both}
+    .fw-quick a::after{content:"";position:absolute;left:0;right:0;bottom:3px;height:2px;border-radius:2px;background:#E7A11C;transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+    .fw-quick a:hover::after{transform:scaleX(1)}
+    .fw-quick a:nth-of-type(1){animation-delay:.55s}.fw-quick a:nth-of-type(2){animation-delay:.62s}.fw-quick a:nth-of-type(3){animation-delay:.69s}.fw-quick a:nth-of-type(4){animation-delay:.76s}.fw-quick a:nth-of-type(5){animation-delay:.83s}
+    .fw-quick a:hover{color:#13233F}
+    .fw-quick i{width:1px;height:14px;background:#CBD3DF}
+    .fw-quick .pp{color:#1F3659;font-weight:700}
+    .fw-wing{position:absolute;left:calc(max(38px, calc(50% - 598px)) + 208px);right:0;bottom:0;height:66px;animation:fwSweep .8s cubic-bezier(.2,.7,.2,1) both}
+    .fw-wing svg{position:absolute;left:0;bottom:0;display:block}
+    .fw-flat{position:absolute;left:269px;right:0;top:0;bottom:0;background:#13233F;border-top:3px solid #E7A11C;box-sizing:border-box}
+    .fw-nav{position:absolute;right:max(48px, calc(50% - 588px));bottom:0;height:66px;display:flex;align-items:center;gap:22px;z-index:3}
+    .fw-menu{display:flex;align-items:stretch;height:66px}
+    .fw-menu .dd{position:relative;display:flex;align-items:center;animation:fwFade .4s ease-out both}
+    .fw-menu .dd:nth-child(1){animation-delay:.35s}.fw-menu .dd:nth-child(2){animation-delay:.42s}.fw-menu .dd:nth-child(3){animation-delay:.49s}.fw-menu .dd:nth-child(4){animation-delay:.56s}.fw-menu .dd:nth-child(5){animation-delay:.63s}
+    .fw-menu .dd + .dd::before{content:"";width:1px;height:14px;background:rgba(255,255,255,.28);margin:0 2px}
+    .fw-top{position:relative;display:inline-flex;align-items:center;height:66px;padding:0 13px;box-sizing:border-box;font-size:14px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;border-bottom:3px solid transparent}
+    .fw-top:hover{color:#F3C664!important}
+    .fw-top::after{content:"";position:absolute;left:13px;right:13px;bottom:16px;height:2px;border-radius:2px;background:#F3C664;transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+    .fw-top:hover::after{transform:scaleX(1)}
+    .fw-top[aria-current="page"]::after{display:none}
+    .fw-top .caret{margin-left:6px;opacity:.75}
+    .fw-menu .dd-menu{display:none;position:absolute;top:100%;left:0;z-index:50;min-width:250px;padding:8px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;box-shadow:0 14px 32px rgba(19,35,63,.18);flex-direction:column;gap:2px}
+    .fw-menu .dd:hover .dd-menu,.fw-menu .dd:focus-within .dd-menu{display:flex}
+    .fw-menu .dd-menu a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:0 12px;border-radius:8px;color:#1A2740;font-size:14.5px;font-weight:600;white-space:nowrap}
+    .fw-menu .dd-menu a:hover,.fw-menu .dd-menu a:focus-visible{background:#EEF2F7}
+    .fw-menu .dd-menu small{font-size:12.5px;font-weight:500;color:#5E6878}
+    .fw-apply{display:inline-flex;align-items:center;min-height:42px;padding:0 20px;border-radius:8px;background:#E7A11C;color:#13233F;font-size:14.5px;font-weight:700;white-space:nowrap;animation:fwPop .45s cubic-bezier(.2,.8,.3,1.3) .75s both;transition:background .2s ease,transform .2s ease}
+    .fw-apply:hover{transform:translateY(-1px)}
+    .fw-apply:hover{background:#D48F0E;color:#13233F}
+    .fw-burger{display:none}
+    .fw a:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:6px}
+    @keyframes fwSweep{0%{clip-path:polygon(100% 0,100% 0,100% 100%,100% 100%)}100%{clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}}
+    @keyframes fwFade{0%{opacity:0;transform:translateY(8px)}100%{opacity:1;transform:none}}
+    @keyframes fwDrop{0%{opacity:0;transform:translateY(-6px)}100%{opacity:1;transform:none}}
+    @keyframes fwPop{0%{opacity:0;transform:scale(.9)}100%{opacity:1;transform:none}}
+    @media (prefers-reduced-motion:reduce){.fw-wing,.fw-quick a,.fw-menu .dd,.fw-apply{animation:none}.fw-quick a::after,.fw-top::after{transition:none}}
+    @media (max-width:1240px){.fw-top{padding:0 9px;font-size:13px;letter-spacing:.03em}.fw-nav{gap:14px}}
+    @media (max-width:1100px){
+      .fw{height:84px}
+      .fw-logo{top:12px}.fw-logo img{height:60px}
+      .fw-quick,.fw-menu,.fw-apply{display:none}
+      .fw-wing{left:auto;width:260px;height:84px}
+      .fw-wing svg{display:none}
+      .fw-flat{left:28px;border-top:0;clip-path:polygon(40px 0,100% 0,100% 100%,0 100%)}
+      .fw-nav{height:84px;right:16px}
+      .fw-burger{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border-radius:10px;border:1px solid rgba(255,255,255,.45);color:#FFFFFF;font-size:15px;font-weight:600}
+    }
+  </style>
+  <a class="fw-logo" href="Main.html" aria-label="Falcon Academy home"><img src="assets/img/falcon-academy-2.svg" alt="Falcon Academy"></a>
+  <nav class="fw-quick" aria-label="Quick links">
+    <a href="Campuses.html">Our Campuses</a><i aria-hidden="true"></i>
+    <a href="Careers.html" style="color: rgb(61, 74, 96); font-weight: 500; box-shadow: transparent 0px -2px 0px inset;">Careers</a><i aria-hidden="true"></i>
+    <a href="Policies.html" style="color: rgb(19, 35, 63); font-weight: 700; box-shadow: rgb(231, 161, 28) 0px -2px 0px inset;">Policies</a><i aria-hidden="true"></i>
+    <a href="Contact.html" style="color: rgb(61, 74, 96); font-weight: 500; box-shadow: transparent 0px -2px 0px inset;">Contact Us</a><i aria-hidden="true"></i>
+    <a class="pp" href="https://portal.edumagined.com/falconacademy/" target="_blank" rel="noopener noreferrer">Parent Portal ↗</a>
+  </nav>
+  <div class="fw-wing" aria-hidden="true">
+    <svg width="272" height="66" viewBox="0 0 272 66"><path d="M0 66 C120 66 150 0 270 0 H272 V66 Z" fill="#13233F"></path><path d="M0 64.5 C120 64.5 150 1.5 272 1.5" fill="none" stroke="#E7A11C" stroke-width="3"></path></svg>
+    <div class="fw-flat"></div>
   </div>
-  <div style="background: rgb(255, 255, 255); border-bottom: 1px solid rgb(220, 226, 235); box-shadow: rgba(19, 35, 63, 0.06) 0px 4px 14px;">
-    <div style="max-width: 1224px; margin: 0px auto; padding: 0px 24px; min-height: 80px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 28px;">
-      <a href="Main.html" aria-label="Falcon Academy home" style="display: block; line-height: 0; margin-left: -10px;"><img src="assets/img/falcon-academy-2.svg" alt="Falcon Academy" style="height: 62px; width: auto; display: block;"></a>
-      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 32px;">
-        <nav aria-label="Main" class="fa-nav" style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 0px 26px; align-self: stretch;">
-          <style>
-            .fa-nav .dd{position:relative;display:flex}
-            .fa-nav .dd-menu{display:none;position:absolute;top:100%;left:-16px;z-index:50;min-width:250px;padding:8px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;box-shadow:0 14px 32px rgba(19,35,63,.18);flex-direction:column;gap:2px}
-            .fa-nav .dd:hover .dd-menu,.fa-nav .dd:focus-within .dd-menu{display:flex}
-            .fa-nav .dd-menu a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:0 12px;border-radius:8px;color:#1A2740;font-size:14.5px;font-weight:600;text-decoration:none;white-space:nowrap}
-            .fa-nav .dd-menu a:hover,.fa-nav .dd-menu a:focus-visible{background:#EEF2F7}
-            .fa-nav .dd-menu small{font-size:12.5px;font-weight:500;color:#5E6878}
-            .fa-nav .caret{margin-left:6px;opacity:.7}
-          </style>
+  <div class="fw-nav">
+    <nav class="fw-menu" aria-label="Main">
+      
+        <div class="dd">
+          <a class="fw-top" href="Main.html" aria-current="false" style="color: rgb(255, 255, 255); border-bottom-color: transparent;">Home</a>
           
-            <div class="dd">
-              <a href="Main.html" aria-current="false" style="display: inline-flex; align-items: center; min-height: 80px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; font-size: 14.5px; font-weight: 600; color: rgb(26, 39, 64); text-decoration: none;">Home</a>
-              
-            </div>
-          
-            <div class="dd">
-              <a href="OurStory.html" aria-current="false" style="display: inline-flex; align-items: center; min-height: 80px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; font-size: 14.5px; font-weight: 600; color: rgb(26, 39, 64); text-decoration: none;">About Us<svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
-              
-                <div class="dd-menu" role="group" aria-label="About Us pages">
-                  
-                    <a href="OurStory.html">Our Story<small></small></a>
-                  
-                    <a href="Leadership.html">Leadership<small></small></a>
-                  
-                    <a href="Faculty.html">Faculty &amp; Staff<small></small></a>
-                  
-                    <a href="Campuses.html">Our Campuses<small></small></a>
-                  
-                </div>
-              
-            </div>
-          
-            <div class="dd">
-              <a href="Curriculum.html" aria-current="false" style="display: inline-flex; align-items: center; min-height: 80px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; font-size: 14.5px; font-weight: 600; color: rgb(26, 39, 64); text-decoration: none;">Academics<svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
-              
-                <div class="dd-menu" role="group" aria-label="Academics pages">
-                  
-                    <a href="Curriculum.html">Curriculum<small>9 subjects</small></a>
-                  
-                    <a href="PrimaryYears.html">Primary Years<small>KG–Grade 5</small></a>
-                  
-                    <a href="MiddleYears.html">Middle Years<small>Grades 6–8</small></a>
-                  
-                    <a href="HighSchool.html">High School<small>Grades 9–12</small></a>
-                  
-                    <a href="DualEnrollment.html">Dual Enrollment<small>NOVA</small></a>
-                  
-                    <a href="ArabicIslamic.html">Arabic &amp; Islamic Studies<small>Every grade</small></a>
-                  
-                    <a href="Accreditation.html">Accreditation<small>IB · Cognia</small></a>
-                  
-                </div>
-              
-            </div>
-          
-            <div class="dd">
-              <a href="VisitTour.html" aria-current="false" style="display: inline-flex; align-items: center; min-height: 80px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; font-size: 14.5px; font-weight: 600; color: rgb(26, 39, 64); text-decoration: none;">Admissions<svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
-              
-                <div class="dd-menu" role="group" aria-label="Admissions pages">
-                  
-                    <a href="VisitTour.html">Visit &amp; Book a Tour<small></small></a>
-                  
-                    <a href="HowToApply.html">How to Apply<small></small></a>
-                  
-                    <a href="Tuition.html">Tuition &amp; Financial Aid<small></small></a>
-                  
-                </div>
-              
-            </div>
-          
-            <div class="dd">
-              <a href="CalendarEvents.html" aria-current="false" style="display: inline-flex; align-items: center; min-height: 80px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; font-size: 14.5px; font-weight: 600; color: rgb(26, 39, 64); text-decoration: none;">Community<svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
-              
-                <div class="dd-menu" role="group" aria-label="Community pages">
-                  
-                    <a href="CalendarEvents.html">Calendar &amp; Events<small></small></a>
-                  
-                    <a href="News.html">News &amp; Announcements<small></small></a>
-                  
-                    <a href="PhotosVideos.html">Photos &amp; Videos<small></small></a>
-                  
-                    <a href="ParentVoices.html">Parent Voices<small></small></a>
-                  
-                    <a href="Store.html">Falcon Store<small></small></a>
-                  
-                    <a href="AfterSchool.html">After School &amp; Weekend<small>Clubs</small></a>
-                  
-                </div>
-              
-            </div>
-          
-        </nav>
-        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 10px;">
-          <a href="https://portal.edumagined.com/falconacademy/" style="display: inline-flex; align-items: center; min-height: 40px; padding: 0px 16px; border: 1px solid rgb(31, 54, 89); border-radius: 8px; color: rgb(31, 54, 89); font-size: 14px; font-weight: 600; text-decoration: none; box-sizing: border-box;">Parent Portal</a>
-          <a href="HowToApply.html" style="display: inline-flex; align-items: center; gap: 6px; min-height: 40px; padding: 0px 20px; border-radius: 8px; background: rgb(231, 161, 28); color: rgb(26, 39, 64); font-size: 14.5px; font-weight: 700; text-decoration: none; box-sizing: border-box;">Apply Now</a>
         </div>
-      </div>
-    </div>
+      
+        <div class="dd">
+          <a class="fw-top" href="OurStory.html" aria-current="false" style="color: rgb(255, 255, 255); border-bottom-color: transparent;">About Us<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          
+            <div class="dd-menu" role="group" aria-label="About Us pages">
+              
+                <a href="OurStory.html">Our Story<small></small></a>
+              
+                <a href="Leadership.html">Leadership<small></small></a>
+              
+                <a href="Faculty.html">Faculty &amp; Staff<small></small></a>
+              
+                <a href="Campuses.html">Our Campuses<small></small></a>
+              
+            </div>
+          
+        </div>
+      
+        <div class="dd">
+          <a class="fw-top" href="Curriculum.html" aria-current="false" style="color: rgb(255, 255, 255); border-bottom-color: transparent;">Academics<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          
+            <div class="dd-menu" role="group" aria-label="Academics pages">
+              
+                <a href="Curriculum.html">Curriculum<small>9 subjects</small></a>
+              
+                <a href="PrimaryYears.html">Primary Years<small>KG–Grade 5</small></a>
+              
+                <a href="MiddleYears.html">Middle Years<small>Grades 6–8</small></a>
+              
+                <a href="HighSchool.html">High School<small>Grades 9–12</small></a>
+              
+                <a href="DualEnrollment.html">Dual Enrollment<small>NOVA</small></a>
+              
+                <a href="ArabicIslamic.html">Arabic &amp; Islamic Studies<small>Every grade</small></a>
+              
+                <a href="Accreditation.html">Accreditation<small>IB · Cognia</small></a>
+              
+            </div>
+          
+        </div>
+      
+        <div class="dd">
+          <a class="fw-top" href="VisitTour.html" aria-current="false" style="color: rgb(255, 255, 255); border-bottom-color: transparent;">Admissions<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          
+            <div class="dd-menu" role="group" aria-label="Admissions pages">
+              
+                <a href="VisitTour.html">Visit &amp; Book a Tour<small></small></a>
+              
+                <a href="HowToApply.html">How to Apply<small></small></a>
+              
+                <a href="Tuition.html">Tuition &amp; Financial Aid<small></small></a>
+              
+            </div>
+          
+        </div>
+      
+        <div class="dd">
+          <a class="fw-top" href="CalendarEvents.html" aria-current="false" style="color: rgb(255, 255, 255); border-bottom-color: transparent;">Community<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          
+            <div class="dd-menu" role="group" aria-label="Community pages">
+              
+                <a href="CalendarEvents.html">Calendar &amp; Events<small></small></a>
+              
+                <a href="News.html">News &amp; Announcements<small></small></a>
+              
+                <a href="PhotosVideos.html">Photos &amp; Videos<small></small></a>
+              
+                <a href="ParentVoices.html">Parent Voices<small></small></a>
+              
+                <a href="Store.html">Falcon Store<small></small></a>
+              
+                <a href="AfterSchool.html">After School &amp; Weekend<small>Clubs</small></a>
+              
+            </div>
+          
+        </div>
+      
+    </nav>
+    <a class="fw-apply" href="HowToApply.html">Apply Now</a>
+    <a class="fw-burger" href="m/Menu.html?mobile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>Menu</a>
   </div></header></div>
 
   <main class="wrap-card" style="padding-top: 18px; padding-bottom: 48px; display: flex; flex-direction: column; gap: 14px;">
