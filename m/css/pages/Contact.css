@@ -1,0 +1,65 @@
+/* Contact Us (phone) */
+
+.lede{font-size:16px;line-height:1.42;color:#5E6878;max-width:640px}
+.icards{display:flex;flex-wrap:wrap;gap:16px}
+.icard{flex:1 1 auto;min-width:0;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;padding:17px 18px;box-sizing:border-box;display:flex;align-items:center;gap:12px 15px}
+.icircle{width:42px;height:42px;flex:none;border-radius:50%;background:#E6EAF1;color:#1F3659;display:inline-flex;align-items:center;justify-content:center}
+.ilabel{font-size:13px;line-height:1.38;color:#5E6878}
+.ival{font-size:15px;line-height:1.5;font-weight:700;color:#243044;text-decoration:none;overflow-wrap:anywhere}
+a.ival:hover{text-decoration:underline;color:#1A2740}
+.callbtn{min-height:36px;padding:0 13px;font-size:14px}
+.itext{flex:1 1 auto;min-width:0;display:flex;flex-direction:column}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:20px}
+.ccard{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.map{position:relative;height:170px;background:#E8EDF3;overflow:hidden}
+.map svg{display:block}
+.map .mpin{position:absolute}
+.mapchip{position:absolute;top:12px;left:11px;display:inline-flex;align-items:center;min-height:19px;padding:0 7px;border-radius:5px;background:#FFFFFF;color:#5E6878;font-size:11.5px;font-weight:600;line-height:1}
+.cbody{padding:18px 18px 18px;display:flex;flex-direction:column}
+.cname{font-size:19px;font-weight:700;color:#243044;line-height:1.3}
+.ctag{min-height:25px;padding:0 9px;font-size:13.5px}
+.cprog{font-size:14.5px;line-height:1.55;color:#5E6878;margin-top:2px}
+.caddr{display:flex;align-items:flex-start;gap:7px;margin-top:6px;font-size:16px;line-height:1.5;color:#243044}
+.cbtn{min-height:44px;padding:0 18px;font-size:14.5px}
+.fcard{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;padding:22px;box-sizing:border-box}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:13px 14px}
+.fcard .field label{font-size:14.5px;font-weight:600;color:#243044;line-height:1.45}
+.fcard .input{min-height:44px;border-color:#C9D1DD;font-size:15px}
+.fcard select.input{appearance:none;-webkit-appearance:none;padding-right:40px;cursor:pointer;color:#1A2740}
+.fcard select.input:invalid{color:#5E6878}
+.fcard select.input option{color:#1A2740}
+.fcard textarea.input{height:120px;padding:10px 14px;resize:vertical;display:block}
+.hint{font-size:13px;line-height:1.55;color:#5E6878;margin-top:-1px}
+.sendbtn{min-height:42px;padding:0 17px;font-size:15px}
+.pnav{display:flex;flex-direction:column;gap:14px}.pnav-chips{display:flex;flex-wrap:wrap;gap:8px}@media (max-width:640px){.pnav-chips{flex-wrap:nowrap;overflow-x:auto;margin-inline:-24px;padding:0 24px 4px;scrollbar-width:none}.pnav-chips::-webkit-scrollbar{display:none}}
+@media (max-width:640px){.btn{white-space:normal;text-align:center;max-width:100%}table{display:block;overflow-x:auto;max-width:100%}}
+@media (max-width:640px){.wrap,.wrap-card{padding-inline:16px}.pnav-chips{margin-inline:-16px;padding:0 16px 4px}.panel{margin-inline:-16px;border-radius:0;border-left:0;border-right:0;padding:22px 16px 24px}}
+
+/* phone polish */
+.panel{background:transparent!important;border:0!important;margin-inline:0!important;padding:8px 0 0!important;border-radius:0!important}
+.lede{font-size:17px!important;line-height:1.55!important;color:#3D4A60!important}
+.sec-h{font-size:22px;line-height:1.25;font-weight:700;color:#1A2740}
+.icards{flex-direction:column;gap:0!important;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:14px;padding:0 16px}
+.icard{flex-wrap:nowrap!important;border:0!important;border-radius:0!important;background:transparent!important;padding:16px 0!important;border-top:1px solid #E6EAF1!important;gap:14px!important}
+.icard:first-child{border-top:0!important}
+.icircle{width:40px;height:40px}
+.ilabel{font-size:13.5px!important}
+.ival{font-size:16px!important}
+.callbtn{min-height:44px!important;padding:0 16px!important;font-size:15px!important;border-radius:10px!important;flex:none}
+.ccard{border-radius:14px!important}
+.cgrid{gap:12px!important}
+.cbody{padding:18px!important}
+.cname{font-size:18px!important}
+.cprog{font-size:14.5px!important;margin-top:4px!important}
+.caddr{margin-top:8px!important;color:#3D4A60!important}
+.cacts .cbtn{min-height:48px!important;padding:0 10px!important;font-size:15px!important;border-radius:12px!important;width:100%}
+.fcard{padding:20px 18px!important;border-radius:14px!important}
+.fgrid{gap:20px!important}
+.fcard .field{gap:8px!important}
+.fcard .field label{font-size:15px!important;color:#1A2740!important}
+.fcard .input{min-height:48px!important;height:48px;border-radius:10px!important;font-size:16px!important;border-color:#CBD3DF!important}
+.fcard textarea.input{height:132px!important;padding:12px 14px!important}
+.hint{display:none!important}
+.sendbtn{width:100%;min-height:52px!important;border-radius:12px!important;font-size:17px!important}
+
+body{margin:0}

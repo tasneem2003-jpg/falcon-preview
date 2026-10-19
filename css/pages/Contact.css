@@ -31,5 +31,8 @@ a.ival:hover{text-decoration:underline;color:#1A2740}
 .fcard textarea.input{height:120px;padding:10px 14px;resize:vertical;display:block}
 .hint{font-size:13px;line-height:1.55;color:#5E6878;margin-top:-1px}
 .sendbtn{min-height:42px;padding:0 17px;font-size:15px}
+.pnav{display:flex;flex-direction:column;gap:14px}.pnav-chips{display:flex;flex-wrap:wrap;gap:8px}@media (max-width:640px){.pnav-chips{flex-wrap:nowrap;overflow-x:auto;margin-inline:-24px;padding:0 24px 4px;scrollbar-width:none}.pnav-chips::-webkit-scrollbar{display:none}}
+@media (max-width:640px){.btn{white-space:normal;text-align:center;max-width:100%}table{display:block;overflow-x:auto;max-width:100%}}
+@media (max-width:640px){.wrap,.wrap-card{padding-inline:16px}.pnav-chips{margin-inline:-16px;padding:0 16px 4px}.panel{margin-inline:-16px;border-radius:0;border-left:0;border-right:0;padding:22px 16px 24px}}
 
 body{margin:0}

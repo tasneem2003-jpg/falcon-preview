@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>if(!matchMedia("(max-width: 640px)").matches&&!/[?&]mobile/.test(location.search))location.replace("../Store.html"+location.hash);</script>
+<title>Falcon Store · Falcon Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/pages/Store.css">
+</head>
+<body>
+<div><div data-fx="" data-limit="12" style="background: rgb(241, 244, 248);">
+  <p class="st-strip">Every purchase helps enrich our extracurricular programs</p>
+  <header style="background: rgb(19, 35, 63);">
+    <div class="st-wrap st-bar">
+      <div style="display: flex; align-items: center;">
+        <a href="Main.html" aria-label="Falcon Academy home" style="display: block; line-height: 0; margin-left: -5px;"><img class="st-logo" src="assets/img/falcon-academy.svg" alt="Falcon Academy" style="height: 56px; width: auto; display: block;"></a>
+        <span aria-hidden="true" class="st-div" style="width: 1px; height: 28px; margin-left: 16px; background: rgba(255, 255, 255, 0.28);"></span>
+        <a class="st-brand" href="Store.html" style="margin-left: 18px; display: flex; flex-direction: column; color: rgb(255, 255, 255); text-decoration: none; line-height: 1.15;"><strong style="font-size: 17px; font-weight: 800; letter-spacing: -0.01em;">Falcon Store</strong><span style="font-size: 11.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(185, 196, 214);">Spirit store</span></a>
+      </div>
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <a class="st-back" href="Main.html" style="color: rgb(213, 220, 231); font-size: 14px; font-weight: 500; text-decoration: none;">← falconacademy.org</a>
+        <button type="button" class="st-cart" aria-label="Cart, 0 items"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.5"></circle><circle cx="18" cy="20" r="1.5"></circle><path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.6L22 7H6"></path></svg>Cart<span class="st-count" aria-hidden="true">0</span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="st-hero" aria-labelledby="st-title">
+    <div class="st-wrap st-hgrid">
+      <div style="flex: 1 1 420px; min-width: 0px; display: flex; flex-direction: column; align-items: flex-start; gap: 18px;">
+        <span class="st-eyebrow">Home of the Falcons</span>
+        <h1 id="st-title" class="st-h1">Wear the <span style="color: rgb(231, 161, 28);">Falcon</span> pride</h1>
+        <p style="color: rgb(213, 220, 231); font-size: 17px; line-height: 1.6; max-width: 460px;">Official uniforms, athletic kit and spirit gear for students, families and alumni. Every order supports our extracurricular programs.</p>
+        <a class="btn btn-gold btn-lg" href="#shop">Shop the collection <span aria-hidden="true">→</span></a>
+        <div class="st-kpis">
+          <div><b>49+</b><span>Products</span></div>
+          <div><b>100%</b><span>Give-back</span></div>
+          <div><b>K–12</b><span>Sizing</span></div>
+        </div>
+      </div>
+      <div class="st-photo">
+        <img src="assets/img/falcon-academy-students-in-their-school-uniforms.jpg" alt="Falcon Academy students in their school uniforms">
+        <div class="st-sticker"><small>New season</small><strong>Uniforms now available to order</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <main id="shop" class="st-wrap" style="padding-top: 44px; padding-bottom: 56px; display: flex; flex-direction: column; gap: 20px;">
+    <div class="st-head" style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 24px;">
+      <div style="display: flex; flex-direction: column; gap: 4px;">
+        <span class="label" style="font-size: 12px; color: rgb(138, 90, 0);">The collection</span>
+        <h2 style="font-size: 30px; font-weight: 800;">Shop Falcon gear</h2>
+      </div>
+      <div class="st-search">
+        <label for="st-q" class="sr-only">Search the store</label>
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        <input id="st-q" type="search" placeholder="Search the store" data-f="q" value="">
+      </div>
+    </div>
+
+    <div class="fsel-row">
+      <label class="fsel"><span class="fsel-l">Category</span><select data-f="cat" data-clears="who"><option value="all">All (49)</option><option value="uniform">Uniform (16)</option><option value="gear">Falcon Gear (33)</option></select><svg class="fsel-c" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></label>
+      <label class="fsel" data-show="cat=uniform" hidden=""><span class="fsel-l">For</span><select data-f="who"><option value="all">All</option><option value="boys">Boys</option><option value="girls">Girls</option><option value="unisex">Unisex</option></select><svg class="fsel-c" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></label>
+      <label class="fsel"><span class="fsel-l">Sort</span><select aria-label="Sort products" data-sort=""><option value="popular">Most popular</option><option value="latest">Latest</option><option value="low">Lowest price</option><option value="high">Highest price</option></select><svg class="fsel-c" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></label>
+    </div>
+
+    <p aria-live="polite" data-count="" data-tpl="Showing 1–{to} of {n} products" style="font-size: 15px; color: rgb(94, 104, 120);">Showing 1–12 of 49 products</p>
+
+      <div class="st-grid">
+        
+          <article class="card st-card" data-item="" data-k-cat="uniform" data-k-who="any" data-i="0" data-price="15" data-text="Unisex PE Shirt">
+            <div class="st-img">
+              <span class="st-badge">Uniform</span>
+              <span class="st-for">Unisex</span>
+              <img src="assets/img/unisex-pe-shirt.jpg" alt="Unisex PE Shirt" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">PE Shirt</h3>
+              <span class="st-price">$15.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Select options: Unisex PE Shirt">Select options</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="uniform" data-k-who="boys" data-i="1" data-price="20" data-text="Boys Short Sleeve Polo">
+            <div class="st-img">
+              <span class="st-badge">Uniform</span>
+              <span class="st-for">Boys</span>
+              <img src="assets/img/boys-short-sleeve-polo.jpg" alt="Boys Short Sleeve Polo" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Short Sleeve Polo</h3>
+              <span class="st-price">$20.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Select options: Boys Short Sleeve Polo">Select options</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="uniform" data-k-who="girls" data-i="2" data-price="20" data-text="Girls Short Sleeve Polo">
+            <div class="st-img">
+              <span class="st-badge">Uniform</span>
+              <span class="st-for">Girls</span>
+              <img src="assets/img/girls-short-sleeve-polo.jpg" alt="Girls Short Sleeve Polo" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Short Sleeve Polo</h3>
+              <span class="st-price">$20.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Select options: Girls Short Sleeve Polo">Select options</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="uniform" data-k-who="girls" data-i="3" data-price="25" data-text="Girls Long Sleeve Polo">
+            <div class="st-img">
+              <span class="st-badge">Uniform</span>
+              <span class="st-for">Girls</span>
+              <img src="assets/img/girls-long-sleeve-polo.jpg" alt="Girls Long Sleeve Polo" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Long Sleeve Polo</h3>
+              <span class="st-price">$25.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Select options: Girls Long Sleeve Polo">Select options</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="uniform" data-k-who="any" data-i="4" data-price="30" data-text="Unisex Sweatshirt">
+            <div class="st-img">
+              <span class="st-badge">Uniform</span>
+              <span class="st-for">Unisex</span>
+              <img src="assets/img/unisex-sweatshirt.jpg" alt="Unisex Sweatshirt" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Sweatshirt</h3>
+              <span class="st-price">$30.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Select options: Unisex Sweatshirt">Select options</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="uniform" data-k-who="any" data-i="5" data-price="20" data-text="Unisex PE Shirt, Long Sleeve">
+            <div class="st-img">
+              <span class="st-badge">Uniform</span>
+              <span class="st-for">Unisex</span>
+              <img src="assets/img/unisex-pe-shirt-long-sleeve.jpg" alt="Unisex PE Shirt, Long Sleeve" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">PE Shirt, Long Sleeve</h3>
+              <span class="st-price">$20.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Select options: Unisex PE Shirt, Long Sleeve">Select options</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="uniform" data-k-who="boys" data-i="6" data-price="25" data-text="Boys Long Sleeve Polo">
+            <div class="st-img">
+              <span class="st-badge">Uniform</span>
+              <span class="st-for">Boys</span>
+              <img src="assets/img/boys-long-sleeve-polo.jpg" alt="Boys Long Sleeve Polo" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Long Sleeve Polo</h3>
+              <span class="st-price">$25.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Select options: Boys Long Sleeve Polo">Select options</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="uniform" data-k-who="any" data-i="7" data-price="40" data-text="Unisex Full Zip Jacket">
+            <div class="st-img">
+              <span class="st-badge">Uniform</span>
+              <span class="st-for">Unisex</span>
+              <img src="assets/img/unisex-full-zip-jacket.jpg" alt="Unisex Full Zip Jacket" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Full Zip Jacket</h3>
+              <span class="st-price">$40.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Select options: Unisex Full Zip Jacket">Select options</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="uniform" data-k-who="any" data-i="8" data-price="15" data-text="Unisex PE Sweatpants">
+            <div class="st-img">
+              <span class="st-badge">Uniform</span>
+              <span class="st-for">Unisex</span>
+              <img src="assets/img/unisex-pe-sweatpants.jpg" alt="Unisex PE Sweatpants" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">PE Sweatpants</h3>
+              <span class="st-price">$15.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Select options: Unisex PE Sweatpants">Select options</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="uniform" data-k-who="girls" data-i="9" data-price="25" data-text="Girls Skirt">
+            <div class="st-img">
+              <span class="st-badge">Uniform</span>
+              <span class="st-for">Girls</span>
+              <img src="assets/img/girls-skirt.jpg" alt="Girls Skirt" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Skirt</h3>
+              <span class="st-price">$25.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Select options: Girls Skirt">Select options</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="uniform" data-k-who="girls" data-i="10" data-price="25" data-text="Girls Pants">
+            <div class="st-img">
+              <span class="st-badge">Uniform</span>
+              <span class="st-for">Girls</span>
+              <img src="assets/img/girls-pants.jpg" alt="Girls Pants" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Pants</h3>
+              <span class="st-price">$25.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Select options: Girls Pants">Select options</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="uniform" data-k-who="boys" data-i="11" data-price="25" data-text="Boys Pants">
+            <div class="st-img">
+              <span class="st-badge">Uniform</span>
+              <span class="st-for">Boys</span>
+              <img src="assets/img/boys-pants.jpg" alt="Boys Pants" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Pants</h3>
+              <span class="st-price">$25.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Select options: Boys Pants">Select options</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="uniform" data-k-who="girls" data-i="12" data-price="20" data-text="Girls Short Sleeve Stretch Blouse" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Uniform</span>
+              <span class="st-for">Girls</span>
+              <img src="assets/img/girls-short-sleeve-stretch-blouse.jpg" alt="Girls Short Sleeve Stretch Blouse" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Short Sleeve Stretch Blouse</h3>
+              <span class="st-price">$20.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Select options: Girls Short Sleeve Stretch Blouse">Select options</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="uniform" data-k-who="girls" data-i="13" data-price="35" data-text="Girls Crewneck Sweater Cardigan" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Uniform</span>
+              <span class="st-for">Girls</span>
+              <img src="assets/img/girls-crewneck-sweater-cardigan.jpg" alt="Girls Crewneck Sweater Cardigan" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Crewneck Sweater Cardigan</h3>
+              <span class="st-price">$35.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Select options: Girls Crewneck Sweater Cardigan">Select options</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="uniform" data-k-who="girls" data-i="14" data-price="25" data-text="Girls Long Sleeve Peter Pan Collar Blouse" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Uniform</span>
+              <span class="st-for">Girls</span>
+              <img src="assets/img/girls-long-sleeve-peter-pan-collar-blouse.jpg" alt="Girls Long Sleeve Peter Pan Collar Blouse" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Long Sleeve Peter Pan Collar Blouse</h3>
+              <span class="st-price">$25.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Select options: Girls Long Sleeve Peter Pan Collar Blouse">Select options</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="uniform" data-k-who="girls" data-i="15" data-price="30" data-text="Girls Skirt, Ankle Length" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Uniform</span>
+              <span class="st-for">Girls</span>
+              <img src="assets/img/girls-skirt-ankle-length.jpg" alt="Girls Skirt, Ankle Length" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Skirt, Ankle Length</h3>
+              <span class="st-price">$30.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Select options: Girls Skirt, Ankle Length">Select options</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="16" data-price="5" data-text="Stress Ball" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/stress-ball.jpg" alt="Stress Ball" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Stress Ball</h3>
+              <span class="st-price">$5.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Stress Ball">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="17" data-price="9" data-text="Espresso Porcelain Cup with Saucer Set" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/espresso-porcelain-cup-with-saucer-set.jpg" alt="Espresso Porcelain Cup with Saucer Set" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Espresso Porcelain Cup with Saucer Set</h3>
+              <span class="st-price">$9.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Espresso Porcelain Cup with Saucer Set">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="18" data-price="35" data-text="Hydrapeak® Insulated Sport Straw Water Bottle" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/hydrapeak-insulated-sport-straw-water-bottle.jpg" alt="Hydrapeak® Insulated Sport Straw Water Bottle" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Hydrapeak® Insulated Sport Straw Water Bottle</h3>
+              <span class="st-price">$35.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Hydrapeak® Insulated Sport Straw Water Bottle">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="19" data-price="9" data-text="Stainless Steel Mug" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/stainless-steel-mug.jpg" alt="Stainless Steel Mug" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Stainless Steel Mug</h3>
+              <span class="st-price">$9.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Stainless Steel Mug">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="20" data-price="5" data-text="Magnetic Dry Erase Memo Board with Pen" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/magnetic-dry-erase-memo-board-with-pen.jpg" alt="Magnetic Dry Erase Memo Board with Pen" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Magnetic Dry Erase Memo Board with Pen</h3>
+              <span class="st-price">$5.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Magnetic Dry Erase Memo Board with Pen">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="21" data-price="9" data-text="Keychain with LED Light" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/keychain-with-led-light.jpg" alt="Keychain with LED Light" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Keychain with LED Light</h3>
+              <span class="st-price">$9.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Keychain with LED Light">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="22" data-price="35" data-text="TiTUS® Insulated Water Bottle" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/titus-insulated-water-bottle.jpg" alt="TiTUS® Insulated Water Bottle" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">TiTUS® Insulated Water Bottle</h3>
+              <span class="st-price">$35.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: TiTUS® Insulated Water Bottle">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="23" data-price="50" data-text="Twill Cap" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/twill-cap.jpg" alt="Twill Cap" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Twill Cap</h3>
+              <span class="st-price">$50.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Twill Cap">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="24" data-price="20" data-text="Warm Knitted Woven Scarf" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/warm-knitted-woven-scarf.jpg" alt="Warm Knitted Woven Scarf" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Warm Knitted Woven Scarf</h3>
+              <span class="st-price">$20.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Warm Knitted Woven Scarf">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="25" data-price="6" data-text="Round Slate Coaster" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/round-slate-coaster.jpg" alt="Round Slate Coaster" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Round Slate Coaster</h3>
+              <span class="st-price">$6.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Round Slate Coaster">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="26" data-price="5" data-text="Plastic Flying Disc" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/plastic-flying-disc.jpg" alt="Plastic Flying Disc" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Plastic Flying Disc</h3>
+              <span class="st-price">$5.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Plastic Flying Disc">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="27" data-price="8" data-text="Coffee Mug with Speckle Accents" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/coffee-mug-with-speckle-accents.jpg" alt="Coffee Mug with Speckle Accents" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Coffee Mug with Speckle Accents</h3>
+              <span class="st-price">$8.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Coffee Mug with Speckle Accents">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="28" data-price="8" data-text="Two Tone Speckled Coffee Mug" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/two-tone-speckled-coffee-mug.jpg" alt="Two Tone Speckled Coffee Mug" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Two Tone Speckled Coffee Mug</h3>
+              <span class="st-price">$8.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Two Tone Speckled Coffee Mug">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="29" data-price="15" data-text="A5 Business Notebook with Bookmark" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/a5-business-notebook-with-bookmark.jpg" alt="A5 Business Notebook with Bookmark" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">A5 Business Notebook with Bookmark</h3>
+              <span class="st-price">$15.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: A5 Business Notebook with Bookmark">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="30" data-price="18" data-text="Magnetic Notebook with Metal Pen" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/magnetic-notebook-with-metal-pen.jpg" alt="Magnetic Notebook with Metal Pen" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Magnetic Notebook with Metal Pen</h3>
+              <span class="st-price">$18.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Magnetic Notebook with Metal Pen">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="31" data-price="15" data-text="Spiral Hardcover Lined Journal, 160 Pages" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/spiral-hardcover-lined-journal-160-pages.jpg" alt="Spiral Hardcover Lined Journal, 160 Pages" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Spiral Hardcover Lined Journal, 160 Pages</h3>
+              <span class="st-price">$15.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Spiral Hardcover Lined Journal, 160 Pages">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="32" data-price="10" data-text="Soft Touch Journal with Close Strap" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/soft-touch-journal-with-close-strap.jpg" alt="Soft Touch Journal with Close Strap" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Soft Touch Journal with Close Strap</h3>
+              <span class="st-price">$10.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Soft Touch Journal with Close Strap">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="33" data-price="8" data-text="TiTUS® Metallic Finish Pens" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/titus-metallic-finish-pens.jpg" alt="TiTUS® Metallic Finish Pens" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">TiTUS® Metallic Finish Pens</h3>
+              <span class="st-price">$8.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: TiTUS® Metallic Finish Pens">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="34" data-price="8" data-text="Premium Metal Press-Button Pen" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/premium-metal-press-button-pen.jpg" alt="Premium Metal Press-Button Pen" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Premium Metal Press-Button Pen</h3>
+              <span class="st-price">$8.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Premium Metal Press-Button Pen">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="35" data-price="30" data-text="TUCANO® Anti-Slip 16″ Laptop Sleeve" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/tucano-anti-slip-16-laptop-sleeve.jpg" alt="TUCANO® Anti-Slip 16″ Laptop Sleeve" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">TUCANO® Anti-Slip 16″ Laptop Sleeve</h3>
+              <span class="st-price">$30.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: TUCANO® Anti-Slip 16″ Laptop Sleeve">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="36" data-price="30" data-text="RejuVe® X-PAK 16″ Laptop Brief Bag" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/rejuve-x-pak-16-laptop-brief-bag.jpg" alt="RejuVe® X-PAK 16″ Laptop Brief Bag" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">RejuVe® X-PAK 16″ Laptop Brief Bag</h3>
+              <span class="st-price">$30.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: RejuVe® X-PAK 16″ Laptop Brief Bag">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="37" data-price="15" data-text="TiTUS® Insulated Tumbler" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/titus-insulated-tumbler.jpg" alt="TiTUS® Insulated Tumbler" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">TiTUS® Insulated Tumbler</h3>
+              <span class="st-price">$15.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: TiTUS® Insulated Tumbler">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="38" data-price="15" data-text="TiTUS® Insulated Mug" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/titus-insulated-mug.jpg" alt="TiTUS® Insulated Mug" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">TiTUS® Insulated Mug</h3>
+              <span class="st-price">$15.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: TiTUS® Insulated Mug">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="39" data-price="30" data-text="Hydrapeak® Insulated Food Jar" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/hydrapeak-insulated-food-jar.jpg" alt="Hydrapeak® Insulated Food Jar" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Hydrapeak® Insulated Food Jar</h3>
+              <span class="st-price">$30.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Hydrapeak® Insulated Food Jar">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="40" data-price="5" data-text="Non-Woven Reusable Tote Bag" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/non-woven-reusable-tote-bag.jpg" alt="Non-Woven Reusable Tote Bag" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Non-Woven Reusable Tote Bag</h3>
+              <span class="st-price">$5.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Non-Woven Reusable Tote Bag">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="41" data-price="8" data-text="Canvas Tote Bag with Zipper Pocket" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/canvas-tote-bag-with-zipper-pocket.jpg" alt="Canvas Tote Bag with Zipper Pocket" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Canvas Tote Bag with Zipper Pocket</h3>
+              <span class="st-price">$8.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Canvas Tote Bag with Zipper Pocket">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="42" data-price="6" data-text="Small Cotton Canvas Messenger Bag" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/small-cotton-canvas-messenger-bag.jpg" alt="Small Cotton Canvas Messenger Bag" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Small Cotton Canvas Messenger Bag</h3>
+              <span class="st-price">$6.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Small Cotton Canvas Messenger Bag">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="43" data-price="9" data-text="RejuVe® Two-Tone Waist Fanny Pack" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/rejuve-two-tone-waist-fanny-pack.jpg" alt="RejuVe® Two-Tone Waist Fanny Pack" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">RejuVe® Two-Tone Waist Fanny Pack</h3>
+              <span class="st-price">$9.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: RejuVe® Two-Tone Waist Fanny Pack">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="44" data-price="30" data-text="TUCANO® Slim 14″ Laptop Bag" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/tucano-slim-14-laptop-bag.jpg" alt="TUCANO® Slim 14″ Laptop Bag" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">TUCANO® Slim 14″ Laptop Bag</h3>
+              <span class="st-price">$30.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: TUCANO® Slim 14″ Laptop Bag">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="45" data-price="70" data-text="Carhartt® Canvas Backpack" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/carhartt-canvas-backpack.jpg" alt="Carhartt® Canvas Backpack" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">Carhartt® Canvas Backpack</h3>
+              <span class="st-price">$70.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: Carhartt® Canvas Backpack">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="46" data-price="40" data-text="TUCANO® LATO Business Backpack" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/tucano-lato-business-backpack.jpg" alt="TUCANO® LATO Business Backpack" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">TUCANO® LATO Business Backpack</h3>
+              <span class="st-price">$40.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: TUCANO® LATO Business Backpack">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="47" data-price="25" data-text="RejuVe® MILANO Business Backpack" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/rejuve-milano-business-backpack.jpg" alt="RejuVe® MILANO Business Backpack" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">RejuVe® MILANO Business Backpack</h3>
+              <span class="st-price">$25.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: RejuVe® MILANO Business Backpack">Add to cart</button>
+            </div>
+          </article>
+        
+          <article class="card st-card" data-item="" data-k-cat="gear" data-k-who="any" data-i="48" data-price="15" data-text="RejuVe® 12-Can Insulated Cooler Bag" hidden="">
+            <div class="st-img">
+              <span class="st-badge">Falcon Gear</span>
+              
+              <img src="assets/img/rejuve-12-can-insulated-cooler-bag.jpg" alt="RejuVe® 12-Can Insulated Cooler Bag" loading="lazy">
+            </div>
+            <div class="st-body">
+              <h3 class="st-name">RejuVe® 12-Can Insulated Cooler Bag</h3>
+              <span class="st-price">$15.00</span>
+              <button type="button" class="btn btn-navy st-add" aria-label="Add to cart: RejuVe® 12-Can Insulated Cooler Bag">Add to cart</button>
+            </div>
+          </article>
+        
+      </div>
+        <div style="display: flex; justify-content: center;">
+          <button type="button" class="btn btn-outline st-more" data-more="" data-tpl="Show {k} more" style="min-height: 44px; font-weight: 600;">Show 12 more</button>
+        </div>
+      <div class="st-ph" data-empty="" hidden="">
+        <p style="font-size: 17px; font-weight: 600; color: rgb(36, 48, 68);">Nothing matches your search.</p>
+        <button type="button" class="btn btn-outline" data-reset="" style="min-height: 42px; font-weight: 600;">Show all products</button>
+      </div>
+
+    <section aria-labelledby="st-know" style="margin-top: 20px; display: flex; flex-direction: column; gap: 14px;">
+      <h2 id="st-know" class="label rule" style="font-size: 13px;">Good to know</h2>
+      <div class="st-know" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 14px;">
+        <div class="card st-info">
+          <span class="st-tile"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.3 15.3 8.7 2.7a1 1 0 0 0-1.4 0L2.7 7.3a1 1 0 0 0 0 1.4l12.6 12.6a1 1 0 0 0 1.4 0l4.6-4.6a1 1 0 0 0 0-1.4zM7.5 10.5l2-2M10.5 13.5l2-2M13.5 16.5l2-2"></path></svg></span>
+          <span style="display: flex; flex-direction: column; gap: 2px;"><strong style="font-size: 15.5px; font-weight: 700; color: rgb(26, 39, 64);">Sizing for every grade</strong><span class="st-info-d" style="font-size: 14px; color: rgb(94, 104, 120);">Uniform sizes run from Kindergarten to Grade 12. [Add size chart link]</span></span>
+        </div>
+        <div class="card st-info">
+          <span class="st-tile"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.4 6.6 16 4a4 4 0 0 1-8 0L3.6 6.6a1 1 0 0 0-.5 1.2l1.6 3.7a1 1 0 0 0 1.3.5L8 11v9a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-9l2 1a1 1 0 0 0 1.3-.5l1.6-3.7a1 1 0 0 0-.5-1.2z"></path></svg></span>
+          <span style="display: flex; flex-direction: column; gap: 2px;"><strong style="font-size: 15.5px; font-weight: 700; color: rgb(26, 39, 64);">Official uniform</strong><span class="st-info-d" style="font-size: 14px; color: rgb(94, 104, 120);">Light blue polos and blouses, navy outerwear, grey PE kit.</span></span>
+        </div>
+        <div class="card st-info">
+          <span class="st-tile"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8 12 3 3 8v8l9 5 9-5z"></path><path d="m3 8 9 5 9-5M12 13v8"></path></svg></span>
+          <span style="display: flex; flex-direction: column; gap: 2px;"><strong style="font-size: 15.5px; font-weight: 700; color: rgb(26, 39, 64);">Pickup &amp; delivery</strong><span class="st-info-d" style="font-size: 14px; color: rgb(94, 104, 120);">[How and when orders arrive — confirm with the front office]</span></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="st-foot" style="background: rgb(19, 35, 63); color: rgb(198, 206, 219); font-size: 14px; line-height: 1.5;">
+    <div class="st-wrap st-fgrid" style="padding-top: 36px; padding-bottom: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); gap: 24px 40px;">
+      <div style="display: flex; flex-direction: column; gap: 6px; grid-column: span 2; max-width: 420px;">
+        <strong style="color: rgb(255, 255, 255); font-size: 16px; font-weight: 800;">Falcon Academy Spirit Store</strong>
+        <span>Official spirit store. Every purchase helps enrich our extracurricular programs.</span>
+      </div>
+      <nav aria-label="Shop">
+        <h2>Shop</h2>
+        <div style="display: flex; flex-direction: column; gap: 4px;"><a href="#shop" data-f="cat" data-clears="who" data-on="x-on" data-v="uniform">Uniform</a><a href="#shop" data-f="cat" data-clears="who" data-on="x-on" data-v="gear">Falcon Gear</a></div>
+      </nav>
+      <nav aria-label="Support">
+        <h2>Support</h2>
+        <div style="display: flex; flex-direction: column; gap: 4px;"><a href="#shop">Store policies</a><a href="Contact.html">Contact us</a><a href="Main.html">Back to falconacademy.org</a></div>
+      </nav>
+    </div>
+    <div class="st-wrap" style="padding-bottom: 22px;"><p style="padding-top: 14px; border-top: 1px solid rgba(255, 255, 255, 0.14); font-size: 13px; color: rgb(185, 196, 214);">© 2026 Falcon Academy Spirit Store. All rights reserved.</p></div>
+  </footer></div></div>
+<script src="js/site.js" defer></script>
+</body>
+</html>

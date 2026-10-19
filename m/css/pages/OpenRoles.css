@@ -1,0 +1,36 @@
+/* Careers · Open roles (new) (phone) */
+
+.jtile{width:56px;height:56px;flex:none;border-radius:12px;background:#EEF2F7;color:#1F3659;display:inline-flex;align-items:center;justify-content:center}
+.rowbtn{min-height:42px;padding:0 16px;font-size:16px;font-weight:600}
+@media (max-width:560px){.jtile{width:44px;height:44px;border-radius:10px}}
+.cnt{margin-left:6px;opacity:.72;font-weight:500}
+.point{display:flex;flex-direction:column;gap:6px}
+@media (max-width:600px){.intro{align-items:flex-start!important;text-align:left!important;padding:8px 0 28px!important}.intro>div{justify-content:flex-start!important}}
+.pager{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 20px;margin-top:22px;padding-top:20px;border-top:1px solid #DCE2EB}
+.pg{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:44px;min-height:44px;padding:0 12px;border-radius:8px;border:1px solid #DCE2EB;background:#FFFFFF;color:#1A2740;font-size:15px;font-weight:600;cursor:pointer;box-sizing:border-box}
+.pg:hover{border-color:#1F3659}
+.pg-on,.pg-on:hover{background:#1F3659;border-color:#1F3659;color:#FFFFFF}
+.pg-off,.pg-off:hover{color:#A3ACBA;border-color:#E3E8EF;background:#FAFBFD;cursor:default}
+@media (max-width:560px){.pg-word{display:none}}
+[hidden]{display:none!important}
+.pnav{display:flex;flex-direction:column;gap:14px}.pnav-chips{display:flex;flex-wrap:wrap;gap:8px}@media (max-width:640px){.pnav-chips{flex-wrap:nowrap;overflow-x:auto;margin-inline:-24px;padding:0 24px 4px;scrollbar-width:none}.pnav-chips::-webkit-scrollbar{display:none}}
+@media (max-width:640px){.btn{white-space:normal;text-align:center;max-width:100%}table{display:block;overflow-x:auto;max-width:100%}}
+@media (max-width:640px){.wrap,.wrap-card{padding-inline:16px}.pnav-chips{margin-inline:-16px;padding:0 16px 4px}.panel{margin-inline:-16px;border-radius:0;border-left:0;border-right:0;padding:22px 16px 24px}}
+
+/* phone polish */
+.panel{background:transparent!important;border:0!important;margin-inline:0!important;padding:8px 0 0!important;border-radius:0!important}
+.cbtn{width:100%;min-height:52px!important;border-radius:12px!important;font-size:17px!important;font-weight:600!important}
+.swipe{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto;gap:8px;margin-inline:-16px;padding:2px 16px 6px;scrollbar-width:none}
+.swipe::-webkit-scrollbar{display:none}
+.swipe>*,.swipe .chip{flex:none}
+.swipe .label{margin-right:4px}
+.jlist{padding:0 16px;overflow:hidden}
+.jrow{position:relative;border-bottom:1px solid #E6EAF1!important;margin-bottom:-1px;padding:16px 28px 16px 0!important}
+.jrow>div{flex:1 1 100%!important;align-items:flex-start!important;gap:14px!important}
+.jrow .jtile{width:44px;height:44px;border-radius:10px}
+.jrow .tag{font-size:13px;min-height:24px}
+.jlink{position:absolute!important;inset:0;min-height:0!important;padding:0!important;margin:0!important;border:0!important;border-radius:0!important;background:transparent!important;font-size:0!important;color:transparent!important;z-index:1}
+.jrow::after{content:"";position:absolute;right:6px;top:50%;width:8px;height:8px;border-top:2px solid #8A94A6;border-right:2px solid #8A94A6;transform:translateY(-50%) rotate(45deg);pointer-events:none}
+.pager{margin-top:24px!important}
+
+body{margin:0}

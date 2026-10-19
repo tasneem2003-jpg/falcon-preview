@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>if(matchMedia("(max-width: 640px)").matches&&!/[?&]desktop/.test(location.search))location.replace("m/Main.html"+location.hash);</script>
 <title>Home · Falcon Academy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +15,11 @@
 <div><div style="background: rgb(255, 255, 255);">
   <div><header style="font-family: Inter, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; line-height: 1.4;">
   <div style="background: rgb(255, 255, 255); border-bottom: 1px solid rgb(220, 226, 235);">
-    <div style="max-width: 1224px; margin: 0px auto; padding: 0px 24px; min-height: 42px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2px 24px; font-size: 13.5px;">
-      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2px 16px;">
-        <a href="tel:5718001382" style="display: inline-flex; align-items: center; gap: 8px; min-height: 36px; color: rgb(36, 48, 68); font-weight: 600; text-decoration: none;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#E7A11C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"></path></svg>571-800-1382</a>
-        <span aria-hidden="true" style="width: 1px; height: 18px; background: rgb(203, 211, 223);"></span>
-        <a href="mailto:admissions@falconacademy.org" style="display: inline-flex; align-items: center; gap: 8px; min-height: 36px; color: rgb(36, 48, 68); font-weight: 600; text-decoration: none;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#E7A11C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg>admissions@falconacademy.org</a>
-      </div>
+    <div style="max-width: 1224px; margin: 0px auto; padding: 0px 24px; min-height: 42px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 2px 24px; font-size: 13.5px;">
       <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2px 16px;">
         <nav aria-label="Utility" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2px 16px;">
+          <a href="Campuses.html" style="display: inline-flex; align-items: center; min-height: 36px; color: rgb(61, 74, 96); font-weight: 500; text-decoration: none;">Our Campuses</a>
+          <span aria-hidden="true" style="width: 1px; height: 18px; background: rgb(203, 211, 223);"></span>
           <a href="Careers.html" style="display: inline-flex; align-items: center; min-height: 36px; color: rgb(61, 74, 96); font-weight: 500; text-decoration: none; box-shadow: transparent 0px -2px 0px inset;">Careers</a>
           <span aria-hidden="true" style="width: 1px; height: 18px; background: rgb(203, 211, 223);"></span>
           <a href="Policies.html" style="display: inline-flex; align-items: center; min-height: 36px; color: rgb(61, 74, 96); font-weight: 500; text-decoration: none; box-shadow: transparent 0px -2px 0px inset;">Policies</a>
@@ -39,7 +37,7 @@
   </div>
   <div style="background: rgb(19, 35, 63);">
     <div style="max-width: 1224px; margin: 0px auto; padding: 0px 24px; min-height: 76px; box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 28px;">
-      <a href="Main.html" aria-label="Falcon Academy home" style="display: block; line-height: 0; margin-left: -10px;"><img src="assets/img/falcon-academy-2.svg" alt="Falcon Academy" style="height: 62px; width: auto; display: block;"></a>
+      <a href="Main.html" aria-label="Falcon Academy home" style="display: block; line-height: 0; margin-left: -10px;"><img src="assets/img/falcon-academy.svg" alt="Falcon Academy" style="height: 62px; width: auto; display: block;"></a>
       <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 32px;">
         <nav aria-label="Main" class="fa-nav" style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 0px 26px; align-self: stretch;">
           <style>
@@ -75,11 +73,9 @@
             </div>
           
             <div class="dd">
-              <a href="Academics.html" aria-current="false" style="display: inline-flex; align-items: center; min-height: 76px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; font-size: 14.5px; font-weight: 600; color: rgb(230, 234, 241); text-decoration: none;">Academics<svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+              <a href="Curriculum.html" aria-current="false" style="display: inline-flex; align-items: center; min-height: 76px; box-sizing: border-box; padding-top: 3px; border-bottom: 3px solid transparent; font-size: 14.5px; font-weight: 600; color: rgb(230, 234, 241); text-decoration: none;">Academics<svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
               
                 <div class="dd-menu" role="group" aria-label="Academics pages">
-                  
-                    <a href="Academics.html">Overview<small></small></a>
                   
                     <a href="Curriculum.html">Curriculum<small>9 subjects</small></a>
                   
@@ -148,13 +144,13 @@
     <div class="ticker-wrapper">
       <div class="ticker-content">
         
-          <span class="tk-i"><a href="News.html" aria-hidden="false" tabindex="0"><img src="assets/img/falcon-academy-2.svg" alt=""><span class="tk-t">Falcon Academy announces a strategic partnership with CIRA Global Ventures, becoming its exclusive K–12 partner in the United States.</span></a></span>
+          <span class="tk-i"><a href="News.html" aria-hidden="false" tabindex="0"><img src="assets/img/falcon-academy.svg" alt=""><span class="tk-t">Falcon Academy announces a strategic partnership with CIRA Global Ventures, becoming its exclusive K–12 partner in the United States.</span></a></span>
         
-          <span class="tk-i"><a href="News.html" aria-hidden="false" tabindex="0"><img src="assets/img/falcon-academy-2.svg" alt=""><span class="tk-t">Falcon Academy Announces New Ashburn Campus Opening Fall 2026.</span></a></span>
+          <span class="tk-i"><a href="News.html" aria-hidden="false" tabindex="0"><img src="assets/img/falcon-academy.svg" alt=""><span class="tk-t">Falcon Academy Announces New Ashburn Campus Opening Fall 2026.</span></a></span>
         
-          <span class="tk-i"><a href="News.html" aria-hidden="true" tabindex="-1"><img src="assets/img/falcon-academy-2.svg" alt=""><span class="tk-t">Falcon Academy announces a strategic partnership with CIRA Global Ventures, becoming its exclusive K–12 partner in the United States.</span></a></span>
+          <span class="tk-i"><a href="News.html" aria-hidden="true" tabindex="-1"><img src="assets/img/falcon-academy.svg" alt=""><span class="tk-t">Falcon Academy announces a strategic partnership with CIRA Global Ventures, becoming its exclusive K–12 partner in the United States.</span></a></span>
         
-          <span class="tk-i"><a href="News.html" aria-hidden="true" tabindex="-1"><img src="assets/img/falcon-academy-2.svg" alt=""><span class="tk-t">Falcon Academy Announces New Ashburn Campus Opening Fall 2026.</span></a></span>
+          <span class="tk-i"><a href="News.html" aria-hidden="true" tabindex="-1"><img src="assets/img/falcon-academy.svg" alt=""><span class="tk-t">Falcon Academy Announces New Ashburn Campus Opening Fall 2026.</span></a></span>
         
       </div>
     </div>
@@ -163,7 +159,7 @@
   <section class="hero" style="position: relative; overflow: hidden; background: linear-gradient(100deg, rgb(12, 34, 66) 0%, rgb(22, 55, 99) 55%, rgb(29, 70, 119) 100%);">
     <input class="hr sr-only" type="radio" name="hero-photo" id="hr-0" aria-label="Show photo 1 of 5: Falcon Academy graduates throwing their caps at the Class of 2026 graduation"><input class="hr sr-only" type="radio" name="hero-photo" id="hr-1" aria-label="Show photo 2 of 5: Young graduates in caps on stage under the Class of 2026 balloon arch"><input class="hr sr-only" type="radio" name="hero-photo" id="hr-2" aria-label="Show photo 3 of 5: Young students smiling at their desk during a crafts activity"><input class="hr sr-only" type="radio" name="hero-photo" id="hr-3" aria-label="Show photo 4 of 5: Students and teachers on a hayride during a field trip"><input class="hr sr-only" type="radio" name="hero-photo" id="hr-4" aria-label="Show photo 5 of 5: Young students wearing red firefighter hats in their classroom">
     <div class="hero-photo">
-      <img class="hero-img hi0" src="assets/img/falcon-academy-graduates-throwing-their-caps-at.jpg" alt="Falcon Academy graduates throwing their caps at the Class of 2026 graduation" style="object-position: 58% 75%;"><img class="hero-img hi1" src="assets/img/young-students-dancing-with-ribbons.jpg" alt="Young graduates in caps on stage under the Class of 2026 balloon arch" style="object-position: 50% 45%;"><img class="hero-img hi2" src="assets/img/young-students-drawing-and-coloring-a-group.jpg" alt="Young students smiling at their desk during a crafts activity" style="object-position: 42% 50%;"><img class="hero-img hi3" src="assets/img/students-and-teachers-on-a-hayride-during.jpg" alt="Students and teachers on a hayride during a field trip" style="object-position: 50% 55%;"><img class="hero-img hi4" src="assets/img/smiling-students-wearing-junior-firefighter-helmets.jpg" alt="Young students wearing red firefighter hats in their classroom" style="object-position: 40% 45%;">
+      <img class="hero-img hi0" src="assets/img/falcon-academy-graduates-throwing-their-caps-at.jpg" alt="Falcon Academy graduates throwing their caps at the Class of 2026 graduation" style="object-position: 58% 75%;"><img class="hero-img hi1" src="assets/img/young-students-dancing-with-ribbons.jpg" alt="Young graduates in caps on stage under the Class of 2026 balloon arch" style="object-position: 50% 45%;"><img class="hero-img hi2" src="assets/img/young-students-drawing-and-coloring-a-group.jpg" alt="Young students smiling at their desk during a crafts activity" style="object-position: 42% 50%;"><img class="hero-img hi3" src="assets/img/students-on-a-hayride-field-trip.jpg" alt="Students and teachers on a hayride during a field trip" style="object-position: 50% 55%;"><img class="hero-img hi4" src="assets/img/smiling-students-wearing-junior-firefighter-helmets.jpg" alt="Young students wearing red firefighter hats in their classroom" style="object-position: 40% 45%;">
       <div class="hero-fade"></div>
     </div>
     <div class="wrap" style="position: relative; min-height: 580px; display: flex; align-items: center; padding-top: 56px; padding-bottom: 96px;">
@@ -191,7 +187,7 @@
       
         <label class="hgal ht2" for="hr-2" title="Show photo 3: Young students smiling at their desk during a crafts activity"><img src="assets/img/young-students-drawing-and-coloring-a-group.jpg" alt=""></label>
       
-        <label class="hgal ht3" for="hr-3" title="Show photo 4: Students and teachers on a hayride during a field trip"><img src="assets/img/students-and-teachers-on-a-hayride-during.jpg" alt=""></label>
+        <label class="hgal ht3" for="hr-3" title="Show photo 4: Students and teachers on a hayride during a field trip"><img src="assets/img/students-on-a-hayride-field-trip.jpg" alt=""></label>
       
         <label class="hgal ht4" for="hr-4" title="Show photo 5: Young students wearing red firefighter hats in their classroom"><img src="assets/img/smiling-students-wearing-junior-firefighter-helmets.jpg" alt=""></label>
       
@@ -236,12 +232,12 @@
           <h2 style="font-size: 30px; font-weight: 700;">Find the right program for your child</h2>
           <p class="muted" style="font-size: 16px;">IB Primary and Middle Years, High School, and Arabic &amp; Islamic Studies in every grade.</p>
         </div>
-        <a class="link" href="Academics.html">All academics <span aria-hidden="true">→</span></a>
+        <a class="link" href="Curriculum.html">All academics <span aria-hidden="true">→</span></a>
       </div>
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 18px;">
         <a class="card pcard" href="PrimaryYears.html">
           <div style="position: relative; height: 180px; background: rgb(220, 226, 235);">
-            <img src="assets/img/smiling-primary-students-working-at-a-desk.jpg" alt="Primary students smiling while working on a craft project" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; display: block;">
+            <img src="assets/img/smiling-students-at-their-desk.jpg" alt="Primary students smiling while working on a craft project" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; display: block;">
             <span class="ptag">KG – GRADE 5</span>
           </div>
           <div style="padding: 20px; display: flex; flex-direction: column; gap: 6px; flex-grow: 1;">
@@ -300,7 +296,7 @@
             <span class="label" style="font-size: 12px; color: rgb(138, 90, 0);">International standards, Islamic heart</span>
             <h3 style="font-size: 19px; font-weight: 700;">Rigorous IB learning inside a values-driven school</h3>
             <p class="muted" style="font-size: 15px;">Falcon is an IB Candidate School for the Primary Years and Middle Years Programmes. Children learn by asking questions and solving real problems, while prayer, Quran and Islamic values shape the school day.</p>
-            <a class="more" href="Academics.html" style="font-size: 15px; margin-top: auto; padding-top: 8px;">How we teach <span aria-hidden="true">→</span></a>
+            <a class="more" href="Curriculum.html" style="font-size: 15px; margin-top: auto; padding-top: 8px;">How we teach <span aria-hidden="true">→</span></a>
           </div>
         </article>
         <article class="card" style="overflow: hidden; display: flex; flex-direction: column;">
@@ -367,6 +363,7 @@
           </div>
         </article>
       </div>
+      <div class="shuttle-note" style="margin-top: 18px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; padding: 16px 20px; border-radius: 14px; background: rgb(253, 246, 231); border: 1px solid rgb(240, 217, 168);"><p style="display: flex; align-items: center; gap: 12px; font-size: 16px; font-weight: 700; color: rgb(63, 42, 2);"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: 0 0 auto; color: rgb(201, 138, 11);"><rect x="4" y="3" width="16" height="15" rx="2"></rect><path d="M4 11h16M8 18v3M16 18v3"></path><circle cx="8" cy="14.5" r=".8"></circle><circle cx="16" cy="14.5" r=".8"></circle></svg>Free shuttle between our campuses for:</p><ul style="list-style: none; margin: 0px; padding: 0px; display: flex; flex-wrap: wrap; gap: 10px 28px;"><li style="display: flex; align-items: center; gap: 10px; font-size: 15.5px; line-height: 1.45; color: rgb(63, 42, 2); font-weight: 500;"><span style="flex: 0 0 auto; width: 22px; height: 22px; border-radius: 50%; background: rgb(231, 161, 28); color: rgb(255, 255, 255); display: inline-flex; align-items: center; justify-content: center;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span><span>Brothers and sisters who study at different campuses</span></li><li style="display: flex; align-items: center; gap: 10px; font-size: 15.5px; line-height: 1.45; color: rgb(63, 42, 2); font-weight: 500;"><span style="flex: 0 0 auto; width: 22px; height: 22px; border-radius: 50%; background: rgb(231, 161, 28); color: rgb(255, 255, 255); display: inline-flex; align-items: center; justify-content: center;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span><span>Students who live near one campus and attend the other</span></li></ul></div>
     </div>
   </section>
 
@@ -562,7 +559,7 @@
             <div style="min-width: 0px; display: flex; flex-direction: column; gap: 4px;"><h3 style="font-size: 17px; font-weight: 600; line-height: 1.3;">Caring Challenge Winners</h3><span class="muted" style="font-size: 14.5px;">IB Learner Profile · October 2025</span></div>
           </a>
           <a class="vrow" href="https://www.youtube.com/watch?v=5ZM0ILrv34U" target="_blank" rel="noopener" aria-label="Play video: Field Trip to Cox Farms, 1 minute 32 seconds (opens YouTube)">
-            <span class="vthumb"><img src="assets/img/the-chantilly-playground-soccer-field-and-basketball.jpg" alt="" style="object-position: 50% 60%;"><span class="vshade" aria-hidden="true"></span><span class="vplay" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M7 4v16l13-8z" fill="currentColor"></path></svg></span><span class="vdur">1:32</span></span>
+            <span class="vthumb"><img src="assets/img/the-playground-field-and-basketball-court.jpg" alt="" style="object-position: 50% 60%;"><span class="vshade" aria-hidden="true"></span><span class="vplay" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24"><path d="M7 4v16l13-8z" fill="currentColor"></path></svg></span><span class="vdur">1:32</span></span>
             <div style="min-width: 0px; display: flex; flex-direction: column; gap: 4px;"><h3 style="font-size: 17px; font-weight: 600; line-height: 1.3;">Field Trip to Cox Farms</h3><span class="muted" style="font-size: 14.5px;">Field trips · October 2025</span></div>
           </a>
           <a class="vrow" href="https://www.youtube.com/watch?v=k2NY0UrNgbY" target="_blank" rel="noopener" aria-label="Play video: Falcons Helping Falcons, 1 minute 5 seconds (opens YouTube)">
@@ -668,7 +665,7 @@
   <div style="max-width: 1224px; margin: 0px auto; padding: 40px 24px 0px; box-sizing: border-box;">
     <div class="cols">
       <div class="brand" style="display: flex; flex-direction: column; gap: 12px;">
-        <a href="Main.html" aria-label="Falcon Academy home" style="display: block; line-height: 0; align-self: flex-start; margin-left: -8px;"><img src="assets/img/falcon-academy-2.svg" alt="Falcon Academy" style="height: 56px; width: auto; display: block;"></a>
+        <a href="Main.html" aria-label="Falcon Academy home" style="display: block; line-height: 0; align-self: flex-start; margin-left: -8px;"><img src="assets/img/falcon-academy.svg" alt="Falcon Academy" style="height: 56px; width: auto; display: block;"></a>
         <p class="muted" style="margin: 0px;">IB Candidate School<br>Kindergarten to Grade 12</p>
         <div style="display: flex; gap: 8px;">
           <a class="soc" href="https://www.facebook.com/FalconAcademy.official" aria-label="Falcon Academy on Facebook" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H7.3v3.2h2.8V22z"></path></svg></a>

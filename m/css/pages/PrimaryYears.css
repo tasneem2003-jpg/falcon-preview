@@ -1,0 +1,108 @@
+/* Academics · Primary Years (phone) */
+
+.check{width:22px;height:22px;border-radius:50%;background:#E2F3EA;color:#1C6B43;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.ticks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:15px}
+.ticks li{display:flex;align-items:flex-start;gap:10px}.ticks li .check{margin-top:1px}
+.icard{background:#F6F8FB;border:1px solid #DCE2EB;border-radius:12px;padding:15px 18px;display:flex;align-items:center;gap:14px;box-sizing:border-box;min-width:0}
+.icard .tile{width:44px;height:44px;background:#E8EDF4}
+.icard .t{font-size:17px;font-weight:700;color:#1A2740;line-height:1.3}
+.icard .s{font-size:14px;color:#5E6878;line-height:1.4}
+.jump{display:inline-flex;align-items:center;min-height:34px;padding:0 14px;border-radius:999px;border:1px solid #DCE2EB;background:#FFFFFF;color:#243044;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap}
+.jump:hover{border-color:#1F3659;color:#1A2740}
+.tl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:20px}
+.tl>li{position:relative;display:flex;gap:22px;align-items:flex-start}
+.tl>li:not(:last-child)::before{content:"";position:absolute;left:22px;top:64px;bottom:-18px;width:2px;background:#DCE2EB}
+.tl-n{width:46px;height:46px;border-radius:50%;background:#E7A11C;color:#1A2740;font-size:19px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;flex:none;margin-top:16px}
+.tl-card{flex:1;min-width:0;padding:22px;display:flex;flex-wrap:wrap;gap:20px 28px;align-items:center}
+.tl-text{flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:8px}
+.tl-media{flex:0 1 330px;min-width:0;position:relative}
+.tl-media .main{width:100%;height:214px;object-fit:cover;border-radius:12px;display:block}
+.tl-media .inset{position:absolute;left:12px;bottom:12px;width:42%;aspect-ratio:370/265;object-fit:cover;border-radius:8px;border:4px solid #FFFFFF;box-shadow:0 6px 18px rgba(19,35,63,.22);display:block}
+.ph{font-style:italic;color:#5E6878}
+.fine{font-size:13.5px;line-height:1.6;color:#5E6878}
+@media (max-width:640px){.tl>li{gap:12px}.tl-n{width:34px;height:34px;font-size:15px;margin-top:20px}.tl>li:not(:last-child)::before{left:16px;top:58px}.tl-card{padding:18px}.tl-media .main{height:190px}.hero-pic{height:200px!important}}
+.trait{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px 0 10px;border-radius:999px;background:#FFFFFF;border:1px solid #DCE2EB;font-size:16px;font-weight:700;color:#1A2740;box-sizing:border-box}
+.pnav{display:flex;flex-direction:column;gap:14px}.pnav-chips{display:flex;flex-wrap:wrap;gap:8px}@media (max-width:640px){.pnav-chips{flex-wrap:nowrap;overflow-x:auto;margin-inline:-24px;padding:0 24px 4px;scrollbar-width:none}.pnav-chips::-webkit-scrollbar{display:none}}
+@media (max-width:640px){.btn{white-space:normal;text-align:center;max-width:100%}table{display:block;overflow-x:auto;max-width:100%}}
+@media (max-width:640px){.wrap,.wrap-card{padding-inline:16px}.pnav-chips{margin-inline:-16px;padding:0 16px 4px}.panel{margin-inline:-16px;border-radius:0;border-left:0;border-right:0;padding:22px 16px 24px}}
+@media (max-width:640px){.cgal{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}.cgal img{height:132px!important}.cgal figcaption{font-size:12.5px!important;padding:8px 10px 10px!important;line-height:1.35}}
+.pnav-m{display:none}@media (max-width:640px){.pnav:has(.pnav-m) .crumb,.pnav:has(.pnav-m) .pnav-chips{display:none}.pnav-m{display:block;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;box-shadow:0 1px 2px rgba(19,35,63,.04)}.pnav-m summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;min-height:56px;padding:8px 14px 8px 16px;box-sizing:border-box}.pnav-m summary::-webkit-details-marker{display:none}.pm-txt{display:flex;flex-direction:column;gap:1px;min-width:0;flex:1}.pm-sec{font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00}.pm-cur{font-size:16.5px;font-weight:700;color:#1A2740;line-height:1.25}.pm-ic{flex:none;width:32px;height:32px;border-radius:8px;background:#EEF2F7;color:#1F3659;display:inline-flex;align-items:center;justify-content:center;transition:transform .2s ease}.pnav-m[open] .pm-ic{transform:rotate(180deg)}.pnav-m ul{list-style:none;margin:0;padding:4px 8px 8px;border-top:1px solid #E6EAF1;display:flex;flex-direction:column}.pnav-m li a{display:flex;align-items:center;justify-content:space-between;min-height:46px;padding:0 10px;border-radius:8px;font-size:15.5px;font-weight:500;color:#243044;text-decoration:none}.pnav-m li a[aria-current]{background:#F1F4F8;font-weight:700;color:#13233F;box-shadow:inset 3px 0 0 #E7A11C}}
+
+/* phone polish */
+/* --- stage template (Primary / Middle / High School) --- */
+.s-hero h1{font-size:30px!important;line-height:1.18!important;letter-spacing:-0.01em!important}
+.s-hero .lead-p{font-size:17px!important;line-height:1.55!important;color:#3D4A60!important}
+.s-hero .wrap{gap:14px!important}
+.facts{display:flex;flex-direction:column;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:14px;margin-top:6px;overflow:hidden}
+.facts .icard{background:transparent!important;border:0!important;border-radius:0!important;padding:14px 16px!important;gap:14px!important}
+.facts .icard+.icard{border-top:1px solid #E6EAF1!important}
+.facts .icard .tile{width:40px!important;height:40px!important;background:#EEF2F7!important}
+.facts .icard .t{font-size:16.5px!important}
+.facts .icard .s{font-size:14px!important;line-height:1.45!important}
+.hero-pic{height:auto!important;aspect-ratio:16 / 10;border-radius:14px!important;margin-top:2px!important}
+.otp{display:flex!important;flex-wrap:nowrap!important;align-items:center;overflow-x:auto;gap:8px;margin:2px -16px 0!important;padding:2px 16px 6px;scrollbar-width:none}
+.otp::-webkit-scrollbar{display:none}
+.otp>*{flex:none}
+.otp .label{margin-right:2px!important}
+.otp .jump{min-height:40px;padding:0 14px;font-size:14.5px}
+.s-band{padding-top:40px!important;padding-bottom:40px!important;scroll-margin-top:8px}
+.s-band>.wrap{gap:16px!important}
+.s-band h2{font-size:23px!important;line-height:1.25!important;letter-spacing:-0.01em!important}
+.s-band h3{line-height:1.3!important}
+.s-band p.muted{color:#3D4A60!important;line-height:1.6!important}
+.s-band p.muted[style*="font-size: 15px"]{font-size:16px!important}
+.s-band p.muted[style*="font-size: 14px"]{color:#5E6878!important;font-size:14px!important;line-height:1.5!important}
+.s-band .link{font-size:15.5px}
+/* day timeline: no rail, number inside the card header */
+.tl{gap:12px!important;margin-top:0!important}
+.tl>li{display:block!important}
+.tl>li::before{display:none!important}
+.tl-n{width:36px!important;height:36px!important;font-size:16px!important;margin:0!important}
+.tl-card{padding:18px!important;flex-direction:column;flex-wrap:nowrap!important;align-items:stretch!important;gap:16px!important}
+.tl-text{flex:none!important;gap:10px!important}
+.tl-text h3{font-size:18px!important}
+.tl-media{flex:none!important;width:100%}
+.tl-media .main{height:auto!important;aspect-ratio:16 / 10;border-radius:10px!important}
+.tl-media:has(.inset){display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tl-media:has(.inset) .main,.tl-media .inset{aspect-ratio:1 / 1}
+.tl-media .inset{position:static!important;width:100%!important;height:auto!important;border:0!important;box-shadow:none!important;border-radius:10px!important}
+/* leader cards: photo beside the name */
+.lead-card{display:grid!important;grid-template-columns:96px minmax(0,1fr);gap:14px;padding:16px;align-items:start}
+.lead-card>img{width:96px!important;height:116px!important;flex:none!important;border-radius:10px;background:#F1F4F8!important}
+.lead-card>div{padding:0!important;border:0!important;gap:6px!important}
+.lead-card h3{font-size:18px!important}
+.lead-card .mini{font-size:13px!important;line-height:1.35;padding:4px 8px!important}
+.lead-card p.muted{font-size:15px!important}
+/* closing call to action */
+.cta-band .wrap{padding-top:44px!important;padding-bottom:44px!important;gap:12px!important}
+.cta-band h2{font-size:26px!important;line-height:1.22!important}
+.cta-band p{font-size:16.5px!important;line-height:1.55!important}
+.cta-band .wrap>div{flex-direction:column!important;align-self:stretch;gap:10px!important;margin-top:10px!important}
+.cta-band .btn{width:100%;min-height:50px;border-radius:12px;font-size:16.5px}
+.cta-band .btn-light{border:1.5px solid rgba(255,255,255,.85)!important}
+.cta-band .wrap>a{min-height:44px;margin-top:0!important}
+/* --- Primary Years only --- */
+.subj-list{display:flex!important;flex-direction:column!important;flex-wrap:nowrap!important;gap:0!important;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:14px;overflow:hidden}
+.subj-list li+li{border-top:1px solid #E6EAF1}
+.subj-list .mini{display:flex!important;justify-content:space-between;min-height:50px!important;padding:0 16px!important;border-radius:0!important;background:transparent!important;font-size:16px!important;font-weight:600!important;color:#1A2740!important;text-decoration:none!important;white-space:normal}
+.subj-list .mini::after{content:"";width:8px;height:8px;border-right:2px solid #8A94A6;border-top:2px solid #8A94A6;transform:rotate(45deg);flex:none;margin-left:12px}
+.subj-block{border-top:0!important;padding-top:8px!important;margin-top:8px!important;gap:10px!important}
+.subj-block h3{font-size:20px!important}
+.subj-block p.muted{font-size:15px!important;color:#5E6878!important}
+.traits{display:grid!important;grid-template-columns:1fr 1fr;gap:8px!important}
+.traits .trait{min-height:48px;padding:0 12px 0 10px;font-size:15.5px;border-radius:12px}
+.theme-grid{gap:12px!important}
+.theme-grid>article{padding:16px 18px!important;gap:8px!important}
+.theme-grid h3{font-size:17px!important}
+.theme-grid p.muted{font-size:15px!important;color:#5E6878!important;margin-bottom:2px!important}
+.theme-grid article>div:last-child{border-top-color:#E6EAF1!important;padding-top:10px!important}
+.theme-grid article>div:last-child p:last-child{font-size:15.5px!important;line-height:1.5}
+.cgal{gap:10px!important}
+.cgal img{height:auto!important;aspect-ratio:4 / 3}
+.cgal figcaption{font-size:13.5px!important;line-height:1.4!important;padding:10px 12px 12px!important}
+.after-card{padding:18px!important;gap:20px!important}
+.after-card>div{flex:none!important}
+.after-card .ticks{font-size:15.5px}
+.after-card h4{font-size:16.5px!important}
+
+body{margin:0}

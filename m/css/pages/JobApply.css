@@ -1,0 +1,44 @@
+/* Careers · Apply (new) (phone) */
+
+.facts{margin:0;display:flex;flex-direction:column}
+.facts div{display:flex;justify-content:space-between;gap:16px;padding:8px 0;border-top:1px solid #DCE2EB;font-size:15px}
+.facts div:first-child{border-top:0}
+.facts dt{color:#5E6878}
+.facts dd{margin:0;font-weight:600;color:#1A2740;text-align:right}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.opt{font-weight:400;color:#5E6878}
+.drop{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:22px 16px;border:1.5px dashed #CBD3DF;border-radius:10px;background:#FAFBFD;text-align:center;cursor:pointer;color:#1A2740}
+.drop:hover{border-color:#1F3659;background:#EEF2F7}
+.drop:focus-within{outline:3px solid #E7A11C;outline-offset:2px}
+.field .drop{font-weight:400;font-size:14px}
+.drop-sm{flex-direction:row;justify-content:flex-start;gap:14px;padding:14px 16px;text-align:left}
+.radios{border:0;margin:0;padding:0;min-width:0}
+.radios legend{font-size:15px;font-weight:600;color:#1A2740;padding:0;margin-bottom:8px}
+.radio{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 16px;border:1px solid #DCE2EB;border-radius:8px;background:#FFFFFF;cursor:pointer;font-weight:500;font-size:15px;color:#243044}
+.radio:hover{border-color:#1F3659}
+.radio input{width:18px;height:18px;margin:0;accent-color:#1F3659}
+.steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:16px}
+.steps li{display:flex;gap:12px;align-items:flex-start}
+.done{width:64px;height:64px;border-radius:50%;background:#E2F3EA;color:#1C6B43;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.pnav{display:flex;flex-direction:column;gap:14px}.pnav-chips{display:flex;flex-wrap:wrap;gap:8px}@media (max-width:640px){.pnav-chips{flex-wrap:nowrap;overflow-x:auto;margin-inline:-24px;padding:0 24px 4px;scrollbar-width:none}.pnav-chips::-webkit-scrollbar{display:none}}
+@media (max-width:640px){.btn{white-space:normal;text-align:center;max-width:100%}table{display:block;overflow-x:auto;max-width:100%}}
+@media (max-width:640px){.wrap,.wrap-card{padding-inline:16px}.pnav-chips{margin-inline:-16px;padding:0 16px 4px}.panel{margin-inline:-16px;border-radius:0;border-left:0;border-right:0;padding:22px 16px 24px}}
+
+/* phone polish */
+.panel{background:transparent!important;border:0!important;margin-inline:0!important;padding:8px 0 0!important;border-radius:0!important}
+.cbtn{width:100%;min-height:52px!important;border-radius:12px!important;font-size:17px!important}
+.field{gap:8px!important}
+.field label,.field>span{font-size:15px!important;font-weight:600;color:#1A2740;line-height:1.35}
+.field .drop{font-weight:400!important}
+.input{min-height:48px!important;height:48px;border-radius:10px!important;border-color:#CBD3DF!important;padding:0 14px!important;font-size:16px!important}
+select.input{-webkit-appearance:none;appearance:none;padding-right:40px!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%235E6878' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+.drop{border-radius:12px!important;padding:20px 16px!important}
+.drop-sm{padding:14px 16px!important;min-height:56px;box-sizing:border-box}
+.radios legend{font-size:15px!important;margin-bottom:10px!important}
+.radio{display:flex!important;min-height:48px!important;border-radius:10px!important;font-size:16px!important;padding:0 16px!important;box-sizing:border-box}
+.radio input{width:20px!important;height:20px!important}
+.facts div{padding:11px 0!important;border-top-color:#E6EAF1!important}
+.steps li strong{font-size:16px!important}
+.steps li .muted{font-size:14.5px!important;line-height:1.45}
+
+body{margin:0}

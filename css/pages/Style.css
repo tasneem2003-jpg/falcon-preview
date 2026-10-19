@@ -1,8 +1,0 @@
-/* Visual system */
-
-.sw{display:flex;flex-direction:column;gap:6px}
-.sw i{display:block;height:84px;border-radius:12px;border:1px solid #DCE2EB}
-.sw strong{font-size:15px;color:#1A2740}
-.sw span{font-size:13px;color:#5E6878;line-height:1.4}
-.spec{display:flex;flex-direction:column;gap:12px}
-.dbox{width:92px;min-height:92px;border:1px solid #DCE2EB;border-radius:10px;background:#FFFFFF;display:flex;flex-direction:column;align-items:center;justify-content:center;box-sizing:border-box}
