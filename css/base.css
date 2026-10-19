@@ -41,3 +41,49 @@ button,input,select,textarea{font-family:inherit}
 .field{display:flex;flex-direction:column;gap:6px}.field label{font-size:15px;font-weight:600;color:#1A2740}
 .input{min-height:46px;padding:0 14px;border:1px solid #CBD3DF;border-radius:8px;background:#FFFFFF;color:#1A2740;font-size:16px;box-sizing:border-box;width:100%}
 .faq{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px}
+
+/* Falcon motion: subtle and calm. Hover feedback, gentle entrances on scroll, smooth accordions, soft page crossfade. Off for reduced motion. */
+:root{--m-ease:cubic-bezier(.2,0,0,1);--m-reveal:cubic-bezier(.22,1,.36,1)}
+
+/* 1. Interactive elements change state smoothly (colour always; movement only when motion is welcome) */
+.btn,.chip,.more,.link,.subtab,.jump,.stage-link,.rowbtn,.cbtn,
+a.card,a.pcard,a.scard,a.icard,a.acard,a.fcard,a.ccard,a.prog,a.post,a.tl-card,a.news-card,a.campus-card{
+  transition:background-color .18s ease,border-color .18s ease,color .18s ease,box-shadow .24s var(--m-ease),transform .24s var(--m-ease)}
+
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth}
+  @media (hover:hover){
+    /* cards that are links lift a little, with a soft navy shadow */
+    a.card:hover,a.pcard:hover,a.scard:hover,a.icard:hover,a.acard:hover,a.fcard:hover,a.ccard:hover,a.prog:hover,a.post:hover,a.tl-card:hover,a.news-card:hover,a.campus-card:hover{
+      transform:translateY(-3px);box-shadow:0 14px 32px -10px rgba(19,35,63,.22)}
+    /* filled buttons rise one pixel */
+    .btn-gold:hover,.btn-navy:hover,.cbtn:hover{transform:translateY(-1px)}
+    /* photos inside photo cards zoom very slowly inside their frame */
+    .acard .cover img,a.prog img,a.post img{transition:transform .8s var(--m-ease)}
+    .acard:hover .cover img,a.prog:hover img,a.post:hover img{transform:scale(1.04)}
+  }
+  .btn:active,.chip:active,.cbtn:active{transform:translateY(1px);transition-duration:.12s}
+
+  /* 2. Content fades up gently as it scrolls into view (CSS only; browsers without support simply show it) */
+  @keyframes mRise{from{opacity:0;translate:0 16px}to{opacity:1;translate:0 0}}
+  @supports (animation-timeline: view()){
+    :is(.card,.pcard,.icard,.tcard,.scard,.acard,.fcard,.ccard,.tl-card,.prog,.post,.stat,.faq,.course,.hw,.camp,figure):not(:is(.card,.pcard,.icard,.tcard,.scard,.acard,.fcard,.ccard,.tl-card,.prog,.post,.stat,.faq,.course,.hw,.camp,figure,header,footer,nav) *){
+      animation:mRise var(--m-reveal) both;animation-timeline:view();animation-range:entry 0% entry 45%}
+  }
+
+  /* 3. Accordions open smoothly (Chrome and Edge; other browsers open instantly) */
+  @supports (interpolate-size: allow-keywords){
+    :root{interpolate-size:allow-keywords}
+    details::details-content{block-size:0;overflow:clip;transition:block-size .32s var(--m-ease),content-visibility .32s allow-discrete}
+    details[open]::details-content{block-size:auto}
+  }
+
+  /* 4. A soft crossfade between pages of the site */
+  @view-transition{navigation:auto}
+  ::view-transition-old(root),::view-transition-new(root){animation-duration:.22s}
+}
+
+/* Reduced motion: nothing moves */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:1ms!important;animation-duration:1ms!important;animation-iteration-count:1!important}
+}
