@@ -463,7 +463,7 @@
   if (h1) {
     var block = h1.parentElement;
     Array.prototype.forEach.call(block.children, function (el, i) {
-      if (el.tagName !== 'INPUT' && el.tagName !== 'STYLE') mark(el, 80 + Math.min(i, 6) * 110);
+      if (el.tagName !== 'INPUT' && el.tagName !== 'STYLE') mark(el, 150 + Math.min(i, 6) * 170);
     });
   }
   Array.prototype.forEach.call(hero.querySelectorAll('img'), function (img) {
@@ -481,7 +481,7 @@
         var n = 0;
         Array.prototype.forEach.call(el.children, function (k) {
           if (k.tagName === 'STYLE' || k.tagName === 'INPUT') return;
-          mark(k, Math.min(n++, 5) * 90);
+          mark(k, Math.min(n++, 5) * 140);
         });
       } else {
         mark(el, 0);
@@ -498,7 +498,7 @@
     picked.splice(i, 1);
     io.unobserve(el);
     el.classList.add('in');
-    var wait = 1000 + (parseInt(el.style.getPropertyValue('--rd'), 10) || 0);
+    var wait = 1600 + (parseInt(el.style.getPropertyValue('--rd'), 10) || 0);
     setTimeout(function () {
       el.classList.remove('rv', 'in');
       el.style.removeProperty('--rd');

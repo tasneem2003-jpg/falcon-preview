@@ -20,20 +20,20 @@
     .fw-logo{position:absolute;left:max(38px, calc(50% - 598px));top:18px;display:block;line-height:0;z-index:2}
     .fw-logo img{height:76px;width:auto;display:block}
     .fw-quick{position:absolute;right:max(48px, calc(50% - 588px));top:0;height:46px;display:flex;align-items:center;gap:14px;font-size:13.5px;z-index:2}
-    .fw-quick a{position:relative;display:inline-flex;align-items:center;min-height:32px;color:#3D4A60;font-weight:500;animation:fwDrop .45s ease-out both}
+    .fw-quick a{position:relative;display:inline-flex;align-items:center;min-height:32px;color:#3D4A60;font-weight:500;animation:fwDrop .8s cubic-bezier(.22,1,.36,1) both}
     .fw-quick a::after{content:"";position:absolute;left:0;right:0;bottom:3px;height:2px;border-radius:2px;background:#E7A11C;transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
     .fw-quick a:hover::after{transform:scaleX(1)}
-    .fw-quick a:nth-of-type(1){animation-delay:.55s}.fw-quick a:nth-of-type(2){animation-delay:.62s}.fw-quick a:nth-of-type(3){animation-delay:.69s}.fw-quick a:nth-of-type(4){animation-delay:.76s}.fw-quick a:nth-of-type(5){animation-delay:.83s}
+    .fw-quick a:nth-of-type(1){animation-delay:0.83s}.fw-quick a:nth-of-type(2){animation-delay:0.93s}.fw-quick a:nth-of-type(3){animation-delay:1.03s}.fw-quick a:nth-of-type(4){animation-delay:1.14s}.fw-quick a:nth-of-type(5){animation-delay:1.24s}
     .fw-quick a:hover{color:#13233F}
     .fw-quick i{width:1px;height:14px;background:#CBD3DF}
     .fw-quick .pp{color:#1F3659;font-weight:700}
-    .fw-wing{position:absolute;left:calc(max(38px, calc(50% - 598px)) + 208px);right:0;bottom:0;height:66px;animation:fwSweep .8s cubic-bezier(.2,.7,.2,1) both}
+    .fw-wing{position:absolute;left:calc(max(38px, calc(50% - 598px)) + 208px);right:0;bottom:0;height:66px;animation:fwSweep 1.3s cubic-bezier(.22,1,.36,1) both}
     .fw-wing svg{position:absolute;left:0;bottom:0;display:block}
     .fw-flat{position:absolute;left:269px;right:0;top:0;bottom:0;background:#13233F;border-top:3px solid #E7A11C;box-sizing:border-box}
     .fw-nav{position:absolute;right:max(48px, calc(50% - 588px));bottom:0;height:66px;display:flex;align-items:center;gap:22px;z-index:3}
     .fw-menu{display:flex;align-items:stretch;height:66px}
-    .fw-menu .dd{position:relative;display:flex;align-items:center;animation:fwFade .4s ease-out both}
-    .fw-menu .dd:nth-child(1){animation-delay:.35s}.fw-menu .dd:nth-child(2){animation-delay:.42s}.fw-menu .dd:nth-child(3){animation-delay:.49s}.fw-menu .dd:nth-child(4){animation-delay:.56s}.fw-menu .dd:nth-child(5){animation-delay:.63s}
+    .fw-menu .dd{position:relative;display:flex;align-items:center;animation:fwFade .8s cubic-bezier(.22,1,.36,1) both}
+    .fw-menu .dd:nth-child(1){animation-delay:0.52s}.fw-menu .dd:nth-child(2){animation-delay:0.63s}.fw-menu .dd:nth-child(3){animation-delay:0.73s}.fw-menu .dd:nth-child(4){animation-delay:0.84s}.fw-menu .dd:nth-child(5){animation-delay:0.95s}
     .fw-menu .dd + .dd::before{content:"";width:1px;height:14px;background:rgba(255,255,255,.28);margin:0 2px}
     .fw-top{position:relative;display:inline-flex;align-items:center;height:66px;padding:0 13px;box-sizing:border-box;font-size:14px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;border-bottom:3px solid transparent}
     .fw-top:hover{color:#F3C664!important}
@@ -46,7 +46,7 @@
     .fw-menu .dd-menu a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:0 12px;border-radius:8px;color:#1A2740;font-size:14.5px;font-weight:600;white-space:nowrap}
     .fw-menu .dd-menu a:hover,.fw-menu .dd-menu a:focus-visible{background:#EEF2F7}
     .fw-menu .dd-menu small{font-size:12.5px;font-weight:500;color:#5E6878}
-    .fw-apply{display:inline-flex;align-items:center;min-height:42px;padding:0 20px;border-radius:8px;background:#E7A11C;color:#13233F;font-size:14.5px;font-weight:700;white-space:nowrap;animation:fwPop .45s cubic-bezier(.2,.8,.3,1.3) .75s both;transition:background .2s ease,transform .2s ease}
+    .fw-apply{display:inline-flex;align-items:center;min-height:42px;padding:0 20px;border-radius:8px;background:#E7A11C;color:#13233F;font-size:14.5px;font-weight:700;white-space:nowrap;animation:fwPop .8s cubic-bezier(.22,1,.36,1) 1.15s both;transition:background .2s ease,transform .2s ease}
     .fw-apply:hover{transform:translateY(-1px)}
     .fw-apply:hover{background:#D48F0E;color:#13233F}
     .fw-burger{display:none}

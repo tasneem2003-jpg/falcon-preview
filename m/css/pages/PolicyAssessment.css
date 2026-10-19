@@ -8,9 +8,9 @@
 .meta dd{margin:0;font-size:15px;font-weight:600;color:#1A2740}
 .layout{display:flex;flex-wrap:wrap;align-items:flex-start;gap:28px 40px}
 .toc{flex:1 1 210px;max-width:240px;position:sticky;top:16px;display:flex;flex-direction:column;gap:2px}
-.toc a{display:flex;align-items:center;min-height:38px;padding:0 12px;border-left:3px solid transparent;color:#5E6878;font-size:14.5px;font-weight:600;text-decoration:none}
+.toc a{display:flex;align-items:center;min-height:38px;padding:0 12px;border-radius:8px;color:#5E6878;font-size:14.5px;font-weight:600;text-decoration:none}
 .toc a:hover{color:#1A2740;background:#F1F4F8}
-.toc a.on{color:#1A2740;border-left-color:#E7A11C;background:#FFFFFF}
+.toc a.on{color:#13233F;font-weight:700;background:#E9EEF5}
 .doc{flex:999 1 560px;min-width:0;max-width:720px;display:flex;flex-direction:column}
 .glance{background:#FDF6E7;border:1px solid #F0D9A6;border-radius:12px;padding:18px 20px 20px}
 .glance h2{font-size:17px;font-weight:700}
@@ -92,7 +92,7 @@ details.refs li{font-size:14.5px;line-height:1.55;color:#4B5566}
 .s h3{color:#1A2740}
 .s p,.s li{font-size:16px!important;line-height:1.6!important;color:#3D4A60!important}
 .s ul{gap:8px!important}
-.quote{border-radius:14px!important;padding:16px 18px!important;font-size:16px!important;line-height:1.6!important;color:#3D4A60!important;background:#FFFFFF!important;border:1px solid #DCE2EB;border-left:3px solid #E7A11C}
+.quote{border-radius:14px!important;padding:16px 18px!important;font-size:16px!important;line-height:1.6!important;color:#3D4A60!important;background:#FFFFFF!important;border:1px solid #DCE2EB}
 .quote cite{font-size:14px!important}
 .defs,.roles,.cons{display:flex!important;flex-direction:column;gap:0!important;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:14px;padding:0 16px}
 .def,.role,.con{background:transparent!important;border:0!important;border-radius:0!important;border-top:1px solid #E6EAF1!important;padding:16px 0!important}
