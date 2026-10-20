@@ -137,4 +137,7 @@ details.refs li{font-size:14.5px!important;line-height:1.55!important;color:#5E6
 .more-body{display:flex;flex-direction:column;gap:12px;padding:4px 16px 18px;border-top:1px solid #E6EAF1}
 .more-body p{padding-top:8px}
 
+/* table of contents: items never squeeze into each other when the list scrolls */
+.toc a{flex-shrink:0;padding-block:8px;line-height:1.35}
+
 body{margin:0}
