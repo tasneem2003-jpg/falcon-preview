@@ -114,6 +114,10 @@
 @media (max-width:900px){.bento{grid-template-columns:1fr 1fr;grid-template-rows:auto}.bbig{grid-row:auto;grid-column:span 2;height:300px}.btile{min-height:190px}.vgrid{grid-template-columns:1fr}}
 @media (max-width:520px){.vrow .vthumb{width:132px}.vrow .vplay{width:32px;height:32px}.vrow .vplay svg{width:13px;height:13px}}
 
+/* Falcon hero captions */
+.hero-cap{position:absolute;top:22px;right:24px;z-index:2;font-size:13px;font-weight:600;letter-spacing:.02em;line-height:1.3;color:#FFFFFF;background:rgba(9,22,43,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);padding:6px 12px;border-radius:999px;opacity:0;transition:opacity .35s ease;pointer-events:none}
+.hero:not(:has(.hr:checked)) .hc0,.hero:has(#hr-0:checked) .hc0,.hero:has(#hr-1:checked) .hc1,.hero:has(#hr-2:checked) .hc2,.hero:has(#hr-3:checked) .hc3,.hero:has(#hr-4:checked) .hc4{opacity:1}
+@media (max-width:760px){.hero-cap{top:12px;right:16px;font-size:12px}}
 /* Falcon hero motion: the photo stays still; the badge and headline arrive, then the four checks one by one, then the buttons, then the note. Plays once on load. */
 @media (prefers-reduced-motion:no-preference){
   @keyframes fhIn{from{opacity:0;translate:0 var(--fh-y,12px)}to{opacity:1;translate:0 0}}
@@ -126,17 +130,22 @@
   .hero h1 ~ div .btn{--fh-y:10px;animation:fhIn .7s cubic-bezier(0,0,.3,1) 1.8s both}
   .hero h1 ~ div .btn:nth-child(2){animation-delay:1.92s}
   .hero h1 ~ p{--fh-y:0px;animation:fhIn .6s cubic-bezier(0,0,.3,1) 2.3s both}
-  /* photos: until a thumbnail is chosen, each photo shows for 7 s, dissolves into the next over 0.8 s and drifts
-     slowly from 105% to 100%; the gold frame follows on the thumbnails; hovering the hero pauses it */
-  @keyframes fhPhoto{0%{opacity:0;scale:1.05}2.3%{opacity:1}20%{opacity:1}22.3%{opacity:0;scale:1}100%{opacity:0;scale:1}}
+  /* photos: until a thumbnail is chosen, each photo shows for 7 s and dissolves into the next over 0.8 s;
+     the zoom alternates, gently in on one photo (100% to 104%) and out on the next (104% to 100%);
+     the caption and the gold frame on the thumbnails follow; hovering the hero pauses it */
+  @keyframes fhZoomOut{0%{opacity:0;scale:1.04}2.3%{opacity:1}20%{opacity:1}22.3%{opacity:0;scale:1}100%{opacity:0;scale:1}}
+  @keyframes fhZoomIn{0%{opacity:0;scale:1}2.3%{opacity:1}20%{opacity:1}22.3%{opacity:0;scale:1.04}100%{opacity:0;scale:1.04}}
+  @keyframes fhCap{0%{opacity:0}2.3%{opacity:1}20%{opacity:1}22.3%{opacity:0}100%{opacity:0}}
   @keyframes fhThumb{0%,20%{opacity:1;border-color:#E7A11C;box-shadow:0 0 0 2px rgba(231,161,28,.35)}21%,100%{opacity:.82;border-color:rgba(255,255,255,.35);box-shadow:none}}
-  .hero:not(:has(.hr:checked)) .hero-img{animation:fhPhoto 35s linear infinite both}
+  .hero:not(:has(.hr:checked)) .hero-img{animation:fhZoomOut 35s linear infinite both}
+  .hero:not(:has(.hr:checked)) :is(.hi1,.hi3){animation-name:fhZoomIn}
+  .hero:not(:has(.hr:checked)) .hero-cap{animation:fhCap 35s linear infinite both}
   .hero:not(:has(.hr:checked)) .hgal{animation:fhThumb 35s linear infinite both}
-  .hero:not(:has(.hr:checked)) :is(.hi1,.ht1){animation-delay:7s}
-  .hero:not(:has(.hr:checked)) :is(.hi2,.ht2){animation-delay:14s}
-  .hero:not(:has(.hr:checked)) :is(.hi3,.ht3){animation-delay:21s}
-  .hero:not(:has(.hr:checked)) :is(.hi4,.ht4){animation-delay:28s}
-  .hero:hover :is(.hero-img,.hgal){animation-play-state:paused}
+  .hero:not(:has(.hr:checked)) :is(.hi1,.hc1,.ht1){animation-delay:7s}
+  .hero:not(:has(.hr:checked)) :is(.hi2,.hc2,.ht2){animation-delay:14s}
+  .hero:not(:has(.hr:checked)) :is(.hi3,.hc3,.ht3){animation-delay:21s}
+  .hero:not(:has(.hr:checked)) :is(.hi4,.hc4,.ht4){animation-delay:28s}
+  .hero:hover :is(.hero-img,.hero-cap,.hgal){animation-play-state:paused}
 }
 
 body{margin:0}
