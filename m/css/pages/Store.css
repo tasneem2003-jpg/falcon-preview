@@ -102,3 +102,26 @@ p[data-count]{font-size:14px!important}
 .st-photo{aspect-ratio:4 / 5!important;flex:0 1 440px!important;max-width:440px;margin-inline:auto;background:#FFFFFF!important}
 .st-photo img{object-fit:cover;object-position:50% 50%}
 @media (max-width:640px){.st-photo{max-width:none;flex:1 1 auto!important;width:100%}}
+
+/* store header (like the official store) */
+.st-strip{background:#0F1B2D!important;color:#FFFFFF!important;font-size:12.5px;font-weight:700!important;letter-spacing:.12em!important}
+.st-head{background:#F2F0EB;border-bottom:1px solid #E2DED5}
+.st-head .st-bar{min-height:82px;flex-wrap:nowrap;gap:28px}
+.st-id{display:flex;align-items:center;gap:14px;text-decoration:none;flex:none}
+.st-id img{height:50px;width:auto;display:block}
+.st-id span{padding-left:14px;border-left:1px solid #CFC9BD;font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#5E6878;line-height:1.2}
+.st-nav{display:flex;align-items:center;gap:6px;margin-right:auto}
+.st-nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;border-radius:8px;color:#1A2740;font-size:15px;font-weight:600;text-decoration:none;transition:color .3s ease,background-color .3s ease}
+.st-nav a:hover{background:#E7E3DA}
+.st-nav a.x-on{color:#13233F;font-weight:800}
+.st-head .st-cart{background:#13233F;color:#FFFFFF;min-height:46px;padding:0 18px;border-radius:10px}
+.st-head .st-cart:hover{background:#1F3659}
+@media (max-width:760px){
+  .st-head .st-bar{flex-wrap:wrap!important;min-height:0!important;padding-block:12px;gap:6px 12px!important}
+  .st-id img{height:40px}
+  .st-id span{font-size:10.5px;padding-left:10px;letter-spacing:.16em}
+  .st-nav{order:3;flex:1 1 100%;margin:0 0 0 -12px;justify-content:flex-start;gap:2px}
+  .st-nav a{font-size:14.5px}
+  .st-head .st-cart{margin-left:auto;font-size:0;gap:8px;padding:0 12px}
+  .st-head .st-cart .st-count{font-size:12px}
+}
