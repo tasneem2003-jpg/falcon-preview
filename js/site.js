@@ -421,7 +421,7 @@
   });
 })();
 
-/* Falcon Academy static site: calm entrance motion. The first section (hero) settles in on load; other blocks fade up as they scroll into view, cards one after another. Works in every browser; off for reduced motion. */
+/* Falcon Academy static site: calm entrance motion. Blocks below the first section fade up as one piece when they reach the screen. Works in every browser; off for reduced motion. */
 (function () {
   if (!('IntersectionObserver' in window)) return;
   if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -442,16 +442,6 @@
     el.classList.add('rv');
     picked.push(el);
   }
-  function isGroup(el) {
-    var kids = el.children;
-    if (kids.length < 2) return false;
-    var d = css(el).display;
-    if (d.indexOf('grid') < 0 && d.indexOf('flex') < 0) return false;
-    if (css(el).flexDirection === 'column' && d.indexOf('flex') > -1) return false;
-    if (css(el).overflowX === 'auto' || css(el).overflowX === 'scroll') return false;
-    return true;
-  }
-
   var sections = Array.prototype.filter.call(document.querySelectorAll('section'), function (s) {
     return !s.closest('header, footer') && !s.parentElement.closest('section');
   });
@@ -459,20 +449,13 @@
 
   // 1. Hero: its entrance lives in the home page's own CSS ("Falcon hero motion"), so it is skipped here
 
-  // 2. Every other section: its blocks fade up; rows of cards come in one after another
+  // 2. Every other section: each block (heading, row of cards, text and picture) fades up as one piece when it
+  //    reaches the screen; cards in a row arrive together, not one by one (Dalton style)
   sections.slice(1).forEach(function (s) {
     var wrap = s.querySelector(':scope > .wrap') || s;
     Array.prototype.forEach.call(wrap.children, function (el) {
       if (el.tagName === 'STYLE' || el.tagName === 'INPUT' || el.tagName === 'SCRIPT') return;
-      if (isGroup(el)) {
-        var n = 0;
-        Array.prototype.forEach.call(el.children, function (k) {
-          if (k.tagName === 'STYLE' || k.tagName === 'INPUT') return;
-          mark(k, Math.min(n++, 5) * 140);
-        });
-      } else {
-        mark(el, 0);
-      }
+      mark(el, 0);
     });
   });
 
@@ -487,10 +470,8 @@
     el.classList.add('in');
     var wait = 1600 + (parseInt(el.style.getPropertyValue('--rd'), 10) || 0);
     setTimeout(function () {
-      el.classList.remove('rv', 'in', 'rv-h');
+      el.classList.remove('rv', 'in');
       el.style.removeProperty('--rd');
-      el.style.removeProperty('--rdur');
-      el.style.removeProperty('--rtr');
     }, wait);
   }
   var io = new IntersectionObserver(function (entries) {
