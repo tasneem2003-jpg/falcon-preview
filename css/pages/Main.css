@@ -126,6 +126,17 @@
   .hero h1 ~ div .btn{--fh-y:10px;animation:fhIn .7s cubic-bezier(0,0,.3,1) 1.8s both}
   .hero h1 ~ div .btn:nth-child(2){animation-delay:1.92s}
   .hero h1 ~ p{--fh-y:0px;animation:fhIn .6s cubic-bezier(0,0,.3,1) 2.3s both}
+  /* photos: until a thumbnail is chosen, each photo shows for 7 s, dissolves into the next over 1.6 s and drifts
+     slowly from 105% to 100%; the gold frame follows on the thumbnails; hovering the hero pauses it */
+  @keyframes fhPhoto{0%{opacity:0;scale:1.05}4.6%{opacity:1}20%{opacity:1}24.6%{opacity:0;scale:1}100%{opacity:0;scale:1}}
+  @keyframes fhThumb{0%,19%{opacity:1;border-color:#E7A11C;box-shadow:0 0 0 2px rgba(231,161,28,.35)}21%,100%{opacity:.82;border-color:rgba(255,255,255,.35);box-shadow:none}}
+  .hero:not(:has(.hr:checked)) .hero-img{animation:fhPhoto 35s linear infinite both}
+  .hero:not(:has(.hr:checked)) .hgal{animation:fhThumb 35s linear infinite both}
+  .hero:not(:has(.hr:checked)) :is(.hi1,.ht1){animation-delay:7s}
+  .hero:not(:has(.hr:checked)) :is(.hi2,.ht2){animation-delay:14s}
+  .hero:not(:has(.hr:checked)) :is(.hi3,.ht3){animation-delay:21s}
+  .hero:not(:has(.hr:checked)) :is(.hi4,.ht4){animation-delay:28s}
+  .hero:hover :is(.hero-img,.hgal){animation-play-state:paused}
 }
 
 body{margin:0}
