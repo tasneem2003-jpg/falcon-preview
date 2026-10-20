@@ -19,42 +19,30 @@
     .fw-logo{position:absolute;left:max(38px, calc(50% - 598px));top:18px;display:block;line-height:0;z-index:2}
     .fw-logo img{height:76px;width:auto;display:block}
     .fw-quick{position:absolute;right:max(48px, calc(50% - 588px));top:0;height:46px;display:flex;align-items:center;gap:14px;font-size:13.5px;z-index:2}
-    .fw-quick a{position:relative;display:inline-flex;align-items:center;min-height:32px;color:#3D4A60;font-weight:500;animation:fwDrop .8s cubic-bezier(.22,1,.36,1) both}
-    .fw-quick a::after{content:"";position:absolute;left:0;right:0;bottom:3px;height:2px;border-radius:2px;background:#E7A11C;transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
-    .fw-quick a:hover::after{transform:scaleX(1)}
-    .fw-quick a:nth-of-type(1){animation-delay:0.83s}.fw-quick a:nth-of-type(2){animation-delay:0.93s}.fw-quick a:nth-of-type(3){animation-delay:1.03s}.fw-quick a:nth-of-type(4){animation-delay:1.14s}.fw-quick a:nth-of-type(5){animation-delay:1.24s}
+    .fw-quick a{position:relative;display:inline-flex;align-items:center;min-height:32px;color:#3D4A60;font-weight:500;transition:color .3s ease}
     .fw-quick a:hover{color:#13233F}
     .fw-quick i{width:1px;height:14px;background:#CBD3DF}
     .fw-quick .pp{color:#1F3659;font-weight:700}
-    .fw-wing{position:absolute;left:calc(max(38px, calc(50% - 598px)) + 208px);right:0;bottom:0;height:66px;animation:fwSweep 1.3s cubic-bezier(.22,1,.36,1) both}
+    .fw-wing{position:absolute;left:calc(max(38px, calc(50% - 598px)) + 208px);right:0;bottom:0;height:66px}
     .fw-wing svg{position:absolute;left:0;bottom:0;display:block}
     .fw-flat{position:absolute;left:269px;right:0;top:0;bottom:0;background:#13233F;border-top:3px solid #E7A11C;box-sizing:border-box}
     .fw-nav{position:absolute;right:max(48px, calc(50% - 588px));bottom:0;height:66px;display:flex;align-items:center;gap:22px;z-index:3}
     .fw-menu{display:flex;align-items:stretch;height:66px}
-    .fw-menu .dd{position:relative;display:flex;align-items:center;animation:fwFade .8s cubic-bezier(.22,1,.36,1) both}
-    .fw-menu .dd:nth-child(1){animation-delay:0.52s}.fw-menu .dd:nth-child(2){animation-delay:0.63s}.fw-menu .dd:nth-child(3){animation-delay:0.73s}.fw-menu .dd:nth-child(4){animation-delay:0.84s}.fw-menu .dd:nth-child(5){animation-delay:0.95s}
+    .fw-menu .dd{position:relative;display:flex;align-items:center}
     .fw-menu .dd + .dd::before{content:"";width:1px;height:14px;background:rgba(255,255,255,.28);margin:0 2px}
-    .fw-top{position:relative;display:inline-flex;align-items:center;height:66px;padding:0 13px;box-sizing:border-box;font-size:14px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;border-bottom:3px solid transparent}
+    .fw-top{position:relative;display:inline-flex;align-items:center;height:66px;padding:0 13px;box-sizing:border-box;font-size:14px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;transition:color .3s ease}
     .fw-top:hover{color:#F3C664!important}
-    .fw-top::after{content:"";position:absolute;left:13px;right:13px;bottom:16px;height:2px;border-radius:2px;background:#F3C664;transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
-    .fw-top:hover::after{transform:scaleX(1)}
-    .fw-top[aria-current="page"]::after{display:none}
     .fw-top .caret{margin-left:6px;opacity:.75}
-    .fw-menu .dd-menu{display:none;position:absolute;top:100%;left:0;z-index:50;min-width:250px;padding:8px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;box-shadow:0 14px 32px rgba(19,35,63,.18);flex-direction:column;gap:2px}
-    .fw-menu .dd:hover .dd-menu,.fw-menu .dd:focus-within .dd-menu{display:flex}
+    .fw-menu .dd-menu{display:flex;visibility:hidden;opacity:0;transition:opacity .2s ease-in,visibility 0s linear .2s;position:absolute;top:100%;left:0;z-index:50;min-width:250px;padding:8px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;box-shadow:0 14px 32px rgba(19,35,63,.18);flex-direction:column;gap:2px}
+    .fw-menu .dd:hover .dd-menu,.fw-menu .dd:focus-within .dd-menu{visibility:visible;opacity:1;transition:opacity .2s ease-out,visibility 0s}
     .fw-menu .dd-menu a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:0 12px;border-radius:8px;color:#1A2740;font-size:14.5px;font-weight:600;white-space:nowrap}
     .fw-menu .dd-menu a:hover,.fw-menu .dd-menu a:focus-visible{background:#EEF2F7}
     .fw-menu .dd-menu small{font-size:12.5px;font-weight:500;color:#5E6878}
-    .fw-apply{display:inline-flex;align-items:center;min-height:42px;padding:0 20px;border-radius:8px;background:#E7A11C;color:#13233F;font-size:14.5px;font-weight:700;white-space:nowrap;animation:fwPop .8s cubic-bezier(.22,1,.36,1) 1.15s both;transition:background .2s ease,transform .2s ease}
-    .fw-apply:hover{transform:translateY(-1px)}
+    .fw-apply{display:inline-flex;align-items:center;min-height:42px;padding:0 20px;border-radius:8px;background:#E7A11C;color:#13233F;font-size:14.5px;font-weight:700;white-space:nowrap;transition:background .3s ease}
     .fw-apply:hover{background:#D48F0E;color:#13233F}
     .fw-burger{display:none}
     .fw a:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:6px}
-    @keyframes fwSweep{0%{clip-path:polygon(100% 0,100% 0,100% 100%,100% 100%)}100%{clip-path:polygon(0 0,100% 0,100% 100%,0 100%)}}
-    @keyframes fwFade{0%{opacity:0;transform:translateY(8px)}100%{opacity:1;transform:none}}
-    @keyframes fwDrop{0%{opacity:0;transform:translateY(-6px)}100%{opacity:1;transform:none}}
-    @keyframes fwPop{0%{opacity:0;transform:scale(.9)}100%{opacity:1;transform:none}}
-    @media (prefers-reduced-motion:reduce){.fw-wing,.fw-quick a,.fw-menu .dd,.fw-apply{animation:none}.fw-quick a::after,.fw-top::after{transition:none}}
+    @media (prefers-reduced-motion:reduce){.fw a,.fw-menu .dd-menu{transition:none!important}}
     @media (max-width:1240px){.fw-top{padding:0 9px;font-size:13px;letter-spacing:.03em}.fw-nav{gap:14px}}
     @media (max-width:1100px){
       .fw{height:84px}
@@ -70,9 +58,9 @@
   <a class="fw-logo" href="Main.html" aria-label="Falcon Academy home"><img src="assets/img/falcon-academy-2.svg" alt="Falcon Academy"></a>
   <nav class="fw-quick" aria-label="Quick links">
     <a href="Campuses.html">Our Campuses</a><i aria-hidden="true"></i>
-    <a href="Careers.html" style="color: rgb(61, 74, 96); font-weight: 500; box-shadow: transparent 0px -2px 0px inset;">Careers</a><i aria-hidden="true"></i>
-    <a href="Policies.html" style="color: rgb(61, 74, 96); font-weight: 500; box-shadow: transparent 0px -2px 0px inset;">Policies</a><i aria-hidden="true"></i>
-    <a href="Contact.html" style="color: rgb(61, 74, 96); font-weight: 500; box-shadow: transparent 0px -2px 0px inset;">Contact Us</a><i aria-hidden="true"></i>
+    <a href="Careers.html" style="color: rgb(61, 74, 96); font-weight: 500;">Careers</a><i aria-hidden="true"></i>
+    <a href="Policies.html" style="color: rgb(61, 74, 96); font-weight: 500;">Policies</a><i aria-hidden="true"></i>
+    <a href="Contact.html" style="color: rgb(61, 74, 96); font-weight: 500;">Contact Us</a><i aria-hidden="true"></i>
     <a class="pp" href="https://portal.edumagined.com/falconacademy/" target="_blank" rel="noopener noreferrer">Parent Portal ↗</a>
   </nav>
   <div class="fw-wing" aria-hidden="true">
@@ -83,12 +71,12 @@
     <nav class="fw-menu" aria-label="Main">
       
         <div class="dd">
-          <a class="fw-top" href="Main.html" aria-current="false" style="color: rgb(255, 255, 255); border-bottom-color: transparent;">Home</a>
+          <a class="fw-top" href="Main.html" aria-current="false" style="color: rgb(255, 255, 255);">Home</a>
           
         </div>
       
         <div class="dd">
-          <a class="fw-top" href="OurStory.html" aria-current="false" style="color: rgb(255, 255, 255); border-bottom-color: transparent;">About Us<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          <a class="fw-top" href="OurStory.html" aria-current="false" style="color: rgb(255, 255, 255);">About Us<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
             <div class="dd-menu" role="group" aria-label="About Us pages">
               
@@ -105,7 +93,7 @@
         </div>
       
         <div class="dd">
-          <a class="fw-top" href="Curriculum.html" aria-current="false" style="color: rgb(255, 255, 255); border-bottom-color: transparent;">Academics<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          <a class="fw-top" href="Curriculum.html" aria-current="false" style="color: rgb(255, 255, 255);">Academics<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
             <div class="dd-menu" role="group" aria-label="Academics pages">
               
@@ -128,7 +116,7 @@
         </div>
       
         <div class="dd">
-          <a class="fw-top" href="VisitTour.html" aria-current="false" style="color: rgb(255, 255, 255); border-bottom-color: transparent;">Admissions<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          <a class="fw-top" href="VisitTour.html" aria-current="false" style="color: rgb(255, 255, 255);">Admissions<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
             <div class="dd-menu" role="group" aria-label="Admissions pages">
               
@@ -143,7 +131,7 @@
         </div>
       
         <div class="dd">
-          <a class="fw-top" href="CalendarEvents.html" aria-current="page" style="color: rgb(231, 161, 28); border-bottom-color: rgb(231, 161, 28);">Community<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          <a class="fw-top" href="CalendarEvents.html" aria-current="page" style="color: rgb(231, 161, 28);">Community<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
             <div class="dd-menu" role="group" aria-label="Community pages">
               
