@@ -97,3 +97,8 @@ p[data-count]{font-size:14px!important}
 .st-fgrid > div:first-child{grid-column:1/-1!important}
 .st-fgrid a{display:inline-flex;align-items:center;min-height:36px;overflow-wrap:anywhere}
 .st-fgrid nav div{gap:0!important}
+
+/* store poster */
+.st-photo{aspect-ratio:4 / 5!important;flex:0 1 440px!important;max-width:440px;margin-inline:auto;background:#FFFFFF!important}
+.st-photo img{object-fit:cover;object-position:50% 50%}
+@media (max-width:640px){.st-photo{max-width:none;flex:1 1 auto!important;width:100%}}
