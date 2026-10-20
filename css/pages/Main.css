@@ -133,8 +133,8 @@
   /* photos: until a thumbnail is chosen, each photo shows for 7 s and dissolves into the next over 0.8 s;
      the zoom alternates, gently in on one photo (100% to 104%) and out on the next (104% to 100%);
      the caption and the gold frame on the thumbnails follow; hovering the hero pauses it */
-  @keyframes fhZoomOut{0%{opacity:0;scale:1.04}2.3%{opacity:1}20%{opacity:1}22.3%{opacity:0;scale:1}100%{opacity:0;scale:1}}
-  @keyframes fhZoomIn{0%{opacity:0;scale:1}2.3%{opacity:1}20%{opacity:1}22.3%{opacity:0;scale:1.04}100%{opacity:0;scale:1.04}}
+  @keyframes fhZoomOut{0%{opacity:0;scale:1.04;animation-timing-function:cubic-bezier(.25,.46,.45,.94)}2.3%{opacity:1}14%{scale:1;animation-timing-function:linear}20%{opacity:1}22.3%{opacity:0;scale:1}100%{opacity:0;scale:1}}
+  @keyframes fhZoomIn{0%{opacity:0;scale:1;animation-timing-function:cubic-bezier(.25,.46,.45,.94)}2.3%{opacity:1}14%{scale:1.04;animation-timing-function:linear}20%{opacity:1}22.3%{opacity:0;scale:1.04}100%{opacity:0;scale:1.04}}
   @keyframes fhCap{0%{opacity:0}2.3%{opacity:1}20%{opacity:1}22.3%{opacity:0}100%{opacity:0}}
   @keyframes fhThumb{0%,20%{opacity:1;border-color:#E7A11C;box-shadow:0 0 0 2px rgba(231,161,28,.35)}21%,100%{opacity:.82;border-color:rgba(255,255,255,.35);box-shadow:none}}
   .hero:not(:has(.hr:checked)) .hero-img{animation:fhZoomOut 35s linear infinite both}
