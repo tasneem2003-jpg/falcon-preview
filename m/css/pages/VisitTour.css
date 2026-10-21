@@ -99,4 +99,31 @@ aside{gap:12px!important}
 .vt-cta .btn{width:100%!important;min-height:50px!important;border-radius:12px!important;font-size:16px!important}
 .vt-cta .btn-light{border:1.5px solid rgba(255,255,255,.85)!important}
 
+/* tour form: the site's real form (same fields), laid out as on the WordPress page */
+.tf-head{margin-bottom:12px}
+.tf{display:flex;flex-direction:column;margin:0}
+.tf-req{margin:0 0 20px;font-size:13px;line-height:1.4;color:#5E6878}
+.tf-star{margin-left:4px;font-weight:700;color:#B42318}
+.tf-req .tf-star{margin:0}
+.tf-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 16px}
+.tf-name{grid-column:1 / -1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:0;padding:0;border:0;min-width:0}
+.tf-sr{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.tf-f{display:flex;flex-direction:column;gap:7px;min-width:0}
+.tf-f label{font-size:14px;font-weight:700;line-height:1.3;color:#1A2740}
+.tf-in{display:block;box-sizing:border-box;width:100%;height:48px;margin:0;padding:0 14px;border:1px solid #D5DCE6;border-radius:10px;background:#FBFCFE;font-family:inherit;font-size:15.5px;color:#1A2740;transition:border-color .2s ease,box-shadow .2s ease,background-color .2s ease}
+.tf-in:hover{border-color:#B9C4D6}
+.tf-in:focus{border-color:#1F3659;background:#FFFFFF;box-shadow:0 0 0 3px rgba(231,161,28,.35);outline:none}
+.tf-sel{-webkit-appearance:none;appearance:none;padding-right:42px;line-height:46px;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%231A2740' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;background-size:12px 8px}
+.tf-sel:has(option[value=""]:checked){color:#5E6878}
+.tf-foot{display:flex;margin-top:24px}
+.tf-btn{display:inline-flex;align-items:center;justify-content:center;height:52px;padding:0 34px;border:0;border-radius:10px;background:#E7A11C;color:#1A2740;font-family:inherit;font-size:17px;font-weight:700;line-height:1;cursor:pointer;transition:background-color .3s ease}
+.tf-btn:hover{background:#D48F0E}
+.tf-btn:focus-visible{outline:3px solid #1F3659;outline-offset:2px}
+@media (max-width:640px){
+  .tf-grid{grid-template-columns:minmax(0,1fr);gap:16px}
+  .tf-name{gap:12px}
+  .tf-btn{width:100%}
+  .tf-head > span{padding-left:0!important}
+}
+
 body{margin:0}
