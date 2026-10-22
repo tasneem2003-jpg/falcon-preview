@@ -140,4 +140,8 @@ details.refs li{font-size:14.5px!important;line-height:1.55!important;color:#5E6
 /* table of contents: items never squeeze into each other when the list scrolls */
 .toc a{flex-shrink:0;padding-block:8px;line-height:1.35}
 
+/* language policy infographic */
+.infog{margin:6px 0 4px;max-width:440px}
+.infog img{display:block;width:100%;height:auto}
+
 body{margin:0}
