@@ -1,0 +1,5 @@
+/* Screen fit: laptops with display scaling get the same proportions as a wide screen */
+@media (min-width:1100px) and (max-width:1299.98px){html{zoom:.8}}
+@media (min-width:1300px) and (max-width:1449.98px){html{zoom:.85}}
+@media (min-width:1450px) and (max-width:1599.98px){html{zoom:.9}}
+@media (min-width:1600px) and (max-width:1799.98px){html{zoom:.95}}
