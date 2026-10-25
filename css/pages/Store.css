@@ -11,7 +11,7 @@
 .st-hgrid{display:flex;flex-wrap:wrap;align-items:center;gap:36px 56px;padding-top:56px;padding-bottom:60px}
 .st-eyebrow{display:inline-flex;align-items:center;gap:8px;color:#F0B545;font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
 .st-eyebrow::before{content:"";width:8px;height:8px;background:#E7A11C;transform:rotate(45deg)}
-.st-h1{color:#FFFFFF;font-size:clamp(40px,5vw,64px);font-weight:800;line-height:1;letter-spacing:-0.03em;text-transform:uppercase}
+.st-h1{color:#FFFFFF;font-size:clamp(37px, 4.5vw, 56.5px);font-weight:800;line-height:1;letter-spacing:-0.03em;text-transform:uppercase}
 .st-kpis{display:flex;flex-wrap:wrap;gap:12px 36px;margin-top:6px}
 .st-kpis b{display:block;font-size:30px;font-weight:800;color:#F0B545;letter-spacing:-0.02em;line-height:1.1}
 .st-kpis span{display:block;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#B9C4D6}

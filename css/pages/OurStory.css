@@ -1,6 +1,6 @@
 /* About Us · Our Story */
 
-.sec{display:flex;flex-direction:column;margin-top:40px;scroll-margin-top:16px}
+.sec{display:flex;flex-direction:column;margin-top:32px;scroll-margin-top:16px}
 .read{max-width:680px;display:flex;flex-direction:column;gap:18px}
 .read p,.read li{font-size:17px;line-height:1.7;color:#243044}
 .read ul{padding-left:22px;display:flex;flex-direction:column;gap:10px}

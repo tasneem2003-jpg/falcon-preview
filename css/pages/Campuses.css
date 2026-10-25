@@ -1,6 +1,6 @@
 /* About Us · Our campuses */
 
-.sec{display:flex;flex-direction:column;margin-top:40px;scroll-margin-top:16px}
+.sec{display:flex;flex-direction:column;margin-top:32px;scroll-margin-top:16px}
 .cpill{position:absolute;top:14px;left:14px;display:inline-flex;align-items:center;min-height:28px;padding:0 12px;border-radius:999px;background:#FFFFFF;color:#1A2740;font-size:12px;font-weight:800;letter-spacing:.06em}
 .pmini{border-radius:999px;padding:0 10px;min-height:26px}
 .check{width:22px;height:22px;border-radius:50%;background:#E2F3EA;color:#1C6B43;display:inline-flex;align-items:center;justify-content:center;flex:none}
