@@ -3,7 +3,7 @@
 .stat{display:flex;align-items:center;gap:14px;padding:4px 16px}
 .sl{border-left:1px solid #DCE2EB}
 @media (max-width:560px){.sl{border-left:0}}
-.hero-photo{position:absolute;top:0;right:0;bottom:0;width:46%;overflow:hidden;-webkit-mask:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22 preserveAspectRatio=%22none%22%3E%3Cpath d=%22M13 0C13 44 0 56 0 100H100V0Z%22/%3E%3C/svg%3E') 0 0/100% 100% no-repeat;mask:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22 preserveAspectRatio=%22none%22%3E%3Cpath d=%22M13 0C13 44 0 56 0 100H100V0Z%22/%3E%3C/svg%3E') 0 0/100% 100% no-repeat}
+.hero-photo{position:absolute;top:0;right:0;bottom:0;width:52%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 42%);mask-image:linear-gradient(90deg,transparent 0%,#000 42%)}
 .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .35s ease}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .hero:not(:has(.hr:checked)) .hi0{opacity:1}
@@ -34,8 +34,8 @@
 .hgal:hover{opacity:1;border-color:#FFFFFF}
 .hgal-on,.hgal-on:hover{opacity:1;border-color:#E7A11C;box-shadow:0 0 0 2px rgba(231,161,28,.35)}
 @media (max-width:760px){.hero-thumbs{left:16px;right:16px;bottom:12px;justify-content:center;overflow-x:auto}.hgal{width:44px;height:32px}}
-.hero-fade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,55,99,0.55) 0%,rgba(22,55,99,0) 40%)}
-@media (max-width:760px){.hero-photo{width:100%;-webkit-mask:none;mask:none}.hero-fade{background:rgba(12,34,66,0.82)}}
+.hero-fade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,55,99,.45) 0%,rgba(22,55,99,0) 55%)}
+@media (max-width:760px){.hero-photo{width:100%;-webkit-mask-image:none;mask-image:none}.hero-fade{background:rgba(12,34,66,0.82)}}
 .pcard{overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:#243044}
 .pcard:hover{border-color:#1F3659;color:#243044}
 .pcard:hover .more{text-decoration:underline}
