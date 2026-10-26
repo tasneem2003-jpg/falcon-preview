@@ -1,5 +1,6 @@
-/* Screen fit. Laptops with display scaling (125-150%, crisp text) show the site like browser zoom 80%;
-   ordinary 1x screens get a lighter fit so text never gets too small. Tablet and phone pages are untouched. */
-@media (min-width:1100px) and (max-width:1439.98px){html{zoom:.9}}
-@media (min-resolution:1.25dppx) and (min-width:1100px) and (max-width:1439.98px){html{zoom:.72}}
-@media (min-resolution:1.25dppx) and (min-width:1440px) and (max-width:1799.98px){html{zoom:.8}}
+/* Screen fit: on laptop-size windows the whole page shows like browser zoom 80%.
+   Keyed on window width only (not pixel density, which browser zoom changes), so zooming the
+   browser out always makes the page smaller, never bigger. Tablet and phone pages are untouched. */
+@media (min-width:1100px) and (max-width:1439.98px){html{zoom:.8}}
+@media (min-width:1440px) and (max-width:1799.98px){html{zoom:.85}}
+@media (min-width:1800px) and (max-width:2199.98px){html{zoom:.95}}
