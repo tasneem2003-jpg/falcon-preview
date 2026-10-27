@@ -13,6 +13,6 @@
   .hero-copy{min-height:0!important;padding-top:32px!important;padding-bottom:44px!important}
 }
 .subj:hover{border-color:#1F3659}.subj:hover h3{text-decoration:underline}
-.pnav{display:flex;flex-direction:column;gap:14px}.pnav-chips{display:flex;flex-wrap:wrap;gap:8px}@media (max-width:640px){.pnav-chips{flex-wrap:nowrap;overflow-x:auto;margin-inline:-24px;padding:0 24px 4px;scrollbar-width:none}.pnav-chips::-webkit-scrollbar{display:none}}
+.pnav{display:flex;flex-direction:column;gap:14px}.pnav-chips{display:flex;flex-wrap:wrap;gap:6px}.pnav-chips .chip{padding:0 12px;font-size:13.5px}@media (max-width:640px){.pnav-chips{flex-wrap:nowrap;overflow-x:auto;margin-inline:-24px;padding:0 24px 4px;scrollbar-width:none}.pnav-chips::-webkit-scrollbar{display:none}}
 
 body{margin:0}
