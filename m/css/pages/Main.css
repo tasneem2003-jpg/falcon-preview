@@ -31,7 +31,7 @@ p{margin:0}
 .hero h1 .hl{color:#F3C664}
 .hero-eb{margin:0;font-size:12.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#F3C664}
 .hero-chips{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.hero-chip{display:inline-flex;align-items:center;gap:6px;min-height:34px;padding:0 12px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.32);color:#FFFFFF;font-size:13px;font-weight:700;white-space:nowrap;backdrop-filter:blur(6px)}
+.hero-chip{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:0 12px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.32);color:#FFFFFF;font-size:14px;font-weight:700;white-space:nowrap;backdrop-filter:blur(6px)}
 .hero-chip svg{color:#F3C664;flex:none}
 .hero-sub{font-size:16px;color:#D5DCE7}
 .ib-note{font-size:13px;color:#B9C4D6}
