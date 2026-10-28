@@ -41,6 +41,11 @@
     .fw-menu .dd-menu a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:0 12px;border-radius:8px;color:#1A2740;font-size:14.5px;font-weight:600;white-space:nowrap}
     .fw-menu .dd-menu a:hover,.fw-menu .dd-menu a:focus-visible{background:#EEF2F7}
     .fw-menu .dd-menu small{font-size:12.5px;font-weight:500;color:#5E6878}
+    .dd-col{display:flex;flex-direction:column;gap:2px}
+    .fw-menu .dd-mega{flex-direction:row;gap:6px;padding:14px 12px 12px;left:50%;transform:translateX(-50%)}
+    .dd-mega .dd-col{width:224px}
+    .dd-head{margin:0 12px 6px;font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00;white-space:nowrap}
+    .fw-menu .dd-mega a{flex-direction:column;align-items:flex-start;justify-content:center;gap:1px;min-height:54px;padding:6px 12px;white-space:normal}
     .fw-apply{display:inline-flex;align-items:center;min-height:38px;padding:0 18px;border-radius:8px;background:#E7A11C;color:#13233F;font-size:14.5px;font-weight:700;white-space:nowrap;transition:background .3s ease}
     .fw-apply:hover{background:#D48F0E;color:#13233F}
     .fw-burger{display:none}
@@ -77,15 +82,20 @@
         <div class="dd">
           <a class="fw-top" href="OurStory.html" aria-current="false" style="color: rgb(255, 255, 255);">About Us<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
-            <div class="dd-menu" role="group" aria-label="About Us pages">
+            <div class="dd-menu " role="group" aria-label="About Us pages">
               
-                <a href="OurStory.html">Our Story<small></small></a>
-              
-                <a href="Leadership.html">Leadership<small></small></a>
-              
-                <a href="Faculty.html">Faculty &amp; Staff<small></small></a>
-              
-                <a href="Campuses.html">Our Campuses<small></small></a>
+                <div class="dd-col">
+                  
+                  
+                    <a href="OurStory.html">Our Story<small></small></a>
+                  
+                    <a href="Leadership.html">Leadership<small></small></a>
+                  
+                    <a href="Faculty.html">Faculty &amp; Staff<small></small></a>
+                  
+                    <a href="Campuses.html">Our Campuses<small></small></a>
+                  
+                </div>
               
             </div>
           
@@ -94,25 +104,40 @@
         <div class="dd">
           <a class="fw-top" href="Curriculum.html" aria-current="page" style="color: rgb(231, 161, 28);">Academics<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
-            <div class="dd-menu" role="group" aria-label="Academics pages">
+            <div class="dd-menu dd-mega" role="group" aria-label="Academics pages">
               
-                <a href="Accreditation.html">Accreditation<small>IB · Cognia</small></a>
+                <div class="dd-col">
+                  <p class="dd-head">By grade</p>
+                  
+                    <a href="PrimaryYears.html">Primary Years<small>KG–Grade 5</small></a>
+                  
+                    <a href="MiddleYears.html">Middle Years<small>Grades 6–8</small></a>
+                  
+                    <a href="HighSchool.html">High School<small>Grades 9–12</small></a>
+                  
+                </div>
               
-                <a href="PrimaryYears.html">Primary Years<small>KG–Grade 5</small></a>
+                <div class="dd-col">
+                  <p class="dd-head">College pathways</p>
+                  
+                    <a href="DualEnrollment.html">Dual Enrollment<small>College credit with NOVA</small></a>
+                  
+                    <a href="APCourses.html">AP Courses<small>College Board approved</small></a>
+                  
+                    <a href="AssociateDegree.html">Associate Degree<small>Pathway while in high school</small></a>
+                  
+                </div>
               
-                <a href="MiddleYears.html">Middle Years<small>Grades 6–8</small></a>
-              
-                <a href="HighSchool.html">High School<small>Grades 9–12</small></a>
-              
-                <a href="Curriculum.html">Curriculum<small>9 subjects</small></a>
-              
-                <a href="ArabicIslamic.html">Arabic &amp; Islamic Studies<small>Every grade</small></a>
-              
-                <a href="DualEnrollment.html">Dual Enrollment<small>NOVA</small></a>
-              
-                <a href="APCourses.html">AP Courses<small>College Board</small></a>
-              
-                <a href="AssociateDegree.html">Associate Degree<small>With NOVA</small></a>
+                <div class="dd-col">
+                  <p class="dd-head">Curriculum &amp; standards</p>
+                  
+                    <a href="Curriculum.html">Curriculum<small>9 subjects</small></a>
+                  
+                    <a href="ArabicIslamic.html">Arabic &amp; Islamic Studies<small>Every grade</small></a>
+                  
+                    <a href="Accreditation.html">Accreditation<small>IB · Cognia</small></a>
+                  
+                </div>
               
             </div>
           
@@ -121,13 +146,18 @@
         <div class="dd">
           <a class="fw-top" href="VisitTour.html" aria-current="false" style="color: rgb(255, 255, 255);">Admissions<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
-            <div class="dd-menu" role="group" aria-label="Admissions pages">
+            <div class="dd-menu " role="group" aria-label="Admissions pages">
               
-                <a href="VisitTour.html">Visit &amp; Book a Tour<small></small></a>
-              
-                <a href="HowToApply.html">How to Apply<small></small></a>
-              
-                <a href="Tuition.html">Tuition &amp; Financial Aid<small></small></a>
+                <div class="dd-col">
+                  
+                  
+                    <a href="VisitTour.html">Visit &amp; Book a Tour<small></small></a>
+                  
+                    <a href="HowToApply.html">How to Apply<small></small></a>
+                  
+                    <a href="Tuition.html">Tuition &amp; Financial Aid<small></small></a>
+                  
+                </div>
               
             </div>
           
@@ -136,19 +166,24 @@
         <div class="dd">
           <a class="fw-top" href="CalendarEvents.html" aria-current="false" style="color: rgb(255, 255, 255);">Community<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
-            <div class="dd-menu" role="group" aria-label="Community pages">
+            <div class="dd-menu " role="group" aria-label="Community pages">
               
-                <a href="CalendarEvents.html">Calendar &amp; Events<small></small></a>
-              
-                <a href="News.html">News &amp; Announcements<small></small></a>
-              
-                <a href="PhotosVideos.html">Photos &amp; Videos<small></small></a>
-              
-                <a href="ParentVoices.html">Parent Voices<small></small></a>
-              
-                <a href="Store.html">Falcon Store<small></small></a>
-              
-                <a href="AfterSchool.html">After School &amp; Weekend<small>Clubs</small></a>
+                <div class="dd-col">
+                  
+                  
+                    <a href="CalendarEvents.html">Calendar &amp; Events<small></small></a>
+                  
+                    <a href="News.html">News &amp; Announcements<small></small></a>
+                  
+                    <a href="PhotosVideos.html">Photos &amp; Videos<small></small></a>
+                  
+                    <a href="ParentVoices.html">Parent Voices<small></small></a>
+                  
+                    <a href="Store.html">Falcon Store<small></small></a>
+                  
+                    <a href="AfterSchool.html">After School &amp; Weekend<small>Clubs</small></a>
+                  
+                </div>
               
             </div>
           
@@ -163,17 +198,17 @@
     <div class="pnav">
       <nav class="crumb" aria-label="Breadcrumb"><a href="Main.html">Home</a><span aria-hidden="true">›</span><a href="Curriculum.html">Academics</a><span aria-hidden="true">›</span><a href="Curriculum.html">Curriculum</a><span aria-hidden="true">›</span><span aria-current="page">English Language Arts</span></nav>
       <nav class="pnav-chips" aria-label="Academics pages">
-        <a class="chip" href="Accreditation.html">Accreditation</a>
         <a class="chip" href="PrimaryYears.html">Primary Years</a>
         <a class="chip" href="MiddleYears.html">Middle Years</a>
         <a class="chip" href="HighSchool.html">High School</a>
-        <a class="chip chip-on" href="Curriculum.html" aria-current="page">Curriculum</a>
-        <a class="chip" href="ArabicIslamic.html">Arabic &amp; Islamic Studies</a>
         <a class="chip" href="DualEnrollment.html">Dual Enrollment</a>
         <a class="chip" href="APCourses.html">AP Courses</a>
         <a class="chip" href="AssociateDegree.html">Associate Degree</a>
+        <a class="chip chip-on" href="Curriculum.html" aria-current="page">Curriculum</a>
+        <a class="chip" href="ArabicIslamic.html">Arabic &amp; Islamic Studies</a>
+        <a class="chip" href="Accreditation.html">Accreditation</a>
       </nav>
-      <details class="pnav-m"><summary><span class="pm-txt"><span class="pm-sec">Academics</span><span class="pm-cur">English Language Arts</span></span><span class="pm-ic" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></span></summary><ul><li><a href="Accreditation.html">Accreditation</a></li><li><a href="PrimaryYears.html">Primary Years</a></li><li><a href="MiddleYears.html">Middle Years</a></li><li><a href="HighSchool.html">High School</a></li><li><a href="Curriculum.html" aria-current="page">Curriculum<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E7A11C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></a></li><li><a href="ArabicIslamic.html">Arabic &amp; Islamic Studies</a></li><li><a href="DualEnrollment.html">Dual Enrollment</a></li><li><a href="APCourses.html">AP Courses</a></li><li><a href="AssociateDegree.html">Associate Degree</a></li></ul></details>
+      <details class="pnav-m"><summary><span class="pm-txt"><span class="pm-sec">Academics</span><span class="pm-cur">English Language Arts</span></span><span class="pm-ic" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></span></summary><ul><li><a href="PrimaryYears.html">Primary Years</a></li><li><a href="MiddleYears.html">Middle Years</a></li><li><a href="HighSchool.html">High School</a></li><li><a href="DualEnrollment.html">Dual Enrollment</a></li><li><a href="APCourses.html">AP Courses</a></li><li><a href="AssociateDegree.html">Associate Degree</a></li><li><a href="Curriculum.html" aria-current="page">Curriculum<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E7A11C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></a></li><li><a href="ArabicIslamic.html">Arabic &amp; Islamic Studies</a></li><li><a href="Accreditation.html">Accreditation</a></li></ul></details>
     </div>
   </div>
 
