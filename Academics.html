@@ -26,6 +26,7 @@
     .fw-quick .pp{color:#1F3659;font-weight:700}
     .fw-wing{position:absolute;left:calc(max(38px, calc(50% - 598px)) + 176px);right:0;bottom:0;height:54px}
     .fw-wing svg{position:absolute;left:0;bottom:0;display:block}
+    .fw-line{position:absolute;left:0;bottom:0;width:calc(max(38px, calc(50% - 598px)) + 177px);height:3px;background:#E7A11C;z-index:1}
     .fw-flat{position:absolute;left:220px;right:0;top:0;bottom:0;background:#13233F;border-top:3px solid #E7A11C;box-sizing:border-box}
     .fw-nav{position:absolute;right:max(48px, calc(50% - 588px));bottom:0;height:54px;display:flex;align-items:center;gap:22px;z-index:3}
     .fw-menu{display:flex;align-items:stretch;height:54px}
@@ -50,7 +51,7 @@
       .fw-logo{top:12px}.fw-logo img{height:60px}
       .fw-quick,.fw-menu,.fw-apply{display:none}
       .fw-wing{left:auto;width:260px;height:84px}
-      .fw-wing svg{display:none}
+      .fw-wing svg,.fw-line{display:none}
       .fw-flat{left:28px;border-top:0;-webkit-mask:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22 preserveAspectRatio=%22none%22%3E%3Cpath d=%22M0 100C44 100 56 0 100 0V100Z%22/%3E%3C/svg%3E') 0 0/48px 100% no-repeat,linear-gradient(#000,#000) 47px 0/100% 100% no-repeat;mask:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22 preserveAspectRatio=%22none%22%3E%3Cpath d=%22M0 100C44 100 56 0 100 0V100Z%22/%3E%3C/svg%3E') 0 0/48px 100% no-repeat,linear-gradient(#000,#000) 47px 0/100% 100% no-repeat}
       .fw-nav{height:84px;right:16px}
       .fw-burger{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border-radius:10px;border:1px solid rgba(255,255,255,.45);color:#FFFFFF;font-size:15px;font-weight:600}
@@ -64,6 +65,7 @@
     <a href="Contact.html" style="color: rgb(61, 74, 96); font-weight: 500;">Contact Us</a><i aria-hidden="true"></i>
     <a class="pp" href="https://portal.edumagined.com/falconacademy/" target="_blank" rel="noopener noreferrer">Parent Portal ↗</a>
   </nav>
+  <span class="fw-line" aria-hidden="true"></span>
   <div class="fw-wing" aria-hidden="true">
     <svg width="222" height="54" viewBox="0 0 272 66"><path d="M0 66 C120 66 150 0 270 0 H272 V66 Z" fill="#13233F"></path><path d="M0 64.5 C120 64.5 150 1.5 272 1.5" fill="none" stroke="#E7A11C" stroke-width="3" vector-effect="non-scaling-stroke"></path></svg>
     <div class="fw-flat"></div>
