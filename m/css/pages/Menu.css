@@ -26,6 +26,14 @@ summary.row-btn::-webkit-details-marker{display:none}
 .sub a:hover{background:#EEF2F7;color:#1A2740}
 .sub .sub-h > span{display:block;padding:14px 12px 4px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00}
 .sub .sub-h:first-child > span{padding-top:4px}
+/* Academics: two columns like the desktop menu (By grade | College pathways), Curriculum & standards below */
+.mgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:8px;margin:-4px 0 12px}
+.mgrid .sub{margin:0}
+.mgrid .sub a{font-size:16px;line-height:1.25}
+.mcol-wide{grid-column:1/-1}
+.mcol-wide .sub{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:10px}
+.mcol-wide .sub-h,.mcol-wide .span2{grid-column:1/-1}
+.mcol-wide .sub .sub-h:first-child > span{padding-top:14px}
 .plain{display:flex;flex-wrap:wrap;gap:0 18px}
 .plain a{display:inline-flex;align-items:center;min-height:44px;font-size:16px;font-weight:600;color:#3D4A60;text-decoration:none}
 .portal{display:flex;align-items:center;gap:12px;min-height:56px;padding:0 16px;border:1px solid #DCE2EB;border-radius:14px;background:#F6F8FB;color:#1A2740;font-size:16.5px;font-weight:700;text-decoration:none}
