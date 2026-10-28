@@ -118,10 +118,7 @@ p{margin:0}
   .hero .hero-cap{animation:fhFade .8s ease-out .6s both}
 }
 
-/* Associate degree + AP (2026-10-27) */
-.hero-chip-hl{background:#E7A11C;border-color:#E7A11C;color:#13233F;text-decoration:none;backdrop-filter:none}
-.hero-chip-hl svg{color:#13233F}
-.hero-chip-hl:hover{background:#F0B545;border-color:#F0B545;color:#13233F}
+/* "A head start on college" section: Associate degree pathway + AP (2026-10-27) */
 .adeg{background:linear-gradient(160deg,#0C2242 0%,#1B4170 100%);border-radius:18px;padding:24px 20px 22px;display:flex;flex-direction:column;gap:12px;color:#FFFFFF}
 .adeg .ak,.apcard .ak{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
 .adeg .ak{color:#F3C664}
