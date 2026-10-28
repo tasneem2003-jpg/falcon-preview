@@ -18,7 +18,7 @@
 .usp .ck{width:26px;height:26px;border-radius:50%;background:#E7A11C;color:#13233F;display:inline-flex;align-items:center;justify-content:center;flex:none;margin-top:1px}
 .usp strong{display:block;font-size:18px;font-weight:700;line-height:1.3}
 .usp small{display:block;margin-top:3px;font-size:15.5px;color:#D5DCE7;line-height:1.4}
-.usp a{color:#F0B545;text-decoration:none}
+.usp a{color:inherit;text-decoration:none;font-weight:500;font-size:.8em;vertical-align:.25em;margin-left:1px;cursor:default}
 @media (max-width:480px){.usp{grid-template-columns:minmax(0,1fr)}}
 .kstats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:#FFFFFF;border:1px solid #DCE2EB;border-radius:16px;box-shadow:0 8px 24px rgba(19,35,63,.06)}
 .kstat{padding:26px 14px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;border-left:1px solid #E6EAF1;min-width:0}
