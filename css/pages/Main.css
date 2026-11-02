@@ -279,7 +279,7 @@ button,input,select,textarea{font-family:inherit}
 .mt-sand .mt-n{color:#C98A0B}.mt-sand h3{color:#1A2740}.mt-sand p{color:#5E6878}
 .mt-stat{margin:0 0 4px!important;font-size:64px!important;font-weight:800;line-height:1!important;letter-spacing:-.03em;color:#F3C664}
 .mt-sand .mt-stat{font-size:34px!important;color:#B07A06}.mt-sand{padding:22px 28px;gap:8px}.mt-sand p{font-size:14.5px;line-height:1.55}
-.mt-navy .mt-stat{color:#F3C664}.mt-sand .mt-stat{color:#B07A06}
+.mt-navy .mt-stat,.mt-more .mt-stat{color:#F3C664}.mt-sand .mt-stat{color:#B07A06}
 .mt-stat small{display:block;margin-top:8px;font-size:14px;font-weight:600;letter-spacing:0;color:#C6CEDB}
 .mt-sand .mt-stat small{color:#8A5A00}
 .mt-title{display:flex;flex-direction:column;justify-content:center;gap:12px;padding:8px 18px}
