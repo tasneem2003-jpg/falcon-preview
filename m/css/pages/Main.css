@@ -25,21 +25,24 @@ p{margin:0}
 .hero-media{position:relative;height:300px;overflow:hidden}
 .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 35%;display:block}
 .hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,31,60,0) 68%,rgba(13,31,60,.85) 100%)}
-.hero-in{position:relative;padding:22px 20px 30px;display:flex;flex-direction:column;gap:14px}
+.hero-in{position:relative;padding:22px 20px 84px;display:flex;flex-direction:column;gap:14px}
 .eyebrow{font-size:16px;font-weight:600;color:#F0C267;line-height:1.4}
 .hero h1{color:#FFFFFF;font-size:30px;font-weight:800;line-height:1.18;letter-spacing:-0.015em}
 .hero h1 .hl{color:#F3C664}
 .hero-eb{margin:0;font-size:12.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#F3C664}
-.hero-chips{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.hero-chip{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:0 12px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.32);color:#FFFFFF;font-size:14px;font-weight:700;white-space:nowrap;backdrop-filter:blur(6px)}
-.hero-chip svg{color:#F3C664;flex:none}
+.hero-usp{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px 12px}
+.hero-usp li{display:flex;align-items:flex-start;gap:8px;color:#FFFFFF}
+.hero-usp .ck{width:20px;height:20px;border-radius:50%;background:#E7A11C;color:#13233F;display:inline-flex;align-items:center;justify-content:center;flex:none;margin-top:1px}
+.hero-usp strong{display:block;font-size:14.5px;font-weight:700;line-height:1.3}
+.hero-usp small{display:block;margin-top:2px;font-size:12.5px;line-height:1.35;color:#D5DCE7}
 .hero-sub{font-size:16px;color:#D5DCE7}
 .ib-note{font-size:13px;color:#B9C4D6}
-.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.stat{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:14px;padding:16px 14px 14px;display:flex;flex-direction:column;gap:4px}
-.stat b{font-size:34px;font-weight:800;line-height:1;color:#13233F;letter-spacing:-0.03em}
-.stat span{font-size:14.5px;font-weight:600;color:#1A2740;line-height:1.3;min-height:2.6em}
-.stat small{font-size:13px;color:#5E6878;line-height:1.35}
+/* The stat cards sit partly on the hero (2026-11-01) */
+.stats{position:relative;z-index:2;margin-top:-56px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.stat{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:16px;padding:16px 14px 15px;display:flex;flex-direction:column;gap:4px;box-shadow:0 10px 26px rgba(9,22,43,.12)}
+.stat b{font-size:32px;font-weight:800;line-height:1;color:#13233F;letter-spacing:-0.03em;display:flex;align-items:baseline;gap:5px}
+.stat span{font-size:14.5px;font-weight:700;color:#1A2740;line-height:1.3;min-height:2.6em}
+.stat small{font-size:13px;color:#5E6878;line-height:1.35;text-wrap:balance}
 .camp{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:16px;overflow:hidden}
 .camp img{width:100%;height:180px;object-fit:cover;display:block}
 .camp-b{padding:16px;display:flex;flex-direction:column;gap:8px}
@@ -107,10 +110,10 @@ p{margin:0}
   @keyframes fhIn{from{opacity:0;translate:0 var(--fh-y,8px)}to{opacity:1;translate:0 0}}
   .hero .hero-eb{--fh-y:6px;animation:fhIn .6s cubic-bezier(0,0,.3,1) .1s both}
   .hero h1{--fh-y:12px;animation:fhIn .8s cubic-bezier(0,0,.3,1) .25s both}
-  .hero .hero-chip{--fh-y:8px;animation:fhIn .6s cubic-bezier(0,0,.3,1) .9s both}
-  .hero .hero-chip:nth-child(2){animation-delay:1s}
-  .hero .hero-chip:nth-child(3){animation-delay:1.1s}
-  .hero .hero-chip:nth-child(4){animation-delay:1.2s}
+  .hero .hero-usp li{--fh-y:8px;animation:fhIn .6s cubic-bezier(0,0,.3,1) .9s both}
+  .hero .hero-usp li:nth-child(2){animation-delay:1s}
+  .hero .hero-usp li:nth-child(3){animation-delay:1.1s}
+  .hero .hero-usp li:nth-child(4){animation-delay:1.2s}
   /* photo: fades in, then keeps drifting very slowly (zooms 100% to 105% with a light pan and back, 14 s each way) */
   @keyframes fhFade{from{opacity:0}to{opacity:1}}
   @keyframes fhDrift{from{scale:1;translate:0 0}to{scale:1.05;translate:-1.5% -1%}}
@@ -142,30 +145,55 @@ p{margin:0}
 
 /* Credentials (2026-10-29): IB, AP and the associate degree pathway as three stacked cards in one section */
 .cred3{display:flex;flex-direction:column;gap:12px}
-.cred{display:flex;flex-direction:column;overflow:hidden;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:16px;text-decoration:none;color:#243044}
-.cred-top{height:92px;background:#13233F;display:flex;align-items:center;justify-content:center;gap:14px;padding:0 14px;box-sizing:border-box}
-.cred-top img{display:block;height:auto;width:48%;max-width:170px}
-.cred-stat{display:flex;flex-direction:column;align-items:center;gap:1px;text-align:center}
-.cred-stat b{font-size:24px;font-weight:800;line-height:1.05;letter-spacing:-0.02em;color:#F3C664}
-.cred-stat i{font-style:normal;font-size:12.5px;color:#C6CEDB}
-.cred-b{padding:16px 16px 14px;display:flex;flex-direction:column;gap:5px}
+.cred{display:flex;flex-direction:column;gap:5px;padding:18px 18px 8px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:16px;text-decoration:none;color:#243044}
 .cred-k{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00}
 .cred h3{font-size:18px;font-weight:700;line-height:1.3}
 .cred-p{font-size:14.5px;line-height:1.5;color:#4B5566}
-.cred-go{display:inline-flex;align-items:center;gap:4px;min-height:40px;font-size:15.5px;font-weight:700;color:#1A2740}
+.cred-go{display:inline-flex;align-items:center;gap:4px;min-height:44px;font-size:15.5px;font-weight:700;color:#1A2740}
+/* IB candidacy: logos on navy, then the official wording (2026-11-02) */
+.cib{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:16px;overflow:hidden}
+.cib-logos{background:#13233F;display:flex;align-items:center;justify-content:center;gap:14px;padding:18px 14px}
+.cib-logos img{display:block;width:46%;max-width:160px;height:auto}
+.cib-t{padding:18px 18px 8px;display:flex;flex-direction:column;gap:8px}
+.cib-h{font-size:20px;font-weight:700;line-height:1.25}
+.cib-p{font-size:15px;line-height:1.6;color:#243044}
+.cib-p strong{color:#1A2740;font-weight:700}
+.cib-p2{font-size:14px;line-height:1.5;color:#5E6878}
+.cib .cred-go{text-decoration:none}
+
+
+
+/* Arabic & Islamic Studies strip under the three stages (2026-11-02) */
+.astrip{display:flex;align-items:center;gap:12px;padding:14px 12px 14px 14px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:16px;text-decoration:none;color:#243044}
+.astrip-ic{width:44px;height:44px;border-radius:12px;background:#13233F;color:#F3C664;display:flex;align-items:center;justify-content:center;flex:none}
+.astrip-t{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}
+.astrip-t strong{font-size:16px;font-weight:700;color:#1A2740;line-height:1.3}
+.astrip-t span{font-size:13.5px;color:#5E6878;line-height:1.4}
+.astrip-go{color:#1F3659;display:flex;flex:none}
+
+/* Why Families Choose Falcon (2026-11-02): seven numbered tiles stacked (no carousel) */
+.wtiles{display:flex;flex-direction:column;gap:12px}
+.wt{position:relative;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;gap:8px;padding:20px 18px;box-sizing:border-box;color:#243044}
+.wt-n{font-size:12.5px;font-weight:800;letter-spacing:.14em;color:#C98A0B}
+.wt h3{font-size:19px;font-weight:700;line-height:1.25;color:#1A2740;margin:0}
+.wt p{font-size:14.5px;line-height:1.55;color:#4B5566;margin:0}
+.wt-links{display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin-top:4px}
+.wt-link{display:inline-flex;align-items:center;gap:4px;min-height:40px;font-size:15.5px;font-weight:700;color:#1A2740;text-decoration:none}
+.wt-apply{width:100%}
+.wt-white{background:#FFFFFF;border:1px solid #DCE2EB}
+.wt-sand{background:#FDF6E7;border:1px solid #F0D49A}
+.wt-navy{background:#13233F}
+.wt-navy h3{color:#FFFFFF}.wt-navy p{color:#C6CEDB}.wt-navy .wt-n,.wt-navy .wt-link{color:#F3C664}
+.wt-navy .wt-stat{font-size:46px;font-weight:800;line-height:1;letter-spacing:-.03em;color:#F3C664;margin:4px 0 2px}
+.wt-stat small{display:block;font-size:13px;font-weight:600;letter-spacing:0;color:#C6CEDB;margin-top:6px}
+.wt-photo{background:#13233F;padding-top:214px}
+.wt-photo img{position:absolute;top:0;left:0;width:100%;height:200px;object-fit:cover;display:block}
+.wt-photo::before{content:"";position:absolute;top:120px;left:0;right:0;height:81px;z-index:1;background:linear-gradient(180deg,rgba(19,35,63,0) 0%,#13233F 100%)}
+.wt-photo > :not(img){position:relative;z-index:2}
+.wt-photo h3{color:#FFFFFF}.wt-photo p{color:#E1E7F0}.wt-photo .wt-n{color:#F3C664}.wt-photo .wt-link{color:#FFFFFF}
+.wt-chips{display:flex;flex-wrap:wrap;gap:6px}
+.wt-chips span{display:inline-flex;align-items:center;gap:5px;min-height:28px;padding:0 10px;border-radius:999px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);color:#FFFFFF;font-size:12.5px;font-weight:600}
+.wt-chips svg{color:#F3C664}
+.wt-chips-sand span{background:#FFFFFF;border-color:#F0D49A;color:#5C3D00;-webkit-backdrop-filter:none;backdrop-filter:none}.wt-chips-sand svg{color:#C98A0B}
 
 body{margin:0}
-
-.mx{font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;color:#243044}
-.hb{position:sticky;top:0;z-index:20}
-.hb-top{height:40px;background:#13233F;display:flex;align-items:center;gap:9px;padding:0 12px;box-sizing:border-box;overflow:hidden}
-.hb-c{display:inline-flex;align-items:center;gap:6px;min-height:40px;min-width:0;color:#FFFFFF;font-size:13px;font-weight:500;letter-spacing:0;text-decoration:none;white-space:nowrap}
-.hb-c:first-child{flex:none}
-.hb-c:hover{color:#FFFFFF}
-.hb-c svg{flex:none}
-.hb-sep{flex:none;width:1px;height:18px;background:rgba(255,255,255,.28)}
-.hb-c span{overflow:hidden;text-overflow:ellipsis}
-.hb-bar{height:72px;background:#FFFFFF;border-bottom:1px solid #E6EAF1;display:flex;align-items:center;justify-content:space-between;padding:0 8px 0 10px;box-sizing:border-box}
-.hb-menu{width:48px;height:48px;display:inline-flex;align-items:center;justify-content:center;border-radius:10px;color:#13233F;background:transparent}
-.hb-menu:hover{background:#F1F4F8;color:#13233F}
-@media (max-width:370px){.hb-top{padding:0 12px;gap:9px}.hb-c{font-size:12.5px;gap:6px}}

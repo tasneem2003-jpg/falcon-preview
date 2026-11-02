@@ -52,4 +52,28 @@
 .nrow .tag{min-height:24px;font-size:13px}
 .pg{width:44px!important;height:44px!important}
 
+/* Pinned top story: the Ashburn campus announcement with its video and FAQ (2026-11-02) */
+.feat{margin-top:20px;display:flex;flex-direction:column;overflow:hidden;border-radius:16px}
+.feat,.feat-media,.feat-body,.feat-faq{min-width:0;max-width:100%;box-sizing:border-box}
+.feat-media video{display:block;width:100%;max-width:100%;height:auto;aspect-ratio:16 / 9;object-fit:cover;background:#0D1F3C}
+.feat-body{padding:18px 16px;display:flex;flex-direction:column;gap:10px}
+.feat-body h2{font-size:21px;font-weight:700;line-height:1.28;color:#1A2740}
+.feat-body > p{font-size:15px;line-height:1.6;color:#3D4A60}
+.feat-facts{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.feat-facts li{display:inline-flex;align-items:center;gap:5px;min-height:30px;padding:0 10px;border-radius:999px;background:#EEF2F7;color:#1A2740;font-size:13px;font-weight:600}
+.feat-facts svg{color:#C98A0B}
+.feat-quote{margin:2px 0 0;padding:0}
+.feat-quote p{font-size:14.5px;line-height:1.6;font-style:italic;color:#243044}
+.feat-quote cite{display:block;margin-top:4px;font-size:13px;font-style:normal;font-weight:600;color:#5E6878}
+.feat-acts{display:flex;flex-direction:column;gap:10px;margin-top:4px}
+.feat-acts .btn{width:100%;min-height:48px}
+.feat-faq{border-top:1px solid #DCE2EB;padding:14px 16px 16px;background:#FAFBFD}
+.feat-faq h3{font-size:16px;font-weight:700;color:#1A2740;margin-bottom:6px}
+.feat-q{border-bottom:1px solid #E6EAF1}
+.feat-q summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px;font-size:15px;font-weight:600;color:#243044}
+.feat-q summary::-webkit-details-marker{display:none}
+.feat-q summary::after{content:"+";font-size:20px;font-weight:500;color:#1F3659;flex:none}
+.feat-q[open] summary::after{content:"–"}
+.feat-q p{padding:0 0 12px;font-size:14.5px;line-height:1.6;color:#5E6878}
+
 body{margin:0}
