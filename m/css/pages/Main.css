@@ -49,6 +49,8 @@ p{margin:0}
 .camp-tag{align-self:flex-start;font-size:12px;font-weight:800;letter-spacing:.06em;color:#1F3659;background:#E5EDF9;border-radius:6px;padding:3px 8px}
 .camp h3{font-size:21px;font-weight:700}
 .camp p{font-size:15.5px;color:#4B5566;line-height:1.5}
+.camp-chips{display:flex;flex-wrap:wrap;gap:6px}
+.camp-chips span{display:inline-flex;align-items:center;min-height:28px;padding:0 10px;border-radius:999px;background:#F1F4F8;font-size:13px;font-weight:600;color:#1A2740}
 .camp-acts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:6px}
 .camp-acts .btn{min-height:48px;font-size:15.5px}
 .camp-acts .camp-main{grid-column:1 / -1}
