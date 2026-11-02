@@ -282,10 +282,11 @@ button,input,select,textarea{font-family:inherit}
 .mt-navy .mt-stat,.mt-more .mt-stat{color:#F3C664}.mt-sand .mt-stat{color:#B07A06}
 .mt-stat small{display:block;margin-top:8px;font-size:14px;font-weight:600;letter-spacing:0;color:#C6CEDB}
 .mt-sand .mt-stat small{color:#8A5A00}
-.mt-title{display:flex;flex-direction:column;justify-content:center;gap:12px;padding:8px 18px}
-.mt-rule{display:block;width:44px;height:3px;border-radius:2px;background:#E7A11C}
-.mt-title h2{margin:0;font-size:32px;font-weight:700;line-height:1.15;color:#13233F}
-.mt-title p{font-size:15.5px;color:#5E6878}
+.mt-title{display:flex;flex-direction:column;justify-content:center;gap:10px;padding:26px 28px;background:linear-gradient(150deg,#0D1F3C 0%,#1B4170 100%)}
+.mt-eb{font-size:12.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#F3C664}
+.mt-title h2{margin:0;font-size:30px;font-weight:700;line-height:1.15;color:#FFFFFF}
+.mt-title h2 span{color:#F3C664}
+.mt-title p{font-size:15.5px;color:#C6CEDB}
 .mt-btn{align-self:flex-start;min-height:44px;font-size:15px}
 @media (prefers-reduced-motion:reduce){.mt-more,.mt-cap,.mt-plus,.mt-photo img{transition:none}}
 
