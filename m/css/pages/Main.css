@@ -51,6 +51,7 @@ p{margin:0}
 .camp p{font-size:15.5px;color:#4B5566;line-height:1.5}
 .camp-acts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:6px}
 .camp-acts .btn{min-height:48px;font-size:15.5px}
+.camp-acts .camp-main{grid-column:1 / -1}
 .shuttle{display:flex;align-items:flex-start;line-height:1.45;gap:12px;padding:14px 16px;border-radius:14px;background:#FDF6E7;border:1px solid #F0D9A8;font-size:15.5px;color:#6E4A05;font-weight:600}
 .shuttle svg{flex:none;color:#C98A0B}
 .why{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px}
