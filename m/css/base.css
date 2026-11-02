@@ -87,6 +87,20 @@ button,input,select,textarea{font-family:inherit}
 .faq{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px}
 
 .mx{font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;color:#243044}
+.hb{position:sticky;top:0;z-index:20}
+.hb-top{height:40px;background:#13233F;display:flex;align-items:center;gap:9px;padding:0 12px;box-sizing:border-box;overflow:hidden}
+.hb-c{display:inline-flex;align-items:center;gap:6px;min-height:40px;min-width:0;color:#FFFFFF;font-size:13px;font-weight:500;letter-spacing:0;text-decoration:none;white-space:nowrap}
+.hb-c:first-child{flex:none}
+.hb-c:hover{color:#FFFFFF}
+.hb-c svg{flex:none}
+.hb-sep{flex:none;width:1px;height:18px;background:rgba(255,255,255,.28)}
+.hb-c span{overflow:hidden;text-overflow:ellipsis}
+.hb-bar{height:72px;background:#FFFFFF;border-bottom:1px solid #E6EAF1;display:flex;align-items:center;justify-content:space-between;padding:0 8px 0 10px;box-sizing:border-box}
+.hb-menu{width:48px;height:48px;display:inline-flex;align-items:center;justify-content:center;border-radius:10px;color:#13233F;background:transparent}
+.hb-menu:hover{background:#F1F4F8;color:#13233F}
+@media (max-width:370px){.hb-top{padding:0 12px;gap:9px}.hb-c{font-size:12.5px;gap:6px}}
+
+.mx{font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;color:#243044}
 .mx p{margin:0}.mx h3{margin:0}
 .mx .btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:0 20px;border-radius:12px;font-size:17px;font-weight:700;text-decoration:none;box-sizing:border-box;border:1px solid transparent}
 .mx .btn-gold{background:#E7A11C;color:#13233F}.mx .btn-line{background:#FFFFFF;border-color:#CBD3DF;color:#1A2740}
@@ -102,17 +116,3 @@ button,input,select,textarea{font-family:inherit}
 .foot-camp{display:flex;flex-direction:column;gap:4px;line-height:1.45}
 .foot-camp a{display:inline-flex;align-items:center;min-height:40px;color:#F0C267;font-weight:700;align-self:flex-start}
 .fine{font-size:12.5px;color:#9AA7BC;line-height:1.5}
-
-.mx{font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;color:#243044}
-.hb{position:sticky;top:0;z-index:20}
-.hb-top{height:40px;background:#13233F;display:flex;align-items:center;gap:9px;padding:0 12px;box-sizing:border-box;overflow:hidden}
-.hb-c{display:inline-flex;align-items:center;gap:6px;min-height:40px;min-width:0;color:#FFFFFF;font-size:13px;font-weight:500;letter-spacing:0;text-decoration:none;white-space:nowrap}
-.hb-c:first-child{flex:none}
-.hb-c:hover{color:#FFFFFF}
-.hb-c svg{flex:none}
-.hb-sep{flex:none;width:1px;height:18px;background:rgba(255,255,255,.28)}
-.hb-c span{overflow:hidden;text-overflow:ellipsis}
-.hb-bar{height:72px;background:#FFFFFF;border-bottom:1px solid #E6EAF1;display:flex;align-items:center;justify-content:space-between;padding:0 8px 0 10px;box-sizing:border-box}
-.hb-menu{width:48px;height:48px;display:inline-flex;align-items:center;justify-content:center;border-radius:10px;color:#13233F;background:transparent}
-.hb-menu:hover{background:#F1F4F8;color:#13233F}
-@media (max-width:370px){.hb-top{padding:0 12px;gap:9px}.hb-c{font-size:12.5px;gap:6px}}
