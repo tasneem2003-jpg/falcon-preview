@@ -38,6 +38,7 @@
 .cx-bands li{display:flex;align-items:flex-start;gap:12px;font-size:15.5px;color:#243044}
 .cx-band{flex:none;min-width:78px;min-height:28px;padding:0 10px;border-radius:999px;background:#FDF6E7;border:1px solid #F0D49A;color:#8A5A00;font-size:13px;font-weight:800;letter-spacing:.02em;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box}
 .cx-note{display:block;font-size:13.5px;color:#5E6878;margin-top:1px}
+.cx-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px}
 .cx-acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:10px}
 .cx-sec{margin-top:40px;display:flex;flex-direction:column;gap:16px}
 .cx-h2{font-size:20px;font-weight:700}
