@@ -23,99 +23,58 @@
 @media (max-width:640px){.wrap,.wrap-card{padding-inline:16px}.pnav-chips{margin-inline:-16px;padding:0 16px 4px}.panel{margin-inline:-16px;border-radius:0;border-left:0;border-right:0;padding:22px 16px 24px}}
 .pnav-m{display:none}@media (max-width:640px){.pnav:has(.pnav-m) .crumb,.pnav:has(.pnav-m) .pnav-chips{display:none}.pnav-m{display:block;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;box-shadow:0 1px 2px rgba(19,35,63,.04)}.pnav-m summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;min-height:56px;padding:8px 14px 8px 16px;box-sizing:border-box}.pnav-m summary::-webkit-details-marker{display:none}.pm-txt{display:flex;flex-direction:column;gap:1px;min-width:0;flex:1}.pm-sec{font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00}.pm-cur{font-size:16.5px;font-weight:700;color:#1A2740;line-height:1.25}.pm-ic{flex:none;width:32px;height:32px;border-radius:8px;background:#EEF2F7;color:#1F3659;display:inline-flex;align-items:center;justify-content:center;transition:transform .2s ease}.pnav-m[open] .pm-ic{transform:rotate(180deg)}.pnav-m ul{list-style:none;margin:0;padding:4px 8px 8px;border-top:1px solid #E6EAF1;display:flex;flex-direction:column}.pnav-m li a{display:flex;align-items:center;justify-content:space-between;min-height:46px;padding:0 10px;border-radius:8px;font-size:15.5px;font-weight:500;color:#243044;text-decoration:none}.pnav-m li a[aria-current]{background:#F1F4F8;font-weight:700;color:#13233F}}
 
-/* Our Campuses hub (2026-11-02) */
-.cx-head{display:flex;flex-direction:column;gap:8px}
-.cx-head p{font-size:16px;line-height:1.6;color:#5E6878;max-width:640px}
-.cx-cards{margin-top:24px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-.cx-card{overflow:hidden;display:flex;flex-direction:column}
-.cx-photo{position:relative;display:block;height:240px;background:#DCE2EB}
-.cx-photo img{width:100%;height:100%;object-fit:cover;display:block}
-.cx-body{padding:22px 24px 24px;display:flex;flex-direction:column;gap:12px;flex:1}
-.cx-body h2{font-size:23px;font-weight:700}
-.cx-body h2 a{color:inherit;text-decoration:none}.cx-body h2 a:hover{text-decoration:underline;text-underline-offset:4px}
-.cx-desc{font-size:16px;line-height:1.55;color:#5E6878}
-.cx-bands{list-style:none;margin:2px 0 0;padding:0;display:flex;flex-direction:column;gap:8px}
-.cx-bands li{display:flex;align-items:flex-start;gap:12px;font-size:15.5px;color:#243044}
-.cx-band{flex:none;min-width:78px;min-height:28px;padding:0 10px;border-radius:999px;background:#FDF6E7;border:1px solid #F0D49A;color:#8A5A00;font-size:13px;font-weight:800;letter-spacing:.02em;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box}
-.cx-note{display:block;font-size:13.5px;color:#5E6878;margin-top:1px}
-.cx-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px}
-.cx-acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:10px}
-.cx-sec{margin-top:40px;display:flex;flex-direction:column;gap:16px}
-.cx-h2{font-size:20px;font-weight:700}
-.cx-table{width:100%;border-collapse:separate;border-spacing:0;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:14px;overflow:hidden;font-size:15.5px;line-height:1.5}
-.cx-table th,.cx-table td{padding:14px 20px;text-align:left;vertical-align:top;border-bottom:1px solid #E6EAF1}
-.cx-table tbody tr:last-child th,.cx-table tbody tr:last-child td{border-bottom:0}
-.cx-table thead th{font-size:16px;font-weight:700;color:#1A2740;background:#F6F8FB}
-.cx-table thead td{background:#F6F8FB;width:170px}
-.cx-table tbody th{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5A6478;padding-top:16px}
-.cx-table td{color:#243044}
-.cx-table .ext{display:inline-block;margin-top:4px}
-.cx-both{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.cx-both li{display:flex;align-items:flex-start;gap:14px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:14px;padding:18px 20px}
-.cx-both h3{font-size:16.5px;font-weight:700}
-.cx-both p{margin-top:4px;font-size:15.5px;line-height:1.5;color:#5E6878}
-.cx-both .ext{display:inline-block;margin-top:6px}
-.cx-cta{margin-top:40px;background:#E6EAF1;border-radius:14px;padding:20px 22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 20px}
-.cx-cta > div:first-child{flex:1 1 320px;display:flex;flex-direction:column;gap:2px}
-.cx-cta h2{font-size:19px;font-weight:700}
-.cx-cta p{font-size:16px;color:#5E6878}
-.cx-cta-acts{display:flex;flex-wrap:wrap;gap:10px}
+/* Our Campuses hub (2026-11-03, v4): pick a campus, then go to its own page */
+.ch-head{display:flex;flex-direction:column;gap:8px}
+.ch-head p{font-size:16px;line-height:1.6;color:#5E6878;max-width:700px}
+.cd-grid{margin-top:24px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.cd{display:flex;flex-direction:column;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:18px;overflow:hidden}
+.cd-photo{position:relative;display:block;height:210px;background:#DCE2EB}
+.cd-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.cd-pill{position:absolute;top:14px;left:14px;display:inline-flex;align-items:center;min-height:28px;padding:0 12px;border-radius:999px;background:#E7A11C;color:#13233F;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.cd-body{padding:22px 26px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cd-grades{display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin:0;padding-bottom:12px;border-bottom:1px solid #E6EAF1}
+.cd-grades b{font-size:40px;font-weight:800;line-height:1;letter-spacing:-0.02em;color:#C98A0B}
+.cd-grades span{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#5A6478}
+.cd-body h2{font-size:24px;font-weight:700;margin-top:4px}
+.cd-body h2 a{color:inherit;text-decoration:none}.cd-body h2 a:hover{text-decoration:underline;text-underline-offset:4px}
+.cd-desc{font-size:16px;line-height:1.55;color:#5E6878}
+.cd-hl{list-style:none;margin:4px 0 16px;padding:0;display:flex;flex-direction:column;gap:8px}
+.cd-hl li{display:flex;align-items:flex-start;gap:10px;font-size:15.5px;line-height:1.45;color:#243044}
+.cd-hl svg{flex:none;margin-top:3px;color:#1C6B43}
+.cd-go{margin-top:auto;width:100%;min-height:50px;border-radius:10px;font-size:16.5px}
+.cd-meta{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 8px;font-size:14.5px;color:#5E6878}
+.cd-meta svg{color:#D9473B}
+.cd-meta a{color:#1A2740;font-weight:700;text-decoration:none}.cd-meta a:hover{text-decoration:underline}
+.ch-sec{margin-top:40px;display:flex;flex-direction:column;gap:16px}
+.ch-h2{font-size:20px;font-weight:700}
+.ch-both{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.ch-both li{display:flex;align-items:flex-start;gap:14px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:14px;padding:18px 20px}
+.ch-both h3{font-size:16.5px;font-weight:700}
+.ch-both p{margin-top:4px;font-size:15.5px;line-height:1.5;color:#5E6878}
+.ch-both .ext{display:inline-block;margin-top:6px}
+.ch-cta{margin-top:40px;background:#E6EAF1;border-radius:14px;padding:20px 22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 20px}
+.ch-cta > div:first-child{flex:1 1 320px;display:flex;flex-direction:column;gap:2px}
+.ch-cta h2{font-size:19px;font-weight:700}
+.ch-cta p{font-size:16px;color:#5E6878}
+.ch-cta-acts{display:flex;flex-wrap:wrap;gap:10px}
 @media (max-width:640px){
-  .cx-head p{font-size:17px;color:#3D4A60}
-  .cx-cards{grid-template-columns:1fr;gap:16px}
-  .cx-photo{height:auto;aspect-ratio:16 / 10}
-  .cx-body{padding:18px 18px 20px;gap:10px}
-  .cx-body h2{font-size:21px}
-  .cx-acts{flex-direction:column}
-  .cx-acts .btn,.cx-cta-acts .btn{width:100%;min-height:50px;border-radius:12px}
-  .cx-sec{margin-top:36px;gap:14px}
-  .cx-h2{font-size:22px}
-  .cx-table thead{display:none}
-  .cx-table,.cx-table tbody{display:block}
-  .cx-table tr{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-bottom:1px solid #E6EAF1}
-  .cx-table tbody tr:last-child{border-bottom:0}
-  .cx-table th,.cx-table td{display:block;border-bottom:0!important;padding:10px 14px 14px;font-size:15px}
-  .cx-table tbody th{grid-column:1 / -1;padding:14px 14px 0}
-  .cx-table td::before{content:attr(data-c);display:block;font-size:13px;font-weight:700;color:#1A2740;margin-bottom:2px}
-  .cx-table td + td{border-left:1px solid #E6EAF1}
-  .cx-both{grid-template-columns:1fr;gap:10px}
-  .cx-both li{padding:16px}
-  .cx-cta{background:#FFFFFF;border:1px solid #DCE2EB;padding:20px 18px;flex-direction:column;align-items:stretch;gap:16px}
-  .cx-cta > div:first-child{flex:none}
-  .cx-cta-acts{flex-direction:column}
+  .ch-head p{font-size:17px;color:#3D4A60}
+  .cd-grid{grid-template-columns:1fr;gap:16px}
+  .cd-photo{height:auto;aspect-ratio:16 / 9}
+  .cd-body{padding:18px 18px 20px}
+  .cd-grades b{font-size:34px}
+  .cd-body h2{font-size:22px}
+  .ch-sec{margin-top:36px;gap:14px}
+  .ch-h2{font-size:22px}
+  .ch-both{grid-template-columns:1fr;gap:10px}
+  .ch-both li{padding:16px}
+  .ch-cta{background:#FFFFFF;border:1px solid #DCE2EB;padding:20px 18px;flex-direction:column;align-items:stretch;gap:16px}
+  .ch-cta > div:first-child{flex:none}
+  .ch-cta-acts{flex-direction:column}
+  .ch-cta-acts .btn{width:100%;min-height:50px;border-radius:12px}
 }
 .panel{background:#F6F8FB;padding:24px 16px 40px;border-bottom:0}
 main.wrap-card{padding-bottom:0!important}
 #camp-title{font-size:29px!important;line-height:1.18}
-
-/* Our Campuses wide cards (2026-11-02, v2) */
-.cw-list{margin-top:24px;display:flex;flex-direction:column;gap:22px}
-.cw{overflow:hidden;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
-.cw-flip{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}
-.cw-flip .cw-photo{order:2}
-.cw-photo{position:relative;display:block;min-height:100%;background:#DCE2EB}
-.cw-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.cw-body{padding:28px 30px 28px;display:flex;flex-direction:column;gap:10px}
-.cw-eb{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00}
-.cw-body h2{font-size:26px;font-weight:700}
-.cw-body h2 a{color:inherit;text-decoration:none}.cw-body h2 a:hover{text-decoration:underline;text-underline-offset:4px}
-.cw-desc{font-size:16px;line-height:1.55;color:#5E6878}
-.cw-facts{list-style:none;margin:8px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 22px}
-.cw-facts li{display:flex;align-items:flex-start;gap:14px}
-.cw-facts .tile{width:36px;height:36px;border-radius:10px}
-.cw-k{display:block;font-size:12.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#5A6478;line-height:1.3}
-.cw-facts p{margin-top:2px;font-size:15.5px;line-height:1.5;color:#243044}
-.cw-facts .ext{font-size:15px;white-space:nowrap}
-.cw-desc{max-width:600px}
-.cw-acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-@media (max-width:900px){.cw-facts{grid-template-columns:1fr;gap:14px}.cw,.cw-flip{grid-template-columns:1fr}.cw-flip .cw-photo{order:0}.cw-photo{min-height:0;aspect-ratio:16 / 9}}
-@media (max-width:640px){
-  .cw-list{gap:16px}
-  .cw-photo{aspect-ratio:16 / 10}
-  .cw-body{padding:18px 18px 20px}
-  .cw-body h2{font-size:22px}
-  .cw-acts{flex-direction:column}
-  .cw-acts .btn{width:100%;min-height:50px;border-radius:12px}
-}
 
 body{margin:0}
