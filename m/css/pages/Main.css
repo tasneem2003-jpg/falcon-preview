@@ -39,8 +39,8 @@ p{margin:0}
 .ib-note{font-size:13px;color:#B9C4D6}
 /* The stat cards sit partly on the hero (2026-11-01) */
 .stats{position:relative;z-index:2;margin-top:-56px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.stat{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:16px;padding:16px 14px 15px;display:flex;flex-direction:column;gap:4px;box-shadow:0 10px 26px rgba(9,22,43,.12)}
-.stat b{font-size:32px;font-weight:800;line-height:1;color:#13233F;letter-spacing:-0.03em;display:flex;align-items:baseline;gap:5px}
+.stat{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:16px;padding:14px 14px 13px;display:flex;flex-direction:column;gap:4px;box-shadow:0 10px 26px rgba(9,22,43,.12)}
+.stat b{font-size:28px;font-weight:800;line-height:1;color:#13233F;letter-spacing:-0.03em;display:flex;align-items:baseline;gap:5px}
 .stat span{font-size:14.5px;font-weight:700;color:#1A2740;line-height:1.3;min-height:2.6em}
 .stat small{font-size:13px;color:#5E6878;line-height:1.35;text-wrap:balance}
 .camp{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:16px;overflow:hidden}
@@ -236,7 +236,7 @@ p{margin:0}
 .nw-card{position:relative;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:16px;display:flex;flex-direction:column;align-items:flex-start;transition:box-shadow .24s cubic-bezier(.2,0,0,1),border-color .18s ease}
 .nw-card:hover,.nw-card:focus-within{border-color:#C9D2DF;box-shadow:0 12px 28px -12px rgba(19,35,63,.20)}
 .nw-tag{display:inline-flex;align-items:center;min-height:26px;padding:0 10px;border-radius:999px;font-size:13px;font-weight:600}
-.nw-t-ash{background:#E5EDF9;color:#2A5BA8}.nw-t-cha{background:#E2F3EA;color:#1C6B43}.nw-t-team{background:#FDF1D8;color:#865A06}
+.nw-t-ash{background:#E5EDF9;color:#2A5BA8}.nw-t-cha{background:#E2F3EA;color:#1C6B43}.nw-t-team{background:#FDF1D8;color:#865A06}.nw-t-ach{background:#EEF1F5;color:#3E4A5E}
 .nw-card h3{margin:0;font-weight:600;color:#13233F;letter-spacing:-0.005em}
 .nw-link{color:inherit;text-decoration:none}
 .nw-link::after{content:"";position:absolute;inset:0;border-radius:16px}
@@ -269,5 +269,10 @@ p{margin:0}
 .wr-link{display:inline-flex;align-items:center;gap:4px;min-height:40px;font-size:15.5px;font-weight:700;color:#1F3659;text-decoration:none}
 .wr-apply{width:100%;min-height:52px;border-radius:12px;font-size:17px;margin-top:4px;box-sizing:border-box}
 .wr-i summary:focus-visible{outline:3px solid #E7A11C;outline-offset:-3px}
+/* Urgent alert strip: shown only while something time-critical is on (2026-11-05) */
+.halert{background:#FBE7E5;border-bottom:1px solid #F0C4BF;color:#A0281D}
+.halert-in{display:flex;align-items:center;gap:10px;padding-top:9px;padding-bottom:9px;font-size:14px;line-height:1.4}
+.halert-in b{color:#8F1D14;font-weight:700}
+.halert-go{margin-left:auto;font-weight:700;color:#B42318;text-decoration:none;white-space:nowrap}.halert-go:hover{color:#8F1D14;text-decoration:underline}
 
 body{margin:0}
