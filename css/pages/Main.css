@@ -331,5 +331,15 @@ button,input,select,textarea{font-family:inherit}
 .halert-in{display:flex;align-items:center;gap:6px 12px;flex-wrap:wrap;padding-top:9px;padding-bottom:9px;font-size:14.5px;line-height:1.45}
 .halert-in b{color:#8F1D14;font-weight:700}
 .halert-go{margin-left:auto;font-weight:700;color:#B42318;text-decoration:none;white-space:nowrap}.halert-go:hover{color:#8F1D14;text-decoration:underline}
+/* Home Latest News v9: photo cards with a date | category line (2026-11-05) */
+.nw-card{padding:0;gap:0;overflow:hidden;align-items:stretch}
+.nw-img{display:block;width:100%;aspect-ratio:16 / 9;object-fit:cover;background:#E6EAF1}
+.nw-body{flex:1;display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:20px 22px 22px;border-top:1px solid #E6EAF1}
+.nw-meta{margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:0 8px;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5A6478}
+.nw-bar{color:#C3CBD8;font-weight:400}
+.nw-card h3{font-size:20px;line-height:1.35}
+.nw-sum{margin:0;font-size:15.5px;line-height:1.55;color:#5E6878;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.nw-more{margin-top:auto;padding-top:4px;font-size:15px;font-weight:700;color:#1A2740}
+@media (prefers-reduced-motion:no-preference) and (hover:hover){.nw-img{transition:transform 1.2s cubic-bezier(.2,0,0,1)}.nw-card:hover .nw-img{transform:scale(1.03)}}
 
 body{margin:0}
