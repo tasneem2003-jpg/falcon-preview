@@ -124,4 +124,17 @@
 .tu-cta .btn{width:100%!important;min-height:50px!important;border-radius:12px!important;font-size:16px!important}
 .tu-cta .btn-light{border:1.5px solid rgba(255,255,255,.85)!important}
 
+/* Sticky "On this page" bar (2026-11-05) */
+.tu-bar{position:sticky;top:0;z-index:30;background:#FFFFFF;border-top:1px solid #DCE2EB;box-shadow:0 1px 0 #DCE2EB}
+.tu-bar nav{display:flex;gap:0 24px;overflow-x:auto;scrollbar-width:none}
+.tu-bar nav::-webkit-scrollbar{display:none}
+.anc.jump-on,.anc.jump-on:hover{color:#1A2740;border-bottom-color:#E7A11C}
+main section[id]{scroll-margin-top:72px}
+
+/* Sticky "On this page" bar, phone (2026-11-05) */
+.tu-bar{margin-top:24px}
+.tu-bar nav{gap:0 22px}
+.tu-bar .wrap{padding-inline:16px}
+main section[id]{scroll-margin-top:64px}
+
 body{margin:0}
