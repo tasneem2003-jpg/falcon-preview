@@ -326,11 +326,12 @@ button,input,select,textarea{font-family:inherit}
 .nw-top{align-self:stretch;display:flex;align-items:center;justify-content:space-between;gap:10px}
 .nw-date{color:#5E6878;white-space:nowrap}
 @media (max-width:900px){.nw3{grid-template-columns:1fr}}
-/* Urgent alert strip: shown only while something time-critical is on (2026-11-05) */
-.halert{background:#FBE7E5;border-bottom:1px solid #F0C4BF;color:#A0281D}
-.halert-in{display:flex;align-items:center;gap:6px 12px;flex-wrap:wrap;padding-top:9px;padding-bottom:9px;font-size:14.5px;line-height:1.45}
-.halert-in b{color:#8F1D14;font-weight:700}
-.halert-go{margin-left:auto;font-weight:700;color:#B42318;text-decoration:none;white-space:nowrap}.halert-go:hover{color:#8F1D14;text-decoration:underline}
+/* Urgent alert strip, in the old ticker's navy look: shown only while something time-critical is on (2026-11-05) */
+.halert{background:#1F3659;border-top:1px solid rgba(255,255,255,.1);color:#FFFFFF}
+.halert-in{display:flex;align-items:center;gap:6px 14px;min-height:34px;box-sizing:border-box;padding-top:6px;padding-bottom:6px;font-size:14px;font-weight:500;line-height:1.4}
+.halert-in > img{display:block;flex:none;width:52px;height:20px;object-fit:contain}
+.halert-in b{color:#FFFFFF;font-weight:700}
+.halert-go{margin-left:auto;font-weight:700;color:#F3C664;text-decoration:none;white-space:nowrap}.halert-go:hover{color:#FFFFFF;text-decoration:underline}
 /* Home Latest News v9: photo cards with a date | category line (2026-11-05) */
 .nw-card{padding:0;gap:0;overflow:hidden;align-items:stretch}
 .nw-img{display:block;width:100%;aspect-ratio:16 / 9;object-fit:cover;background:#E6EAF1}
