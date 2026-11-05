@@ -284,26 +284,6 @@ button,input,select,textarea{font-family:inherit}
 .mt-sand .mt-stat small{color:#8A5A00}
 @media (prefers-reduced-motion:reduce){.mt-more,.mt-cap,.mt-plus,.mt-photo img{transition:none}}
 
-/* Home News & Events v4, open text-led layout (2026-11-03) */
-.ne2{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:56px;align-items:start}
-.ne2-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-bottom:12px;border-bottom:2px solid #13233F}
-.ne2-head h3{margin:0;font-size:20px;font-weight:700;color:#13233F}
-.on,.oe{list-style:none;margin:0;padding:0}
-.on li,.oe li{border-bottom:1px solid #DCE2EB}
-.on-item{display:flex;flex-direction:column;gap:6px;padding:20px 0;text-decoration:none;color:#13233F}
-.on-meta{font-size:13px;font-weight:600;color:#5E6878;letter-spacing:.01em}.on-meta span{color:#8A5A00}
-.on-item strong{font-size:19px;font-weight:700;line-height:1.35}
-.on-line{font-size:15px;line-height:1.5;color:#5E6878}
-.on-item:hover strong,.oe-item:hover strong{text-decoration:underline;text-underline-offset:4px}
-.oe-item{display:flex;align-items:center;gap:18px;padding:16px 0;text-decoration:none;color:#13233F}
-.oe-date{flex:none;width:44px;display:flex;flex-direction:column;align-items:center;line-height:1}
-.oe-date small{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00}
-.oe-date b{font-size:26px;font-weight:800;color:#13233F;margin-top:3px}
-.oe-t{display:flex;flex-direction:column;gap:4px;min-width:0}
-.oe-t strong{font-size:16.5px;font-weight:700;line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.oe-t span{font-size:14px;color:#5E6878}
-@media (max-width:1000px){.ne2{grid-template-columns:1fr;gap:40px}}
-
 /* Home Photos & Videos, one section (2026-11-03) */
 .mgrid2{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:230px 230px;gap:14px}
 .mtile{position:relative;display:block;min-width:0;border-radius:16px;overflow:hidden;background:#D5DDE9;text-decoration:none;color:#FFFFFF}
@@ -328,5 +308,23 @@ button,input,select,textarea{font-family:inherit}
 .mcount-go{margin-left:auto;font-weight:700;color:#13233F}
 .mcount:hover .mcount-go{text-decoration:underline;text-underline-offset:4px}
 @media (max-width:900px){.mgrid2{grid-template-columns:1fr 1fr;grid-template-rows:auto}.mlead{grid-column:1 / -1;grid-row:auto;height:320px}.mtile{min-height:190px}}
+
+/* Home Latest News v8: three matching cards (2026-11-04) */
+.nw3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.nw-card{padding:22px 24px 26px;gap:16px}
+.nw-card h3{font-size:20px;line-height:1.35}
+.nw-date{font-size:14px}
+.nw3{list-style:none;margin:0;padding:0}
+.nw-card{position:relative;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:16px;display:flex;flex-direction:column;align-items:flex-start;transition:box-shadow .24s cubic-bezier(.2,0,0,1),border-color .18s ease}
+.nw-card:hover,.nw-card:focus-within{border-color:#C9D2DF;box-shadow:0 12px 28px -12px rgba(19,35,63,.20)}
+.nw-tag{display:inline-flex;align-items:center;min-height:26px;padding:0 10px;border-radius:999px;font-size:13px;font-weight:600}
+.nw-t-ash{background:#E5EDF9;color:#2A5BA8}.nw-t-cha{background:#E2F3EA;color:#1C6B43}.nw-t-team{background:#FDF1D8;color:#865A06}
+.nw-card h3{margin:0;font-weight:600;color:#13233F;letter-spacing:-0.005em}
+.nw-link{color:inherit;text-decoration:none}
+.nw-link::after{content:"";position:absolute;inset:0;border-radius:16px}
+.nw-card:hover .nw-link,.nw-card:focus-within .nw-link{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.nw-top{align-self:stretch;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.nw-date{color:#5E6878;white-space:nowrap}
+@media (max-width:900px){.nw3{grid-template-columns:1fr}}
 
 body{margin:0}

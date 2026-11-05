@@ -24,4 +24,47 @@
 @media (max-width:640px){.wrap,.wrap-card{padding-inline:16px}.pnav-chips{margin-inline:-16px;padding:0 16px 4px}.panel{margin-inline:-16px;border-radius:0;border-left:0;border-right:0;padding:22px 16px 24px}}
 .pnav-m{display:none}@media (max-width:640px){.pnav:has(.pnav-m) .crumb,.pnav:has(.pnav-m) .pnav-chips{display:none}.pnav-m{display:block;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;box-shadow:0 1px 2px rgba(19,35,63,.04)}.pnav-m summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:12px;min-height:56px;padding:8px 14px 8px 16px;box-sizing:border-box}.pnav-m summary::-webkit-details-marker{display:none}.pm-txt{display:flex;flex-direction:column;gap:1px;min-width:0;flex:1}.pm-sec{font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00}.pm-cur{font-size:16.5px;font-weight:700;color:#1A2740;line-height:1.25}.pm-ic{flex:none;width:32px;height:32px;border-radius:8px;background:#EEF2F7;color:#1F3659;display:inline-flex;align-items:center;justify-content:center;transition:transform .2s ease}.pnav-m[open] .pm-ic{transform:rotate(180deg)}.pnav-m ul{list-style:none;margin:0;padding:4px 8px 8px;border-top:1px solid #E6EAF1;display:flex;flex-direction:column}.pnav-m li a{display:flex;align-items:center;justify-content:space-between;min-height:46px;padding:0 10px;border-radius:8px;font-size:15.5px;font-weight:500;color:#243044;text-decoration:none}.pnav-m li a[aria-current]{background:#F1F4F8;font-weight:700;color:#13233F}}
 
+/* How to Apply v2: the school's three steps only (2026-11-05) */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.ap-hero{padding:44px 0 48px;background:#FFFFFF}
+.ap-hero-in{display:flex;flex-wrap:wrap;align-items:center;gap:32px 56px}
+.ap-intro{flex:999 1 520px;min-width:0;display:flex;flex-direction:column}
+.ap-intro h1{font-size:40px;font-weight:700;margin-top:12px;letter-spacing:-0.02em}
+.ap-lead{font-size:20px;line-height:1.5;color:#1A2740;font-weight:500;margin-top:12px;max-width:640px}
+.ap-sub{font-size:16.5px;line-height:1.6;color:#5E6878;margin-top:10px;max-width:620px}
+.ap-acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.ap-fee{flex:1 1 300px;max-width:380px;min-width:0;position:relative;background:#13233F;color:#FFFFFF;border-radius:20px;padding:26px 28px 24px;box-sizing:border-box;overflow:hidden}
+.ap-fee-ic{width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.1);color:#F0C267;display:inline-flex;align-items:center;justify-content:center}
+.ap-fee-k{margin-top:16px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#B9C4D6}
+.ap-fee-v{font-size:46px;font-weight:800;line-height:1.05;letter-spacing:-0.02em;margin-top:4px}
+.ap-fee-v span{font-size:17px;font-weight:600;color:#D5DCE7;letter-spacing:0;margin-left:4px}
+.ap-fee ul{list-style:none;margin:16px 0 0;padding:16px 0 0;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-direction:column;gap:8px}
+.ap-fee li{position:relative;padding-left:26px;font-size:15px;line-height:1.45;color:#E6EBF3}
+.ap-fee li::before{content:"";position:absolute;left:2px;top:4px;width:14px;height:14px;border-radius:50%;background:#E7A11C;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm-1.7 17.3-5-5 1.9-1.9 3.1 3.1 6.9-6.9 1.9 1.9z'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm-1.7 17.3-5-5 1.9-1.9 3.1 3.1 6.9-6.9 1.9 1.9z'/%3E%3C/svg%3E") center/contain no-repeat}
+.ap-steps-sec{background:#F6F8FB;border-top:1px solid #DCE2EB;padding:52px 0 60px}
+.ap-head{display:flex;flex-direction:column;gap:4px}
+.ap-head h2{font-size:30px;font-weight:700}
+.ap-head p{font-size:16.5px}
+.ap-steps{list-style:none;margin:30px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;position:relative}
+.ap-steps::before{content:"";position:absolute;left:26px;right:calc(33.33% - 22px);top:26px;border-top:2px dashed #CBD3DF;z-index:0}
+.ap-step{position:relative;display:flex;flex-direction:column;gap:16px}
+.ap-num{position:relative;z-index:1;width:52px;height:52px;border-radius:50%;background:#E7A11C;color:#1A2740;font-size:22px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 0 0 6px #F6F8FB}
+.ap-card{flex:1;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:16px;padding:22px 22px 24px;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.ap-tile{width:42px;height:42px;border-radius:12px;background:#EEF2F7;color:#1F3659;display:inline-flex;align-items:center;justify-content:center}
+.ap-card h3{font-size:21px;font-weight:700;margin-top:6px}
+.ap-card p{font-size:15.5px;line-height:1.6;color:#3D4A60}
+.ap-btn{margin-top:auto;min-height:44px;font-size:15.5px}
+.ap-card > p:nth-of-type(1){margin-bottom:6px}
+.ap-price{margin-top:auto!important;display:inline-flex;align-items:baseline;gap:6px;padding:8px 14px;border-radius:10px;background:#FDF1D8;color:#6E4A05!important;font-size:14.5px!important;font-weight:600}
+.ap-price b{font-size:22px;font-weight:800;color:#1A2740}
+.ap-amt{color:#1A2740;font-weight:700}
+.ap-chip{margin-top:auto;display:inline-flex;align-items:center;min-height:32px;padding:0 12px;border-radius:999px;background:#EEF2F7;color:#1F3659;font-size:14px;font-weight:600}
+.ap-next{margin-top:28px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:16px;padding:24px 26px;display:flex;flex-wrap:wrap;align-items:flex-start;gap:16px 20px}
+.ap-next > div{flex:999 1 480px;min-width:0;display:flex;flex-direction:column;gap:6px}
+.ap-next-ic{width:52px;height:52px;flex:none;border-radius:50%;background:#E5EDF9;color:#2A5BA8;display:inline-flex;align-items:center;justify-content:center}
+.ap-next-h{font-size:20px;font-weight:700}
+.ap-next p{font-size:15.5px;line-height:1.6;color:#3D4A60;max-width:780px}
+.ap-next-q{flex:1 1 100%;margin-left:72px;font-size:15px;font-weight:600;color:#1A2740;text-decoration:underline;text-underline-offset:4px}
+@media (max-width:900px){.ap-steps{grid-template-columns:minmax(0,1fr)}.ap-steps::before{display:none}.ap-next-q{margin-left:0}}
+
 body{margin:0}
