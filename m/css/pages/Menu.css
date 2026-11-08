@@ -24,6 +24,9 @@ summary.row-btn::-webkit-details-marker{display:none}
 .sub{list-style:none;margin:-4px 0 12px;padding:0 0 0 2px;display:flex;flex-direction:column}
 .sub a{display:flex;align-items:center;min-height:46px;padding:0 12px;border-radius:10px;font-size:16.5px;font-weight:500;color:#243044;text-decoration:none}
 .sub a:hover{background:#EEF2F7;color:#1A2740}
+/* campus pages sit under Our Campuses as one group (2026-11-08) */
+.sub li.subi a{min-height:42px;padding-left:30px;font-size:15.5px;color:#3D4A60;position:relative}
+.sub li.subi a::before{content:"";position:absolute;left:16px;top:50%;width:6px;height:6px;margin-top:-3px;border-radius:50%;background:#C3CBD8}
 .sub .sub-h > span{display:block;padding:14px 12px 4px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00}
 .sub .sub-h:first-child > span{padding-top:4px}
 /* Academics: two columns like the desktop menu (Learning at Falcon | College & credentials) */
