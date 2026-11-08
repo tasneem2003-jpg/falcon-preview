@@ -285,5 +285,17 @@ p{margin:0}
 .nw-card h3{font-size:18px;line-height:1.35}
 .nw-sum{margin:0;font-size:15px;line-height:1.55;color:#5E6878;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .nw-more{padding-top:2px;font-size:15px;font-weight:700;color:#1A2740}
+/* Home for the school year, phone: family quick links, Coming Up, tour band (2026-11-08) */
+.qgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.ql{display:flex;align-items:center;gap:10px;min-height:60px;padding:10px 12px;box-sizing:border-box;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:14px;text-decoration:none;color:#1A2740}
+.ql-ic{width:36px;height:36px;border-radius:9px;background:#EEF2F7;color:#1F3659;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.ql-tx{display:flex;flex-direction:column;gap:2px;min-width:0}.ql-tx b{font-size:15px;font-weight:700;color:#1A2740;line-height:1.3}.ql-tx small{display:none}
+.cu-list{list-style:none;margin:0 0 18px;padding:0;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:14px;overflow:hidden}
+.cu{display:flex;align-items:center;gap:14px;padding:13px 14px}.cu + .cu{border-top:1px solid #E6EAF1}
+.cu-d{flex:none;width:50px;height:54px;border-radius:11px;background:#13233F;color:#FFFFFF;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
+.cu-d small{font-size:11px;font-weight:700;letter-spacing:.08em;color:#F3C664}.cu-d b{margin-top:4px;font-size:21px;font-weight:800}
+.cu-tx{display:flex;flex-direction:column;gap:2px;min-width:0}.cu-tx b{font-size:16px;font-weight:700;color:#1A2740;line-height:1.3}.cu-tx small{font-size:13.5px;line-height:1.4;color:#5E6878}
+.tour{display:flex;flex-direction:column;gap:12px;padding:22px 18px;background:#FDF6E7;border:1px solid #F0D49A;border-radius:18px}
+.tour .lead{margin-top:-4px}
 
 body{margin:0}
