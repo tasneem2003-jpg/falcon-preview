@@ -362,5 +362,12 @@ button,input,select,textarea{font-family:inherit}
 .vq figcaption{font-size:14.5px;color:#C6CEDB}
 .tour{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 32px;padding:30px 36px;background:#FDF6E7;border:1px solid #F0D49A;border-radius:20px}
 .tour-acts{display:flex;flex-wrap:wrap;gap:10px}
+/* In Their Own Words: three real quotes as light cards (2026-11-08) */
+.vq3{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+@media (max-width:900px){.vq3{grid-template-columns:1fr}}
+.vq3 li{display:flex}
+.vqc{margin:0;flex:1;display:flex;flex-direction:column;gap:14px;padding:24px 24px 22px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:16px}
+.vqc blockquote{margin:0;font-size:17.5px;font-weight:500;line-height:1.55;color:#1A2740;text-wrap:pretty}
+.vqc figcaption{margin-top:auto;padding-top:4px;font-size:14px;color:#5E6878}
 
 body{margin:0}

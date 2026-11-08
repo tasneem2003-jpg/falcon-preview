@@ -6,10 +6,12 @@
 .pv-note svg{flex:none;margin-top:1px}
 .pv-rating{margin-top:14px;padding:19px 20px;border-radius:12px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px}
 .pv-stars{display:flex;align-items:center;gap:4px;line-height:0}
-.pv-masonry{margin-top:14px;columns:3;column-gap:21px}
-.pv-q{break-inside:avoid;margin:0 0 20px;padding:22px 20px 19px;border-radius:12px;display:flex;flex-direction:column}
+.pv-masonry{margin-top:14px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+@media (max-width:760px){.pv-masonry{grid-template-columns:1fr}}
+.pv-masonry > *{display:flex}.pv-q{flex:1}
+.pv-q{margin:0;padding:22px 20px 19px;border-radius:12px;display:flex;flex-direction:column}
 .pv-q.brk{break-before:column}
-.pv-q h3{margin-top:9px;font-size:18px;font-weight:700;line-height:1.35;color:#243044;letter-spacing:-0.005em;text-wrap:wrap}
+.pv-q h3{margin-top:12px;font-size:18px;font-weight:700;line-height:1.35;color:#243044;letter-spacing:-0.005em;text-wrap:wrap}
 .pv-q p{margin-top:5px;font-size:15.6px;letter-spacing:-0.012em;line-height:24px;color:#4B556F;text-wrap:wrap}
 .pv-who{margin-top:16px;padding-top:14px;border-top:1px solid #DCE2EB;display:flex;align-items:center;gap:11px}
 .pv-av{width:40px;height:40px;border-radius:50%;flex:none;display:inline-flex;align-items:center;justify-content:center;color:#FFFFFF;font-size:16px;font-weight:700}
