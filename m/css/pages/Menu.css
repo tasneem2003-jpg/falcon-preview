@@ -3,7 +3,7 @@
 body{margin:0;background:#FFFFFF}
 p{margin:0}
 :focus-visible{outline:3px solid #E7A11C;outline-offset:2px}
-.mm{width:390px;height:844px;position:relative;overflow:hidden;display:flex;flex-direction:column;font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#243044;background:#FFFFFF}
+.mm{width:100%;height:844px;position:relative;overflow:hidden;display:flex;flex-direction:column;font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#243044;background:#FFFFFF}
 .hdr{height:72px;flex:none;background:#FFFFFF;border-bottom:1px solid #DCE2EB;display:flex;align-items:center;justify-content:space-between;padding:0 8px 0 10px;box-sizing:border-box}
 .close{width:48px;height:48px;display:inline-flex;align-items:center;justify-content:center;border-radius:10px;color:#13233F;background:transparent;text-decoration:none}
 .close:hover{background:#F1F4F8;color:#13233F}

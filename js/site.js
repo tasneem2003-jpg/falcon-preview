@@ -497,3 +497,9 @@
   document.addEventListener('change', onScroll);
   setTimeout(sweep, 600);
 })();
+
+/* Print buttons on the policy pages */
+document.addEventListener('click', function (e) {
+  var b = e.target.closest && e.target.closest('button');
+  if (b && b.textContent.trim() === 'Print') window.print();
+});

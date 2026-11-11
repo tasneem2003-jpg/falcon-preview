@@ -5,7 +5,7 @@ a{color:#1F3659}a:hover{color:#13233F}
 h1,h2,h3{margin:0;color:#1A2740;line-height:1.2;letter-spacing:-0.01em;text-wrap:balance}
 p{margin:0}
 :focus-visible{outline:3px solid #E7A11C;outline-offset:2px}
-.m{width:390px;font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.55;color:#243044;background:#FFFFFF}
+.m{width:100%;font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:17px;line-height:1.55;color:#243044;background:#FFFFFF}
 .pad{padding-left:20px;padding-right:20px}
 .sec{padding-top:48px;padding-bottom:48px;display:flex;flex-direction:column;gap:18px}
 .sec-alt{background:#F6F8FB;border-top:1px solid #E3E8EF;border-bottom:1px solid #E3E8EF}
