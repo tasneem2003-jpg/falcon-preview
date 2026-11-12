@@ -270,6 +270,15 @@ p{margin:0}
 .wr-apply{width:100%;min-height:52px;border-radius:12px;font-size:17px;margin-top:4px;box-sizing:border-box}
 .wr-i summary:focus-visible{outline:3px solid #E7A11C;outline-offset:-3px}
 /* Urgent alert strip, in the old ticker's navy look: shown only while something time-critical is on (2026-11-05) */
+.nticker{background:#1F3659;border-top:1px solid rgba(255,255,255,.1);color:#FFFFFF;overflow:hidden}
+.nticker-track{display:flex;width:max-content;animation:nt-scroll 60s linear infinite}
+.nticker:hover .nticker-track,.nticker:focus-within .nticker-track{animation-play-state:paused}
+.nt-set{display:flex;align-items:center;flex:none}
+.nt-item{display:inline-flex;align-items:center;gap:16px;padding:0 32px;min-height:36px;font-size:14px;font-weight:500;line-height:1.4;color:#FFFFFF;text-decoration:none;white-space:nowrap}
+.nt-item:hover{color:#F3C664}
+.nt-item img{display:block;flex:none;width:52px;height:20px;object-fit:contain}
+@keyframes nt-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.nticker-track{animation:none!important}}
 .halert{background:#1F3659;border-top:1px solid rgba(255,255,255,.1);color:#FFFFFF}
 .halert-in{display:flex;align-items:center;gap:6px 14px;min-height:34px;box-sizing:border-box;padding-top:9px;padding-bottom:9px;font-size:14px;font-weight:500;line-height:1.4}
 .halert-in > img{display:block;flex:none;width:52px;height:20px;object-fit:contain}
