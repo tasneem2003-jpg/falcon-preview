@@ -31,7 +31,7 @@
 .pol p{font-size:15.5px;line-height:1.5;color:#4B5566}
 .applies{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
 .applies .tag{font-size:13px;min-height:22px}
-.pol-side{flex:0 1 250px;min-width:0;display:flex;flex-direction:column;gap:10px}
+.pol-side{flex:0 0 auto;margin-left:auto;min-width:0;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
 .rev{font-size:13.5px;line-height:1.45;color:#5E6878}
 .rev b{color:#243044;font-weight:600}
 .acts{display:flex;flex-wrap:wrap;gap:8px}
