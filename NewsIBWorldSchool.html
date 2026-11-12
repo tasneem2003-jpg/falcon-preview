@@ -56,16 +56,16 @@
     .fw a:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:6px}
     @media (prefers-reduced-motion:reduce){.fw a,.fw-menu .dd-menu{transition:none!important}}
 
-    /* Sticky header that morphs on scroll (HeaderMotion concept 5, 2026-11-12): after ~120px of scroll the wave header eases into a slim navy bar in 1.2s, the same timing as the concept and the colour logo cross-fades to the white logo. js/site.js adds .fw-compact. */
+    /* Sticky header that morphs on scroll (HeaderMotion concept 5, 2026-11-12): after ~120px of scroll the wave header eases into a slim navy bar. Tuned 2026-11-12: the concept's slow timing felt laggy on the live site and 0.3s felt abrupt, so shapes now move in 0.6s on the standard ease (gentle start like the concept, half its length) while colours and opacities cross-fade a little faster so nothing lingers half-way and the colour logo cross-fades to the white logo. js/site.js adds .fw-compact. */
     :root{--fa-hdr:60px}
-    div:has(> header.fw){position:sticky;top:0;z-index:60;transition:margin-bottom 1.2s ease-in-out}
+    div:has(> header.fw){position:sticky;top:0;z-index:60;transition:margin-bottom .6s cubic-bezier(.4,0,.2,1)}
     div:has(> header.fw.fw-compact){margin-bottom:32px}
-    .fw{transition:height 1.2s ease-in-out,background-color 1.2s ease-in-out,box-shadow 1.2s ease-in-out}
-    .fw-logo{transition:top 1.2s ease-in-out}
-    .fw-logo img{transition:height 1.2s ease-in-out,opacity 1.2s ease-in-out}
+    .fw{transition:height .6s cubic-bezier(.4,0,.2,1),background-color .5s cubic-bezier(.4,0,.2,1),box-shadow .5s cubic-bezier(.4,0,.2,1)}
+    .fw-logo{transition:top .6s cubic-bezier(.4,0,.2,1)}
+    .fw-logo img{transition:height .6s cubic-bezier(.4,0,.2,1),opacity .45s cubic-bezier(.4,0,.2,1)}
     .fw-logo .fw-logo-w{position:absolute;left:0;top:0;opacity:0}
-    .fw-wing,.fw-line,.fw-quick{transition:opacity 1.2s ease-in-out,visibility 1.2s}
-    .fw-nav,.fw-menu,.fw-top{transition:height 1.2s ease-in-out}
+    .fw-wing,.fw-line,.fw-quick{transition:opacity .25s ease,visibility .25s}
+    .fw-nav,.fw-menu,.fw-top{transition:height .6s cubic-bezier(.4,0,.2,1)}
     .fw.fw-compact{height:60px;background:#13233F;box-shadow:inset 0 -3px 0 #E7A11C,0 6px 16px rgba(19,35,63,.18)}
     .fw-compact .fw-logo{top:8px}
     .fw-compact .fw-logo img{height:44px}
