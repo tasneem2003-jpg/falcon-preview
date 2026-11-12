@@ -56,6 +56,7 @@
 .feat-more:hover{text-decoration:underline;text-underline-offset:4px}
 @media (max-width:900px){.feat-media{padding:20px 20px 0}}
 /* IB MYP top story (2026-11-12): the certificate sits inset like the video did */
-.feat-cert{display:block;width:100%;height:auto;aspect-ratio:5 / 4;object-fit:cover;object-position:50% 0;border-radius:12px;border:1px solid #DCE2EB;box-sizing:border-box;background:#FFFFFF}
+.feat-cert{display:block;width:100%;height:auto;aspect-ratio:1080 / 1350;object-fit:cover;border-radius:12px;border:1px solid #DCE2EB;box-sizing:border-box;background:#FFFFFF}
+.feat:has(.feat-cert){grid-template-columns:minmax(0,.62fr) minmax(0,1fr)}
 
 body{margin:0}
