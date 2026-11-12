@@ -60,7 +60,7 @@
 .art h1{font-size:27px;font-weight:800;line-height:1.22;letter-spacing:-0.01em}
 .art-deck{font-size:17px;line-height:1.5;color:#5E6878}
 .art-fig{margin:2px 0;display:flex;flex-direction:column;gap:8px}
-.art-fig img{display:block;width:100%;max-width:100%;height:auto;border-radius:10px;border:1px solid #DCE2EB;box-sizing:border-box}
+.art-fig img{display:block;width:100%;max-width:100%;height:auto;border-radius:12px;box-sizing:border-box}
 .art-fig figcaption{font-size:13.5px;line-height:1.45;color:#5E6878}
 .art-body{display:flex;flex-direction:column;gap:14px}
 .art-body p{font-size:16.5px;line-height:1.7;color:#243044}

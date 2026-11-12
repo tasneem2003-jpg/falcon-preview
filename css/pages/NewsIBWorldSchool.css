@@ -28,7 +28,7 @@
 .art h1{font-size:38px;font-weight:800;line-height:1.18;letter-spacing:-0.02em}
 .art-deck{font-size:20px;line-height:1.5;color:#5E6878}
 .art-fig{margin:6px 0 4px;display:flex;flex-direction:column;gap:10px}
-.art-fig img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid #DCE2EB}
+.art-fig img{display:block;width:100%;max-width:540px;height:auto;margin:0 auto;border-radius:14px;box-shadow:0 18px 40px -22px rgba(19,35,63,.45)}
 .art-fig figcaption{font-size:14px;color:#5E6878;text-align:center}
 .art-body{display:flex;flex-direction:column;gap:16px}
 .art-body p{font-size:18px;line-height:1.7;color:#243044}
