@@ -55,33 +55,29 @@
     .fw a:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:6px}
     @media (prefers-reduced-motion:reduce){.fw a,.fw-menu .dd-menu{transition:none!important}}
 
-    /* Sticky header that shrinks on scroll (2026-11-12): the slim navy bar slides down once; going back to the top is instant. js/site.js adds .fw-compact after ~120px of scroll. */
+    /* Sticky header that morphs on scroll (HeaderMotion concept 5, 2026-11-12): after ~120px of scroll the wave header eases into a slim navy bar in 0.3s and the colour logo cross-fades to the white logo. js/site.js adds .fw-compact. */
     :root{--fa-hdr:60px}
-    div:has(> header.fw){position:sticky;top:0;z-index:60}
+    div:has(> header.fw){position:sticky;top:0;z-index:60;transition:margin-bottom .3s ease-in-out}
     div:has(> header.fw.fw-compact){margin-bottom:32px}
-    .fw-logo .fw-logo-w{display:none}
-    /* compact = one navy bar with the white logo (2026-11-12) */
-    .fw.fw-compact{background:#13233F;box-shadow:inset 0 -3px 0 #E7A11C,0 6px 16px rgba(19,35,63,.18);animation:fw-drop .22s cubic-bezier(.2,0,0,1)}
-    @keyframes fw-drop{from{transform:translateY(-100%)}to{transform:none}}
-    .fw-compact .fw-logo .fw-logo-c{display:none}
-    .fw-compact .fw-logo .fw-logo-w{display:block}
-    .fw-compact .fw-wing,.fw-compact .fw-line{opacity:0}
-    .fw.fw-compact{height:60px}
-    .fw-compact .fw-quick{opacity:0;visibility:hidden;pointer-events:none}
+    .fw{transition:height .3s ease-in-out,background-color .3s ease-in-out,box-shadow .3s ease-in-out}
+    .fw-logo{transition:top .3s ease-in-out}
+    .fw-logo img{transition:height .3s ease-in-out,opacity .3s ease-in-out}
+    .fw-logo .fw-logo-w{position:absolute;left:0;top:0;opacity:0}
+    .fw-wing,.fw-line,.fw-quick{transition:opacity .3s ease-in-out,visibility .3s}
+    .fw-nav,.fw-menu,.fw-top{transition:height .3s ease-in-out}
+    .fw.fw-compact{height:60px;background:#13233F;box-shadow:inset 0 -3px 0 #E7A11C,0 6px 16px rgba(19,35,63,.18)}
     .fw-compact .fw-logo{top:8px}
     .fw-compact .fw-logo img{height:44px}
-    .fw-compact .fw-line{width:calc(max(38px, calc(50% - 598px)) + 127px)}
-    .fw-compact .fw-wing{left:calc(max(38px, calc(50% - 598px)) + 126px);height:60px}
-    .fw-compact .fw-wing svg{width:247px;height:60px}
-    .fw-compact .fw-flat{left:245px}
+    .fw-compact .fw-logo .fw-logo-c{opacity:0}
+    .fw-compact .fw-logo .fw-logo-w{opacity:1}
+    .fw-compact .fw-wing,.fw-compact .fw-line,.fw-compact .fw-quick{opacity:0;visibility:hidden}
+    .fw-compact .fw-quick{pointer-events:none}
     .fw-compact .fw-nav,.fw-compact .fw-menu,.fw-compact .fw-top{height:60px}
     .jump,.tu-bar{top:var(--fa-hdr)!important}
     .toc,.side{top:calc(var(--fa-hdr) + 16px)!important}
     .fq-head{top:calc(var(--fa-hdr) + 24px)!important}
     @media (max-width:1100px){
       div:has(> header.fw.fw-compact){margin-bottom:24px}
-      .fw-compact .fw-wing{left:auto;height:60px}
-      .fw-compact .fw-flat{left:28px}
       .fw-compact .fw-nav{height:60px}
     }
     @media (prefers-reduced-motion:reduce){div:has(> header.fw),.fw,.fw *{transition:none!important;animation:none!important}}

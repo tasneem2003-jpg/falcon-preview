@@ -507,8 +507,8 @@
   function update() {
     ticking = false;
     var y = window.scrollY;
-    if (!on && y > 120) { on = true; h.classList.add(cls); }
-    else if (on && y < 40) { on = false; h.classList.remove(cls); }
+    if (!on && y > 80) { on = true; h.classList.add(cls); }
+    else if (on && y < 30) { on = false; h.classList.remove(cls); }
   }
   window.addEventListener("scroll", function () { if (!ticking) { ticking = true; window.requestAnimationFrame(update); } }, { passive: true });
   update();

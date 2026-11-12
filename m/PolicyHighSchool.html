@@ -27,14 +27,14 @@
 .hb-menu{width:48px;height:48px;display:inline-flex;align-items:center;justify-content:center;border-radius:10px;color:#13233F;background:transparent}
 .hb-menu:hover{background:#F1F4F8;color:#13233F}
 @media (max-width:370px){.hb-top{padding:0 12px;gap:9px}.hb-c{font-size:12.5px;gap:6px}}
-/* Sticky header that shrinks on scroll (2026-11-12). js/site.js adds .hb-compact after ~120px of scroll. */
+/* Sticky header that shrinks on scroll, eased over 0.3s like the desktop morph (2026-11-12). js/site.js adds .hb-compact after ~120px of scroll. */
 :root{--fa-hdr:60px}
-div:has(> .mx > header.hb){position:sticky;top:0;z-index:60}
+div:has(> .mx > header.hb){position:sticky;top:0;z-index:60;transition:margin-bottom .3s ease-in-out}
 div:has(> .mx > header.hb.hb-compact){margin-bottom:52px}
 .hb.hb-compact .hb-top{height:0}
 .hb.hb-compact .hb-bar{height:60px}
-.hb.hb-compact{animation:hb-drop .22s cubic-bezier(.2,0,0,1)}
-@keyframes hb-drop{from{transform:translateY(-100%)}to{transform:none}}
+.hb-top,.hb-bar{transition:height .3s ease-in-out}
+.hb-bar img{transition:height .3s ease-in-out}
 .hb.hb-compact .hb-bar img{height:46px!important}
 .jump,.tu-bar{top:var(--fa-hdr)!important}
 .toc,.side{top:calc(var(--fa-hdr) + 16px)!important}
