@@ -56,18 +56,17 @@
     .fw a:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:6px}
     @media (prefers-reduced-motion:reduce){.fw a,.fw-menu .dd-menu{transition:none!important}}
 
-    /* Sticky header that shrinks on scroll (2026-11-12). js/site.js adds .fw-compact after ~120px of scroll. */
+    /* Sticky header that shrinks on scroll (2026-11-12): the slim navy bar slides down once; going back to the top is instant. js/site.js adds .fw-compact after ~120px of scroll. */
     :root{--fa-hdr:60px}
-    div:has(> header.fw){position:sticky;top:0;z-index:60;transition:margin-bottom .25s ease}
+    div:has(> header.fw){position:sticky;top:0;z-index:60}
     div:has(> header.fw.fw-compact){margin-bottom:32px}
-    .fw{transition:height .25s ease,background-color .25s ease,box-shadow .25s ease}
     .fw-logo .fw-logo-w{display:none}
     /* compact = one navy bar with the white logo (2026-11-12) */
-    .fw.fw-compact{background:#13233F;box-shadow:inset 0 -3px 0 #E7A11C,0 6px 16px rgba(19,35,63,.18)}
+    .fw.fw-compact{background:#13233F;box-shadow:inset 0 -3px 0 #E7A11C,0 6px 16px rgba(19,35,63,.18);animation:fw-drop .22s cubic-bezier(.2,0,0,1)}
+    @keyframes fw-drop{from{transform:translateY(-100%)}to{transform:none}}
     .fw-compact .fw-logo .fw-logo-c{display:none}
     .fw-compact .fw-logo .fw-logo-w{display:block}
     .fw-compact .fw-wing,.fw-compact .fw-line{opacity:0}
-    .fw-logo,.fw-logo img,.fw-quick,.fw-wing,.fw-wing svg,.fw-flat,.fw-line,.fw-nav,.fw-menu{transition:all .25s ease}
     .fw.fw-compact{height:60px}
     .fw-compact .fw-quick{opacity:0;visibility:hidden;pointer-events:none}
     .fw-compact .fw-logo{top:8px}
@@ -86,7 +85,7 @@
       .fw-compact .fw-flat{left:28px}
       .fw-compact .fw-nav{height:60px}
     }
-    @media (prefers-reduced-motion:reduce){div:has(> header.fw),.fw,.fw *{transition:none!important}}
+    @media (prefers-reduced-motion:reduce){div:has(> header.fw),.fw,.fw *{transition:none!important;animation:none!important}}
     @media (max-width:1240px){.fw-top{padding:0 9px;font-size:13px;letter-spacing:.03em}.fw-nav{gap:14px}}
     @media (max-width:1100px){
       .fw{height:84px}
