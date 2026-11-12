@@ -497,3 +497,19 @@
   document.addEventListener('change', onScroll);
   setTimeout(sweep, 600);
 })();
+
+/* Sticky header: shrink after scrolling down a little, grow back near the top (2026-11-12). */
+(function () {
+  var h = document.querySelector("header.fw, header.hb");
+  if (!h) return;
+  var cls = h.classList.contains("fw") ? "fw-compact" : "hb-compact";
+  var on = false, ticking = false;
+  function update() {
+    ticking = false;
+    var y = window.scrollY;
+    if (!on && y > 120) { on = true; h.classList.add(cls); }
+    else if (on && y < 40) { on = false; h.classList.remove(cls); }
+  }
+  window.addEventListener("scroll", function () { if (!ticking) { ticking = true; window.requestAnimationFrame(update); } }, { passive: true });
+  update();
+})();
