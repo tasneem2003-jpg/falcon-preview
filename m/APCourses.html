@@ -166,15 +166,41 @@
       </div>
     </section>
 
-    <section id="faq" class="sec" aria-labelledby="h-faq">
-      <div class="sec-head"><h2 id="h-faq">Frequently Asked Questions</h2></div>
-      <div class="faqs">
-        <details open=""><summary>Who can take AP courses?</summary><div class="ans">High school students who are ready for college-level work, with a counselor’s advice.</div></details>
-        <details><summary>Where do students take the AP exams?</summary><div class="ans">Falcon is an approved College Board testing school, so eligible exams can be given at Falcon.</div></details>
-        <details><summary>Do AP scores count for college credit?</summary><div class="ans">Often, yes. Many colleges give credit or advanced placement for scores of 3 or higher, but each college sets its own policy. Check with the colleges your child is considering.</div></details>
-        <details><summary>Is there a fee for AP exams?</summary><div class="ans">The College Board charges a fee for each exam.</div></details>
-        <details><summary>Can my child get testing accommodations?</summary><div class="ans">If your child is eligible, Falcon can request accommodations through the College Board’s Services for Students with Disabilities (SSD).</div></details>
-        <details><summary>Should my child choose AP or dual enrollment?</summary><div class="ans">Many students do both. AP courses are taught at Falcon and end with a national exam. Dual enrollment courses are NOVA classes that go on a college transcript. A counselor helps plan the right mix.</div></details>
+    <section id="faq" class="sec" aria-labelledby="h-faq"><style>
+    .fq{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:20px 64px;align-items:start}
+    .fq-stack{grid-template-columns:minmax(0,1fr)}
+    .fq-head{display:flex;flex-direction:column;gap:8px;position:sticky;top:24px}
+    .fq-head h2{font-size:32px;font-weight:700}
+    .fq-head p{font-size:17px}
+    .fq-list{border-top:1px solid #DCE2EB}
+    .fq-group{margin:0;padding:22px 0 10px;border-bottom:1px solid #DCE2EB;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00}
+    .fq-list > .fq-group:first-child{padding-top:14px}
+    .fq-item{border-bottom:1px solid #DCE2EB}
+    .fq-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:16px 0;box-sizing:border-box;font-size:18.5px;font-weight:600;line-height:1.4;color:#1A2740}
+    .fq-item summary::-webkit-details-marker{display:none}
+    .fq-item summary:hover{color:#1F3659}
+    .fq-item summary:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:6px}
+    .fq-ic{flex:none;width:32px;height:32px;border-radius:50%;background:#EEF2F7;position:relative}
+    .fq-ic::before,.fq-ic::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2px;margin:-1px 0 0 -7px;border-radius:2px;background:#1F3659}
+    .fq-ic::after{transform:rotate(90deg);transition:opacity .2s ease}
+    .fq-item[open] .fq-ic{background:#13233F}
+    .fq-item[open] .fq-ic::before{background:#FFFFFF}
+    .fq-item[open] .fq-ic::after{opacity:0}
+    .fq-a{padding:0 48px 20px 0;font-size:17px;line-height:1.65;color:#4B5566}
+    .fq-a p{margin:0 0 10px}.fq-a p:last-child{margin:0}
+    .fq-a a{color:#1F3659;font-weight:600}
+    @media (max-width:860px){.fq{grid-template-columns:minmax(0,1fr)}.fq-head{position:static}.fq-head h2{font-size:27px}.fq-item summary{font-size:17.5px}.fq-a{padding-right:0;font-size:16.5px}}
+  </style>
+      <div class="fq">
+        <div class="fq-head"><h2 id="h-faq">Frequently Asked Questions</h2></div>
+        <div class="fq-list">
+          <details class="fq-item" open=""><summary>Who can take AP courses?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">High school students who are ready for college-level work, with a counselor’s advice.</div></details>
+          <details class="fq-item"><summary>Where do students take the AP exams?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">Falcon is an approved College Board testing school, so eligible exams can be given at Falcon.</div></details>
+          <details class="fq-item"><summary>Do AP scores count for college credit?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">Often, yes. Many colleges give credit or advanced placement for scores of 3 or higher, but each college sets its own policy. Check with the colleges your child is considering.</div></details>
+          <details class="fq-item"><summary>Is there a fee for AP exams?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">The College Board charges a fee for each exam.</div></details>
+          <details class="fq-item"><summary>Can my child get testing accommodations?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">If your child is eligible, Falcon can request accommodations through the College Board’s Services for Students with Disabilities (SSD).</div></details>
+          <details class="fq-item"><summary>Should my child choose AP or dual enrollment?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">Many students do both. AP courses are taught at Falcon and end with a national exam. Dual enrollment courses are NOVA classes that go on a college transcript. A counselor helps plan the right mix.</div></details>
+        </div>
       </div>
     </section>
 

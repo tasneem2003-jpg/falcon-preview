@@ -162,15 +162,41 @@
       </div>
     </section>
 
-    <section id="faq" class="sec" aria-labelledby="h-faq">
-      <div class="sec-head"><h2 id="h-faq">Frequently Asked Questions</h2></div>
-      <div class="faqs">
-        <details open=""><summary>Is the associate degree guaranteed?</summary><div class="ans">No. It is an optional goal. Whether a student finishes depends on course availability, eligibility, grades and time. Every course they pass still counts as college credit.</div></details>
-        <details><summary>How is this different from dual enrollment?</summary><div class="ans">Dual enrollment means taking NOVA courses while at Falcon. The associate degree pathway is a plan to take enough of the right NOVA courses to complete a degree.</div></details>
-        <details><summary>Can my child still take AP courses?</summary><div class="ans">Yes. Many students combine AP courses at Falcon with NOVA courses, and AP exam results can help show readiness for NOVA.</div></details>
-        <details><summary>Which associate degree can my child earn?</summary><div class="ans"> A counselor and a NOVA advisor choose the degree that matches the student’s intended major.</div></details>
-        <details><summary>Will NOVA courses count toward the Falcon diploma?</summary><div class="ans">Only if Falcon approves it. Your child should confirm with a counselor before registering for each course.</div></details>
-        <details><summary>Who pays for NOVA courses?</summary><div class="ans">Families pay NOVA’s tuition and fees directly.</div></details>
+    <section id="faq" class="sec" aria-labelledby="h-faq"><style>
+    .fq{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:20px 64px;align-items:start}
+    .fq-stack{grid-template-columns:minmax(0,1fr)}
+    .fq-head{display:flex;flex-direction:column;gap:8px;position:sticky;top:24px}
+    .fq-head h2{font-size:32px;font-weight:700}
+    .fq-head p{font-size:17px}
+    .fq-list{border-top:1px solid #DCE2EB}
+    .fq-group{margin:0;padding:22px 0 10px;border-bottom:1px solid #DCE2EB;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00}
+    .fq-list > .fq-group:first-child{padding-top:14px}
+    .fq-item{border-bottom:1px solid #DCE2EB}
+    .fq-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:16px 0;box-sizing:border-box;font-size:18.5px;font-weight:600;line-height:1.4;color:#1A2740}
+    .fq-item summary::-webkit-details-marker{display:none}
+    .fq-item summary:hover{color:#1F3659}
+    .fq-item summary:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:6px}
+    .fq-ic{flex:none;width:32px;height:32px;border-radius:50%;background:#EEF2F7;position:relative}
+    .fq-ic::before,.fq-ic::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2px;margin:-1px 0 0 -7px;border-radius:2px;background:#1F3659}
+    .fq-ic::after{transform:rotate(90deg);transition:opacity .2s ease}
+    .fq-item[open] .fq-ic{background:#13233F}
+    .fq-item[open] .fq-ic::before{background:#FFFFFF}
+    .fq-item[open] .fq-ic::after{opacity:0}
+    .fq-a{padding:0 48px 20px 0;font-size:17px;line-height:1.65;color:#4B5566}
+    .fq-a p{margin:0 0 10px}.fq-a p:last-child{margin:0}
+    .fq-a a{color:#1F3659;font-weight:600}
+    @media (max-width:860px){.fq{grid-template-columns:minmax(0,1fr)}.fq-head{position:static}.fq-head h2{font-size:27px}.fq-item summary{font-size:17.5px}.fq-a{padding-right:0;font-size:16.5px}}
+  </style>
+      <div class="fq">
+        <div class="fq-head"><h2 id="h-faq">Frequently Asked Questions</h2></div>
+        <div class="fq-list">
+          <details class="fq-item" open=""><summary>Is the associate degree guaranteed?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">No. It is an optional goal. Whether a student finishes depends on course availability, eligibility, grades and time. Every course they pass still counts as college credit.</div></details>
+          <details class="fq-item"><summary>How is this different from dual enrollment?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">Dual enrollment means taking NOVA courses while at Falcon. The associate degree pathway is a plan to take enough of the right NOVA courses to complete a degree.</div></details>
+          <details class="fq-item"><summary>Can my child still take AP courses?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">Yes. Many students combine AP courses at Falcon with NOVA courses, and AP exam results can help show readiness for NOVA.</div></details>
+          <details class="fq-item"><summary>Which associate degree can my child earn?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a"> A counselor and a NOVA advisor choose the degree that matches the student’s intended major.</div></details>
+          <details class="fq-item"><summary>Will NOVA courses count toward the Falcon diploma?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">Only if Falcon approves it. Your child should confirm with a counselor before registering for each course.</div></details>
+          <details class="fq-item"><summary>Who pays for NOVA courses?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">Families pay NOVA’s tuition and fees directly.</div></details>
+        </div>
       </div>
     </section>
 

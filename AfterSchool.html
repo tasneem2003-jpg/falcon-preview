@@ -926,29 +926,47 @@
       </div>
     </section>
 
-    <section id="faq" class="sec" aria-labelledby="h-faq">
-      <div class="sec-head">
-        <h2 id="h-faq">Frequently Asked Questions</h2>
-      </div>
-      <div class="faqs">
-        <div class="fgroup">
-          <h3>Clubs &amp; Days</h3>
-          <details open=""><summary>How do the clubs work?</summary><div class="ans"><p>On weekdays your child joins one club a day after school, on the days you choose. Weekend clubs run on Saturdays and Sundays. You pay $35 a day for weekday clubs and $50 a day for weekend clubs, weekly or monthly, as you prefer.</p></div></details>
-          <details><summary>Where do the clubs take place?</summary><div class="ans"><p>Weekday clubs for Grades 6–12 are at the Ashburn campus, and for KG–Grade 5 at the Chantilly campus. Weekend clubs are at Ashburn, and Music &amp; School Band is at Bera Music School.</p></div></details>
-          <details><summary>Is there pickup from my child’s school?</summary><div class="ans"><p>Yes. A shuttle can pick students up from school. Ask the front office about your school and route.</p></div></details>
-          <details><summary>Can my child come only on some days?</summary><div class="ans"><p>Yes. You choose the days, and you pay only for those days.</p></div></details>
-          <details><summary>Do I pay weekly or monthly?</summary><div class="ans"><p>Either. You decide whether to pay for one week at a time or for the month.</p></div></details>
-        </div>
-        <div class="fgroup">
-          <h3>Clubs &amp; Teachers</h3>
-          <details><summary>Do the language clubs need prior experience?</summary><div class="ans"><p>No. Turkish, French and Spanish are interactive beginner clubs, using games, role-play, songs and stories.</p></div></details>
-          <details><summary>Who can join Self-Defense &amp; Martial Arts?</summary><div class="ans"><p>It is for girls only. Students learn age-appropriate self-defense with a focus on safety, respect and self-control.</p></div></details>
-          <details><summary>How do the STEM and robotics clubs work?</summary><div class="ans"><p>They are hands-on. Solar and Wind Energy (Grades 6–12) and Wind Energy (KG–5) prepare students for the KidWind Challenge, and NASA / Aerospace includes design challenges and experiments. On weekends, iCode instructors lead VEX Robotics, and MathCON prepares middle schoolers for the MathCON competition.</p></div></details>
-          <details><summary>Who teaches the clubs?</summary><div class="ans"><p>Falcon teachers and specialist partners, including Alia Raviola, Mehmet Sonmez, Emine Kilic, Rabia Nur Demir, Rida Ahsan, Sule Cetil and Yasemin Ece Camurcu. Weekend VEX Robotics is led by iCode instructors, and Music by Bera Music School.</p></div></details>
-        </div>
-        <div class="fgroup">
-          <h3>Registration</h3>
-          <details><summary>How do I register?</summary><div class="ans"><p>Register online on the <a href="https://portal.edumagined.com/falconacademy/">Edumagined Parent Portal</a>, the same way as Summer Camp. For Music &amp; School Band, register through <a href="https://forms.gle/vgABgUi4kJHqLRqY7">Bera Music School’s form</a>.</p></div></details>
+    <section id="faq" class="sec" aria-labelledby="h-faq"><style>
+    .fq{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:20px 64px;align-items:start}
+    .fq-stack{grid-template-columns:minmax(0,1fr)}
+    .fq-head{display:flex;flex-direction:column;gap:8px;position:sticky;top:24px}
+    .fq-head h2{font-size:32px;font-weight:700}
+    .fq-head p{font-size:17px}
+    .fq-list{border-top:1px solid #DCE2EB}
+    .fq-group{margin:0;padding:22px 0 10px;border-bottom:1px solid #DCE2EB;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00}
+    .fq-list > .fq-group:first-child{padding-top:14px}
+    .fq-item{border-bottom:1px solid #DCE2EB}
+    .fq-item summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:16px 0;box-sizing:border-box;font-size:18.5px;font-weight:600;line-height:1.4;color:#1A2740}
+    .fq-item summary::-webkit-details-marker{display:none}
+    .fq-item summary:hover{color:#1F3659}
+    .fq-item summary:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:6px}
+    .fq-ic{flex:none;width:32px;height:32px;border-radius:50%;background:#EEF2F7;position:relative}
+    .fq-ic::before,.fq-ic::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2px;margin:-1px 0 0 -7px;border-radius:2px;background:#1F3659}
+    .fq-ic::after{transform:rotate(90deg);transition:opacity .2s ease}
+    .fq-item[open] .fq-ic{background:#13233F}
+    .fq-item[open] .fq-ic::before{background:#FFFFFF}
+    .fq-item[open] .fq-ic::after{opacity:0}
+    .fq-a{padding:0 48px 20px 0;font-size:17px;line-height:1.65;color:#4B5566}
+    .fq-a p{margin:0 0 10px}.fq-a p:last-child{margin:0}
+    .fq-a a{color:#1F3659;font-weight:600}
+    @media (max-width:860px){.fq{grid-template-columns:minmax(0,1fr)}.fq-head{position:static}.fq-head h2{font-size:27px}.fq-item summary{font-size:17.5px}.fq-a{padding-right:0;font-size:16.5px}}
+  </style>
+      <div class="fq">
+        <div class="fq-head"><h2 id="h-faq">Frequently Asked Questions</h2></div>
+        <div class="fq-list">
+          <h3 class="fq-group">Clubs &amp; Days</h3>
+          <details class="fq-item" open=""><summary>How do the clubs work?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">On weekdays your child joins one club a day after school, on the days you choose. Weekend clubs run on Saturdays and Sundays. You pay $35 a day for weekday clubs and $50 a day for weekend clubs, weekly or monthly, as you prefer.</div></details>
+          <details class="fq-item"><summary>Where do the clubs take place?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">Weekday clubs for Grades 6–12 are at the Ashburn campus, and for KG–Grade 5 at the Chantilly campus. Weekend clubs are at Ashburn, and Music &amp; School Band is at Bera Music School.</div></details>
+          <details class="fq-item"><summary>Is there pickup from my child’s school?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">Yes. A shuttle can pick students up from school. Ask the front office about your school and route.</div></details>
+          <details class="fq-item"><summary>Can my child come only on some days?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">Yes. You choose the days, and you pay only for those days.</div></details>
+          <details class="fq-item"><summary>Do I pay weekly or monthly?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">Either. You decide whether to pay for one week at a time or for the month.</div></details>
+          <h3 class="fq-group">Clubs &amp; Teachers</h3>
+          <details class="fq-item"><summary>Do the language clubs need prior experience?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">No. Turkish, French and Spanish are interactive beginner clubs, using games, role-play, songs and stories.</div></details>
+          <details class="fq-item"><summary>Who can join Self-Defense &amp; Martial Arts?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">It is for girls only. Students learn age-appropriate self-defense with a focus on safety, respect and self-control.</div></details>
+          <details class="fq-item"><summary>How do the STEM and robotics clubs work?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">They are hands-on. Solar and Wind Energy (Grades 6–12) and Wind Energy (KG–5) prepare students for the KidWind Challenge, and NASA / Aerospace includes design challenges and experiments. On weekends, iCode instructors lead VEX Robotics, and MathCON prepares middle schoolers for the MathCON competition.</div></details>
+          <details class="fq-item"><summary>Who teaches the clubs?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">Falcon teachers and specialist partners, including Alia Raviola, Mehmet Sonmez, Emine Kilic, Rabia Nur Demir, Rida Ahsan, Sule Cetil and Yasemin Ece Camurcu. Weekend VEX Robotics is led by iCode instructors, and Music by Bera Music School.</div></details>
+          <h3 class="fq-group">Registration</h3>
+          <details class="fq-item"><summary>How do I register?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">Register online on the <a href="https://portal.edumagined.com/falconacademy/">Edumagined Parent Portal</a>, the same way as Summer Camp. For Music &amp; School Band, register through <a href="https://forms.gle/vgABgUi4kJHqLRqY7">Bera Music School’s form</a>.</div></details>
         </div>
       </div>
     </section>
