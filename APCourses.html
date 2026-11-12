@@ -328,11 +328,10 @@
     <section id="faq" class="sec fq-band" aria-labelledby="h-faq"><style>
     .fq{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:20px 64px;align-items:start}
     .fq-stack{grid-template-columns:minmax(0,1fr)}
-    .fq-band{position:relative;background:#FFFFFF;box-shadow:0 0 0 100vmax #FFFFFF;clip-path:inset(0 -100vmax);padding-top:56px!important;padding-bottom:56px!important}
-    .fq-band::before{content:"";position:absolute;top:0;left:-100vmax;right:-100vmax;height:1px;background:#DCE2EB}
+    .fq-band{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:16px;padding:40px!important;margin-top:56px}
+    .fq-band .fq-list > :last-child{border-bottom:0}
     .fq-sep{border-top:1px solid #DCE2EB;padding-top:32px}
-    .fq-band{margin-top:56px}
-    @media (max-width:860px){.fq-band{margin-top:40px;padding-top:40px!important;padding-bottom:40px!important}}
+    @media (max-width:860px){.fq-band{margin-top:40px;padding:22px 18px 8px!important;border-radius:14px}}
     .fq-head{display:flex;flex-direction:column;gap:8px;position:sticky;top:24px}
     .fq-head h2{font-size:32px;font-weight:700}
     .fq-head p{font-size:17px}
