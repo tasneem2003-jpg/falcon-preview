@@ -84,6 +84,7 @@ a.icard:hover{border-color:#1F3659}
 .ib-card{padding:18px!important;gap:18px!important}
 .ib-card .logos{flex:none!important;max-width:none!important;padding:20px 18px!important;gap:16px!important;border-radius:12px!important}
 .ib-card>div:last-child{flex:none!important;gap:10px!important}
+.ib-card .cert-media{flex:none!important;max-width:none!important}
 .ib-card h3{font-size:19px!important;line-height:1.3!important}
 .ib-card p[style*="font-size: 16px"]{line-height:1.6!important;color:#3D4A60}
 .ib-card .tag{font-size:13.5px!important}
