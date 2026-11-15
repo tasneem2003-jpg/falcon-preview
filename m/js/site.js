@@ -513,3 +513,46 @@
   window.addEventListener("scroll", function () { if (!ticking) { ticking = true; window.requestAnimationFrame(update); } }, { passive: true });
   update();
 })();
+
+/* Desktop menu opens on click, not hover (2026-11-15). A click on the same item, on the dimmed page, or Esc closes it.
+   A clear layer sits on the dimmed page while a panel is open, so that click only closes the menu and never
+   follows a link hidden under the veil. */
+(function () {
+  var nav = document.querySelector(".fw-menu");
+  if (!nav) return;
+  document.documentElement.classList.add("js-menu");
+  var open = null;
+  var catcher = document.createElement("div");
+  catcher.setAttribute("aria-hidden", "true");
+  catcher.style.cssText = "position:fixed;inset:0;z-index:59;display:none;cursor:default";
+  document.body.appendChild(catcher);
+  function set(dd, on) {
+    dd.classList.toggle("is-open", on);
+    var b = dd.querySelector(".fw-top");
+    if (b) b.setAttribute("aria-expanded", on ? "true" : "false");
+  }
+  function close(focusBack) {
+    if (!open) return;
+    var was = open;
+    set(was, false); open = null; catcher.style.display = "none";
+    if (focusBack) { var b = was.querySelector(".fw-top"); if (b) b.focus(); }
+  }
+  [].forEach.call(nav.querySelectorAll(".dd"), function (dd) {
+    var b = dd.querySelector(".fw-top");
+    if (!b || !dd.querySelector(".dd-menu")) return;
+    b.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (open === dd) { close(); return; }
+      if (open) {
+        nav.classList.add("dd-swap");
+        set(open, false);
+        requestAnimationFrame(function () { requestAnimationFrame(function () { nav.classList.remove("dd-swap"); }); });
+      }
+      set(dd, true); open = dd; catcher.style.display = "block";
+    });
+  });
+  catcher.addEventListener("click", function () { close(); });
+  document.addEventListener("click", function (e) { if (open && !nav.contains(e.target)) close(); });
+  document.addEventListener("keydown", function (e) { if (open && (e.key === "Escape" || e.key === "Esc")) close(true); });
+  nav.addEventListener("focusout", function (e) { if (open && e.relatedTarget && !nav.contains(e.relatedTarget)) close(); });
+})();

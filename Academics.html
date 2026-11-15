@@ -34,14 +34,18 @@
     .fw-menu .dd + .dd::before{content:"";width:1px;height:14px;background:rgba(255,255,255,.28);margin:0 2px}
     .fw-top{position:relative;display:inline-flex;align-items:center;height:54px;padding:0 13px;box-sizing:border-box;font-size:14px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;transition:color .3s ease}
     .fw-top:hover{color:#F3C664!important}
-    .fw-top .caret{margin-left:6px;opacity:.75}
+    button.fw-top{margin:0;border:0;background:none;font-family:inherit;cursor:pointer}
+    .fw-top .caret{margin-left:6px;opacity:.75;transition:transform .25s ease}
+    .fw-menu .dd.is-open .fw-top{color:#F3C664!important}
+    .fw-menu .dd.is-open .fw-top .caret{transform:rotate(180deg);opacity:1}
+    .fw button.fw-top:focus-visible{outline:3px solid #E7A11C;outline-offset:-6px;border-radius:6px}
     /* Full-width menu panel (2026-11-15). It opens under the header across the whole screen. */
-    .fw-menu .dd-menu{position:fixed;left:0;right:0;top:92px;z-index:50;display:block;visibility:hidden;opacity:0;transform:translateY(-10px);transition:opacity .18s ease-in,transform .18s ease-in,visibility 0s linear .18s;background:#F6F8FB;border-top:1px solid #E6EAF1;overflow:hidden;box-shadow:0 0 0 100vmax rgba(13,25,46,.62);clip-path:inset(0 0 -100vmax 0)}
-    /* ↑ the page below the open panel dims under a navy veil (like the reference school); the header stays clear. The veil is a shadow, so it never catches the pointer and the menu closes as soon as you leave it. */
+    .fw-menu .dd-menu{position:fixed;left:0;right:0;top:92px;z-index:50;display:block;visibility:hidden;opacity:0;transform:translateY(-10px);transition:opacity .18s ease-in,transform .18s ease-in,visibility 0s linear .18s;background:#F6F8FB;border-top:1px solid #E6EAF1;overflow:hidden;box-shadow:0 0 0 100vmax rgba(13,25,46,.86);clip-path:inset(0 0 -100vmax 0)}
+    /* ↑ the page below the open panel is covered by a deep navy veil (86%, like the reference school, so the page behind does not compete); the header stays clear. A click on the veil, Esc, or a second click on the same item closes it (js/site.js). */
     .fw.fw-compact .fw-menu .dd-menu{top:64px}
-    .fw-menu .dd:hover .dd-menu,.fw-menu .dd:focus-within .dd-menu{visibility:visible;opacity:1;transform:translateY(0);transition:opacity .28s cubic-bezier(0,0,.3,1),transform .36s cubic-bezier(0,0,.3,1),visibility 0s}
-    /* the hover path from the top item down to the panel stays open */
-    .fw-menu .dd:hover .fw-top::after{content:"";position:absolute;left:0;right:0;top:100%;height:40px}
+    .fw-menu .dd.is-open .dd-menu,html:not(.js-menu) .fw-menu .dd:focus-within .dd-menu{visibility:visible;opacity:1;transform:translateY(0);transition:opacity .28s cubic-bezier(0,0,.3,1),transform .36s cubic-bezier(0,0,.3,1),visibility 0s}
+    /* switching from one open panel to another swaps at once, so the veil never doubles up */
+    .fw-menu.dd-swap .dd-menu{transition:none!important}
     .dd-menu::before,.dd-menu::after{content:"";position:absolute;top:0;bottom:0;left:0;width:calc(max(24px, (100% - 1224px) / 2) + 384px);clip-path:polygon(0 0,100% 0,calc(100% - 132px) 100%,0 100%)}
     .dd-menu::before{background:#E7A11C;width:calc(max(24px, (100% - 1224px) / 2) + 388px)}
     .dd-menu::after{background:#13233F}
@@ -119,14 +123,14 @@
     <nav class="fw-menu" aria-label="Main">
       
         <div class="dd">
-          <a class="fw-top" href="OurStory.html" aria-current="false" style="color: rgb(255, 255, 255);">About Us<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          <button class="fw-top" type="button" aria-expanded="false" aria-controls="dd-about" style="color: rgb(255, 255, 255);">About Us<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button>
           
-            <div class="dd-menu" role="group" aria-label="About Us pages">
+            <div class="dd-menu" id="dd-about" role="group" aria-label="About Us pages">
               <div class="dd-in">
                 <div class="dd-intro">
                   <p class="dd-title">About Us</p>
                   <p class="dd-desc">A school founded by its families, on two campuses in Northern Virginia.</p>
-                  <a class="dd-go" href="OurStory.html">Our Story <span aria-hidden="true">→</span></a>
+                  <a class="dd-go" href="OurStory.html" aria-current="false">Our Story <span aria-hidden="true">→</span></a>
                 </div>
                 <div class="dd-cols">
                   
@@ -170,14 +174,14 @@
         </div>
       
         <div class="dd">
-          <a class="fw-top" href="Academics.html" aria-current="page" style="color: rgb(231, 161, 28);">Academics<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          <button class="fw-top" type="button" aria-expanded="false" aria-controls="dd-academics" style="color: rgb(231, 161, 28);">Academics<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button>
           
-            <div class="dd-menu" role="group" aria-label="Academics pages">
+            <div class="dd-menu" id="dd-academics" role="group" aria-label="Academics pages">
               <div class="dd-in">
                 <div class="dd-intro">
                   <p class="dd-title">Academics</p>
                   <p class="dd-desc">One school from KG to Grade 12, with AP courses and college credit in high school.</p>
-                  <a class="dd-go" href="Academics.html">Academics Overview <span aria-hidden="true">→</span></a>
+                  <a class="dd-go" href="Academics.html" aria-current="page">Academics Overview <span aria-hidden="true">→</span></a>
                 </div>
                 <div class="dd-cols">
                   
@@ -227,14 +231,14 @@
         </div>
       
         <div class="dd">
-          <a class="fw-top" href="AdmissionsOverview.html" aria-current="false" style="color: rgb(255, 255, 255);">Admissions<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          <button class="fw-top" type="button" aria-expanded="false" aria-controls="dd-admissions" style="color: rgb(255, 255, 255);">Admissions<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button>
           
-            <div class="dd-menu" role="group" aria-label="Admissions pages">
+            <div class="dd-menu" id="dd-admissions" role="group" aria-label="Admissions pages">
               <div class="dd-in">
                 <div class="dd-intro">
                   <p class="dd-title">Admissions</p>
                   <p class="dd-desc">Now enrolling for 2026–27. Visit us, apply and plan the year with our team.</p>
-                  <a class="dd-go" href="AdmissionsOverview.html">Admissions Overview <span aria-hidden="true">→</span></a>
+                  <a class="dd-go" href="AdmissionsOverview.html" aria-current="false">Admissions Overview <span aria-hidden="true">→</span></a>
                 </div>
                 <div class="dd-cols">
                   
@@ -274,14 +278,14 @@
         </div>
       
         <div class="dd">
-          <a class="fw-top" href="StudentLife.html" aria-current="false" style="color: rgb(255, 255, 255);">Community<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          <button class="fw-top" type="button" aria-expanded="false" aria-controls="dd-community" style="color: rgb(255, 255, 255);">Community<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button>
           
-            <div class="dd-menu" role="group" aria-label="Community pages">
+            <div class="dd-menu" id="dd-community" role="group" aria-label="Community pages">
               <div class="dd-in">
                 <div class="dd-intro">
                   <p class="dd-title">Community</p>
                   <p class="dd-desc">Clubs, trips, camp and a family community that shows up for every student.</p>
-                  <a class="dd-go" href="StudentLife.html">Student Life <span aria-hidden="true">→</span></a>
+                  <a class="dd-go" href="StudentLife.html" aria-current="false">Student Life <span aria-hidden="true">→</span></a>
                 </div>
                 <div class="dd-cols">
                   
