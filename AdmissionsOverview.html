@@ -38,6 +38,10 @@
     .fw-top .caret{margin-left:6px;opacity:.75;transition:transform .25s ease}
     .fw-menu .dd.is-open .fw-top{color:#F3C664!important}
     .fw-menu .dd.is-open .fw-top .caret{transform:rotate(180deg);opacity:1}
+    /* While a panel is open only that item is gold; the other items (current page too) dim into the navy, so two golds never compete (2026-11-15) */
+    .fw-menu:has(.dd.is-open) .dd:not(.is-open) .fw-top{color:rgba(255,255,255,.45)!important}
+    .fw-menu:has(.dd.is-open) .dd:not(.is-open) .fw-top:hover{color:#FFFFFF!important}
+    .fw-menu:has(.dd.is-open) .dd + .dd::before{background:rgba(255,255,255,.16)}
     .fw button.fw-top:focus-visible{outline:3px solid #E7A11C;outline-offset:-6px;border-radius:6px}
     /* Full-width menu panel (2026-11-15). It opens under the header across the whole screen. */
     .fw-menu .dd-menu{position:fixed;left:0;right:0;top:92px;z-index:50;display:block;visibility:hidden;opacity:0;transform:translateY(-10px);transition:opacity .18s ease-in,transform .18s ease-in,visibility 0s linear .18s;background:#F6F8FB;border-top:1px solid #E6EAF1;overflow:hidden;box-shadow:0 0 0 100vmax rgba(13,25,46,.86);clip-path:inset(0 0 -100vmax 0)}
