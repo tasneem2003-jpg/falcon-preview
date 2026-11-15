@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>if(matchMedia("(max-width: 640px)").matches&&!/[?&]desktop/.test(location.search))location.replace("m/STEM.html"+location.hash);</script>
+<title>STEM at Falcon · Falcon Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/fit.css">
+<link rel="stylesheet" href="css/pages/STEM.css">
+</head>
+<body>
+<div><div style="background: rgb(246, 248, 251);">
+  <div><header class="fw" style="font-family: Inter, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; line-height: 1.4;">
+  <style>
+    .fw{position:relative;height:92px;background:#FFFFFF;box-shadow:0 6px 16px rgba(19,35,63,.08);z-index:40}
+    .fw a{text-decoration:none}
+    .fw-logo{position:absolute;left:max(38px, calc(50% - 598px));top:15px;display:block;line-height:0;z-index:2}
+    .fw-logo img{height:62px;width:auto;display:block}
+    .fw-quick{position:absolute;right:max(48px, calc(50% - 588px));top:0;height:38px;display:flex;align-items:center;gap:14px;font-size:13px;z-index:2}
+    .fw-quick a{position:relative;display:inline-flex;align-items:center;min-height:32px;color:#3D4A60;font-weight:500;transition:color .3s ease}
+    .fw-quick a:hover{color:#13233F}
+    .fw-quick i{width:1px;height:14px;background:#CBD3DF}
+    .fw-quick .pp{color:#1F3659;font-weight:700}
+    .fw-wing{position:absolute;left:calc(max(38px, calc(50% - 598px)) + 176px);right:0;bottom:0;height:54px}
+    .fw-wing svg{position:absolute;left:0;bottom:0;display:block}
+    .fw-line{position:absolute;left:0;bottom:0;width:calc(max(38px, calc(50% - 598px)) + 177px);height:3px;background:#E7A11C;z-index:1}
+    .fw-flat{position:absolute;left:220px;right:0;top:0;bottom:0;background:#13233F;border-top:3px solid #E7A11C;box-sizing:border-box}
+    .fw-nav{position:absolute;right:max(48px, calc(50% - 588px));bottom:0;height:54px;display:flex;align-items:center;gap:22px;z-index:3}
+    .fw-menu{display:flex;align-items:stretch;height:54px}
+    .fw-menu .dd{position:relative;display:flex;align-items:center}
+    .fw-menu .dd + .dd::before{content:"";width:1px;height:14px;background:rgba(255,255,255,.28);margin:0 2px}
+    .fw-top{position:relative;display:inline-flex;align-items:center;height:54px;padding:0 13px;box-sizing:border-box;font-size:14px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;transition:color .3s ease}
+    .fw-top:hover{color:#F3C664!important}
+    .fw-top .caret{margin-left:6px;opacity:.75}
+    .fw-menu .dd-menu{display:flex;visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity .18s ease-in,transform .18s ease-in,visibility 0s linear .18s;position:absolute;top:100%;left:0;z-index:50;min-width:250px;padding:8px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;box-shadow:0 14px 32px rgba(19,35,63,.18);flex-direction:column;gap:2px}
+    .fw-menu .dd:hover .dd-menu,.fw-menu .dd:focus-within .dd-menu{visibility:visible;opacity:1;transform:translateY(0);transition:opacity .26s cubic-bezier(0,0,.3,1),transform .32s cubic-bezier(0,0,.3,1),visibility 0s}
+    .fw-menu .dd-menu a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:0 12px;border-radius:8px;color:#1A2740;font-size:14.5px;font-weight:600;white-space:nowrap}
+    .fw-menu .dd-menu a:hover,.fw-menu .dd-menu a:focus-visible{background:#EEF2F7}
+    .fw-menu .dd-menu small{font-size:12.5px;font-weight:500;color:#5E6878}
+    /* campus pages sit under Our Campuses as one group (2026-11-08) */
+    .fw-menu .dd-menu a.dd-sub{min-height:38px;margin-left:14px;padding-left:12px;font-size:14px;font-weight:500;color:#3D4A60}
+    .fw-menu .dd-menu a.dd-sub{position:relative;padding-left:26px}
+    .fw-menu .dd-menu a.dd-sub::before{content:"";position:absolute;left:12px;top:50%;width:6px;height:6px;margin-top:-3px;border-radius:50%;background:#C3CBD8}
+    .dd-col{display:flex;flex-direction:column;gap:2px}
+    .fw-menu .dd-mega{flex-direction:row;gap:2px;padding:8px}
+    .dd-mega .dd-col{width:max-content;min-width:176px}
+    .dd-head{margin:6px 14px 6px;font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00;white-space:nowrap}
+    .fw-menu .dd-mega a{flex-direction:column;align-items:flex-start;justify-content:center;gap:1px;min-height:50px;padding:6px 14px;box-sizing:border-box;white-space:nowrap}
+    .fw-menu .dd-mega a.dd-wrap{white-space:normal;max-width:212px;line-height:1.3}
+    .fw-menu .dd:nth-last-child(-n+2) .dd-menu{left:auto;right:0}
+    .fw-apply{display:inline-flex;align-items:center;min-height:38px;padding:0 18px;border-radius:8px;background:#E7A11C;color:#13233F;font-size:14.5px;font-weight:700;white-space:nowrap;transition:background .3s ease}
+    .fw-apply:hover{background:#D48F0E;color:#13233F}
+    .fw-burger{display:none}
+    .fw a:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:6px}
+    @media (prefers-reduced-motion:reduce){.fw a,.fw-menu .dd-menu{transition:none!important}}
+
+    /* Sticky header that shrinks on scroll, like sidwell.edu (2026-11-12): after ~80px of scroll the same white header with the wave and the colour logo just gets smaller (92px to 64px, logo 62px to 44px) in 0.3s ease. Nothing changes colour or swaps; only the small quick links fade away. js/site.js adds .fw-compact. */
+    :root{--fa-hdr:64px}
+    div:has(> header.fw){position:sticky;top:0;z-index:60;transition:margin-bottom .3s ease}
+    div:has(> header.fw.fw-compact){margin-bottom:28px}
+    .fw{transition:height .3s ease,box-shadow .3s ease}
+    .fw-logo{transition:top .3s ease}
+    .fw-logo img{transition:height .3s ease}
+    .fw-logo .fw-logo-w{display:none}
+    .fw-quick{transition:opacity .2s ease,visibility .2s}
+    .fw-wing,.fw-nav{transition:height .3s ease}
+    .fw.fw-compact{height:64px;box-shadow:0 6px 18px rgba(19,35,63,.14)}
+    .fw-compact .fw-logo{top:10px}
+    .fw-compact .fw-logo img{height:44px}
+    .fw-compact .fw-quick{opacity:0;visibility:hidden;pointer-events:none}
+    .jump,.tu-bar{top:var(--fa-hdr)!important}
+    .toc,.side{top:calc(var(--fa-hdr) + 16px)!important}
+    .fq-head{top:calc(var(--fa-hdr) + 24px)!important}
+    @media (max-width:1100px){
+      div:has(> header.fw.fw-compact){margin-bottom:20px}
+      .fw-compact .fw-wing,.fw-compact .fw-nav{height:64px}
+    }
+    @media (prefers-reduced-motion:reduce){div:has(> header.fw),.fw,.fw *{transition:none!important;animation:none!important}}
+    @media (max-width:1240px){.fw-top{padding:0 9px;font-size:13px;letter-spacing:.03em}.fw-nav{gap:14px}}
+    @media (max-width:1100px){
+      .fw{height:84px}
+      .fw-logo{top:12px}.fw-logo img{height:60px}
+      .fw-quick,.fw-menu,.fw-apply{display:none}
+      .fw-wing{left:auto;width:260px;height:84px}
+      .fw-wing svg,.fw-line{display:none}
+      .fw-flat{left:28px;border-top:0;-webkit-mask:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22 preserveAspectRatio=%22none%22%3E%3Cpath d=%22M0 100C44 100 56 0 100 0V100Z%22/%3E%3C/svg%3E') 0 0/48px 100% no-repeat,linear-gradient(#000,#000) 47px 0/100% 100% no-repeat;mask:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22 preserveAspectRatio=%22none%22%3E%3Cpath d=%22M0 100C44 100 56 0 100 0V100Z%22/%3E%3C/svg%3E') 0 0/48px 100% no-repeat,linear-gradient(#000,#000) 47px 0/100% 100% no-repeat}
+      .fw-nav{height:84px;right:16px}
+      .fw-burger{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border-radius:10px;border:1px solid rgba(255,255,255,.45);color:#FFFFFF;font-size:15px;font-weight:600}
+    }
+  </style>
+  <a class="fw-logo" href="Main.html" aria-label="Falcon Academy home"><img class="fw-logo-c" src="assets/img/falcon-academy-2.svg" alt="Falcon Academy"><img class="fw-logo-w" src="assets/img/falcon-academy.svg" alt=""></a>
+  <nav class="fw-quick" aria-label="Quick links">
+    <a href="Campuses.html" style="color: rgb(61, 74, 96); font-weight: 500;">Our Campuses</a><i aria-hidden="true"></i>
+    <a href="Careers.html" style="color: rgb(61, 74, 96); font-weight: 500;">Careers</a><i aria-hidden="true"></i>
+    <a href="Policies.html" style="color: rgb(61, 74, 96); font-weight: 500;">Policies</a><i aria-hidden="true"></i>
+    <a href="Contact.html" style="color: rgb(61, 74, 96); font-weight: 500;">Contact Us</a><i aria-hidden="true"></i>
+    <a class="pp" href="https://portal.edumagined.com/falconacademy/" target="_blank" rel="noopener noreferrer">Parent Portal ↗</a>
+  </nav>
+  <span class="fw-line" aria-hidden="true"></span>
+  <div class="fw-wing" aria-hidden="true">
+    <svg width="222" height="54" viewBox="0 0 272 66"><path d="M0 66 C120 66 150 0 270 0 H272 V66 Z" fill="#13233F"></path><path d="M0 64.5 C120 64.5 150 1.5 272 1.5" fill="none" stroke="#E7A11C" stroke-width="3" vector-effect="non-scaling-stroke"></path></svg>
+    <div class="fw-flat"></div>
+  </div>
+  <div class="fw-nav">
+    <nav class="fw-menu" aria-label="Main">
+      
+        <div class="dd">
+          <a class="fw-top" href="OurStory.html" aria-current="false" style="color: rgb(255, 255, 255);">About Us<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          
+            <div class="dd-menu " role="group" aria-label="About Us pages">
+              
+                <div class="dd-col">
+                  
+                  
+                    <a class="" href="OurStory.html">Our Story<small></small></a>
+                  
+                    <a class="" href="Leadership.html">Leadership<small></small></a>
+                  
+                    <a class="" href="Faculty.html">Faculty &amp; Staff<small></small></a>
+                  
+                    <a class="dd-group" href="Campuses.html">Our Campuses<small></small></a>
+                  
+                    <a class="dd-sub" href="AshburnCampus.html">Ashburn Campus<small>G6 – G12</small></a>
+                  
+                    <a class="dd-sub" href="ChantillyCampus.html">Chantilly Campus<small>KG – G5</small></a>
+                  
+                    <a class="" href="ParentVoices.html">Share Your Story<small></small></a>
+                  
+                    <a class="" href="Careers.html">Careers<small></small></a>
+                  
+                </div>
+              
+            </div>
+          
+        </div>
+      
+        <div class="dd">
+          <a class="fw-top" href="Academics.html" aria-current="page" style="color: rgb(231, 161, 28);">Academics<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          
+            <div class="dd-menu dd-mega" role="group" aria-label="Academics pages">
+              
+                <div class="dd-col">
+                  <p class="dd-head">Our Programs</p>
+                  
+                    <a class="" href="PrimaryYears.html">Elementary School<small>KG – G5</small></a>
+                  
+                    <a class="" href="MiddleYears.html">Middle School<small>G6 – G8</small></a>
+                  
+                    <a class="" href="HighSchool.html">High School<small>G9 – G12</small></a>
+                  
+                </div>
+              
+                <div class="dd-col">
+                  <p class="dd-head">Academic Excellence</p>
+                  
+                    <a class="" href="Accreditation.html">Accreditation<small>IB · Cognia</small></a>
+                  
+                    <a class="" href="DualEnrollment.html">Dual Enrollment<small>College credit with NOVA</small></a>
+                  
+                    <a class="" href="APCourses.html">AP Courses<small>College Board approved</small></a>
+                  
+                    <a class="" href="AssociateDegree.html">Associate Degree<small>Pathway with NOVA</small></a>
+                  
+                    <a class="" href="AcademicSupport.html">Academic Support<small>Help for every learner</small></a>
+                  
+                </div>
+              
+                <div class="dd-col">
+                  <p class="dd-head">Our Approach</p>
+                  
+                    <a class="" href="Curriculum.html">Curriculum<small>9 subjects</small></a>
+                  
+                    <a class="" href="ArabicIslamic.html">Arabic &amp; Islamic Studies<small>Quran, Arabic and values</small></a>
+                  
+                    <a class="" href="STEM.html">STEM at Falcon<small>Science, tech and math</small></a>
+                  
+                    <a class="" href="CalendarEvents.html">Academic Calendar<small>Key dates for the year</small></a>
+                  
+                </div>
+              
+            </div>
+          
+        </div>
+      
+        <div class="dd">
+          <a class="fw-top" href="AdmissionsOverview.html" aria-current="false" style="color: rgb(255, 255, 255);">Admissions<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          
+            <div class="dd-menu " role="group" aria-label="Admissions pages">
+              
+                <div class="dd-col">
+                  
+                  
+                    <a class="" href="VisitTour.html">Visit Our School<small></small></a>
+                  
+                    <a class="" href="AdmissionsOverview.html">Admissions Overview<small></small></a>
+                  
+                    <a class="" href="HowToApply.html">How to Apply<small></small></a>
+                  
+                    <a class="" href="Tuition.html">Tuition &amp; Financial Aid<small></small></a>
+                  
+                    <a class="" href="InternationalStudents.html">International Students<small></small></a>
+                  
+                    <a class="" href="AdmissionsFAQ.html">Admissions FAQ<small></small></a>
+                  
+                </div>
+              
+            </div>
+          
+        </div>
+      
+        <div class="dd">
+          <a class="fw-top" href="StudentLife.html" aria-current="false" style="color: rgb(255, 255, 255);">Community<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          
+            <div class="dd-menu dd-mega" role="group" aria-label="Community pages">
+              
+                <div class="dd-col">
+                  <p class="dd-head">Beyond the Classroom</p>
+                  
+                    <a class="" href="StudentLife.html">Student Life<small>Trips, sports and events</small></a>
+                  
+                    <a class="dd-wrap" href="AfterSchool.html">Clubs and After School / Enrichment Programs<small></small></a>
+                  
+                    <a class="" href="SummerCamp.html">Summer Camp<small>Seven weeks of summer fun</small></a>
+                  
+                    <a class="" href="PhotosVideos.html">Galleries<small>Photos and videos</small></a>
+                  
+                </div>
+              
+                <div class="dd-col">
+                  <p class="dd-head">Families</p>
+                  
+                    <a class="" href="PTSO.html">PTSO<small>Parent-Teacher-Student Organization</small></a>
+                  
+                    <a class="" href="News.html">News<small>Announcements and stories</small></a>
+                  
+                    <a class="" href="Store.html">Uniform and Spirit Store<small>Uniforms and Falcon gear</small></a>
+                  
+                </div>
+              
+            </div>
+          
+        </div>
+      
+    </nav>
+    <a class="fw-apply" href="HowToApply.html">Apply Now</a>
+    <a class="fw-burger" href="m/Menu.html?mobile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>Menu</a>
+  </div></header></div>
+
+  <main class="wrap" style="padding-bottom: 72px; display: flex; flex-direction: column;">
+
+    <section class="hero" aria-labelledby="stem-title">
+      <div class="hero-copy">
+        <p class="eyebrow">STEM at Falcon</p>
+        <h1 id="stem-title">From First Questions to <span style="white-space: nowrap;">College-Level</span> Engineering</h1>
+        <p class="hero-lede">Science, technology, engineering and math at Falcon start with a question and end with something students build, test and explain. The path runs from hands-on discovery in Kindergarten to AP and NOVA college courses in high school.</p>
+        <div class="hero-cta">
+          <a class="btn btn-gold btn-lg" href="VisitTour.html">Book a Tour</a>
+          <a class="btn btn-ghost btn-lg" href="#path">See the KG – G12 Path</a>
+        </div>
+      </div>
+      <div class="hero-photo"><img src="assets/img/two-middle-school-students-building-a-robot.jpg" alt="Two middle school students building a robot in Design class" style="object-position: 50% 50%;"></div>
+    </section>
+
+    <div class="facts">
+      <div class="fact"><h2>Every Grade</h2><p>KG – G12</p><small>Science and math from Kindergarten on</small></div>
+      <div class="fact"><h2>Coding</h2><p>From Grade 3</p><small>Scratch, then micro:bit and Arduino</small></div>
+      <div class="fact"><h2>AP Courses</h2><p>AP Math and Science</p><small>Calculus, Statistics, Environmental Science, Physics C</small></div>
+      <div class="fact"><h2>College Credit</h2><p>NOVA Courses</p><small>Such as multivariable calculus and engineering</small></div>
+    </div>
+
+    <section id="approach" class="sec" aria-labelledby="h-approach">
+      <div class="sec-head">
+        <h2 id="h-approach">How We Teach STEM</h2>
+        <p>Every STEM subject follows the three-dimensional model of teaching and learning: concepts, skills and content. In practice, that looks like this.</p>
+      </div>
+      <div class="grid4">
+        <div class="mini-card"><span class="ic ic-gold"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6"></path><path d="M10 22h4"></path><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2z"></path></svg></span><h3>Start with a Question</h3><p>Students question, predict, observe and measure before anyone hands them the answer.</p></div>
+        <div class="mini-card"><span class="ic ic-gold"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></span><h3>Learn by Doing</h3><p>Group experiments, models, simulations and design challenges, with students leading their own work.</p></div>
+        <div class="mini-card"><span class="ic ic-gold"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></span><h3>Connect the Subjects</h3><p>STEAM projects in every grade at Ashburn, and cross-subject units that link science and math to daily life.</p></div>
+        <div class="mini-card"><span class="ic ic-gold"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></span><h3>Explain the Thinking</h3><p>Students show a math problem four ways, keep lab notebooks and write up what they found.</p></div>
+      </div>
+    </section>
+
+    <section id="path" class="sec" aria-labelledby="h-path">
+      <div class="sec-head">
+        <h2 id="h-path">STEM from KG to Grade 12</h2>
+        <p>Each stage builds on the last, from hands-on materials to college-level courses.</p>
+      </div>
+      <div class="grid3">
+        <div class="box stage">
+          <div class="stage-head"><span class="g">KG – G5</span><h3>Hands-On Discovery</h3><span class="c">Chantilly Campus</span></div>
+          <div class="stage-body">
+            <ul class="tick">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Science through inquiry, play and observing nature</span></li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Math with manipulatives, games, math centers and small-group lessons</span></li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Computer science with specialist teachers, with Scratch coding from Grade 3</span></li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Projects like simple games, animated stories and coded quizzes</span></li>
+            </ul>
+            <a class="more" href="PrimaryYears.html">More About KG – G5 ›</a>
+          </div>
+        </div>
+        <div class="box stage">
+          <div class="stage-head"><span class="g">G6 – G8</span><h3>Labs, Algebra and Design</h3><span class="c">Ashburn Campus</span></div>
+          <div class="stage-body">
+            <ul class="tick">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Earth and space, life and physical science, with lab investigations</span></li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Algebra, geometry and trigonometry, statistics and functions</span></li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>The full design cycle: apps, robotics, websites and 3D modeling</span></li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Sciences, Mathematics and Design are IB MYP subject groups studied every year</span></li>
+            </ul>
+            <a class="more" href="MiddleYears.html">More About G6 – G8 ›</a>
+          </div>
+        </div>
+        <div class="box stage">
+          <div class="stage-head"><span class="g">G9 – G12</span><h3>Honors, AP and College Courses</h3><span class="c">Ashburn Campus</span></div>
+          <div class="stage-body">
+            <ul class="tick">
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Honors Biology, Chemistry and Physics</span></li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>Mathematical Analysis and Honors math tracks</span></li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>AP Calculus AB / BC, AP Statistics, AP Environmental Science and AP Physics C: Mechanics</span></li>
+              <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>NOVA multivariable calculus and engineering through dual enrollment</span></li>
+            </ul>
+            <a class="more" href="HighSchool.html">More About High School ›</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="subjects" class="sec" aria-labelledby="h-subjects">
+      <div class="sec-head">
+        <h2 id="h-subjects">Explore Each Subject</h2>
+        <p>See what students learn in each STEM subject, grade by grade, and meet the teachers.</p>
+      </div>
+      <div class="grid3">
+        <a class="scard" href="CurriculumScience.html">
+          <div class="ph-img"><img src="assets/img/a-falcon-teacher-with-students-working-at.jpg" alt="Students working at their desks while a teacher leads the class"></div>
+          <div class="sc-body"><span class="meta">KG – G12</span><h3>Science</h3><p>Investigating how the natural world works, through experiments, lab notebooks and scientific reports.</p><span class="go">Explore Science ›</span></div>
+        </a>
+        <a class="scard" href="CurriculumMath.html">
+          <div class="ph-img"><img src="assets/img/two-young-students-working-at-a-round.jpg" alt="Two young students working together at a round desk"></div>
+          <div class="sc-body"><span class="meta">KG – G12</span><h3>Mathematics</h3><p>Number sense, reasoning and problem solving, each year building on the last.</p><span class="go">Explore Mathematics ›</span></div>
+        </a>
+        <a class="scard" href="CurriculumComputerScience.html">
+          <div class="ph-img"><img src="assets/img/a-student-wiring-a-vex-robot-in.jpg" alt="A student wiring a VEX robot in Design class"></div>
+          <div class="sc-body"><span class="meta">From Grade 3</span><h3>Computer Science, IT &amp; Design</h3><p>Coding, technology and designing solutions, from Scratch to micro:bit, Arduino and apps.</p><span class="go">Explore Computer Science ›</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section id="action" class="sec" aria-labelledby="h-action">
+      <div class="sec-head">
+        <h2 id="h-action">STEM in Action</h2>
+        <p>Labs at our Ashburn campus where students build and code robots, and projects that reach beyond the classroom.</p>
+      </div>
+      <div class="grid3">
+        <a class="scard" href="News.html">
+          <div class="ph-img"><img src="assets/img/a-model-wind-turbine-on-a-workbench.jpg" alt="A model wind turbine on a workbench in a school lab"></div>
+          <div class="sc-body"><span class="meta">Oct 1, 2026 · Ashburn Campus</span><h3>Students Take On the KidWind Challenge</h3><p>Our middle and high school students explore renewable-energy engineering.</p><span class="go">Read the Story ›</span></div>
+        </a>
+        <a class="scard" href="News.html">
+          <div class="ph-img"><img src="assets/img/a-student-built-wind-and-solar-model.jpg" alt="A student-built wind and solar model under a desk lamp"></div>
+          <div class="sc-body"><span class="meta">Sep 30, 2026 · Chantilly Campus</span><h3>Exploring Renewable Energy with Dr. Diane Painter</h3><p>Our elementary students discover how wind and solar energy work.</p><span class="go">Read the Story ›</span></div>
+        </a>
+        <a class="scard" href="CurriculumScience.html">
+          <div class="ph-img"><img src="assets/img/students-and-teachers-on-a-hayride-during.jpg" alt="Students and teachers on a hayride during a farm field trip"></div>
+          <div class="sc-body"><span class="meta">Field Trips</span><h3>Science Outside the Classroom</h3><p>Trips like this farm visit link science to daily life and caring for the environment.</p><span class="go">Science at Falcon ›</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section id="advanced" class="sec" aria-labelledby="h-advanced">
+      <div class="sec-head">
+        <h2 id="h-advanced">Advanced and College STEM</h2>
+        <p>High school students who are ready for more can take AP courses at Falcon and college courses with Northern Virginia Community College (NOVA).</p>
+      </div>
+      <div class="grid3" style="grid-template-columns: repeat(2, minmax(0px, 1fr));">
+        <div class="box">
+          <div class="box-top"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg></span><span class="step-n">College Board Approved</span></div>
+          <h3>AP Math and Science at Falcon</h3>
+          <p>Taught by Falcon teachers. Each course ends with the AP exam in May, and strong scores can earn credit at many colleges.</p>
+          <div class="pathways">
+            <div class="pw"><span class="pw-k">Math</span><b>AP Calculus AB / BC</b><span>Limits, derivatives and integrals</span></div>
+            <div class="pw"><span class="pw-k">Math</span><b>AP Statistics</b><span>Data, patterns and conclusions</span></div>
+            <div class="pw"><span class="pw-k">Science</span><b>AP Environmental Science</b><span>Earth systems and ecology</span></div>
+            <div class="pw"><span class="pw-k">Science</span><b>AP Physics C: Mechanics</b><span>Motion, forces and energy, using calculus</span></div>
+          </div>
+          <a class="more" href="APCourses.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15.5px; color: rgb(31, 54, 89); font-weight: 700;">About AP Courses ›</a>
+        </div>
+        <div class="box">
+          <div class="box-top"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6"></path><path d="M10 3v6L4 19a2 2 0 0 0 1.7 3h12.6a2 2 0 0 0 1.7-3L14 9V3"></path><path d="M7 15h10"></path></svg></span><span class="step-n">With NOVA</span></div>
+          <h3>College Courses in STEM</h3>
+          <p>Through dual enrollment, eligible students can take NOVA courses from Grade 9 and earn college credit, with a Falcon counselor guiding each plan.</p>
+          <div class="pathways">
+            <div class="pw"><span class="pw-k">After AP Calculus</span><b>Multivariable Calculus</b><span>A NOVA math course</span></div>
+            <div class="pw"><span class="pw-k">After AP Physics C</span><b>Engineering</b><span>NOVA engineering courses</span></div>
+          </div>
+          <p style="font-size: 15px;">Depending on NOVA’s offerings, students can also explore computer science, mathematics, natural sciences and health sciences. College credit and an associate degree are not guaranteed.</p>
+          <div class="links-row">
+            <a class="more" href="DualEnrollment.html" style="font-size: 15.5px; color: rgb(31, 54, 89); font-weight: 700;">Dual Enrollment ›</a>
+            <a class="more" href="AssociateDegree.html" style="font-size: 15.5px; color: rgb(31, 54, 89); font-weight: 700;">Associate Degree Pathway ›</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clubs" class="sec" aria-labelledby="h-clubs">
+      <div class="sec-head">
+        <h2 id="h-clubs">STEM Clubs After School and on Weekends</h2>
+        <p>Optional, hands-on clubs that take projects further and prepare students for competitions like the KidWind Challenge, VEX Robotics, MathCON and Future City.</p>
+      </div>
+      <div class="grid3">
+        <div class="box">
+          <div class="box-top"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="8" width="16" height="12" rx="2"></rect><path d="M12 8V4"></path><circle cx="12" cy="3" r="1"></circle><path d="M9 13v2"></path><path d="M15 13v2"></path></svg></span><span class="step-n">Weekdays · Ashburn</span></div>
+          <h3>G6 – G12 After School</h3>
+          <div>
+            <div class="club"><b>STEM</b></div>
+            <div class="club"><b>Solar &amp; Wind Energy</b></div>
+            <div class="club"><b>NASA / Aerospace</b></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-top"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2"></path><path d="M9.6 4.6A2 2 0 1 1 11 8H2"></path><path d="M12.6 19.4A2 2 0 1 0 14 16H2"></path></svg></span><span class="step-n">Weekdays · Chantilly</span></div>
+          <h3>KG – G5 After School</h3>
+          <div>
+            <div class="club"><b>STEM</b></div>
+            <div class="club"><b>Wind Energy (KidWind Challenge)</b></div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-top"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 7V4H6l6 8-6 8h12v-3"></path></svg></span><span class="step-n">Weekends · Ashburn</span></div>
+          <h3>Weekend Clubs by Grade</h3>
+          <div>
+            <div class="club"><b>VEX Robotics</b><span class="mini">G4 – G8</span></div>
+            <div class="club"><b>MathCON Prep</b><span class="mini">G6 – G8</span></div>
+            <div class="club"><b>Future City</b><span class="mini">G6 – G8</span></div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px;">
+        <p style="font-size: 15.5px; color: rgb(94, 104, 120);">Weekday clubs are $35 a day and weekend clubs $50 a day. Choose only the days that suit your family.</p>
+        <a class="more" href="AfterSchool.html" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 15.5px; color: rgb(31, 54, 89); font-weight: 700;">See All Clubs ›</a>
+      </div>
+    </section>
+
+    <section id="faq" class="sec fq-band" aria-labelledby="h-faq">
+      <div class="fq">
+        <div class="fq-head"><h2 id="h-faq">Frequently Asked Questions</h2></div>
+        <div class="fq-list">
+          <details class="fq-item"><summary>When does my child start coding?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">Computer Science, IT &amp; Design starts in Grade 3 with block coding in Scratch. In middle school, students move on to micro:bit and Arduino devices, apps, robotics and websites.</div></details>
+          <details class="fq-item"><summary>Are there science labs?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">Yes. The Ashburn campus has labs where students build and code robots, with STEAM projects in every grade. Middle schoolers plan lab investigations, collect data and keep lab notebooks.</div></details>
+          <details class="fq-item"><summary>Which AP STEM courses does Falcon offer?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">AP Calculus AB / BC, AP Statistics, AP Environmental Science and AP Physics C: Mechanics. A counselor helps each student choose the ones that fit their goals. <a href="APCourses.html">About AP Courses</a></div></details>
+          <details class="fq-item"><summary>Can my child earn college credit in STEM?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">Eligible students can take NOVA courses through dual enrollment from Grade 9, such as multivariable calculus after AP Calculus or engineering after AP Physics C. Each university decides which credits it accepts, and families pay NOVA’s tuition directly. <a href="DualEnrollment.html">How Dual Enrollment Works</a></div></details>
+          <details class="fq-item"><summary>Are STEM clubs part of the school day?<span class="fq-ic" aria-hidden="true"></span></summary><div class="fq-a">No. Clubs are optional and run after school on weekdays and on weekends. Families pay per club day: $35 on weekdays and $50 on weekends. <a href="AfterSchool.html">See All Clubs</a></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="cta-band" style="margin-top: 56px; border-radius: 20px; padding: 44px clamp(20px, 4vw, 52px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 32px;">
+      <div style="display: flex; flex-direction: column; gap: 8px; max-width: 640px;">
+        <h2>See STEM in a Real Classroom</h2>
+        <p style="color: rgb(213, 220, 231); font-size: 17px;">Tours run Sundays at Ashburn and Saturdays at Chantilly. Bring your child and your questions.</p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+        <a class="btn btn-gold btn-lg" href="VisitTour.html">Book a Tour</a>
+        <a class="btn btn-light btn-lg" href="HowToApply.html">Apply Now</a>
+      </div>
+    </section>
+  </main>
+
+  <div><footer class="fa-foot" style="font-family: Inter, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; background: rgb(19, 35, 63); color: rgb(255, 255, 255); font-size: 14.5px; line-height: 1.5;">
+  <style>
+    .fa-foot a{color:#FFFFFF;text-decoration:none}
+    .fa-foot a:hover{text-decoration:underline;text-underline-offset:3px}
+    .fa-foot a:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:4px}
+    .fa-foot .cols{display:grid;grid-template-columns:1.1fr 1fr 1fr 1.3fr 0.9fr;gap:28px 28px}
+    .fa-foot h2{margin:0 0 10px;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#E7A11C}
+    .fa-foot .muted{color:#B9C4D6}
+    .fa-foot ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+    .fa-foot .soc{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.1)}
+    .fa-foot .soc:hover{background:rgba(255,255,255,.2)}
+    @media (max-width:980px){.fa-foot .cols{grid-template-columns:repeat(2,minmax(0,1fr))}.fa-foot .brand{grid-column:1 / -1}}
+    @media (max-width:560px){.fa-foot .cols{grid-template-columns:minmax(0,1fr)}}
+  </style>
+  <div style="max-width: 1224px; margin: 0px auto; padding: 40px 24px 0px; box-sizing: border-box;">
+    <div class="cols">
+      <div class="brand" style="display: flex; flex-direction: column; gap: 12px;">
+        <a href="Main.html" aria-label="Falcon Academy home" style="display: block; line-height: 0; align-self: flex-start; margin-left: -8px;"><img src="assets/img/falcon-academy.svg" alt="Falcon Academy" style="height: 56px; width: auto; display: block;"></a>
+        <p class="muted" style="margin: 0px;">IB World School for the MYP<br>Kindergarten to Grade 12</p>
+        <div style="display: flex; gap: 8px;">
+          <a class="soc" href="https://www.facebook.com/FalconAcademy.official" aria-label="Falcon Academy on Facebook" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H7.3v3.2h2.8V22z"></path></svg></a>
+          <a class="soc" href="https://www.instagram.com/falconacademy.official" aria-label="Falcon Academy on Instagram" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.3 6.7h.01"></path></svg></a>
+          <a class="soc" href="https://www.linkedin.com/company/falconacademy-usa/" aria-label="Falcon Academy on LinkedIn" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 8.8h3.8V21H3.6zM5.5 2.9a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4zM9.8 8.8h3.6v1.7h.1c.5-.9 1.7-2 3.6-2 3.8 0 4.5 2.5 4.5 5.8V21h-3.8v-6c0-1.4 0-3.3-2-3.3s-2.3 1.6-2.3 3.2V21H9.8z"></path></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h2>Ashburn Campus</h2>
+        <p class="muted" style="margin: 0px 0px 4px;">G6 – G12</p>
+        <p style="margin: 0px;">20577 Ashburn Road<br>Ashburn, VA 20147</p>
+        <a href="https://maps.app.goo.gl/b3g9sQHwovCVjpXQ9" style="display: inline-block; margin-top: 6px; font-weight: 600; color: rgb(240, 194, 103);">Directions ›</a>
+      </div>
+
+      <div>
+        <h2>Chantilly Campus</h2>
+        <p class="muted" style="margin: 0px 0px 4px;">KG – G5</p>
+        <p style="margin: 0px;">42851 Smallwood Terrace<br>Chantilly, VA 20152</p>
+        <a href="https://maps.app.goo.gl/FS7gxAob7ZPM9opg6" style="display: inline-block; margin-top: 6px; font-weight: 600; color: rgb(240, 194, 103);">Directions ›</a>
+      </div>
+
+      <div>
+        <h2>Contact</h2>
+        <p class="muted" style="margin: 0px;">Questions about STEM at Falcon? Call:</p>
+        <a href="tel:5718001382" style="display: inline-block; font-size: 17px; font-weight: 700; margin-top: 2px;">571-800-1382</a>
+        <a href="mailto:admissions@falconacademy.org" style="display: block; margin-top: 4px; word-break: break-word;">admissions@falconacademy.org</a>
+        <a href="Contact.html" style="display: inline-block; margin-top: 6px; font-weight: 600; color: rgb(240, 194, 103);">Contact us ›</a>
+      </div>
+
+      <nav aria-label="Quick links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="https://portal.edumagined.com/falconacademy/">Parent Portal</a></li>
+          <li><a href="CalendarEvents.html">Academic Calendar</a></li>
+          <li><a href="VisitTour.html">Book a Tour</a></li>
+          <li><a href="Careers.html">Careers</a></li>
+          <li><a href="Policies.html">School Policies</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div style="margin-top: 32px; padding: 16px 0px 20px; border-top: 1px solid rgba(255, 255, 255, 0.14); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; font-size: 13px; color: rgb(185, 196, 214);">
+      <span style="flex-basis: 100%;">*Only schools authorized by the IB Organization can offer its programmes. Candidate status gives no guarantee that authorization will be granted.</span>
+      <span>© 2026 Falcon Academy. All rights reserved.</span>
+      <span>Falcon Academy admits students without discrimination. <a href="PolicyAdmissions.html" style="color: rgb(255, 255, 255); text-decoration: underline; text-underline-offset: 3px;">Admissions Policy</a></span>
+    </div>
+  </div></footer></div></div></div>
+<script src="js/site.js" defer></script>
+<script src="js/fit.js" defer></script>
+</body>
+</html>

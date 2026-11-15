@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>if(matchMedia("(max-width: 640px)").matches&&!/[?&]desktop/.test(location.search))location.replace("m/PTSO.html"+location.hash);</script>
+<title>PTSO · Falcon Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/fit.css">
+<link rel="stylesheet" href="css/pages/PTSO.css">
+</head>
+<body>
+<div><div style="background: rgb(255, 255, 255);">
+  <div><header class="fw" style="font-family: Inter, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; line-height: 1.4;">
+  <style>
+    .fw{position:relative;height:92px;background:#FFFFFF;box-shadow:0 6px 16px rgba(19,35,63,.08);z-index:40}
+    .fw a{text-decoration:none}
+    .fw-logo{position:absolute;left:max(38px, calc(50% - 598px));top:15px;display:block;line-height:0;z-index:2}
+    .fw-logo img{height:62px;width:auto;display:block}
+    .fw-quick{position:absolute;right:max(48px, calc(50% - 588px));top:0;height:38px;display:flex;align-items:center;gap:14px;font-size:13px;z-index:2}
+    .fw-quick a{position:relative;display:inline-flex;align-items:center;min-height:32px;color:#3D4A60;font-weight:500;transition:color .3s ease}
+    .fw-quick a:hover{color:#13233F}
+    .fw-quick i{width:1px;height:14px;background:#CBD3DF}
+    .fw-quick .pp{color:#1F3659;font-weight:700}
+    .fw-wing{position:absolute;left:calc(max(38px, calc(50% - 598px)) + 176px);right:0;bottom:0;height:54px}
+    .fw-wing svg{position:absolute;left:0;bottom:0;display:block}
+    .fw-line{position:absolute;left:0;bottom:0;width:calc(max(38px, calc(50% - 598px)) + 177px);height:3px;background:#E7A11C;z-index:1}
+    .fw-flat{position:absolute;left:220px;right:0;top:0;bottom:0;background:#13233F;border-top:3px solid #E7A11C;box-sizing:border-box}
+    .fw-nav{position:absolute;right:max(48px, calc(50% - 588px));bottom:0;height:54px;display:flex;align-items:center;gap:22px;z-index:3}
+    .fw-menu{display:flex;align-items:stretch;height:54px}
+    .fw-menu .dd{position:relative;display:flex;align-items:center}
+    .fw-menu .dd + .dd::before{content:"";width:1px;height:14px;background:rgba(255,255,255,.28);margin:0 2px}
+    .fw-top{position:relative;display:inline-flex;align-items:center;height:54px;padding:0 13px;box-sizing:border-box;font-size:14px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;transition:color .3s ease}
+    .fw-top:hover{color:#F3C664!important}
+    .fw-top .caret{margin-left:6px;opacity:.75}
+    .fw-menu .dd-menu{display:flex;visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity .18s ease-in,transform .18s ease-in,visibility 0s linear .18s;position:absolute;top:100%;left:0;z-index:50;min-width:250px;padding:8px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;box-shadow:0 14px 32px rgba(19,35,63,.18);flex-direction:column;gap:2px}
+    .fw-menu .dd:hover .dd-menu,.fw-menu .dd:focus-within .dd-menu{visibility:visible;opacity:1;transform:translateY(0);transition:opacity .26s cubic-bezier(0,0,.3,1),transform .32s cubic-bezier(0,0,.3,1),visibility 0s}
+    .fw-menu .dd-menu a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:0 12px;border-radius:8px;color:#1A2740;font-size:14.5px;font-weight:600;white-space:nowrap}
+    .fw-menu .dd-menu a:hover,.fw-menu .dd-menu a:focus-visible{background:#EEF2F7}
+    .fw-menu .dd-menu small{font-size:12.5px;font-weight:500;color:#5E6878}
+    /* campus pages sit under Our Campuses as one group (2026-11-08) */
+    .fw-menu .dd-menu a.dd-sub{min-height:38px;margin-left:14px;padding-left:12px;font-size:14px;font-weight:500;color:#3D4A60}
+    .fw-menu .dd-menu a.dd-sub{position:relative;padding-left:26px}
+    .fw-menu .dd-menu a.dd-sub::before{content:"";position:absolute;left:12px;top:50%;width:6px;height:6px;margin-top:-3px;border-radius:50%;background:#C3CBD8}
+    .dd-col{display:flex;flex-direction:column;gap:2px}
+    .fw-menu .dd-mega{flex-direction:row;gap:2px;padding:8px}
+    .dd-mega .dd-col{width:max-content;min-width:176px}
+    .dd-head{margin:6px 14px 6px;font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00;white-space:nowrap}
+    .fw-menu .dd-mega a{flex-direction:column;align-items:flex-start;justify-content:center;gap:1px;min-height:50px;padding:6px 14px;box-sizing:border-box;white-space:nowrap}
+    .fw-menu .dd-mega a.dd-wrap{white-space:normal;max-width:212px;line-height:1.3}
+    .fw-menu .dd:nth-last-child(-n+2) .dd-menu{left:auto;right:0}
+    .fw-apply{display:inline-flex;align-items:center;min-height:38px;padding:0 18px;border-radius:8px;background:#E7A11C;color:#13233F;font-size:14.5px;font-weight:700;white-space:nowrap;transition:background .3s ease}
+    .fw-apply:hover{background:#D48F0E;color:#13233F}
+    .fw-burger{display:none}
+    .fw a:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:6px}
+    @media (prefers-reduced-motion:reduce){.fw a,.fw-menu .dd-menu{transition:none!important}}
+
+    /* Sticky header that shrinks on scroll, like sidwell.edu (2026-11-12): after ~80px of scroll the same white header with the wave and the colour logo just gets smaller (92px to 64px, logo 62px to 44px) in 0.3s ease. Nothing changes colour or swaps; only the small quick links fade away. js/site.js adds .fw-compact. */
+    :root{--fa-hdr:64px}
+    div:has(> header.fw){position:sticky;top:0;z-index:60;transition:margin-bottom .3s ease}
+    div:has(> header.fw.fw-compact){margin-bottom:28px}
+    .fw{transition:height .3s ease,box-shadow .3s ease}
+    .fw-logo{transition:top .3s ease}
+    .fw-logo img{transition:height .3s ease}
+    .fw-logo .fw-logo-w{display:none}
+    .fw-quick{transition:opacity .2s ease,visibility .2s}
+    .fw-wing,.fw-nav{transition:height .3s ease}
+    .fw.fw-compact{height:64px;box-shadow:0 6px 18px rgba(19,35,63,.14)}
+    .fw-compact .fw-logo{top:10px}
+    .fw-compact .fw-logo img{height:44px}
+    .fw-compact .fw-quick{opacity:0;visibility:hidden;pointer-events:none}
+    .jump,.tu-bar{top:var(--fa-hdr)!important}
+    .toc,.side{top:calc(var(--fa-hdr) + 16px)!important}
+    .fq-head{top:calc(var(--fa-hdr) + 24px)!important}
+    @media (max-width:1100px){
+      div:has(> header.fw.fw-compact){margin-bottom:20px}
+      .fw-compact .fw-wing,.fw-compact .fw-nav{height:64px}
+    }
+    @media (prefers-reduced-motion:reduce){div:has(> header.fw),.fw,.fw *{transition:none!important;animation:none!important}}
+    @media (max-width:1240px){.fw-top{padding:0 9px;font-size:13px;letter-spacing:.03em}.fw-nav{gap:14px}}
+    @media (max-width:1100px){
+      .fw{height:84px}
+      .fw-logo{top:12px}.fw-logo img{height:60px}
+      .fw-quick,.fw-menu,.fw-apply{display:none}
+      .fw-wing{left:auto;width:260px;height:84px}
+      .fw-wing svg,.fw-line{display:none}
+      .fw-flat{left:28px;border-top:0;-webkit-mask:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22 preserveAspectRatio=%22none%22%3E%3Cpath d=%22M0 100C44 100 56 0 100 0V100Z%22/%3E%3C/svg%3E') 0 0/48px 100% no-repeat,linear-gradient(#000,#000) 47px 0/100% 100% no-repeat;mask:url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22 preserveAspectRatio=%22none%22%3E%3Cpath d=%22M0 100C44 100 56 0 100 0V100Z%22/%3E%3C/svg%3E') 0 0/48px 100% no-repeat,linear-gradient(#000,#000) 47px 0/100% 100% no-repeat}
+      .fw-nav{height:84px;right:16px}
+      .fw-burger{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border-radius:10px;border:1px solid rgba(255,255,255,.45);color:#FFFFFF;font-size:15px;font-weight:600}
+    }
+  </style>
+  <a class="fw-logo" href="Main.html" aria-label="Falcon Academy home"><img class="fw-logo-c" src="assets/img/falcon-academy-2.svg" alt="Falcon Academy"><img class="fw-logo-w" src="assets/img/falcon-academy.svg" alt=""></a>
+  <nav class="fw-quick" aria-label="Quick links">
+    <a href="Campuses.html" style="color: rgb(61, 74, 96); font-weight: 500;">Our Campuses</a><i aria-hidden="true"></i>
+    <a href="Careers.html" style="color: rgb(61, 74, 96); font-weight: 500;">Careers</a><i aria-hidden="true"></i>
+    <a href="Policies.html" style="color: rgb(61, 74, 96); font-weight: 500;">Policies</a><i aria-hidden="true"></i>
+    <a href="Contact.html" style="color: rgb(61, 74, 96); font-weight: 500;">Contact Us</a><i aria-hidden="true"></i>
+    <a class="pp" href="https://portal.edumagined.com/falconacademy/" target="_blank" rel="noopener noreferrer">Parent Portal ↗</a>
+  </nav>
+  <span class="fw-line" aria-hidden="true"></span>
+  <div class="fw-wing" aria-hidden="true">
+    <svg width="222" height="54" viewBox="0 0 272 66"><path d="M0 66 C120 66 150 0 270 0 H272 V66 Z" fill="#13233F"></path><path d="M0 64.5 C120 64.5 150 1.5 272 1.5" fill="none" stroke="#E7A11C" stroke-width="3" vector-effect="non-scaling-stroke"></path></svg>
+    <div class="fw-flat"></div>
+  </div>
+  <div class="fw-nav">
+    <nav class="fw-menu" aria-label="Main">
+      
+        <div class="dd">
+          <a class="fw-top" href="OurStory.html" aria-current="false" style="color: rgb(255, 255, 255);">About Us<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          
+            <div class="dd-menu " role="group" aria-label="About Us pages">
+              
+                <div class="dd-col">
+                  
+                  
+                    <a class="" href="OurStory.html">Our Story<small></small></a>
+                  
+                    <a class="" href="Leadership.html">Leadership<small></small></a>
+                  
+                    <a class="" href="Faculty.html">Faculty &amp; Staff<small></small></a>
+                  
+                    <a class="dd-group" href="Campuses.html">Our Campuses<small></small></a>
+                  
+                    <a class="dd-sub" href="AshburnCampus.html">Ashburn Campus<small>G6 – G12</small></a>
+                  
+                    <a class="dd-sub" href="ChantillyCampus.html">Chantilly Campus<small>KG – G5</small></a>
+                  
+                    <a class="" href="ParentVoices.html">Share Your Story<small></small></a>
+                  
+                    <a class="" href="Careers.html">Careers<small></small></a>
+                  
+                </div>
+              
+            </div>
+          
+        </div>
+      
+        <div class="dd">
+          <a class="fw-top" href="Academics.html" aria-current="false" style="color: rgb(255, 255, 255);">Academics<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          
+            <div class="dd-menu dd-mega" role="group" aria-label="Academics pages">
+              
+                <div class="dd-col">
+                  <p class="dd-head">Our Programs</p>
+                  
+                    <a class="" href="PrimaryYears.html">Elementary School<small>KG – G5</small></a>
+                  
+                    <a class="" href="MiddleYears.html">Middle School<small>G6 – G8</small></a>
+                  
+                    <a class="" href="HighSchool.html">High School<small>G9 – G12</small></a>
+                  
+                </div>
+              
+                <div class="dd-col">
+                  <p class="dd-head">Academic Excellence</p>
+                  
+                    <a class="" href="Accreditation.html">Accreditation<small>IB · Cognia</small></a>
+                  
+                    <a class="" href="DualEnrollment.html">Dual Enrollment<small>College credit with NOVA</small></a>
+                  
+                    <a class="" href="APCourses.html">AP Courses<small>College Board approved</small></a>
+                  
+                    <a class="" href="AssociateDegree.html">Associate Degree<small>Pathway with NOVA</small></a>
+                  
+                    <a class="" href="AcademicSupport.html">Academic Support<small>Help for every learner</small></a>
+                  
+                </div>
+              
+                <div class="dd-col">
+                  <p class="dd-head">Our Approach</p>
+                  
+                    <a class="" href="Curriculum.html">Curriculum<small>9 subjects</small></a>
+                  
+                    <a class="" href="ArabicIslamic.html">Arabic &amp; Islamic Studies<small>Quran, Arabic and values</small></a>
+                  
+                    <a class="" href="STEM.html">STEM at Falcon<small>Science, tech and math</small></a>
+                  
+                    <a class="" href="CalendarEvents.html">Academic Calendar<small>Key dates for the year</small></a>
+                  
+                </div>
+              
+            </div>
+          
+        </div>
+      
+        <div class="dd">
+          <a class="fw-top" href="AdmissionsOverview.html" aria-current="false" style="color: rgb(255, 255, 255);">Admissions<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          
+            <div class="dd-menu " role="group" aria-label="Admissions pages">
+              
+                <div class="dd-col">
+                  
+                  
+                    <a class="" href="VisitTour.html">Visit Our School<small></small></a>
+                  
+                    <a class="" href="AdmissionsOverview.html">Admissions Overview<small></small></a>
+                  
+                    <a class="" href="HowToApply.html">How to Apply<small></small></a>
+                  
+                    <a class="" href="Tuition.html">Tuition &amp; Financial Aid<small></small></a>
+                  
+                    <a class="" href="InternationalStudents.html">International Students<small></small></a>
+                  
+                    <a class="" href="AdmissionsFAQ.html">Admissions FAQ<small></small></a>
+                  
+                </div>
+              
+            </div>
+          
+        </div>
+      
+        <div class="dd">
+          <a class="fw-top" href="StudentLife.html" aria-current="page" style="color: rgb(231, 161, 28);">Community<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          
+            <div class="dd-menu dd-mega" role="group" aria-label="Community pages">
+              
+                <div class="dd-col">
+                  <p class="dd-head">Beyond the Classroom</p>
+                  
+                    <a class="" href="StudentLife.html">Student Life<small>Trips, sports and events</small></a>
+                  
+                    <a class="dd-wrap" href="AfterSchool.html">Clubs and After School / Enrichment Programs<small></small></a>
+                  
+                    <a class="" href="SummerCamp.html">Summer Camp<small>Seven weeks of summer fun</small></a>
+                  
+                    <a class="" href="PhotosVideos.html">Galleries<small>Photos and videos</small></a>
+                  
+                </div>
+              
+                <div class="dd-col">
+                  <p class="dd-head">Families</p>
+                  
+                    <a class="" href="PTSO.html">PTSO<small>Parent-Teacher-Student Organization</small></a>
+                  
+                    <a class="" href="News.html">News<small>Announcements and stories</small></a>
+                  
+                    <a class="" href="Store.html">Uniform and Spirit Store<small>Uniforms and Falcon gear</small></a>
+                  
+                </div>
+              
+            </div>
+          
+        </div>
+      
+    </nav>
+    <a class="fw-apply" href="HowToApply.html">Apply Now</a>
+    <a class="fw-burger" href="m/Menu.html?mobile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>Menu</a>
+  </div></header></div>
+
+  <section aria-labelledby="pt-title" style="padding-top: 56px; padding-bottom: 64px;">
+    <div class="wrap hero">
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <p class="eyebrow">PTSO</p>
+        <h1 id="pt-title">Stronger Together, for Every Falcon Student</h1>
+        <p class="lead" style="font-size: 18.5px; color: rgb(75, 85, 102); max-width: 540px;">Our Parent-Teacher-Student Organization brings families, teachers and students together to support learning, celebrate milestones and grow a close-knit school community.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px;">
+          <a class="btn btn-gold btn-lg" href="#involved">Get Involved <span aria-hidden="true">↓</span></a>
+          <a class="btn btn-ghost btn-lg" href="Contact.html">Contact the PTSO</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/img/falcon-families-teachers-and-graduates-together-at.jpg" alt="Falcon families, teachers and graduates gathered together at the 2026 graduation ceremony" style="object-position: 50% 45%;">
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="pt-about" style="background: rgb(246, 248, 251); border-top: 1px solid rgb(220, 226, 235); border-bottom: 1px solid rgb(220, 226, 235); padding-top: 68px; padding-bottom: 72px;">
+    <div class="wrap about">
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <h2 id="pt-about" style="font-size: 30px; font-weight: 700;">What Is the PTSO?</h2>
+        <p style="font-size: 17.5px; line-height: 1.65; color: rgb(75, 85, 102);">The PTSO is Falcon’s parent-teacher-student organization. It gives families an easy way to take part in school life, work side by side with teachers, and help students feel supported in everything they do.</p>
+        <p style="font-size: 17.5px; line-height: 1.65; color: rgb(75, 85, 102);">Every family is part of the Falcon community. The PTSO is where that community comes together.</p>
+      </div>
+      <ul class="does">
+        <li>
+          <span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"></path></svg></span>
+          <div><h3>Connect Families</h3><p>Welcome new families and help everyone feel at home, from KG to G12.</p></div>
+        </li>
+        <li>
+          <span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-8.5-5.3-8.5-11.2A4.8 4.8 0 0 1 12 6.6a4.8 4.8 0 0 1 8.5 3.2C20.5 15.7 12 21 12 21z"></path></svg></span>
+          <div><h3>Support Teachers and Students</h3><p>Give time, ideas and helping hands that make classroom life richer.</p></div>
+        </li>
+        <li>
+          <span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h18v4H3z"></path><path d="M12 8v13M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"></path><path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"></path></svg></span>
+          <div><h3>Celebrate Together</h3><p>Help plan and host the events and milestones that bring Falcon families together.</p></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="pt-why" style="padding-top: 72px; padding-bottom: 76px;">
+    <div class="wrap" style="display: flex; flex-direction: column; gap: 30px;">
+      <div class="sec-head">
+        <h2 id="pt-why">Why Families Join</h2>
+        <p class="muted">A small amount of time goes a long way for your child and the school.</p>
+      </div>
+      <div class="why">
+        <article class="card wcard">
+          <span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11"></path><path d="M10 21v-6h4v6"></path></svg></span>
+          <h3>Know Your School</h3>
+          <p>Meet teachers, staff and other families, and see school life up close.</p>
+        </article>
+        <article class="card wcard">
+          <span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5 14.9 8.4l6.5.9-4.7 4.6 1.1 6.5L12 17.3l-5.8 3.1 1.1-6.5L2.6 9.3l6.5-.9z"></path></svg></span>
+          <h3>Support Your Child</h3>
+          <p>Children feel proud when they see their family involved at school.</p>
+        </article>
+        <article class="card wcard">
+          <span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path><path d="M8 9h8M8 13h5"></path></svg></span>
+          <h3>Share Your Ideas</h3>
+          <p>Bring suggestions and help shape events and activities for students.</p>
+        </article>
+        <article class="card wcard">
+          <span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><path d="M9 9h.01M15 9h.01"></path></svg></span>
+          <h3>Build Friendships</h3>
+          <p>Get to know families who share your values and your hopes for your children.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="involved" aria-labelledby="pt-ways" style="background: rgb(246, 248, 251); border-top: 1px solid rgb(220, 226, 235); border-bottom: 1px solid rgb(220, 226, 235); padding-top: 72px; padding-bottom: 76px; scroll-margin-top: 16px;">
+    <div class="wrap" style="display: flex; flex-direction: column; gap: 30px;">
+      <div class="sec-head">
+        <h2 id="pt-ways">Ways to Get Involved</h2>
+        <p class="muted">Give what fits your schedule, whether that is one afternoon or a whole season.</p>
+      </div>
+      <div class="ways">
+        <article class="card way">
+          <div class="ph"><img src="assets/img/a-speaker-addresses-families-from-the-podium.jpg" alt="A speaker addresses families from the podium at a school ceremony" style="object-position: 92% 40%;"></div>
+          <div class="bd">
+            <h3>Volunteer at Events</h3>
+            <p>Lend a hand at family events, townhalls, celebrations and ceremonies through the year.</p>
+          </div>
+        </article>
+        <article class="card way">
+          <div class="ph"><img src="assets/img/a-falcon-teacher-with-a-young-student.jpg" alt="A Falcon teacher with a young student at a classroom display" style="object-position: 60% 40%;"></div>
+          <div class="bd">
+            <h3>Support Teachers</h3>
+            <p>Help with classroom projects, teacher appreciation and the small things that make lessons richer.</p>
+          </div>
+        </article>
+        <article class="card way">
+          <div class="ph"><img src="assets/img/a-student-receives-a-certificate-at-an.jpg" alt="A student receives an IB Learner Profile certificate at an outdoor assembly" style="object-position: 96% 40%;"></div>
+          <div class="bd">
+            <h3>Cheer On Students</h3>
+            <p>Come out for competitions, award days and performances, and help make each one memorable.</p>
+          </div>
+        </article>
+        <article class="card way">
+          <div class="ph"><img src="assets/img/students-outdoors-on-a-service-project.jpg" alt="Students outdoors carrying litter bags during a neighborhood clean-up" style="object-position: 50% 30%;"></div>
+          <div class="bd">
+            <h3>Serve Together</h3>
+            <p>Join service projects with students, teachers and families, from neighborhood clean-ups to causes close to home.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="pt-touch" style="padding-top: 72px; padding-bottom: 76px;">
+    <div class="wrap" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(460px, 100%), 1fr)); gap: 32px 40px; align-items: stretch;">
+      <div style="display: flex; flex-direction: column; gap: 22px;">
+        <div class="sec-head">
+          <h2 id="pt-touch">PTSO at a Glance</h2>
+          <p class="muted">Details for this school year.</p>
+        </div>
+        <ul class="glance">
+          <li>
+            <span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg></span>
+            <span class="k">Meetings</span><span class="v ph-note">[Confirm with the PTSO]</span>
+          </li>
+          <li>
+            <span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg></span>
+            <span class="k">Officers</span><span class="v ph-note">[Confirm with the PTSO]</span>
+          </li>
+          <li>
+            <span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"></rect><circle cx="8" cy="12" r="2"></circle><path d="M13 10h5M13 14h3"></path></svg></span>
+            <span class="k">Who Can Join</span><span class="v ph-note">[Confirm with the PTSO]</span>
+          </li>
+          <li>
+            <span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 6-10 7L2 6"></path></svg></span>
+            <span class="k">Email</span><span class="v ph-note">[Confirm with the PTSO]</span>
+          </li>
+        </ul>
+      </div>
+      <div class="touch">
+        <span class="tile" style="background: rgba(255, 255, 255, 0.1); color: rgb(243, 198, 100);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></span>
+        <h3>Get in Touch</h3>
+        <p>Have a question, an idea or some time to give? Send us a message through the contact form and mention the PTSO in your note.</p>
+        <ul class="tlist">
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Your name and how to reach you</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Your child’s grade and campus</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>How you would like to help</li>
+        </ul>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: auto; padding-top: 10px;">
+          <a class="btn btn-gold btn-lg" href="Contact.html">Contact the PTSO <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap" style="padding-top: 64px; padding-bottom: 72px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px;">
+      <h2 style="color: rgb(255, 255, 255); font-size: 34px; font-weight: 700;">New to Falcon? Come Say Hello</h2>
+      <p style="color: rgb(213, 220, 231); font-size: 18px;">See our community in action on a campus tour, or start your application today.</p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 12px;">
+        <a class="btn btn-light" href="VisitTour.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>Book a Tour</a>
+        <a class="btn btn-gold" href="HowToApply.html">Apply Now <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div><footer class="fa-foot" style="font-family: Inter, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; background: rgb(19, 35, 63); color: rgb(255, 255, 255); font-size: 14.5px; line-height: 1.5;">
+  <style>
+    .fa-foot a{color:#FFFFFF;text-decoration:none}
+    .fa-foot a:hover{text-decoration:underline;text-underline-offset:3px}
+    .fa-foot a:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:4px}
+    .fa-foot .cols{display:grid;grid-template-columns:1.1fr 1fr 1fr 1.3fr 0.9fr;gap:28px 28px}
+    .fa-foot h2{margin:0 0 10px;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#E7A11C}
+    .fa-foot .muted{color:#B9C4D6}
+    .fa-foot ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+    .fa-foot .soc{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.1)}
+    .fa-foot .soc:hover{background:rgba(255,255,255,.2)}
+    @media (max-width:980px){.fa-foot .cols{grid-template-columns:repeat(2,minmax(0,1fr))}.fa-foot .brand{grid-column:1 / -1}}
+    @media (max-width:560px){.fa-foot .cols{grid-template-columns:minmax(0,1fr)}}
+  </style>
+  <div style="max-width: 1224px; margin: 0px auto; padding: 40px 24px 0px; box-sizing: border-box;">
+    <div class="cols">
+      <div class="brand" style="display: flex; flex-direction: column; gap: 12px;">
+        <a href="Main.html" aria-label="Falcon Academy home" style="display: block; line-height: 0; align-self: flex-start; margin-left: -8px;"><img src="assets/img/falcon-academy.svg" alt="Falcon Academy" style="height: 56px; width: auto; display: block;"></a>
+        <p class="muted" style="margin: 0px;">IB World School for the MYP<br>Kindergarten to Grade 12</p>
+        <div style="display: flex; gap: 8px;">
+          <a class="soc" href="https://www.facebook.com/FalconAcademy.official" aria-label="Falcon Academy on Facebook" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8.2h2.8l.4-3.2h-3.2V8.5c0-.9.3-1.6 1.6-1.6h1.7V4.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.3H7.3v3.2h2.8V22z"></path></svg></a>
+          <a class="soc" href="https://www.instagram.com/falconacademy.official" aria-label="Falcon Academy on Instagram" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.3 6.7h.01"></path></svg></a>
+          <a class="soc" href="https://www.linkedin.com/company/falconacademy-usa/" aria-label="Falcon Academy on LinkedIn" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 8.8h3.8V21H3.6zM5.5 2.9a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4zM9.8 8.8h3.6v1.7h.1c.5-.9 1.7-2 3.6-2 3.8 0 4.5 2.5 4.5 5.8V21h-3.8v-6c0-1.4 0-3.3-2-3.3s-2.3 1.6-2.3 3.2V21H9.8z"></path></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h2>Ashburn Campus</h2>
+        <p class="muted" style="margin: 0px 0px 4px;">G6 – G12</p>
+        <p style="margin: 0px;">20577 Ashburn Road<br>Ashburn, VA 20147</p>
+        <a href="https://maps.app.goo.gl/b3g9sQHwovCVjpXQ9" style="display: inline-block; margin-top: 6px; font-weight: 600; color: rgb(240, 194, 103);">Directions ›</a>
+      </div>
+
+      <div>
+        <h2>Chantilly Campus</h2>
+        <p class="muted" style="margin: 0px 0px 4px;">KG – G5</p>
+        <p style="margin: 0px;">42851 Smallwood Terrace<br>Chantilly, VA 20152</p>
+        <a href="https://maps.app.goo.gl/FS7gxAob7ZPM9opg6" style="display: inline-block; margin-top: 6px; font-weight: 600; color: rgb(240, 194, 103);">Directions ›</a>
+      </div>
+
+      <div>
+        <h2>Contact</h2>
+        <p class="muted" style="margin: 0px;">Questions about the PTSO? Call:</p>
+        <a href="tel:5718001382" style="display: inline-block; font-size: 17px; font-weight: 700; margin-top: 2px;">571-800-1382</a>
+        <a href="mailto:admissions@falconacademy.org" style="display: block; margin-top: 4px; word-break: break-word;">admissions@falconacademy.org</a>
+        <a href="Contact.html" style="display: inline-block; margin-top: 6px; font-weight: 600; color: rgb(240, 194, 103);">Contact us ›</a>
+      </div>
+
+      <nav aria-label="Quick links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="https://portal.edumagined.com/falconacademy/">Parent Portal</a></li>
+          <li><a href="CalendarEvents.html">Academic Calendar</a></li>
+          <li><a href="VisitTour.html">Book a Tour</a></li>
+          <li><a href="Careers.html">Careers</a></li>
+          <li><a href="Policies.html">School Policies</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div style="margin-top: 32px; padding: 16px 0px 20px; border-top: 1px solid rgba(255, 255, 255, 0.14); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; font-size: 13px; color: rgb(185, 196, 214);">
+      <span style="flex-basis: 100%;">*Only schools authorized by the IB Organization can offer its programmes. Candidate status gives no guarantee that authorization will be granted.</span>
+      <span>© 2026 Falcon Academy. All rights reserved.</span>
+      <span>Falcon Academy admits students without discrimination. <a href="PolicyAdmissions.html" style="color: rgb(255, 255, 255); text-decoration: underline; text-underline-offset: 3px;">Admissions Policy</a></span>
+    </div>
+  </div></footer></div></div></div>
+<script src="js/site.js" defer></script>
+<script src="js/fit.js" defer></script>
+</body>
+</html>

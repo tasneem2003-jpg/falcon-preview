@@ -36,8 +36,8 @@
     .fw-top{position:relative;display:inline-flex;align-items:center;height:54px;padding:0 13px;box-sizing:border-box;font-size:14px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;transition:color .3s ease}
     .fw-top:hover{color:#F3C664!important}
     .fw-top .caret{margin-left:6px;opacity:.75}
-    .fw-menu .dd-menu{display:flex;visibility:hidden;opacity:0;transition:opacity .2s ease-in,visibility 0s linear .2s;position:absolute;top:100%;left:0;z-index:50;min-width:250px;padding:8px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;box-shadow:0 14px 32px rgba(19,35,63,.18);flex-direction:column;gap:2px}
-    .fw-menu .dd:hover .dd-menu,.fw-menu .dd:focus-within .dd-menu{visibility:visible;opacity:1;transition:opacity .2s ease-out,visibility 0s}
+    .fw-menu .dd-menu{display:flex;visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity .18s ease-in,transform .18s ease-in,visibility 0s linear .18s;position:absolute;top:100%;left:0;z-index:50;min-width:250px;padding:8px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;box-shadow:0 14px 32px rgba(19,35,63,.18);flex-direction:column;gap:2px}
+    .fw-menu .dd:hover .dd-menu,.fw-menu .dd:focus-within .dd-menu{visibility:visible;opacity:1;transform:translateY(0);transition:opacity .26s cubic-bezier(0,0,.3,1),transform .32s cubic-bezier(0,0,.3,1),visibility 0s}
     .fw-menu .dd-menu a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:0 12px;border-radius:8px;color:#1A2740;font-size:14.5px;font-weight:600;white-space:nowrap}
     .fw-menu .dd-menu a:hover,.fw-menu .dd-menu a:focus-visible{background:#EEF2F7}
     .fw-menu .dd-menu small{font-size:12.5px;font-weight:500;color:#5E6878}
@@ -48,8 +48,10 @@
     .dd-col{display:flex;flex-direction:column;gap:2px}
     .fw-menu .dd-mega{flex-direction:row;gap:2px;padding:8px}
     .dd-mega .dd-col{width:max-content;min-width:176px}
-    .dd-head{margin:0 12px 6px;font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00;white-space:nowrap}
+    .dd-head{margin:6px 14px 6px;font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00;white-space:nowrap}
     .fw-menu .dd-mega a{flex-direction:column;align-items:flex-start;justify-content:center;gap:1px;min-height:50px;padding:6px 14px;box-sizing:border-box;white-space:nowrap}
+    .fw-menu .dd-mega a.dd-wrap{white-space:normal;max-width:212px;line-height:1.3}
+    .fw-menu .dd:nth-last-child(-n+2) .dd-menu{left:auto;right:0}
     .fw-apply{display:inline-flex;align-items:center;min-height:38px;padding:0 18px;border-radius:8px;background:#E7A11C;color:#13233F;font-size:14.5px;font-weight:700;white-space:nowrap;transition:background .3s ease}
     .fw-apply:hover{background:#D48F0E;color:#13233F}
     .fw-burger{display:none}
@@ -126,6 +128,10 @@
                   
                     <a class="dd-sub" href="ChantillyCampus.html">Chantilly Campus<small>KG – G5</small></a>
                   
+                    <a class="" href="ParentVoices.html">Share Your Story<small></small></a>
+                  
+                    <a class="" href="Careers.html">Careers<small></small></a>
+                  
                 </div>
               
             </div>
@@ -133,27 +139,25 @@
         </div>
       
         <div class="dd">
-          <a class="fw-top" href="Curriculum.html" aria-current="page" style="color: rgb(231, 161, 28);">Academics<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          <a class="fw-top" href="Academics.html" aria-current="page" style="color: rgb(231, 161, 28);">Academics<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
             <div class="dd-menu dd-mega" role="group" aria-label="Academics pages">
               
                 <div class="dd-col">
+                  <p class="dd-head">Our Programs</p>
                   
+                    <a class="" href="PrimaryYears.html">Elementary School<small>KG – G5</small></a>
                   
-                    <a class="" href="PrimaryYears.html">Primary Years<small>KG – G5</small></a>
-                  
-                    <a class="" href="MiddleYears.html">Middle Years<small>G6 – G8</small></a>
+                    <a class="" href="MiddleYears.html">Middle School<small>G6 – G8</small></a>
                   
                     <a class="" href="HighSchool.html">High School<small>G9 – G12</small></a>
-                  
-                    <a class="" href="Curriculum.html">Curriculum<small>9 subjects</small></a>
-                  
-                    <a class="" href="ArabicIslamic.html">Arabic &amp; Islamic Studies<small>Quran, Arabic and Islamic values</small></a>
                   
                 </div>
               
                 <div class="dd-col">
+                  <p class="dd-head">Academic Excellence</p>
                   
+                    <a class="" href="Accreditation.html">Accreditation<small>IB · Cognia</small></a>
                   
                     <a class="" href="DualEnrollment.html">Dual Enrollment<small>College credit with NOVA</small></a>
                   
@@ -161,7 +165,20 @@
                   
                     <a class="" href="AssociateDegree.html">Associate Degree<small>Pathway with NOVA</small></a>
                   
-                    <a class="" href="Accreditation.html">Accreditation<small>IB · Cognia</small></a>
+                    <a class="" href="AcademicSupport.html">Academic Support<small>Help for every learner</small></a>
+                  
+                </div>
+              
+                <div class="dd-col">
+                  <p class="dd-head">Our Approach</p>
+                  
+                    <a class="" href="Curriculum.html">Curriculum<small>9 subjects</small></a>
+                  
+                    <a class="" href="ArabicIslamic.html">Arabic &amp; Islamic Studies<small>Quran, Arabic and values</small></a>
+                  
+                    <a class="" href="STEM.html">STEM at Falcon<small>Science, tech and math</small></a>
+                  
+                    <a class="" href="CalendarEvents.html">Academic Calendar<small>Key dates for the year</small></a>
                   
                 </div>
               
@@ -170,18 +187,24 @@
         </div>
       
         <div class="dd">
-          <a class="fw-top" href="VisitTour.html" aria-current="false" style="color: rgb(255, 255, 255);">Admissions<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          <a class="fw-top" href="AdmissionsOverview.html" aria-current="false" style="color: rgb(255, 255, 255);">Admissions<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
             <div class="dd-menu " role="group" aria-label="Admissions pages">
               
                 <div class="dd-col">
                   
                   
-                    <a class="" href="VisitTour.html">Visit &amp; Book a Tour<small></small></a>
+                    <a class="" href="VisitTour.html">Visit Our School<small></small></a>
+                  
+                    <a class="" href="AdmissionsOverview.html">Admissions Overview<small></small></a>
                   
                     <a class="" href="HowToApply.html">How to Apply<small></small></a>
                   
                     <a class="" href="Tuition.html">Tuition &amp; Financial Aid<small></small></a>
+                  
+                    <a class="" href="InternationalStudents.html">International Students<small></small></a>
+                  
+                    <a class="" href="AdmissionsFAQ.html">Admissions FAQ<small></small></a>
                   
                 </div>
               
@@ -190,24 +213,31 @@
         </div>
       
         <div class="dd">
-          <a class="fw-top" href="CalendarEvents.html" aria-current="false" style="color: rgb(255, 255, 255);">Community<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          <a class="fw-top" href="StudentLife.html" aria-current="false" style="color: rgb(255, 255, 255);">Community<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
-            <div class="dd-menu " role="group" aria-label="Community pages">
+            <div class="dd-menu dd-mega" role="group" aria-label="Community pages">
               
                 <div class="dd-col">
+                  <p class="dd-head">Beyond the Classroom</p>
                   
+                    <a class="" href="StudentLife.html">Student Life<small>Trips, sports and events</small></a>
                   
-                    <a class="" href="CalendarEvents.html">Calendar &amp; Events<small></small></a>
+                    <a class="dd-wrap" href="AfterSchool.html">Clubs and After School / Enrichment Programs<small></small></a>
                   
-                    <a class="" href="News.html">News &amp; Announcements<small></small></a>
+                    <a class="" href="SummerCamp.html">Summer Camp<small>Seven weeks of summer fun</small></a>
                   
-                    <a class="" href="PhotosVideos.html">Photos &amp; Videos<small></small></a>
+                    <a class="" href="PhotosVideos.html">Galleries<small>Photos and videos</small></a>
                   
-                    <a class="" href="ParentVoices.html">Parent Voices<small></small></a>
+                </div>
+              
+                <div class="dd-col">
+                  <p class="dd-head">Families</p>
                   
-                    <a class="" href="Store.html">Falcon Store<small></small></a>
+                    <a class="" href="PTSO.html">PTSO<small>Parent-Teacher-Student Organization</small></a>
                   
-                    <a class="" href="AfterSchool.html">After School &amp; Weekend<small>Clubs</small></a>
+                    <a class="" href="News.html">News<small>Announcements and stories</small></a>
+                  
+                    <a class="" href="Store.html">Uniform and Spirit Store<small>Uniforms and Falcon gear</small></a>
                   
                 </div>
               
@@ -220,44 +250,26 @@
     <a class="fw-burger" href="m/Menu.html?mobile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>Menu</a>
   </div></header></div>
 
-  <div class="wrap" style="padding-top: 18px; padding-bottom: 6px;">
-    <div class="pnav">
-      <nav class="crumb" aria-label="Breadcrumb"><a href="Main.html">Home</a><span aria-hidden="true">›</span><span>Academics</span><span aria-hidden="true">›</span><a href="Curriculum.html">Curriculum</a><span aria-hidden="true">›</span><span aria-current="page">Islamic Studies</span></nav>
-      <nav class="pnav-chips" aria-label="Academics pages">
-        <a class="chip" href="PrimaryYears.html">Primary Years</a>
-        <a class="chip" href="MiddleYears.html">Middle Years</a>
-        <a class="chip" href="HighSchool.html">High School</a>
-        <a class="chip chip-on" href="Curriculum.html" aria-current="page">Curriculum</a>
-        <a class="chip" href="ArabicIslamic.html">Arabic &amp; Islamic Studies</a>
-        <a class="chip" href="DualEnrollment.html">Dual Enrollment</a>
-        <a class="chip" href="APCourses.html">AP Courses</a>
-        <a class="chip" href="AssociateDegree.html">Associate Degree</a>
-        <a class="chip" href="Accreditation.html">Accreditation</a>
-      </nav>
-      <details class="pnav-m"><summary><span class="pm-txt"><span class="pm-sec">Academics</span><span class="pm-cur">Islamic Studies</span></span><span class="pm-ic" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"></path></svg></span></summary><ul><li><a href="PrimaryYears.html">Primary Years</a></li><li><a href="MiddleYears.html">Middle Years</a></li><li><a href="HighSchool.html">High School</a></li><li><a href="Curriculum.html" aria-current="page">Curriculum<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E7A11C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></a></li><li><a href="ArabicIslamic.html">Arabic &amp; Islamic Studies</a></li><li><a href="DualEnrollment.html">Dual Enrollment</a></li><li><a href="APCourses.html">AP Courses</a></li><li><a href="AssociateDegree.html">Associate Degree</a></li><li><a href="Accreditation.html">Accreditation</a></li></ul></details>
-    </div>
-  </div>
 
   <main class="wrap" style="padding-top: 20px; padding-bottom: 72px; display: flex; flex-direction: column; gap: 18px;">
     <details class="pick"><summary><small>Subject:</small> Islamic Studies <span aria-hidden="true">▾</span></summary><ul><li><a href="CurriculumArabic.html">Arabic Language</a></li><li><a href="CurriculumIslamic.html" aria-current="page">Islamic Studies</a></li><li><a href="CurriculumEnglish.html">English Language Arts</a></li><li><a href="CurriculumMath.html">Mathematics</a></li><li><a href="CurriculumScience.html">Science</a></li><li><a href="CurriculumSocialStudies.html">Social Studies</a></li><li><a href="CurriculumComputerScience.html">Computer Science, IT &amp; Design</a></li><li><a href="CurriculumVisualArts.html">Visual Arts</a></li><li><a href="CurriculumPHE.html">Physical &amp; Health Education</a></li><li><a href="Curriculum.html">← All subjects</a></li></ul></details>
     <div class="layout">
       <article class="doc" aria-labelledby="s-title">
         <span class="tile" style="width: 48px; height: 48px; border-radius: 12px;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg></span>
-        <h1 id="s-title" style="font-size: clamp(26px, 3.6vw, 31.5px); font-weight: 700;">Islamic Studies</h1>
-        <p class="tagline">Faith, values and Quran, at every age.</p>
-        <figure class="hero"><img src="assets/img/middle-school-students-in-class.jpg" alt="Middle school students working at tables in a classroom decorated for Ramadan" style="object-position: 50% 45%;"><figcaption>A Middle Years classroom during Ramadan</figcaption></figure>
+        <h1 id="s-title" style="font-size: clamp(26px, 3.6vw, 31.5px); font-weight: 700;"><span class="eyebrow">Islamic Studies</span>Faith, Values and Quran at Every Age</h1>
+        <figure class="hero"><img src="assets/img/middle-school-students-in-class.jpg" alt="Middle school students working at tables in a classroom decorated for Ramadan" style="object-position: 50% 45%;"><figcaption>A middle school classroom during Ramadan</figcaption></figure>
         <dl class="glance"><div><dt>Grades</dt><dd>KG – G12</dd></div><div><dt>How often</dt><dd>Part of every school day</dd></div><div><dt>Quran</dt><dd>Recitation and memorization</dd></div><div><dt>Highlight</dt><dd>The Annual Quran Competition</dd></div></dl>
         <p style="font-size: 17px; line-height: 1.7; color: rgb(75, 85, 102);">Islamic Studies is central to Falcon’s mission. Students learn their faith and values at their own level and connect each lesson to their lives. Classes follow our elementary and middle school frameworks and the three-dimensional model of teaching and learning (concepts, skills, and content). Students grow in faith, reason about right and wrong, and build their Islamic identity.</p>
         <nav class="toc" aria-label="On this page"><a href="#primary">KG – G5</a><a href="#middle">G6 – G8</a></nav>
         <section id="primary" class="blk" aria-labelledby="h-primary">
-          <h2 id="h-primary">Primary Years <small>KG – G5</small></h2>
+          <h2 id="h-primary">Elementary School <small>KG – G5</small></h2>
           <a class="stage-link" href="PrimaryYears.html">Part of the Primary Years Programme ›</a>
           <div class="inclass"><h3>In the Classroom</h3><ul class="acts"><li>Stories from the Qur’an and Sunnah</li><li>Role-play</li><li>Daily reflections</li><li>Short surahs</li><li>Prayer routines</li></ul></div>
           <p>In elementary school, children learn Islam by asking questions and doing. They meet core ideas such as belief, submission, responsibility, and compassion through stories from the Qur’an and the Sunnah, hands-on activities, role-play, and daily reflections. Lessons cover the basics of ‘Aqeedah (belief), acts of worship (Ibadah), prophetic manners (Akhlaq), Seerah, and Islamic history, all tied to students’ daily lives.</p>
           <p>Teachers adjust lessons for each child, whether they are native Arabic speakers or new to Islamic ideas. Students memorize and recite selected short surahs and learn what they mean and how to act on them. Teachers model respectful dialogue, self-management, prayer routines, and working together, and students practice them in class.</p>
         </section>
         <section id="middle" class="blk" aria-labelledby="h-middle">
-          <h2 id="h-middle">Middle Years <small>G6 – G8</small></h2>
+          <h2 id="h-middle">Middle School <small>G6 – G8</small></h2>
           <a class="stage-link" href="MiddleYears.html">Part of the Middle Years Programme ›</a>
           <div class="projs"><h3>Sample Projects</h3><div class="pgrid"><div class="pcard"><strong>Plan a Zakat Campaign</strong><span>Apply Islamic principles to a real need in the community.</span></div><div class="pcard"><strong>Write a Khutbah</strong><span>Research, write and deliver a student-led khutbah.</span></div><div class="pcard"><strong>A Digital Seerah Timeline</strong><span>Trace the life of the Prophet ﷺ in a multimedia project.</span></div></div></div>
           <p>In middle school, students think more deeply and ask harder questions about Islam. They study Tawheed, jurisprudence (Fiqh), Islamic values in the modern world, comparative ethics, biographies of the prophets and companions, and how the Muslim world developed over time. They learn to reason about ethics, analyze the Qur’an and Hadith, and apply Islamic teachings to issues in their own lives and in the world today.</p>
@@ -265,7 +277,7 @@
           <p>Teachers check progress in many ways. During each unit, formative assessments include reflection journals, class discussions, recitation checks, and self-assessments. Summative assessments are real projects, such as planning a zakat campaign, writing a khutbah, analyzing case studies using Islamic principles, or creating a digital Seerah timeline. Students can show what they understand by speaking, writing, making art, or taking action.</p>
           <p>In every grade, students learn Islam and are guided to live it, with honesty, humility and service. Our goal is to raise young people who are proud of their faith and ready to serve their communities.</p>
         </section>
-        <section class="xsec" aria-labelledby="h-gal"><h2 id="h-gal">Inside the Classroom</h2><div class="gal"><figure><div class="phbox" role="img" aria-label="Photo to come: The Annual Quran Competition"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"></path><circle cx="12" cy="13" r="3.5"></circle></svg></div><figcaption>The Annual Quran Competition</figcaption></figure><figure><div class="phbox" role="img" aria-label="Photo to come: A Quran recitation circle in the Primary Years"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"></path><circle cx="12" cy="13" r="3.5"></circle></svg></div><figcaption>A Quran recitation circle in the Primary Years</figcaption></figure></div></section>
+        <section class="xsec" aria-labelledby="h-gal"><h2 id="h-gal">Inside the Classroom</h2><div class="gal"><figure><div class="phbox" role="img" aria-label="Photo to come: The Annual Quran Competition"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"></path><circle cx="12" cy="13" r="3.5"></circle></svg></div><figcaption>The Annual Quran Competition</figcaption></figure><figure><div class="phbox" role="img" aria-label="Photo to come: A Quran recitation circle in elementary school"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"></path><circle cx="12" cy="13" r="3.5"></circle></svg></div><figcaption>A Quran recitation circle in elementary school</figcaption></figure></div></section>
         <section class="scta cta-band" aria-labelledby="h-cta"><div><h2 id="h-cta">See Islamic Studies in a Real Classroom</h2><p>Tours run Sundays at Ashburn and Saturdays at Chantilly. Bring your child and your questions.</p></div><div style="display: flex; flex-wrap: wrap; gap: 10px;"><a class="btn btn-light" href="VisitTour.html">Book a Tour</a><a class="btn btn-gold" href="HowToApply.html">Apply Now <span aria-hidden="true">→</span></a></div></section>
         <nav class="pn" aria-label="Other subjects">
           <a href="CurriculumArabic.html"><span>‹ Previous subject</span><strong>Arabic Language</strong></a>
@@ -327,7 +339,7 @@
         <h2>Quick Links</h2>
         <ul>
           <li><a href="https://portal.edumagined.com/falconacademy/">Parent Portal</a></li>
-          <li><a href="CalendarEvents.html">Calendar</a></li>
+          <li><a href="CalendarEvents.html">Academic Calendar</a></li>
           <li><a href="VisitTour.html">Book a Tour</a></li>
           <li><a href="Careers.html">Careers</a></li>
           <li><a href="Policies.html">School Policies</a></li>
@@ -336,6 +348,7 @@
     </div>
 
     <div style="margin-top: 32px; padding: 16px 0px 20px; border-top: 1px solid rgba(255, 255, 255, 0.14); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; font-size: 13px; color: rgb(185, 196, 214);">
+      <span style="flex-basis: 100%;">*Only schools authorized by the IB Organization can offer its programmes. Candidate status gives no guarantee that authorization will be granted.</span>
       <span>© 2026 Falcon Academy. All rights reserved.</span>
       <span>Falcon Academy admits students without discrimination. <a href="PolicyAdmissions.html" style="color: rgb(255, 255, 255); text-decoration: underline; text-underline-offset: 3px;">Admissions Policy</a></span>
     </div>

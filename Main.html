@@ -36,8 +36,8 @@
     .fw-top{position:relative;display:inline-flex;align-items:center;height:54px;padding:0 13px;box-sizing:border-box;font-size:14px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;transition:color .3s ease}
     .fw-top:hover{color:#F3C664!important}
     .fw-top .caret{margin-left:6px;opacity:.75}
-    .fw-menu .dd-menu{display:flex;visibility:hidden;opacity:0;transition:opacity .2s ease-in,visibility 0s linear .2s;position:absolute;top:100%;left:0;z-index:50;min-width:250px;padding:8px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;box-shadow:0 14px 32px rgba(19,35,63,.18);flex-direction:column;gap:2px}
-    .fw-menu .dd:hover .dd-menu,.fw-menu .dd:focus-within .dd-menu{visibility:visible;opacity:1;transition:opacity .2s ease-out,visibility 0s}
+    .fw-menu .dd-menu{display:flex;visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity .18s ease-in,transform .18s ease-in,visibility 0s linear .18s;position:absolute;top:100%;left:0;z-index:50;min-width:250px;padding:8px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;box-shadow:0 14px 32px rgba(19,35,63,.18);flex-direction:column;gap:2px}
+    .fw-menu .dd:hover .dd-menu,.fw-menu .dd:focus-within .dd-menu{visibility:visible;opacity:1;transform:translateY(0);transition:opacity .26s cubic-bezier(0,0,.3,1),transform .32s cubic-bezier(0,0,.3,1),visibility 0s}
     .fw-menu .dd-menu a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:0 12px;border-radius:8px;color:#1A2740;font-size:14.5px;font-weight:600;white-space:nowrap}
     .fw-menu .dd-menu a:hover,.fw-menu .dd-menu a:focus-visible{background:#EEF2F7}
     .fw-menu .dd-menu small{font-size:12.5px;font-weight:500;color:#5E6878}
@@ -48,8 +48,10 @@
     .dd-col{display:flex;flex-direction:column;gap:2px}
     .fw-menu .dd-mega{flex-direction:row;gap:2px;padding:8px}
     .dd-mega .dd-col{width:max-content;min-width:176px}
-    .dd-head{margin:0 12px 6px;font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00;white-space:nowrap}
+    .dd-head{margin:6px 14px 6px;font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00;white-space:nowrap}
     .fw-menu .dd-mega a{flex-direction:column;align-items:flex-start;justify-content:center;gap:1px;min-height:50px;padding:6px 14px;box-sizing:border-box;white-space:nowrap}
+    .fw-menu .dd-mega a.dd-wrap{white-space:normal;max-width:212px;line-height:1.3}
+    .fw-menu .dd:nth-last-child(-n+2) .dd-menu{left:auto;right:0}
     .fw-apply{display:inline-flex;align-items:center;min-height:38px;padding:0 18px;border-radius:8px;background:#E7A11C;color:#13233F;font-size:14.5px;font-weight:700;white-space:nowrap;transition:background .3s ease}
     .fw-apply:hover{background:#D48F0E;color:#13233F}
     .fw-burger{display:none}
@@ -126,6 +128,10 @@
                   
                     <a class="dd-sub" href="ChantillyCampus.html">Chantilly Campus<small>KG – G5</small></a>
                   
+                    <a class="" href="ParentVoices.html">Share Your Story<small></small></a>
+                  
+                    <a class="" href="Careers.html">Careers<small></small></a>
+                  
                 </div>
               
             </div>
@@ -133,27 +139,25 @@
         </div>
       
         <div class="dd">
-          <a class="fw-top" href="Curriculum.html" aria-current="false" style="color: rgb(255, 255, 255);">Academics<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          <a class="fw-top" href="Academics.html" aria-current="false" style="color: rgb(255, 255, 255);">Academics<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
             <div class="dd-menu dd-mega" role="group" aria-label="Academics pages">
               
                 <div class="dd-col">
+                  <p class="dd-head">Our Programs</p>
                   
+                    <a class="" href="PrimaryYears.html">Elementary School<small>KG – G5</small></a>
                   
-                    <a class="" href="PrimaryYears.html">Primary Years<small>KG – G5</small></a>
-                  
-                    <a class="" href="MiddleYears.html">Middle Years<small>G6 – G8</small></a>
+                    <a class="" href="MiddleYears.html">Middle School<small>G6 – G8</small></a>
                   
                     <a class="" href="HighSchool.html">High School<small>G9 – G12</small></a>
-                  
-                    <a class="" href="Curriculum.html">Curriculum<small>9 subjects</small></a>
-                  
-                    <a class="" href="ArabicIslamic.html">Arabic &amp; Islamic Studies<small>Quran, Arabic and Islamic values</small></a>
                   
                 </div>
               
                 <div class="dd-col">
+                  <p class="dd-head">Academic Excellence</p>
                   
+                    <a class="" href="Accreditation.html">Accreditation<small>IB · Cognia</small></a>
                   
                     <a class="" href="DualEnrollment.html">Dual Enrollment<small>College credit with NOVA</small></a>
                   
@@ -161,7 +165,20 @@
                   
                     <a class="" href="AssociateDegree.html">Associate Degree<small>Pathway with NOVA</small></a>
                   
-                    <a class="" href="Accreditation.html">Accreditation<small>IB · Cognia</small></a>
+                    <a class="" href="AcademicSupport.html">Academic Support<small>Help for every learner</small></a>
+                  
+                </div>
+              
+                <div class="dd-col">
+                  <p class="dd-head">Our Approach</p>
+                  
+                    <a class="" href="Curriculum.html">Curriculum<small>9 subjects</small></a>
+                  
+                    <a class="" href="ArabicIslamic.html">Arabic &amp; Islamic Studies<small>Quran, Arabic and values</small></a>
+                  
+                    <a class="" href="STEM.html">STEM at Falcon<small>Science, tech and math</small></a>
+                  
+                    <a class="" href="CalendarEvents.html">Academic Calendar<small>Key dates for the year</small></a>
                   
                 </div>
               
@@ -170,18 +187,24 @@
         </div>
       
         <div class="dd">
-          <a class="fw-top" href="VisitTour.html" aria-current="false" style="color: rgb(255, 255, 255);">Admissions<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          <a class="fw-top" href="AdmissionsOverview.html" aria-current="false" style="color: rgb(255, 255, 255);">Admissions<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
             <div class="dd-menu " role="group" aria-label="Admissions pages">
               
                 <div class="dd-col">
                   
                   
-                    <a class="" href="VisitTour.html">Visit &amp; Book a Tour<small></small></a>
+                    <a class="" href="VisitTour.html">Visit Our School<small></small></a>
+                  
+                    <a class="" href="AdmissionsOverview.html">Admissions Overview<small></small></a>
                   
                     <a class="" href="HowToApply.html">How to Apply<small></small></a>
                   
                     <a class="" href="Tuition.html">Tuition &amp; Financial Aid<small></small></a>
+                  
+                    <a class="" href="InternationalStudents.html">International Students<small></small></a>
+                  
+                    <a class="" href="AdmissionsFAQ.html">Admissions FAQ<small></small></a>
                   
                 </div>
               
@@ -190,24 +213,31 @@
         </div>
       
         <div class="dd">
-          <a class="fw-top" href="CalendarEvents.html" aria-current="false" style="color: rgb(255, 255, 255);">Community<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          <a class="fw-top" href="StudentLife.html" aria-current="false" style="color: rgb(255, 255, 255);">Community<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
-            <div class="dd-menu " role="group" aria-label="Community pages">
+            <div class="dd-menu dd-mega" role="group" aria-label="Community pages">
               
                 <div class="dd-col">
+                  <p class="dd-head">Beyond the Classroom</p>
                   
+                    <a class="" href="StudentLife.html">Student Life<small>Trips, sports and events</small></a>
                   
-                    <a class="" href="CalendarEvents.html">Calendar &amp; Events<small></small></a>
+                    <a class="dd-wrap" href="AfterSchool.html">Clubs and After School / Enrichment Programs<small></small></a>
                   
-                    <a class="" href="News.html">News &amp; Announcements<small></small></a>
+                    <a class="" href="SummerCamp.html">Summer Camp<small>Seven weeks of summer fun</small></a>
                   
-                    <a class="" href="PhotosVideos.html">Photos &amp; Videos<small></small></a>
+                    <a class="" href="PhotosVideos.html">Galleries<small>Photos and videos</small></a>
                   
-                    <a class="" href="ParentVoices.html">Parent Voices<small></small></a>
+                </div>
+              
+                <div class="dd-col">
+                  <p class="dd-head">Families</p>
                   
-                    <a class="" href="Store.html">Falcon Store<small></small></a>
+                    <a class="" href="PTSO.html">PTSO<small>Parent-Teacher-Student Organization</small></a>
                   
-                    <a class="" href="AfterSchool.html">After School &amp; Weekend<small>Clubs</small></a>
+                    <a class="" href="News.html">News<small>Announcements and stories</small></a>
+                  
+                    <a class="" href="Store.html">Uniform and Spirit Store<small>Uniforms and Falcon gear</small></a>
                   
                 </div>
               
@@ -225,7 +255,7 @@
   <section class="hero" style="position: relative; overflow: hidden; background: linear-gradient(100deg, rgb(12, 34, 66) 0%, rgb(22, 55, 99) 55%, rgb(29, 70, 119) 100%);">
     <input class="hr sr-only" type="radio" name="hero-photo" id="hr-0" aria-label="Show photo 1 of 5: Falcon Academy graduates throwing their caps at the Class of 2026 graduation"><input class="hr sr-only" type="radio" name="hero-photo" id="hr-1" aria-label="Show photo 2 of 5: Young graduates in caps on stage under the Class of 2026 balloon arch"><input class="hr sr-only" type="radio" name="hero-photo" id="hr-2" aria-label="Show photo 3 of 5: Young students smiling at their desk during a crafts activity"><input class="hr sr-only" type="radio" name="hero-photo" id="hr-3" aria-label="Show photo 4 of 5: Students and teachers on a hayride during a field trip"><input class="hr sr-only" type="radio" name="hero-photo" id="hr-4" aria-label="Show photo 5 of 5: Young students wearing red firefighter hats in their classroom">
     <div class="hero-photo">
-      <img class="hero-img hi0" src="assets/img/falcon-academy-graduates-throwing-their-caps-at.jpg" alt="Falcon Academy graduates throwing their caps at the Class of 2026 graduation" style="object-position: 58% 75%;"><img class="hero-img hi1" src="assets/img/young-students-dancing-with-ribbons.jpg" alt="Young graduates in caps on stage under the Class of 2026 balloon arch" style="object-position: 50% 45%;"><img class="hero-img hi2" src="assets/img/young-students-drawing-and-coloring-a-group.jpg" alt="Young students smiling at their desk during a crafts activity" style="object-position: 42% 50%;"><img class="hero-img hi3" src="assets/img/students-on-a-hayride-field-trip.jpg" alt="Students and teachers on a hayride during a field trip" style="object-position: 50% 55%;"><img class="hero-img hi4" src="assets/img/smiling-students-wearing-junior-firefighter-helmets.jpg" alt="Young students wearing red firefighter hats in their classroom" style="object-position: 40% 45%;">
+      <img class="hero-img hi0" src="assets/img/falcon-academy-graduates-throwing-their-caps-at.jpg" alt="Falcon Academy graduates throwing their caps at the Class of 2026 graduation" style="object-position: 58% 75%;"><img class="hero-img hi1" src="assets/img/young-students-dancing-with-ribbons.jpg" alt="Young graduates in caps on stage under the Class of 2026 balloon arch" style="object-position: 50% 45%;"><img class="hero-img hi2" src="assets/img/young-students-drawing-and-coloring-a-group.jpg" alt="Young students smiling at their desk during a crafts activity" style="object-position: 42% 50%;"><img class="hero-img hi3" src="assets/img/students-and-teachers-on-a-hayride-during.jpg" alt="Students and teachers on a hayride during a field trip" style="object-position: 50% 55%;"><img class="hero-img hi4" src="assets/img/smiling-students-wearing-junior-firefighter-helmets.jpg" alt="Young students wearing red firefighter hats in their classroom" style="object-position: 40% 45%;">
       <div class="hero-fade"></div>
       <span class="hero-cap hc0" aria-hidden="true">Class of 2026 · Graduation</span><span class="hero-cap hc1" aria-hidden="true">Class of 2026 · On stage</span><span class="hero-cap hc2" aria-hidden="true">Crafts in class</span><span class="hero-cap hc3" aria-hidden="true">Field trip · Hayride</span><span class="hero-cap hc4" aria-hidden="true">Little firefighters</span>
     </div>
@@ -235,7 +265,7 @@
         <span class="badge" style="background: rgba(231, 161, 28, 0.08); color: rgb(240, 181, 69); border-color: rgb(201, 138, 11);">KG – G12 · Ashburn &amp; Chantilly Campuses</span>
         <h1 style="color: rgb(255, 255, 255); font-size: clamp(28px, 2.6vw, 36px); font-weight: 700; line-height: 1.16; letter-spacing: -0.015em;">Northern Virginia’s Only Islamic School Uniting <span style="color: rgb(243, 198, 100);">IB Inquiry, AP Rigor, and an Associate Degree in High School.</span></h1>
         <ul class="usp" aria-label="What Falcon offers" style="margin-top: 4px;">
-          <li><span class="ck" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span><span><strong>IB World School<a href="#ib-candidacy" aria-label="About our IB programmes">*</a></strong><small>MYP Authorized · PYP Candidate</small></span></li>
+          <li><span class="ck" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span><span><strong>IB World School for the MYP<a href="#ib-candidacy" aria-label="About our IB programmes">*</a></strong><small>PYP Candidate School</small></span></li>
           <li><span class="ck" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span><span><strong>Associate Degree</strong><small>4 NOVA A.S. Tracks (Eng, IT, Med, Bus)</small></span></li>
           <li><span class="ck" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span><span><strong>AP Courses</strong><small>17 AP &amp; 22 Honors Courses (Level I &amp; II)</small></span></li>
           <li><span class="ck" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span><span><strong>Dual Enrollment</strong><small>Up to 60 College Credits from Grade 9</small></span></li>
@@ -255,7 +285,7 @@
       
         <label class="hgal ht2" for="hr-2" title="Show photo 3: Young students smiling at their desk during a crafts activity"><img src="assets/img/young-students-drawing-and-coloring-a-group.jpg" alt=""></label>
       
-        <label class="hgal ht3" for="hr-3" title="Show photo 4: Students and teachers on a hayride during a field trip"><img src="assets/img/students-on-a-hayride-field-trip.jpg" alt=""></label>
+        <label class="hgal ht3" for="hr-3" title="Show photo 4: Students and teachers on a hayride during a field trip"><img src="assets/img/students-and-teachers-on-a-hayride-during.jpg" alt=""></label>
       
         <label class="hgal ht4" for="hr-4" title="Show photo 5: Young students wearing red firefighter hats in their classroom"><img src="assets/img/smiling-students-wearing-junior-firefighter-helmets.jpg" alt=""></label>
       
@@ -296,7 +326,7 @@
           <h2 id="media-title" style="font-size: 30px; font-weight: 700;">A Day at Falcon</h2>
           <p class="muted" style="font-size: 16px;">Photos and short films from our classrooms, trips and celebrations.</p>
         </div>
-        <a class="link" href="PhotosVideos.html">All Photos &amp; Videos ›</a>
+        <a class="link" href="PhotosVideos.html">All Galleries ›</a>
       </div>
       <div><div class="mgrid2"><a class="mtile mlead" href="https://www.youtube.com/watch?v=ky3HkBQ9hcU" target="_blank" rel="noopener" aria-label="Play video: Welcome to Falcon Academy, 2 minutes 14 seconds (opens YouTube)"><img src="assets/img/students-in-a-classroom-with-a-large.jpg" alt="" style="object-position: 50% 45%;"><span class="mshade" aria-hidden="true"></span><span class="mchip mchip-gold"><svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z" fill="currentColor"></path></svg>Start here · 2:14</span><span class="mplay mplay-big" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z" fill="currentColor"></path></svg></span><span class="mcap"><strong>Welcome to Falcon Academy</strong><span>A short tour of our classrooms, campus and daily life.</span></span></a><a class="mtile m-album" href="PhotoAlbum.html"><img src="assets/img/a-student-laughs-as-he-receives-his.jpg" alt="" style="object-position: 50% 30%;"><span class="mshade" aria-hidden="true"></span><span class="mchip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h3l2-3h8l2 3h3v11H3z"></path><circle cx="12" cy="13" r="3.5"></circle></svg>Album</span><span class="mcap"><strong>IB Learner Profile Day</strong><span>September 2026</span></span></a><a class="mtile m-album" href="PhotosVideos.html"><img src="assets/img/image-683e9aee.jpg" alt="" style="object-position: 50% 20%;"><span class="mshade" aria-hidden="true"></span><span class="mchip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h3l2-3h8l2 3h3v11H3z"></path><circle cx="12" cy="13" r="3.5"></circle></svg>Album</span><span class="mcap"><strong>Outdoor Art Class</strong><span>Ashburn Campus</span></span></a><a class="mtile m-album" href="PhotoAlbum.html"><img src="assets/img/image-4801c687.jpg" alt="" style="object-position: 80% 35%;"><span class="mshade" aria-hidden="true"></span><span class="mchip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h3l2-3h8l2 3h3v11H3z"></path><circle cx="12" cy="13" r="3.5"></circle></svg>Album</span><span class="mcap"><strong>End-of-Year Awards</strong><span>June 2026</span></span></a><a class="mtile m-album" href="PhotosVideos.html"><img src="assets/img/image-de7e3f51.jpg" alt="" style="object-position: 50% 40%;"><span class="mshade" aria-hidden="true"></span><span class="mchip"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h3l2-3h8l2 3h3v11H3z"></path><circle cx="12" cy="13" r="3.5"></circle></svg>Album</span><span class="mcap"><strong>Fall Festival</strong><span>October 2026</span></span></a></div></div>
     </div>
@@ -314,13 +344,13 @@
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr)); gap: 18px;">
         <a class="card pcard" href="PrimaryYears.html">
           <div style="position: relative; height: 230px; background: rgb(220, 226, 235);">
-            <img src="assets/img/two-students-reading-a-book-together.jpg" alt="Two young students reading a book together on the classroom carpet" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; display: block;">
+            <img src="assets/img/two-young-students-reading-a-book-together.jpg" alt="Two young students reading a book together on the classroom carpet" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; display: block;">
             <span class="ptag">KG – G5</span>
           </div>
           <div style="padding: 24px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1;">
-            <h3 style="font-size: 20px; font-weight: 700;">Primary Years Programme</h3>
+            <h3 style="font-size: 20px; font-weight: 700;">Elementary School</h3>
             <p class="muted" style="font-size: 15.5px; line-height: 1.55;">Small classes, strong reading and math, and daily Arabic and Quran with a teacher who knows your child.</p>
-            <span class="more" style="font-size: 16px; margin-top: auto; padding-top: 10px;">Explore Primary Years <span aria-hidden="true">→</span></span>
+            <span class="more" style="font-size: 16px; margin-top: auto; padding-top: 10px;">Explore Elementary School <span aria-hidden="true">→</span></span>
           </div>
         </a>
         <a class="card pcard" href="MiddleYears.html">
@@ -329,9 +359,9 @@
             <span class="ptag">G6 – G8</span>
           </div>
           <div style="padding: 24px; display: flex; flex-direction: column; gap: 8px; flex-grow: 1;">
-            <h3 style="font-size: 20px; font-weight: 700;">Middle Years Programme</h3>
+            <h3 style="font-size: 20px; font-weight: 700;">Middle School</h3>
             <p class="muted" style="font-size: 15.5px; line-height: 1.55;">Eight IB subject groups, project work and service, and close support through the early teen years.</p>
-            <span class="more" style="font-size: 16px; margin-top: auto; padding-top: 10px;">Explore Middle Years <span aria-hidden="true">→</span></span>
+            <span class="more" style="font-size: 16px; margin-top: auto; padding-top: 10px;">Explore Middle School <span aria-hidden="true">→</span></span>
           </div>
         </a>
         <a class="card pcard" href="HighSchool.html">
@@ -420,7 +450,7 @@
           <img src="assets/img/two-middle-school-students-building-and-testing.jpg" alt="Two middle school students building and testing their robot in Design class" style="object-position: 50% 10%;">
           <span class="mt-plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span>
           <div class="mt-cap"><span class="mt-n">04</span><h3>Clubs After School and on Weekends</h3></div>
-          <div class="mt-more"><span class="mt-n">04</span><h3>Clubs After School and on Weekends</h3><p>Weekday and weekend clubs such as STEAM challenges, cooking and art, after the school day ends.</p><div class="mt-chips"><span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Weekday Clubs</span><span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Weekend Clubs</span></div><a class="mt-link" href="AfterSchool.html">After School &amp; Weekend <span aria-hidden="true">→</span></a></div>
+          <div class="mt-more"><span class="mt-n">04</span><h3>Clubs After School and on Weekends</h3><p>Weekday and weekend clubs such as STEAM challenges, cooking and art, after the school day ends.</p><div class="mt-chips"><span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Weekday Clubs</span><span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Weekend Clubs</span></div><a class="mt-link" href="AfterSchool.html">Clubs and After School <span aria-hidden="true">→</span></a></div>
         </article>
         <article class="mt mt-photo m-f" tabindex="0">
           <img src="assets/img/middle-school-students-in-class.jpg" alt="Middle school students in class" style="object-position: 50% 50%;">
@@ -429,7 +459,7 @@
           <div class="mt-more"><span class="mt-n">05</span><h3>IB Learning With Islamic Values</h3><p>Falcon is an IB World School for the MYP and an IB Candidate School* for the PYP. Students learn through the IB inquiry approach, and prayer, Quran and Islamic Studies are part of every school day.</p><a class="mt-link" href="Curriculum.html">How We Teach <span aria-hidden="true">→</span></a></div>
         </article>
         <article class="mt mt-photo m-g" tabindex="0">
-          <img src="assets/img/the-playground-field-and-basketball-court.jpg" alt="The Chantilly playground, soccer field and basketball court" style="object-position: 50% 50%;">
+          <img src="assets/img/the-chantilly-playground-soccer-field-and-basketball.jpg" alt="The Chantilly playground, soccer field and basketball court" style="object-position: 50% 50%;">
           <span class="mt-plus" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg></span>
           <div class="mt-cap"><span class="mt-n">06</span><h3>A Safe, Modern Campus</h3></div>
           <div class="mt-more"><span class="mt-n">06</span><h3>A Safe, Modern Campus</h3><p>Classrooms set up for group work, a large outdoor playground and a basketball court. How we keep students safe:</p><div class="mt-chips"><span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Locked Doors</span><span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Fenced Play Area</span><span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>On-Site Security</span></div><a class="mt-link" href="Campuses.html">Our Campuses <span aria-hidden="true">→</span></a></div>
@@ -554,7 +584,7 @@
         <h2>Quick Links</h2>
         <ul>
           <li><a href="https://portal.edumagined.com/falconacademy/">Parent Portal</a></li>
-          <li><a href="CalendarEvents.html">Calendar</a></li>
+          <li><a href="CalendarEvents.html">Academic Calendar</a></li>
           <li><a href="VisitTour.html">Book a Tour</a></li>
           <li><a href="Careers.html">Careers</a></li>
           <li><a href="Policies.html">School Policies</a></li>
@@ -563,6 +593,7 @@
     </div>
 
     <div style="margin-top: 32px; padding: 16px 0px 20px; border-top: 1px solid rgba(255, 255, 255, 0.14); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; font-size: 13px; color: rgb(185, 196, 214);">
+      <span style="flex-basis: 100%;">*Only schools authorized by the IB Organization can offer its programmes. Candidate status gives no guarantee that authorization will be granted.</span>
       <span>© 2026 Falcon Academy. All rights reserved.</span>
       <span>Falcon Academy admits students without discrimination. <a href="PolicyAdmissions.html" style="color: rgb(255, 255, 255); text-decoration: underline; text-underline-offset: 3px;">Admissions Policy</a></span>
     </div>

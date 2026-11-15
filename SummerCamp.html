@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>if(matchMedia("(max-width: 640px)").matches&&!/[?&]desktop/.test(location.search))location.replace("m/SummerCamp.html"+location.hash);</script>
 <title>Falcons Summer Camp · Falcon Academy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,8 +36,8 @@
     .fw-top{position:relative;display:inline-flex;align-items:center;height:54px;padding:0 13px;box-sizing:border-box;font-size:14px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;transition:color .3s ease}
     .fw-top:hover{color:#F3C664!important}
     .fw-top .caret{margin-left:6px;opacity:.75}
-    .fw-menu .dd-menu{display:flex;visibility:hidden;opacity:0;transition:opacity .2s ease-in,visibility 0s linear .2s;position:absolute;top:100%;left:0;z-index:50;min-width:250px;padding:8px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;box-shadow:0 14px 32px rgba(19,35,63,.18);flex-direction:column;gap:2px}
-    .fw-menu .dd:hover .dd-menu,.fw-menu .dd:focus-within .dd-menu{visibility:visible;opacity:1;transition:opacity .2s ease-out,visibility 0s}
+    .fw-menu .dd-menu{display:flex;visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity .18s ease-in,transform .18s ease-in,visibility 0s linear .18s;position:absolute;top:100%;left:0;z-index:50;min-width:250px;padding:8px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;box-shadow:0 14px 32px rgba(19,35,63,.18);flex-direction:column;gap:2px}
+    .fw-menu .dd:hover .dd-menu,.fw-menu .dd:focus-within .dd-menu{visibility:visible;opacity:1;transform:translateY(0);transition:opacity .26s cubic-bezier(0,0,.3,1),transform .32s cubic-bezier(0,0,.3,1),visibility 0s}
     .fw-menu .dd-menu a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:0 12px;border-radius:8px;color:#1A2740;font-size:14.5px;font-weight:600;white-space:nowrap}
     .fw-menu .dd-menu a:hover,.fw-menu .dd-menu a:focus-visible{background:#EEF2F7}
     .fw-menu .dd-menu small{font-size:12.5px;font-weight:500;color:#5E6878}
@@ -47,8 +48,10 @@
     .dd-col{display:flex;flex-direction:column;gap:2px}
     .fw-menu .dd-mega{flex-direction:row;gap:2px;padding:8px}
     .dd-mega .dd-col{width:max-content;min-width:176px}
-    .dd-head{margin:0 12px 6px;font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00;white-space:nowrap}
+    .dd-head{margin:6px 14px 6px;font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00;white-space:nowrap}
     .fw-menu .dd-mega a{flex-direction:column;align-items:flex-start;justify-content:center;gap:1px;min-height:50px;padding:6px 14px;box-sizing:border-box;white-space:nowrap}
+    .fw-menu .dd-mega a.dd-wrap{white-space:normal;max-width:212px;line-height:1.3}
+    .fw-menu .dd:nth-last-child(-n+2) .dd-menu{left:auto;right:0}
     .fw-apply{display:inline-flex;align-items:center;min-height:38px;padding:0 18px;border-radius:8px;background:#E7A11C;color:#13233F;font-size:14.5px;font-weight:700;white-space:nowrap;transition:background .3s ease}
     .fw-apply:hover{background:#D48F0E;color:#13233F}
     .fw-burger{display:none}
@@ -125,6 +128,10 @@
                   
                     <a class="dd-sub" href="ChantillyCampus.html">Chantilly Campus<small>KG – G5</small></a>
                   
+                    <a class="" href="ParentVoices.html">Share Your Story<small></small></a>
+                  
+                    <a class="" href="Careers.html">Careers<small></small></a>
+                  
                 </div>
               
             </div>
@@ -132,27 +139,25 @@
         </div>
       
         <div class="dd">
-          <a class="fw-top" href="Curriculum.html" aria-current="false" style="color: rgb(255, 255, 255);">Academics<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          <a class="fw-top" href="Academics.html" aria-current="false" style="color: rgb(255, 255, 255);">Academics<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
             <div class="dd-menu dd-mega" role="group" aria-label="Academics pages">
               
                 <div class="dd-col">
+                  <p class="dd-head">Our Programs</p>
                   
+                    <a class="" href="PrimaryYears.html">Elementary School<small>KG – G5</small></a>
                   
-                    <a class="" href="PrimaryYears.html">Primary Years<small>KG – G5</small></a>
-                  
-                    <a class="" href="MiddleYears.html">Middle Years<small>G6 – G8</small></a>
+                    <a class="" href="MiddleYears.html">Middle School<small>G6 – G8</small></a>
                   
                     <a class="" href="HighSchool.html">High School<small>G9 – G12</small></a>
-                  
-                    <a class="" href="Curriculum.html">Curriculum<small>9 subjects</small></a>
-                  
-                    <a class="" href="ArabicIslamic.html">Arabic &amp; Islamic Studies<small>Quran, Arabic and Islamic values</small></a>
                   
                 </div>
               
                 <div class="dd-col">
+                  <p class="dd-head">Academic Excellence</p>
                   
+                    <a class="" href="Accreditation.html">Accreditation<small>IB · Cognia</small></a>
                   
                     <a class="" href="DualEnrollment.html">Dual Enrollment<small>College credit with NOVA</small></a>
                   
@@ -160,7 +165,20 @@
                   
                     <a class="" href="AssociateDegree.html">Associate Degree<small>Pathway with NOVA</small></a>
                   
-                    <a class="" href="Accreditation.html">Accreditation<small>IB · Cognia</small></a>
+                    <a class="" href="AcademicSupport.html">Academic Support<small>Help for every learner</small></a>
+                  
+                </div>
+              
+                <div class="dd-col">
+                  <p class="dd-head">Our Approach</p>
+                  
+                    <a class="" href="Curriculum.html">Curriculum<small>9 subjects</small></a>
+                  
+                    <a class="" href="ArabicIslamic.html">Arabic &amp; Islamic Studies<small>Quran, Arabic and values</small></a>
+                  
+                    <a class="" href="STEM.html">STEM at Falcon<small>Science, tech and math</small></a>
+                  
+                    <a class="" href="CalendarEvents.html">Academic Calendar<small>Key dates for the year</small></a>
                   
                 </div>
               
@@ -169,18 +187,24 @@
         </div>
       
         <div class="dd">
-          <a class="fw-top" href="VisitTour.html" aria-current="false" style="color: rgb(255, 255, 255);">Admissions<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          <a class="fw-top" href="AdmissionsOverview.html" aria-current="false" style="color: rgb(255, 255, 255);">Admissions<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
             <div class="dd-menu " role="group" aria-label="Admissions pages">
               
                 <div class="dd-col">
                   
                   
-                    <a class="" href="VisitTour.html">Visit &amp; Book a Tour<small></small></a>
+                    <a class="" href="VisitTour.html">Visit Our School<small></small></a>
+                  
+                    <a class="" href="AdmissionsOverview.html">Admissions Overview<small></small></a>
                   
                     <a class="" href="HowToApply.html">How to Apply<small></small></a>
                   
                     <a class="" href="Tuition.html">Tuition &amp; Financial Aid<small></small></a>
+                  
+                    <a class="" href="InternationalStudents.html">International Students<small></small></a>
+                  
+                    <a class="" href="AdmissionsFAQ.html">Admissions FAQ<small></small></a>
                   
                 </div>
               
@@ -189,24 +213,31 @@
         </div>
       
         <div class="dd">
-          <a class="fw-top" href="CalendarEvents.html" aria-current="page" style="color: rgb(231, 161, 28);">Community<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
+          <a class="fw-top" href="StudentLife.html" aria-current="page" style="color: rgb(231, 161, 28);">Community<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
-            <div class="dd-menu " role="group" aria-label="Community pages">
+            <div class="dd-menu dd-mega" role="group" aria-label="Community pages">
               
                 <div class="dd-col">
+                  <p class="dd-head">Beyond the Classroom</p>
                   
+                    <a class="" href="StudentLife.html">Student Life<small>Trips, sports and events</small></a>
                   
-                    <a class="" href="CalendarEvents.html">Calendar &amp; Events<small></small></a>
+                    <a class="dd-wrap" href="AfterSchool.html">Clubs and After School / Enrichment Programs<small></small></a>
                   
-                    <a class="" href="News.html">News &amp; Announcements<small></small></a>
+                    <a class="" href="SummerCamp.html">Summer Camp<small>Seven weeks of summer fun</small></a>
                   
-                    <a class="" href="PhotosVideos.html">Photos &amp; Videos<small></small></a>
+                    <a class="" href="PhotosVideos.html">Galleries<small>Photos and videos</small></a>
                   
-                    <a class="" href="ParentVoices.html">Parent Voices<small></small></a>
+                </div>
+              
+                <div class="dd-col">
+                  <p class="dd-head">Families</p>
                   
-                    <a class="" href="Store.html">Falcon Store<small></small></a>
+                    <a class="" href="PTSO.html">PTSO<small>Parent-Teacher-Student Organization</small></a>
                   
-                    <a class="" href="AfterSchool.html">After School &amp; Weekend<small>Clubs</small></a>
+                    <a class="" href="News.html">News<small>Announcements and stories</small></a>
+                  
+                    <a class="" href="Store.html">Uniform and Spirit Store<small>Uniforms and Falcon gear</small></a>
                   
                 </div>
               
@@ -220,333 +251,198 @@
   </div></header></div>
 
 
-  <main class="wrap" style="padding-top: 20px; padding-bottom: 72px; display: flex; flex-direction: column;">
-    <nav class="crumb" aria-label="Breadcrumb"><a href="Main.html">Home</a><span aria-hidden="true">›</span><span>Community</span><span aria-hidden="true">›</span><span aria-current="page">Summer Camp</span></nav>
-
-    
-
-    <section class="hero" aria-labelledby="sc-title" style="margin-top: 14px;">
+  <main class="wrap" style="padding-top: 24px; padding-bottom: 72px; display: flex; flex-direction: column;">
+    <section class="hero" aria-labelledby="sc-title">
       <div class="hero-copy">
-        <span class="badge" style="background: rgba(231, 161, 28, 0.14); color: rgb(243, 198, 100);">Summer 2026 · Ages 5–13</span>
-        <h1 id="sc-title">Falcons Summer Camp</h1>
-        <p>Seven themed weeks of STEM experiments, Arabic and Spanish, arts, sports and Friday field trips. Choose only the weeks that work for your family. Meals and snacks are included.</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px;">
-          <a class="btn btn-gold btn-lg" href="https://portal.edumagined.com/falconacademy/falcons-summer-camp-registration/">Register Now <span aria-hidden="true">→</span></a>
-          <a class="btn btn-light btn-lg" href="#prices">See Prices</a>
+        <p class="eyebrow">Falcons Summer Camp</p>
+        <h1 id="sc-title">A Summer of Discovery, Friends and <em>Fun</em></h1>
+        <p class="hero-lede">Full-day camp for ages 5 to 13, with themed weeks of STEM, Arabic and Spanish, arts, sports and Friday field trips. Meals and snacks are included.</p>
+        <div class="soon" role="status">
+          <span class="soon-ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path><path d="M16 2v4M8 2v4M3 10h5"></path><circle cx="16" cy="16" r="6"></circle><path d="M16 14v2l1.5 1.5"></path></svg></span>
+          <div><p class="soon-t">Registration for Summer 2027 is not open yet</p><p class="soon-d">Dates and prices will be posted here when registration opens. Contact us and we will let you know as soon as it does.</p></div>
         </div>
-        <p style="font-size: 15px; color: rgb(243, 198, 100);">Register before May 15 and pay $350 instead of $400 a week for full day.</p>
+        <div class="hero-acts">
+          <a class="btn btn-gold btn-lg" href="Contact.html">Notify Me When It Opens <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost btn-lg" href="#weeks">Explore the Program</a>
+        </div>
       </div>
-      <div class="hero-photo"><img src="assets/img/high-school-students-drawing-during-an-outdoor.jpg" alt="High school students drawing during an outdoor art class" style="object-position: 50% 40%;"></div>
+      <figure class="hero-photo">
+        <img src="assets/img/smiling-students-wearing-junior-firefighter-helmets.jpg" alt="Smiling young students wearing junior firefighter helmets" style="object-position: 50% 45%;">
+        <div class="sticker"><span class="sk-ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"></path></svg></span><span><b>Fantastic Fridays</b><small>A field trip or party every week</small></span></div>
+      </figure>
     </section>
 
     <div class="facts" style="margin-top: 16px;">
       <div class="fact">
-        <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>Dates</h2>
-        <p>June 29 – August 14, 2026</p>
-        <small>7 weeks · Pick any weeks · Open Friday, July 3</small>
+        <span class="ftile tint-gold" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></span>
+        <div><h2>Full Day</h2><p>8 AM – 5 PM</p><small>Half-day and aftercare options too</small></div>
       </div>
       <div class="fact">
-        <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>Hours</h2>
-        <p>Full day 8 AM – 5 PM</p>
-        <small>Half day 8 AM–12 PM or 1–5 PM · Aftercare until 6 PM</small>
+        <span class="ftile tint-teal" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"></path></svg></span>
+        <div><h2>Ages</h2><p>5 – 13 Years</p><small>Three age groups, 9 – 12 campers per staff member</small></div>
       </div>
       <div class="fact">
-        <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"></path></svg>Ages</h2>
-        <p>5 to 13 years</p>
-        <small>Three age groups · 9–12 campers per staff member</small>
+        <span class="ftile tint-blue" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 17.5h.01M12 17.5h.01"></path></svg></span>
+        <div><h2>Weeks</h2><p>7 Weeks</p><small>A new theme each week, so pick any weeks</small></div>
       </div>
       <div class="fact">
-        <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>Where</h2>
-        <p>[Campus name]</p>
-        <small>[Street address] · Transportation available</small>
+        <span class="ftile tint-gold" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></span>
+        <div><h2>Campus</h2><p>Falcon Academy</p><small>Campus shared when registration opens</small></div>
       </div>
     </div>
 
     <nav class="jump" aria-label="On this page" style="margin-top: 26px;">
-      <a href="#weeks">Weekly themes</a>
-      <a href="#day">A day at camp</a>
-      <a href="#groups">Age groups</a>
-      <a href="#prices">Prices &amp; discounts</a>
-      <a href="#refunds">Changes &amp; refunds</a>
-      <a href="#safety">Health &amp; safety</a>
+      <a href="#highlights">What Campers Do</a>
+      <a href="#weeks">Weekly Themes</a>
+      <a href="#trips">Field Trips</a>
+      <a href="#day">A Day at Camp</a>
+      <a href="#groups">Age Groups</a>
+      <a href="#safety">Health &amp; Safety</a>
       <a href="#faq">FAQ</a>
     </nav>
 
     <section id="highlights" class="sec" aria-labelledby="h-hi">
       <div class="sec-head">
+        <p class="sec-k">Learn, Play, Grow</p>
         <h2 id="h-hi">What Your Child Will Do</h2>
         <p>Camp follows the same inquiry-based approach as our IB classrooms, with plenty of time to play.</p>
       </div>
-      <ul class="acts-grid" style="list-style: none; padding: 0px; margin: 0px;">
-        <li class="act"><img src="assets/img/a-falcon-teacher-with-students-working-at.jpg" alt="Students building a project together with their teacher" style="object-position: 50% 45%;"><span>STEM experiments</span></li>
-        <li class="act"><img src="assets/img/young-students-drawing-and-coloring-a-group.jpg" alt="Young students drawing and coloring a group poster" style="object-position: 50% 50%;"><span>Arts and crafts</span></li>
-        <li class="act"><img src="assets/img/two-students-reading-a-book-together.jpg" alt="Two students reading a book together" style="object-position: 50% 45%;"><span>Arabic and Spanish</span></li>
-        <li class="act"><img src="assets/img/the-playground-field-and-basketball-court.jpg" alt="The playground, field and basketball court" style="object-position: 50% 60%;"><span>Sports and outdoor play</span></li>
-        <li class="act"><img src="assets/img/smiling-students-wearing-junior-firefighter-helmets.jpg" alt="Smiling students wearing junior firefighter helmets" style="object-position: 50% 40%;"><span>Leadership and confidence</span></li>
-        <li class="act"><img src="assets/img/a-student-receives-an-ib-learner-profile.jpg" alt="A student receives an IB Learner Profile certificate at an outdoor assembly" style="object-position: 50% 45%;"><span>Celebrating our learners</span></li>
+      <ul class="acts-grid">
+        <li class="act"><img src="assets/img/a-falcon-teacher-with-students-working-at.jpg" alt="Students building a project together with their teacher" style="object-position: 50% 45%;"><span>STEM Experiments</span></li>
+        <li class="act"><img src="assets/img/young-students-drawing-and-coloring-a-group.jpg" alt="Young students drawing and coloring a group poster" style="object-position: 50% 50%;"><span>Arts and Crafts</span></li>
+        <li class="act"><img src="assets/img/kg-students-holding-up-the-letter-lam.jpg" alt="Young students holding up the Arabic letter lam during a lemonade-making lesson" style="object-position: 50% 40%;"><span>Arabic and Spanish</span></li>
+        <li class="act"><img src="assets/img/the-chantilly-playground-soccer-field-and-basketball.jpg" alt="Children playing on the playground, field and basketball court" style="object-position: 50% 60%;"><span>Sports and Outdoor Play</span></li>
+        <li class="act"><img src="assets/img/a-young-student-presenting-to-her-class.jpg" alt="A young student presenting to her class in front of the screen" style="object-position: 50% 30%;"><span>Leadership and Confidence</span></li>
+        <li class="act"><img src="assets/img/a-student-receives-a-certificate-at-an.jpg" alt="A student receives a certificate at an outdoor assembly" style="object-position: 50% 45%;"><span>Celebrating Our Campers</span></li>
       </ul>
-      <div class="included">
-        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Daily meals and snacks</span>
-        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Friday field trips and their transport</span>
-        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>Weekly water play</span>
-        <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>On-site security</span>
+      <div class="included" aria-label="Included in camp">
+        <span><i aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></i>Daily meals and snacks</span>
+        <span><i aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></i>Friday field trips and their transport</span>
+        <span><i aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></i>Weekly water play</span>
+        <span><i aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></i>On-site security</span>
       </div>
     </section>
 
     <section id="weeks" class="sec" aria-labelledby="h-wk">
       <div class="sec-head">
+        <p class="sec-k">A New Adventure Every Week</p>
         <h2 id="h-wk">Seven Weeks, Seven Themes</h2>
-        <p>Each week has its own theme, and every Friday ends with a field trip or a celebration. Come for one week or all seven.</p>
+        <p>Each week has its own theme, explored at every age level. These were the Summer 2026 themes, to give you a feel for camp.</p>
       </div>
       <ol class="weeks">
-        
-          <li class="wk">
-            <div class="wk-top"><span class="wk-n">Week 1</span><span class="wk-d">Jun 29 – Jul 3</span></div>
-            <h3>Outdoor Adventures</h3>
-            <p>Backyard biology and nature-based engineering challenges, exploring the science and language of the world around us.</p>
-            <p class="fri"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"></path></svg><span><b>Friday:</b> Field trip to Claude Moore Park</span></p>
-          </li>
-        
-          <li class="wk">
-            <div class="wk-top"><span class="wk-n">Week 2</span><span class="wk-d">Jul 6 – 10</span></div>
-            <h3>Kitchen Chemistry</h3>
-            <p>Follow recipes in Spanish and Arabic, measure ingredients and explore the chemistry that makes food taste great.</p>
-            <p class="fri"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"></path></svg><span><b>Friday:</b> Field trip to a local restaurant</span></p>
-          </li>
-        
-          <li class="wk">
-            <div class="wk-top"><span class="wk-n">Week 3</span><span class="wk-d">Jul 13 – 17</span></div>
-            <h3>Wonders of Water</h3>
-            <p>Oceans, lakes and weather: water’s properties, why it matters to our planet and the life it supports.</p>
-            <p class="fri"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"></path></svg><span><b>Friday:</b> Hal &amp; Berni Hanson Park and splash pad</span></p>
-          </li>
-        
-          <li class="wk">
-            <div class="wk-top"><span class="wk-n">Week 4</span><span class="wk-d">Jul 20 – 24</span></div>
-            <h3>Music &amp; Movement</h3>
-            <p>Rhythm and sound, songs in new languages, and how music connects cultures around the world.</p>
-            <p class="fri"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"></path></svg><span><b>Friday:</b> Student performance and party with families</span></p>
-          </li>
-        
-          <li class="wk">
-            <div class="wk-top"><span class="wk-n">Week 5</span><span class="wk-d">Jul 27 – 31</span></div>
-            <h3>Spectacular Space</h3>
-            <p>Build model rockets, learn the constellations and investigate weather patterns here on Earth.</p>
-            <p class="fri"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"></path></svg><span><b>Friday:</b> Field trip to the Udvar-Hazy Center</span></p>
-          </li>
-        
-          <li class="wk">
-            <div class="wk-top"><span class="wk-n">Week 6</span><span class="wk-d">Aug 3 – 7</span></div>
-            <h3>Global Games</h3>
-            <p>Sports and games from around the world, from a mini-Olympics to the World Cup: teamwork and friendly competition.</p>
-            <p class="fri"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"></path></svg><span><b>Friday:</b> Field Day</span></p>
-          </li>
-        
-          <li class="wk">
-            <div class="wk-top"><span class="wk-n">Week 7</span><span class="wk-d">Aug 10 – 14</span></div>
-            <h3>Be a Hero!</h3>
-            <p>Hands-on service projects and team challenges that build character and show campers they can make a difference.</p>
-            <p class="fri"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"></path></svg><span><b>Friday:</b> Service project presentations and party</span></p>
-          </li>
-        
+        <li class="wk"><span class="wk-ic tint-teal" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 6.5 9.5h3L5 16h14l-4.5-6.5h3z"></path><path d="M12 16v6"></path></svg></span><div class="wk-b"><span class="wk-n">Week 1</span><h3>Outdoor Adventures</h3><p>Backyard biology and nature-based engineering challenges, exploring the science and language of the world around us.</p></div></li>
+        <li class="wk"><span class="wk-ic tint-gold" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6.5L4.6 18.6A2 2 0 0 0 6.3 21.5h11.4a2 2 0 0 0 1.7-2.9L14 9.5V3"></path><path d="M7.2 15h9.6"></path></svg></span><div class="wk-b"><span class="wk-n">Week 2</span><h3>Kitchen Chemistry</h3><p>Follow recipes in Spanish and Arabic, measure ingredients and explore the chemistry that makes food taste great.</p></div></li>
+        <li class="wk"><span class="wk-ic tint-blue" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.7s6.5 7 6.5 11.8a6.5 6.5 0 0 1-13 0C5.5 9.7 12 2.7 12 2.7z"></path><path d="M9 15a3 3 0 0 0 3 3"></path></svg></span><div class="wk-b"><span class="wk-n">Week 3</span><h3>Wonders of Water</h3><p>Oceans, lakes and weather: water’s properties, why it matters to our planet and the life it supports.</p></div></li>
+        <li class="wk"><span class="wk-ic tint-gold" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg></span><div class="wk-b"><span class="wk-n">Week 4</span><h3>Music &amp; Movement</h3><p>Rhythm and sound, songs in new languages, and how music connects cultures around the world.</p></div></li>
+        <li class="wk"><span class="wk-ic tint-blue" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.9A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22.4 22.4 0 0 1-4 2z"></path><path d="M9 12H4s.6-3 2-4c1.6-1.1 5 0 5 0M12 15v5s3-.6 4-2c1.1-1.6 0-5 0-5"></path></svg></span><div class="wk-b"><span class="wk-n">Week 5</span><h3>Spectacular Space</h3><p>Build model rockets, learn the constellations and investigate weather patterns here on Earth.</p></div></li>
+        <li class="wk"><span class="wk-ic tint-teal" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></span><div class="wk-b"><span class="wk-n">Week 6</span><h3>Global Games</h3><p>Sports and games from around the world, from a mini-Olympics to the World Cup: teamwork and friendly competition.</p></div></li>
+        <li class="wk"><span class="wk-ic tint-gold" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m12 7.5 1.2 2.6 2.8.3-2.1 1.9.6 2.8-2.5-1.4-2.5 1.4.6-2.8-2.1-1.9 2.8-.3z"></path></svg></span><div class="wk-b"><span class="wk-n">Week 7</span><h3>Be a Hero!</h3><p>Hands-on service projects and team challenges that build character and show campers they can make a difference.</p></div></li>
+        <li class="wk wk-any"><span class="wk-ic" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"></circle><path d="m8 12.5 2.7 2.7L16.5 9.5"></path></svg></span><div class="wk-b"><span class="wk-n">Your Choice</span><h3>Pick Any Weeks</h3><p>Come for one week, a few or all seven. Choose only the weeks that work for your family.</p></div></li>
       </ol>
-      <figure class="friday">
-        <img src="assets/img/students-on-a-hayride-field-trip.jpg" alt="Students and teachers on a hayride during a farm field trip" style="object-position: 50% 45%;">
-        <figcaption><span class="fri-k">Fantastic Fridays</span><strong>Every Week Ends with a Field Trip or a Celebration</strong><span>Parks, museums, a splash pad and a family performance. Transport is included.</span></figcaption>
-      </figure>
+    </section>
+
+    <section id="trips" class="sec" aria-labelledby="h-trip">
+      <div class="sec-head">
+        <p class="sec-k">Fantastic Fridays</p>
+        <h2 id="h-trip">Field Trips and Celebrations</h2>
+        <p>Every week ends with a Friday field trip or a celebration, and transport for Friday trips is included. Here is where campers went in Summer 2026.</p>
+      </div>
+      <div class="trips">
+        <figure class="trip-photo">
+          <img src="assets/img/students-and-teachers-on-a-hayride-during.jpg" alt="Students and teachers on a hayride during a farm field trip" style="object-position: 45% 50%;">
+          <figcaption><b>Out and About</b><span>Parks, a museum, a splash pad and more</span></figcaption>
+        </figure>
+        <ul class="trip-list">
+          <li class="trip"><span class="trip-ic tint-teal" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22v-6"></path><path d="M17 8A5 5 0 0 0 7 8a4 4 0 0 0-1 7.9h12A4 4 0 0 0 17 8z"></path><path d="M9 13l3 3 3-3"></path></svg></span><span class="trip-t"><small>Week 1 · Field trip</small><b>Claude Moore Park</b></span></li>
+          <li class="trip"><span class="trip-ic tint-gold" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2M7 2v20M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"></path></svg></span><span class="trip-t"><small>Week 2 · Field trip</small><b>A Local Restaurant</b></span></li>
+          <li class="trip"><span class="trip-ic tint-blue" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 16.3c2.2 0 4-1.8 4-4 0-1.2-.6-2.3-1.8-3.3S7.3 6.6 7 5.3c-.3 1.3-1 2.7-2.2 3.7S3 11.1 3 12.3c0 2.2 1.8 4 4 4z"></path><path d="M12.6 6.6A11 11 0 0 0 14 3.5c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a7 7 0 0 1-11.9 4.9"></path></svg></span><span class="trip-t"><small>Week 3 · Field trip</small><b>Hal &amp; Berni Hanson Park and Splash Pad</b></span></li>
+          <li class="trip"><span class="trip-ic tint-gold" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="2" width="6" height="12" rx="3"></rect><path d="M19 10a7 7 0 0 1-14 0M12 17v5M8 22h8"></path></svg></span><span class="trip-t"><small>Week 4 · Celebration</small><b>Student Performance and Party with Families</b></span></li>
+          <li class="trip"><span class="trip-ic tint-blue" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path></svg></span><span class="trip-t"><small>Week 5 · Field trip</small><b>The Udvar-Hazy Center</b></span></li>
+          <li class="trip"><span class="trip-ic tint-teal" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.7V17c0 .6-.5 1-1 1.2C7.8 18.8 7 20.2 7 22M14 14.7V17c0 .6.5 1 1 1.2 1.2.6 2 2 2 3.8M18 2H6v7a6 6 0 0 0 12 0V2z"></path></svg></span><span class="trip-t"><small>Week 6 · Celebration</small><b>Field Day</b></span></li>
+          <li class="trip"><span class="trip-ic tint-gold" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"></path></svg></span><span class="trip-t"><small>Week 7 · Celebration</small><b>Service Project Presentations and Party</b></span></li>
+          <li class="trip-note"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6v6M15 6v6M2 12h19.6M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"></path><circle cx="7" cy="18" r="2"></circle><path d="M9 18h5"></path><circle cx="16" cy="18" r="2"></circle></svg><span>Summer 2027 trips will be shared when registration opens.</span></li>
+        </ul>
+      </div>
     </section>
 
     <section id="day" class="sec" aria-labelledby="h-day">
       <div class="sec-head">
+        <p class="sec-k">8 AM – 5 PM</p>
         <h2 id="h-day">A Day at Camp</h2>
-        <p>Fridays follow a different plan to make room for field trips.</p>
+        <p>A full, happy day from morning kickoff to afternoon sports. Fridays follow a different plan to make room for field trips.</p>
       </div>
       <div class="day-wrap">
-        <figure class="day-photo"><img src="assets/img/young-students-dancing-with-ribbons.jpg" alt="Young students dancing with colorful ribbons on stage" style="object-position: 55% 55%;"></figure>
-      <div class="sched" role="table" aria-label="Daily schedule">
-        <div class="srow" role="row"><div class="st" role="cell">8:00 – 9:30 AM</div><div class="sd" role="cell"><strong>Arrival and Camp Kickoff</strong></div></div>
-        <div class="srow" role="row"><div class="st" role="cell">9:30 – 11:30 AM</div><div class="sd" role="cell"><strong>Morning Enrichment</strong><span>STEM, creative arts and language. Monday to Thursday, Arabic and Spanish alternate, so each is taught twice a week.</span><span class="tag t-amber">Optional: Islamic Discovery, twice a week</span></div></div>
-        <div class="srow" role="row"><div class="st" role="cell">11:30 AM – 12:00 PM</div><div class="sd" role="cell"><strong>Sports, Movement or Water Play</strong><span>Each age group has one water-play day (Mon–Wed), with Thursday as a backup.</span></div></div>
-        <div class="srow" role="row"><div class="st" role="cell">12:00 – 1:00 PM</div><div class="sd" role="cell"><strong>Lunch and Recharge</strong><span>Lunch and snacks are provided.</span></div></div>
-        <div class="srow" role="row"><div class="st" role="cell">1:00 – 4:00 PM</div><div class="sd" role="cell"><strong>Afternoon Enrichment</strong><span>STEM, creative arts and language.</span></div></div>
-        <div class="srow" role="row"><div class="st" role="cell">4:00 – 5:00 PM</div><div class="sd" role="cell"><strong>Sports and Movement</strong></div></div>
-        <div class="srow" role="row"><div class="st" role="cell">5:00 – 6:00 PM</div><div class="sd" role="cell"><strong>Aftercare</strong><span>Creative arts or sports. Extra $50 a week.</span></div></div>
-      </div>
+        <figure class="day-photo"><img src="assets/img/students-cheering-and-holding-up-their-artwork.jpg" alt="Students cheering and holding up their artwork" style="object-position: 58% 40%;"></figure>
+        <div class="sched" role="table" aria-label="Daily schedule">
+          <div class="srow" role="row"><div class="st" role="cell">8:00 – 9:30 AM</div><div class="sd" role="cell"><strong>Arrival and Camp Kickoff</strong></div></div>
+          <div class="srow" role="row"><div class="st" role="cell">9:30 – 11:30 AM</div><div class="sd" role="cell"><strong>Morning Enrichment</strong><span>STEM, creative arts and language. Monday to Thursday, Arabic and Spanish alternate, so each is taught twice a week.</span><span class="tag t-amber">Optional: Islamic Discovery, twice a week</span></div></div>
+          <div class="srow" role="row"><div class="st" role="cell">11:30 AM – 12:00 PM</div><div class="sd" role="cell"><strong>Sports, Movement or Water Play</strong><span>Each age group has one water-play day (Mon – Wed), with Thursday as a backup.</span></div></div>
+          <div class="srow" role="row"><div class="st" role="cell">12:00 – 1:00 PM</div><div class="sd" role="cell"><strong>Lunch and Recharge</strong><span>Lunch and snacks are provided.</span></div></div>
+          <div class="srow" role="row"><div class="st" role="cell">1:00 – 4:00 PM</div><div class="sd" role="cell"><strong>Afternoon Enrichment</strong><span>STEM, creative arts and language.</span></div></div>
+          <div class="srow" role="row"><div class="st" role="cell">4:00 – 5:00 PM</div><div class="sd" role="cell"><strong>Sports and Movement</strong></div></div>
+          <div class="srow" role="row"><div class="st" role="cell">5:00 – 6:00 PM</div><div class="sd" role="cell"><strong>Aftercare</strong><span>Creative arts or sports, as an optional extra.</span></div></div>
+        </div>
       </div>
     </section>
 
     <section id="groups" class="sec" aria-labelledby="h-grp">
       <div class="sec-head">
+        <p class="sec-k">Ages 5 – 13</p>
         <h2 id="h-grp">Age Groups</h2>
         <p>Campers are grouped by age and explore the same weekly theme at their own level. Groups may be combined when enrollment is small.</p>
       </div>
       <div class="ages">
-        <div class="age"><b>Ages 5–7</b><span>Early Explorers</span></div>
-        <div class="age"><b>Ages 8–10</b><span>Junior Innovators</span></div>
-        <div class="age"><b>Ages 11–13</b><span>Future Engineers</span></div>
+        <div class="age"><span class="wk-ic tint-teal" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m16.2 7.8-2.1 6.3-6.3 2.1 2.1-6.3z"></path></svg></span><div class="age-t"><b>Ages 5 – 7</b><span>Early Explorers</span></div></div>
+        <div class="age"><span class="wk-ic tint-gold" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 22h4M15.1 14c.2-1 .7-1.7 1.4-2.5A4.6 4.6 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path></svg></span><div class="age-t"><b>Ages 8 – 10</b><span>Junior Innovators</span></div></div>
+        <div class="age"><span class="wk-ic tint-blue" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9l-3.8 3.8z"></path></svg></span><div class="age-t"><b>Ages 11 – 13</b><span>Future Engineers</span></div></div>
       </div>
       <div class="approach">
-        <div class="ap"><h3>Character &amp; Global Citizenship</h3><p>Values, languages and cultures from around the world.</p></div>
-        <div class="ap"><h3>Inquiry-Based Learning</h3><p>IB-style learning across STEAM, languages and creative arts.</p></div>
-        <div class="ap"><h3>Leadership &amp; Communication</h3><p>Team challenges, public speaking and language immersion.</p></div>
-      </div>
-    </section>
-
-    <section id="prices" class="sec" aria-labelledby="h-pr">
-      <div class="sec-head">
-        <h2 id="h-pr">Prices &amp; Discounts</h2>
-        <p>Prices are per child, per week. Meals and snacks are included in both options.</p>
-      </div>
-      <div class="prices">
-        <article class="pr pr-feat">
-          <h3>Full Day <span style="font-weight: 500; color: rgb(94, 104, 120);">· 8 AM – 5 PM</span></h3>
-          <p class="amt">$400 <small>/ week</small></p>
-          <ul><li>$350 a week if you register before May 15</li><li>$350 a week when you book 5 or more weeks</li></ul>
-        </article>
-        <article class="pr">
-          <h3>Half Day <span style="font-weight: 500; color: rgb(94, 104, 120);">· 8–12 Or 1–5</span></h3>
-          <p class="amt">$250 <small>/ week</small></p>
-          <ul><li>$225 a week when you book 5 or more weeks</li><li>[Early-registration price for half day]</li></ul>
-        </article>
-      </div>
-      <table class="disc">
-        <caption class="label" style="text-align: left; padding: 0px 0px 10px; font-size: 14px; letter-spacing: 0.07em;">Discounts and extras</caption>
-        <thead><tr><th scope="col">Item</th><th scope="col">Details</th><th scope="col">Price</th></tr></thead>
-        <tbody>
-          <tr><td>Early registration</td><td>Full day, booked before May 15</td><td>$350 / week</td></tr>
-          <tr><td>5+ weeks</td><td>Applied automatically</td><td>−$50 full day · −$25 half day, per week</td></tr>
-          <tr><td>Siblings</td><td>Same week and same option</td><td>5% off</td></tr>
-          <tr><td>Aftercare</td><td>5:00 – 6:00 PM</td><td>$50 / week</td></tr>
-          <tr><td>Daily transportation</td><td>Friday field-trip transport is already included</td><td>$100 / week</td></tr>
-        </tbody>
-      </table>
-
-      <div class="calc" aria-labelledby="h-calc">
-        <div class="calc-in">
-          <h3 id="h-calc" style="font-size: 20px; font-weight: 700;">Estimate Your Cost</h3>
-          <div>
-            <span class="qlbl" id="q-weeks">1. Pick your weeks</span>
-            <div class="wchips" role="group" aria-labelledby="q-weeks">
-              
-                <button type="button" class="wchip wchip-on" aria-pressed="true"><b>Week 1</b>Jun 29</button>
-              
-                <button type="button" class="wchip wchip-on" aria-pressed="true"><b>Week 2</b>Jul 6</button>
-              
-                <button type="button" class="wchip " aria-pressed="false"><b>Week 3</b>Jul 13</button>
-              
-                <button type="button" class="wchip " aria-pressed="false"><b>Week 4</b>Jul 20</button>
-              
-                <button type="button" class="wchip " aria-pressed="false"><b>Week 5</b>Jul 27</button>
-              
-                <button type="button" class="wchip " aria-pressed="false"><b>Week 6</b>Aug 3</button>
-              
-                <button type="button" class="wchip " aria-pressed="false"><b>Week 7</b>Aug 10</button>
-              
-            </div>
-          </div>
-          <div style="display: flex; flex-wrap: wrap; gap: 18px 36px;">
-            <div>
-              <span class="qlbl" id="q-plan">2. Full or half day</span>
-              <div class="seg" role="group" aria-labelledby="q-plan">
-                <button type="button" class="seg-on" aria-pressed="true">Full Day</button>
-                <button type="button" class="" aria-pressed="false">Half Day</button>
-              </div>
-            </div>
-            <div>
-              <span class="qlbl" id="q-kids">3. Children</span>
-              <div class="stepper" role="group" aria-labelledby="q-kids">
-                <button type="button" aria-label="One fewer child">−</button>
-                <output aria-live="polite">1</output>
-                <button type="button" aria-label="One more child">+</button>
-              </div>
-            </div>
-          </div>
-          <div>
-            <span class="qlbl">4. Extras</span>
-            <div class="checks">
-              <label><input type="checkbox">Aftercare ($50 / week)</label>
-              <label><input type="checkbox">Daily transportation ($100 / week)</label>
-            </div>
-          </div>
-        </div>
-        <div class="calc-out" aria-live="polite">
-          <p style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: rgb(243, 198, 100);">Your estimate</p>
-          <p class="line"><span>2 weeks × 1 child × $400</span><b>$800</b></p>
-          
-          
-          
-          <p class="total"><span>Total</span><b>$800</b></p>
-          <p style="font-size: 13.5px; color: rgb(198, 206, 219);">An estimate at regular prices, before the early-registration rate. Your final price is shown in the Parent Portal.</p>
-          <a class="btn btn-gold" href="https://portal.edumagined.com/falconacademy/falcons-summer-camp-registration/" style="margin-top: auto;">Register These Weeks <span aria-hidden="true">→</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section id="refunds" class="sec" aria-labelledby="h-rf">
-      <div class="sec-head">
-        <h2 id="h-rf">Changing Weeks and Refunds</h2>
-        <p>Refunds are worked out for each week separately, based on how much notice you give before that week starts.</p>
-      </div>
-      <div class="refund">
-        <div class="rf">
-          <h3>If You Cancel a Week</h3>
-          <div class="rtable">
-            <div><span>4 or more weeks before it starts</span><b>100% refund</b></div>
-            <div><span>2 weeks before it starts</span><b>50% refund</b></div>
-            <div><span>[Less than 2 weeks]</span><b>[Refund %]</b></div>
-          </div>
-          <ul>
-            <li>If you drop below 5 weeks, the 5+ week discount no longer applies to your remaining weeks.</li>
-            <li>No refunds or credits for missed days, absences or leaving early once a week has started.</li>
-          </ul>
-        </div>
-        <div class="rf">
-          <h3>If You Need to Switch, or We Cancel</h3>
-          <ul>
-            <li><b>Switch weeks for free</b> with at least 14 days’ notice, if there is space.</li>
-            <li>With less than 14 days’ notice, switches are not guaranteed and depend on space.</li>
-            <li>If we cancel a week for low enrollment, we tell you right away. Choose another week or a full refund.</li>
-          </ul>
-          <a class="more" href="https://drive.google.com/file/d/1GJ_z0YsuEuBs-U7FlgLqAOFAm6dEI9PQ/view?usp=sharing" style="margin-top: auto; font-size: 15px;">Full Cancellation Policy (PDF) ›</a>
-        </div>
+        <div class="ap"><span class="ftile tint-teal" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></span><div><h3>Character &amp; Global Citizenship</h3><p>Values, languages and cultures from around the world.</p></div></div>
+        <div class="ap"><span class="ftile tint-gold" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg></span><div><h3>Inquiry-Based Learning</h3><p>IB-style learning across STEAM, languages and creative arts.</p></div></div>
+        <div class="ap"><span class="ftile tint-blue" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 11 18-5v12L3 14v-3z"></path><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path></svg></span><div><h3>Leadership &amp; Communication</h3><p>Team challenges, public speaking and language immersion.</p></div></div>
       </div>
     </section>
 
     <section id="safety" class="sec" aria-labelledby="h-sf">
       <div class="sec-head">
+        <p class="sec-k">Peace of Mind</p>
         <h2 id="h-sf">Health &amp; Safety</h2>
       </div>
       <div class="safe">
-        <div class="sf"><h3>Trained, Checked Staff</h3><p>Background checks under Virginia Department of Education rules, plus pre-camp training in emergencies, supervision and behavior.</p></div>
-        <div class="sf"><h3>Small Groups</h3><p>9 to 12 campers per staff member, depending on the age group.</p></div>
-        <div class="sf"><h3>Allergies and Meals</h3><p>We track every child’s food allergies and make safe meal substitutions.</p></div>
-        <div class="sf"><h3>If Your Child Feels Unwell</h3><p>We call you right away and your child rests, supervised, until pick-up.</p></div>
-        <div class="sf"><h3>Secure Campus</h3><p>On-site security and daily cleaning throughout camp.</p></div>
-        <div class="sf"><h3>Time Outdoors</h3><p>Daily outdoor sports, nature exploration and a weekly water-play day.</p></div>
+        <div class="sf"><span class="ftile tint-blue" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg></span><div><h3>Trained, Checked Staff</h3><p>Background checks under Virginia Department of Education rules, plus pre-camp training in emergencies, supervision and behavior.</p></div></div>
+        <div class="sf"><span class="ftile tint-teal" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"></path></svg></span><div><h3>Small Groups</h3><p>9 to 12 campers per staff member, depending on the age group.</p></div></div>
+        <div class="sf"><span class="ftile tint-gold" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.5c-1-1.5-2.6-2-4-2-3 0-5 2.6-5 6 0 4.5 3.5 10 6 10 1.2 0 1.8-.6 3-.6s1.8.6 3 .6c2.5 0 6-5.5 6-10 0-3.4-2-6-5-6-1.4 0-3 .5-4 2z"></path><path d="M12 6.5c0-2 1-3.5 3-4.5"></path></svg></span><div><h3>Allergies and Meals</h3><p>We track every child’s food allergies and make safe meal substitutions.</p></div></div>
+        <div class="sf"><span class="ftile tint-blue" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg></span><div><h3>If Your Child Feels Unwell</h3><p>We call you right away and your child rests, supervised, until pick-up.</p></div></div>
+        <div class="sf"><span class="ftile tint-teal" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 0 1 8 0v4"></path></svg></span><div><h3>Secure Campus</h3><p>On-site security and daily cleaning throughout camp.</p></div></div>
+        <div class="sf"><span class="ftile tint-gold" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></span><div><h3>Time Outdoors</h3><p>Daily outdoor sports, nature exploration and a weekly water-play day.</p></div></div>
       </div>
     </section>
 
     <section id="moments" class="sec" aria-labelledby="h-mom">
       <div class="sec-head" style="flex-flow: wrap; align-items: flex-end; justify-content: space-between; gap: 8px 20px;">
-        <div style="display: flex; flex-direction: column; gap: 6px;"><h2 id="h-mom">Camp Moments</h2><p>A look at Falcon students learning, playing and celebrating.</p></div>
+        <div style="display: flex; flex-direction: column; gap: 6px;"><p class="sec-k">Smiles Guaranteed</p><h2 id="h-mom">Falcon Moments</h2><p>A look at Falcon students learning, playing and celebrating.</p></div>
         <a class="link" href="PhotosVideos.html">See All Photos <span aria-hidden="true">→</span></a>
       </div>
       <div class="gallery">
-        <img class="g-big" src="assets/img/students-cheering-and-holding-up-their-artwork.jpg" alt="Students cheering and holding up their artwork" style="object-position: 50% 40%;">
-        <img class="" src="assets/img/young-students-dancing-with-ribbons.jpg" alt="Young students dancing with ribbons" style="object-position: 50% 50%;">
-        <img class="" src="assets/img/students-on-a-hayride-field-trip.jpg" alt="Students on a hayride field trip" style="object-position: 40% 50%;">
-        <img class="" src="assets/img/smiling-students-at-their-desk.jpg" alt="Smiling students at their desk" style="object-position: 30% 50%;">
-        <img class="" src="assets/img/students-outdoors-on-a-service-project.jpg" alt="Students outdoors on a service project" style="object-position: 50% 40%;">
+        <img class="g-big" src="assets/img/young-students-dancing-with-ribbons.jpg" alt="Young students dancing with colorful ribbons on stage" style="object-position: 50% 60%;">
+        <img src="assets/img/two-young-students-reading-a-book-together.jpg" alt="Two young students reading a book together" style="object-position: 50% 45%;">
+        <img src="assets/img/two-young-students-working-at-a-round.jpg" alt="Two young students working together at a round desk" style="object-position: 50% 50%;">
+        <img src="assets/img/a-smiling-student-holding-up-her-artwork.jpg" alt="A smiling student holding up her artwork" style="object-position: 50% 35%;">
+        <img src="assets/img/students-outdoors-on-a-service-project.jpg" alt="Students outdoors on a service project" style="object-position: 50% 40%;">
       </div>
-      <p class="ph" style="font-size: 14px;">[Replace with photos from Summer 2026 camp, with families’ consent.]</p>
     </section>
 
     <section id="faq" class="sec" aria-labelledby="h-faq">
       <div class="sec-head">
-        <h2 id="h-faq">More Questions</h2>
-        <p>Prices, refunds and safety are answered above. Here is everything else.</p>
+        <p class="sec-k">Good to Know</p>
+        <h2 id="h-faq">Questions Families Ask</h2>
       </div>
       <div class="faqs">
+        <div class="fgroup">
+          <h3>Registration</h3>
+          <details><summary>When does registration for Summer 2027 open?</summary><div class="ans">Registration is not open yet. Dates and prices will be posted on this page when it opens. <a href="Contact.html">Contact us</a> and we will let you know as soon as it does.</div></details>
+          <details><summary>Can my child attend only some weeks?</summary><div class="ans">Yes. Each week stands on its own, so you can choose any week or weeks that suit your family.</div></details>
+        </div>
         <div class="fgroup">
           <h3>Languages</h3>
           <details><summary>Will my child get confused learning two languages at once?</summary><div class="ans">No. Children can learn more than one language at the same time, and doing so can help with problem-solving and flexible thinking. Lessons keep the two languages clear and fun.</div></details>
@@ -562,20 +458,19 @@
         </div>
         <div class="fgroup">
           <h3>Getting There</h3>
-          <details><summary>Do you provide transportation?</summary><div class="ans">Yes, for $100 a week. Transport for Friday field trips is included for everyone.</div></details>
-          <details><summary>Can my child attend only some weeks?</summary><div class="ans">Yes. Register for any week or weeks that suit your family.</div></details>
+          <details><summary>Do you provide transportation?</summary><div class="ans">Daily transportation was available last summer for an extra weekly fee, and transport for Friday field trips was included for everyone. Details for Summer 2027 will be shared when registration opens.</div></details>
         </div>
       </div>
     </section>
 
-    <section id="interest" class="cta-band" style="margin-top: 44px; border-radius: 20px; padding: 40px clamp(20px, 4vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px 28px;">
+    <section class="cta-band sc-cta" aria-labelledby="h-cta">
       <div style="display: flex; flex-direction: column; gap: 6px; max-width: 620px;">
-        <h2 style="color: rgb(255, 255, 255); font-size: 28px; font-weight: 700;">Spots Fill Up by Theme Week</h2>
-        <p style="color: rgb(213, 220, 231); font-size: 16.5px;">Register in the Parent Portal, or call the front office with any questions about camp.</p>
+        <h2 id="h-cta">Be the First to Hear When Registration Opens</h2>
+        <p>Tell us you are interested and we will contact you when Summer 2027 dates and prices are ready. You can also call the front office with any questions.</p>
       </div>
-      <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+      <div class="cta-acts" style="display: flex; flex-wrap: wrap; gap: 10px;">
         <a class="btn btn-light btn-lg" href="tel:5718001382">Call 571-800-1382</a>
-        <a class="btn btn-gold btn-lg" href="https://portal.edumagined.com/falconacademy/falcons-summer-camp-registration/">Register Now <span aria-hidden="true">→</span></a>
+        <a class="btn btn-gold btn-lg" href="Contact.html">Notify Me <span aria-hidden="true">→</span></a>
       </div>
     </section>
   </main>
@@ -632,7 +527,7 @@
         <h2>Quick Links</h2>
         <ul>
           <li><a href="https://portal.edumagined.com/falconacademy/">Parent Portal</a></li>
-          <li><a href="CalendarEvents.html">Calendar</a></li>
+          <li><a href="CalendarEvents.html">Academic Calendar</a></li>
           <li><a href="VisitTour.html">Book a Tour</a></li>
           <li><a href="Careers.html">Careers</a></li>
           <li><a href="Policies.html">School Policies</a></li>
@@ -641,6 +536,7 @@
     </div>
 
     <div style="margin-top: 32px; padding: 16px 0px 20px; border-top: 1px solid rgba(255, 255, 255, 0.14); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 24px; font-size: 13px; color: rgb(185, 196, 214);">
+      <span style="flex-basis: 100%;">*Only schools authorized by the IB Organization can offer its programmes. Candidate status gives no guarantee that authorization will be granted.</span>
       <span>© 2026 Falcon Academy. All rights reserved.</span>
       <span>Falcon Academy admits students without discrimination. <a href="PolicyAdmissions.html" style="color: rgb(255, 255, 255); text-decoration: underline; text-underline-offset: 3px;">Admissions Policy</a></span>
     </div>
