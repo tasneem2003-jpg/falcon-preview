@@ -37,7 +37,8 @@
     .fw-top:hover{color:#F3C664!important}
     .fw-top .caret{margin-left:6px;opacity:.75}
     /* Full-width menu panel (2026-11-15). It opens under the header across the whole screen. */
-    .fw-menu .dd-menu{position:fixed;left:0;right:0;top:92px;z-index:50;display:block;visibility:hidden;opacity:0;transform:translateY(-10px);transition:opacity .18s ease-in,transform .18s ease-in,visibility 0s linear .18s;background:#F6F8FB;border-top:1px solid #E6EAF1;box-shadow:0 26px 44px -18px rgba(19,35,63,.28);overflow:hidden}
+    .fw-menu .dd-menu{position:fixed;left:0;right:0;top:92px;z-index:50;display:block;visibility:hidden;opacity:0;transform:translateY(-10px);transition:opacity .18s ease-in,transform .18s ease-in,visibility 0s linear .18s;background:#F6F8FB;border-top:1px solid #E6EAF1;overflow:hidden;box-shadow:0 0 0 100vmax rgba(13,25,46,.62);clip-path:inset(0 0 -100vmax 0)}
+    /* ↑ the page below the open panel dims under a navy veil (like the reference school); the header stays clear. The veil is a shadow, so it never catches the pointer and the menu closes as soon as you leave it. */
     .fw.fw-compact .fw-menu .dd-menu{top:64px}
     .fw-menu .dd:hover .dd-menu,.fw-menu .dd:focus-within .dd-menu{visibility:visible;opacity:1;transform:translateY(0);transition:opacity .28s cubic-bezier(0,0,.3,1),transform .36s cubic-bezier(0,0,.3,1),visibility 0s}
     /* the hover path from the top item down to the panel stays open */
