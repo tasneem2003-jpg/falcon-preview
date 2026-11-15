@@ -36,22 +36,32 @@
     .fw-top{position:relative;display:inline-flex;align-items:center;height:54px;padding:0 13px;box-sizing:border-box;font-size:14px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap;transition:color .3s ease}
     .fw-top:hover{color:#F3C664!important}
     .fw-top .caret{margin-left:6px;opacity:.75}
-    .fw-menu .dd-menu{display:flex;visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity .18s ease-in,transform .18s ease-in,visibility 0s linear .18s;position:absolute;top:100%;left:0;z-index:50;min-width:250px;padding:8px;background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px;box-shadow:0 14px 32px rgba(19,35,63,.18);flex-direction:column;gap:2px}
-    .fw-menu .dd:hover .dd-menu,.fw-menu .dd:focus-within .dd-menu{visibility:visible;opacity:1;transform:translateY(0);transition:opacity .26s cubic-bezier(0,0,.3,1),transform .32s cubic-bezier(0,0,.3,1),visibility 0s}
-    .fw-menu .dd-menu a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:42px;padding:0 12px;border-radius:8px;color:#1A2740;font-size:14.5px;font-weight:600;white-space:nowrap}
-    .fw-menu .dd-menu a:hover,.fw-menu .dd-menu a:focus-visible{background:#EEF2F7}
-    .fw-menu .dd-menu small{font-size:12.5px;font-weight:500;color:#5E6878}
-    /* campus pages sit under Our Campuses as one group (2026-11-08) */
-    .fw-menu .dd-menu a.dd-sub{min-height:38px;margin-left:14px;padding-left:12px;font-size:14px;font-weight:500;color:#3D4A60}
-    .fw-menu .dd-menu a.dd-sub{position:relative;padding-left:26px}
-    .fw-menu .dd-menu a.dd-sub::before{content:"";position:absolute;left:12px;top:50%;width:6px;height:6px;margin-top:-3px;border-radius:50%;background:#C3CBD8}
-    .dd-col{display:flex;flex-direction:column;gap:2px}
-    .fw-menu .dd-mega{flex-direction:row;gap:2px;padding:8px}
-    .dd-mega .dd-col{width:max-content;min-width:176px}
-    .dd-head{margin:6px 14px 6px;font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00;white-space:nowrap}
-    .fw-menu .dd-mega a{flex-direction:column;align-items:flex-start;justify-content:center;gap:1px;min-height:50px;padding:6px 14px;box-sizing:border-box;white-space:nowrap}
-    .fw-menu .dd-mega a.dd-wrap{white-space:normal;max-width:212px;line-height:1.3}
-    .fw-menu .dd:nth-last-child(-n+2) .dd-menu{left:auto;right:0}
+    /* Full-width menu panel (2026-11-15). It opens under the header across the whole screen. */
+    .fw-menu .dd-menu{position:fixed;left:0;right:0;top:92px;z-index:50;display:block;visibility:hidden;opacity:0;transform:translateY(-10px);transition:opacity .18s ease-in,transform .18s ease-in,visibility 0s linear .18s;background:#F6F8FB;border-top:1px solid #E6EAF1;box-shadow:0 26px 44px -18px rgba(19,35,63,.28);overflow:hidden}
+    .fw.fw-compact .fw-menu .dd-menu{top:64px}
+    .fw-menu .dd:hover .dd-menu,.fw-menu .dd:focus-within .dd-menu{visibility:visible;opacity:1;transform:translateY(0);transition:opacity .28s cubic-bezier(0,0,.3,1),transform .36s cubic-bezier(0,0,.3,1),visibility 0s}
+    /* the hover path from the top item down to the panel stays open */
+    .fw-menu .dd:hover .fw-top::after{content:"";position:absolute;left:0;right:0;top:100%;height:40px}
+    .dd-menu::before,.dd-menu::after{content:"";position:absolute;top:0;bottom:0;left:0;width:calc(max(24px, (100% - 1224px) / 2) + 384px);clip-path:polygon(0 0,100% 0,calc(100% - 132px) 100%,0 100%)}
+    .dd-menu::before{background:#E7A11C;width:calc(max(24px, (100% - 1224px) / 2) + 388px)}
+    .dd-menu::after{background:#13233F}
+    .dd-in{position:relative;z-index:1;max-width:1224px;margin:0 auto;padding:46px 24px 52px;box-sizing:border-box;display:grid;grid-template-columns:330px minmax(0,1fr);gap:0 92px;min-height:330px}
+    .dd-intro{display:flex;flex-direction:column;gap:14px;padding-right:40px}
+    .dd-title{margin:0;font-size:44px;line-height:1.05;font-weight:700;letter-spacing:-.02em;color:#FFFFFF}
+    .dd-desc{margin:0;max-width:250px;font-size:15.5px;line-height:1.55;color:#C6CEDB}
+    .fw-menu .dd-menu a.dd-go{align-self:flex-start;margin-top:6px;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#F3C664;background:none}
+    .fw-menu .dd-menu a.dd-go:hover{color:#FFFFFF;background:none}
+    .dd-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:0 44px;align-content:start}
+    .dd-col{display:flex;flex-direction:column;min-width:0}
+    .dd-head{margin:0 0 10px;padding-bottom:12px;border-bottom:1px solid #CBD3DF;font-size:22px;line-height:1.2;font-weight:600;letter-spacing:-.01em;color:#13233F}
+    .fw-menu .dd-menu .dd-col a{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:2px;min-height:46px;padding:7px 0;color:#1A2740;font-size:14px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;line-height:1.3;background:none;border-radius:0}
+    .fw-menu .dd-menu .dd-col a small{font-size:13px;font-weight:500;letter-spacing:0;text-transform:none;color:#5E6878}
+    .fw-menu .dd-menu .dd-col a:hover,.fw-menu .dd-menu .dd-col a:focus-visible{color:#B4740A;background:none}
+    .fw-menu .dd-menu .dd-col a.dd-sub{padding-left:16px;font-size:13.5px;position:relative}
+    .fw-menu .dd-menu .dd-col a.dd-sub::before{content:"";position:absolute;left:2px;top:50%;width:6px;height:6px;margin-top:-3px;border-radius:50%;background:#C3CBD8}
+    .fw-menu .dd-menu .dd-col a.dd-wrap{max-width:250px}
+    .fw-menu .dd-menu .dd-col a small:empty{display:none}
+    @media (max-width:1300px){.dd-in{grid-template-columns:280px minmax(0,1fr);gap:0 64px}.dd-title{font-size:38px}.dd-cols{gap:0 32px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}.dd-menu::before,.dd-menu::after{width:calc(max(24px, (100% - 1224px) / 2) + 330px)}.dd-menu::before{width:calc(max(24px, (100% - 1224px) / 2) + 334px)}}
     .fw-apply{display:inline-flex;align-items:center;min-height:38px;padding:0 18px;border-radius:8px;background:#E7A11C;color:#13233F;font-size:14.5px;font-weight:700;white-space:nowrap;transition:background .3s ease}
     .fw-apply:hover{background:#D48F0E;color:#13233F}
     .fw-burger{display:none}
@@ -111,29 +121,50 @@
         <div class="dd">
           <a class="fw-top" href="OurStory.html" aria-current="false" style="color: rgb(255, 255, 255);">About Us<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
-            <div class="dd-menu " role="group" aria-label="About Us pages">
-              
-                <div class="dd-col">
+            <div class="dd-menu" role="group" aria-label="About Us pages">
+              <div class="dd-in">
+                <div class="dd-intro">
+                  <p class="dd-title">About Us</p>
+                  <p class="dd-desc">A school founded by its families, on two campuses in Northern Virginia.</p>
+                  <a class="dd-go" href="OurStory.html">Our Story <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="dd-cols">
                   
+                    <div class="dd-col">
+                      <p class="dd-head">Our School</p>
+                      
+                        <a class="" href="OurStory.html">Our Story<small>How Falcon began</small></a>
+                      
+                        <a class="" href="Leadership.html">Leadership<small>Who leads the school</small></a>
+                      
+                        <a class="" href="Faculty.html">Faculty &amp; Staff<small>Meet our teachers</small></a>
+                      
+                        <a class="" href="ParentVoices.html">Share Your Story<small>Parent voices</small></a>
+                      
+                    </div>
                   
-                    <a class="" href="OurStory.html">Our Story<small></small></a>
+                    <div class="dd-col">
+                      <p class="dd-head">Our Campuses</p>
+                      
+                        <a class="" href="Campuses.html">Our Campuses<small>Both campuses at a glance</small></a>
+                      
+                        <a class="dd-sub" href="AshburnCampus.html">Ashburn Campus<small>G6 – G12</small></a>
+                      
+                        <a class="dd-sub" href="ChantillyCampus.html">Chantilly Campus<small>KG – G5</small></a>
+                      
+                    </div>
                   
-                    <a class="" href="Leadership.html">Leadership<small></small></a>
-                  
-                    <a class="" href="Faculty.html">Faculty &amp; Staff<small></small></a>
-                  
-                    <a class="dd-group" href="Campuses.html">Our Campuses<small></small></a>
-                  
-                    <a class="dd-sub" href="AshburnCampus.html">Ashburn Campus<small>G6 – G12</small></a>
-                  
-                    <a class="dd-sub" href="ChantillyCampus.html">Chantilly Campus<small>KG – G5</small></a>
-                  
-                    <a class="" href="ParentVoices.html">Share Your Story<small></small></a>
-                  
-                    <a class="" href="Careers.html">Careers<small></small></a>
+                    <div class="dd-col">
+                      <p class="dd-head">Join Us</p>
+                      
+                        <a class="" href="Careers.html">Careers<small>Teach and work at Falcon</small></a>
+                      
+                        <a class="" href="Contact.html">Contact Us<small>Questions, feedback and visits</small></a>
+                      
+                    </div>
                   
                 </div>
-              
+              </div>
             </div>
           
         </div>
@@ -141,47 +172,56 @@
         <div class="dd">
           <a class="fw-top" href="Academics.html" aria-current="false" style="color: rgb(255, 255, 255);">Academics<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
-            <div class="dd-menu dd-mega" role="group" aria-label="Academics pages">
-              
-                <div class="dd-col">
-                  <p class="dd-head">Our Programs</p>
+            <div class="dd-menu" role="group" aria-label="Academics pages">
+              <div class="dd-in">
+                <div class="dd-intro">
+                  <p class="dd-title">Academics</p>
+                  <p class="dd-desc">One school from KG to Grade 12, with AP courses and college credit in high school.</p>
+                  <a class="dd-go" href="Academics.html">Academics Overview <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="dd-cols">
                   
-                    <a class="" href="PrimaryYears.html">Elementary School<small>KG – G5</small></a>
+                    <div class="dd-col">
+                      <p class="dd-head">Our Programs</p>
+                      
+                        <a class="" href="PrimaryYears.html">Elementary School<small>KG – G5</small></a>
+                      
+                        <a class="" href="MiddleYears.html">Middle School<small>G6 – G8</small></a>
+                      
+                        <a class="" href="HighSchool.html">High School<small>G9 – G12</small></a>
+                      
+                    </div>
                   
-                    <a class="" href="MiddleYears.html">Middle School<small>G6 – G8</small></a>
+                    <div class="dd-col">
+                      <p class="dd-head">Academic Excellence</p>
+                      
+                        <a class="" href="Accreditation.html">Accreditation<small>IB · Cognia</small></a>
+                      
+                        <a class="" href="DualEnrollment.html">Dual Enrollment<small>College credit with NOVA</small></a>
+                      
+                        <a class="" href="APCourses.html">AP Courses<small>College Board approved</small></a>
+                      
+                        <a class="" href="AssociateDegree.html">Associate Degree<small>Pathway with NOVA</small></a>
+                      
+                        <a class="" href="AcademicSupport.html">Academic Support<small>Help for every learner</small></a>
+                      
+                    </div>
                   
-                    <a class="" href="HighSchool.html">High School<small>G9 – G12</small></a>
+                    <div class="dd-col">
+                      <p class="dd-head">Our Approach</p>
+                      
+                        <a class="" href="Curriculum.html">Curriculum<small>9 subjects</small></a>
+                      
+                        <a class="" href="ArabicIslamic.html">Arabic &amp; Islamic Studies<small>Quran, Arabic and values</small></a>
+                      
+                        <a class="" href="STEM.html">STEM at Falcon<small>Science, tech and math</small></a>
+                      
+                        <a class="" href="CalendarEvents.html">Academic Calendar<small>Key dates for the year</small></a>
+                      
+                    </div>
                   
                 </div>
-              
-                <div class="dd-col">
-                  <p class="dd-head">Academic Excellence</p>
-                  
-                    <a class="" href="Accreditation.html">Accreditation<small>IB · Cognia</small></a>
-                  
-                    <a class="" href="DualEnrollment.html">Dual Enrollment<small>College credit with NOVA</small></a>
-                  
-                    <a class="" href="APCourses.html">AP Courses<small>College Board approved</small></a>
-                  
-                    <a class="" href="AssociateDegree.html">Associate Degree<small>Pathway with NOVA</small></a>
-                  
-                    <a class="" href="AcademicSupport.html">Academic Support<small>Help for every learner</small></a>
-                  
-                </div>
-              
-                <div class="dd-col">
-                  <p class="dd-head">Our Approach</p>
-                  
-                    <a class="" href="Curriculum.html">Curriculum<small>9 subjects</small></a>
-                  
-                    <a class="" href="ArabicIslamic.html">Arabic &amp; Islamic Studies<small>Quran, Arabic and values</small></a>
-                  
-                    <a class="" href="STEM.html">STEM at Falcon<small>Science, tech and math</small></a>
-                  
-                    <a class="" href="CalendarEvents.html">Academic Calendar<small>Key dates for the year</small></a>
-                  
-                </div>
-              
+              </div>
             </div>
           
         </div>
@@ -189,25 +229,46 @@
         <div class="dd">
           <a class="fw-top" href="AdmissionsOverview.html" aria-current="false" style="color: rgb(255, 255, 255);">Admissions<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
-            <div class="dd-menu " role="group" aria-label="Admissions pages">
-              
-                <div class="dd-col">
+            <div class="dd-menu" role="group" aria-label="Admissions pages">
+              <div class="dd-in">
+                <div class="dd-intro">
+                  <p class="dd-title">Admissions</p>
+                  <p class="dd-desc">Now enrolling for 2026–27. Visit us, apply and plan the year with our team.</p>
+                  <a class="dd-go" href="AdmissionsOverview.html">Admissions Overview <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="dd-cols">
                   
+                    <div class="dd-col">
+                      <p class="dd-head">Visit and Apply</p>
+                      
+                        <a class="" href="VisitTour.html">Visit Our School<small>Book a free tour</small></a>
+                      
+                        <a class="" href="AdmissionsOverview.html">Admissions Overview<small>Who we are and how to join</small></a>
+                      
+                        <a class="" href="HowToApply.html">How to Apply<small>Three simple steps</small></a>
+                      
+                    </div>
                   
-                    <a class="" href="VisitTour.html">Visit Our School<small></small></a>
+                    <div class="dd-col">
+                      <p class="dd-head">Tuition and Support</p>
+                      
+                        <a class="" href="Tuition.html">Tuition &amp; Financial Aid<small>Price, plans and help</small></a>
+                      
+                        <a class="" href="ExtendedCare.html">Extended Care<small>After school until 5:30 PM</small></a>
+                      
+                    </div>
                   
-                    <a class="" href="AdmissionsOverview.html">Admissions Overview<small></small></a>
-                  
-                    <a class="" href="HowToApply.html">How to Apply<small></small></a>
-                  
-                    <a class="" href="Tuition.html">Tuition &amp; Financial Aid<small></small></a>
-                  
-                    <a class="" href="InternationalStudents.html">International Students<small></small></a>
-                  
-                    <a class="" href="AdmissionsFAQ.html">Admissions FAQ<small></small></a>
+                    <div class="dd-col">
+                      <p class="dd-head">Questions</p>
+                      
+                        <a class="" href="AdmissionsFAQ.html">Admissions FAQ<small>Answers in one place</small></a>
+                      
+                        <a class="" href="InternationalStudents.html">International Students<small>Joining from abroad</small></a>
+                      
+                    </div>
                   
                 </div>
-              
+              </div>
             </div>
           
         </div>
@@ -215,32 +276,41 @@
         <div class="dd">
           <a class="fw-top" href="StudentLife.html" aria-current="false" style="color: rgb(255, 255, 255);">Community<svg class="caret" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></a>
           
-            <div class="dd-menu dd-mega" role="group" aria-label="Community pages">
-              
-                <div class="dd-col">
-                  <p class="dd-head">Beyond the Classroom</p>
+            <div class="dd-menu" role="group" aria-label="Community pages">
+              <div class="dd-in">
+                <div class="dd-intro">
+                  <p class="dd-title">Community</p>
+                  <p class="dd-desc">Clubs, trips, camp and a family community that shows up for every student.</p>
+                  <a class="dd-go" href="StudentLife.html">Student Life <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="dd-cols">
                   
-                    <a class="" href="StudentLife.html">Student Life<small>Trips, sports and events</small></a>
+                    <div class="dd-col">
+                      <p class="dd-head">Beyond the Classroom</p>
+                      
+                        <a class="" href="StudentLife.html">Student Life<small>Trips, sports and events</small></a>
+                      
+                        <a class="dd-wrap" href="AfterSchool.html">Clubs and After School / Enrichment Programs<small></small></a>
+                      
+                        <a class="" href="SummerCamp.html">Summer Camp<small>Seven weeks of summer fun</small></a>
+                      
+                        <a class="" href="PhotosVideos.html">Galleries<small>Photos and videos</small></a>
+                      
+                    </div>
                   
-                    <a class="dd-wrap" href="AfterSchool.html">Clubs and After School / Enrichment Programs<small></small></a>
-                  
-                    <a class="" href="SummerCamp.html">Summer Camp<small>Seven weeks of summer fun</small></a>
-                  
-                    <a class="" href="PhotosVideos.html">Galleries<small>Photos and videos</small></a>
+                    <div class="dd-col">
+                      <p class="dd-head">Families</p>
+                      
+                        <a class="" href="PTSO.html">PTSO<small>Parent-Teacher-Student Organization</small></a>
+                      
+                        <a class="" href="News.html">News<small>Announcements and stories</small></a>
+                      
+                        <a class="" href="Store.html">Uniform and Spirit Store<small>Uniforms and Falcon gear</small></a>
+                      
+                    </div>
                   
                 </div>
-              
-                <div class="dd-col">
-                  <p class="dd-head">Families</p>
-                  
-                    <a class="" href="PTSO.html">PTSO<small>Parent-Teacher-Student Organization</small></a>
-                  
-                    <a class="" href="News.html">News<small>Announcements and stories</small></a>
-                  
-                    <a class="" href="Store.html">Uniform and Spirit Store<small>Uniforms and Falcon gear</small></a>
-                  
-                </div>
-              
+              </div>
             </div>
           
         </div>
