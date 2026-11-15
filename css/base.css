@@ -128,3 +128,4 @@ button,input,select,textarea{font-family:inherit}
 .input{min-height:46px;padding:0 14px;border:1px solid #CBD3DF;border-radius:8px;background:#FFFFFF;color:#1A2740;font-size:16px;box-sizing:border-box;width:100%}
 .faq{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px}
 .eyebrow{display:block;margin:0 0 8px;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00;line-height:1.3}
+.eyebrow.pg-name{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;border:0!important}
