@@ -28,13 +28,13 @@ summary.row-btn::-webkit-details-marker{display:none}
 .sub li.subi a{min-height:42px;padding-left:30px;font-size:15.5px;color:#3D4A60;position:relative}
 .sub a small{margin-left:auto;font-size:13.5px;font-weight:500;color:#5E6878}
 .sub li.subi a::before{content:"";position:absolute;left:16px;top:50%;width:6px;height:6px;margin-top:-3px;border-radius:50%;background:#C3CBD8}
-.sub .sub-h > span{display:block;padding:14px 12px 4px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00}
+.sub .sub-h > span{display:block;padding:14px 12px 4px;font-size:13.5px;font-weight:700;letter-spacing:0;color:#8A5A00}
 .sub .sub-h:first-child > span{padding-top:4px}
 /* Academics: two columns like the desktop menu (Learning at Falcon | College & credentials) */
 .mgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:8px;margin:-4px 0 12px}
 .mgrid .sub{margin:0}
 .mgrid .sub a{font-size:16px;line-height:1.25}
-.mgrid .sub-h > span{font-size:11.5px;letter-spacing:.04em;padding-right:0;white-space:nowrap}
+.mgrid .sub-h > span{font-size:13.5px;letter-spacing:0;padding-right:0;white-space:nowrap}
 .mcol-wide{grid-column:1/-1}
 .mcol-full{grid-column:1/-1}
 .sub li.wrap2 a{max-width:230px;line-height:1.3;padding-top:7px;padding-bottom:7px;box-sizing:border-box}
