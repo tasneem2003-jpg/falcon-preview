@@ -38,3 +38,16 @@
 .art-next h2{flex:1 1 100%;font-size:18px;font-weight:700}
 
 body{margin:0}
+/* More News under each story (2026-11-15): three latest stories, then See All News */
+.more-news{max-width:880px;width:100%;margin:12px auto 0;display:flex;flex-direction:column;gap:14px}
+.mn-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.mn-head h2{font-size:24px;font-weight:700}
+.mn-all{display:inline-flex;align-items:center;min-height:44px;font-size:15.5px;font-weight:700;color:#1F3659;text-decoration:none}.mn-all:hover{text-decoration:underline;text-underline-offset:4px}
+.mn-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.mn-card{display:flex;flex-direction:column;overflow:hidden;text-decoration:none;color:inherit}
+.mn-card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#D5DDE9}
+.mn-body{padding:14px 16px 18px;display:flex;flex-direction:column;gap:8px}
+.mn-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-size:14px;color:#5E6878}
+.mn-meta .tag{font-size:13px}
+.mn-title{font-size:17px;font-weight:700;line-height:1.35;color:#1A2740;text-wrap:balance}
+.mn-card:hover .mn-title{color:#1F3659;text-decoration:underline;text-underline-offset:3px}
