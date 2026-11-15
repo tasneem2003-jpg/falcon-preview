@@ -34,6 +34,7 @@
     .fw-menu .dd{position:relative;display:flex;align-items:center}
     .fw-menu .dd + .dd::before{content:"";width:1px;height:14px;background:rgba(255,255,255,.28);margin:0 2px}
     .fw-top{position:relative;display:inline-flex;align-items:center;height:54px;padding:0 13px;box-sizing:border-box;font-size:15px;font-weight:600;letter-spacing:0;white-space:nowrap;transition:color .3s ease}
+    /* Title Case, not all caps (the user, 2026-11-15) */
     .fw-top:hover{color:#F3C664!important}
     button.fw-top{margin:0;border:0;background:none;font-family:inherit;cursor:pointer}
     .fw-top .caret{margin-left:6px;opacity:.75;transition:transform .25s ease}
@@ -44,7 +45,7 @@
     .fw button.fw-top:focus-visible{outline:3px solid #E7A11C;outline-offset:-6px;border-radius:6px}
     /* Full-width menu panel (2026-11-15). It opens under the header across the whole screen. */
     .fw-menu .dd-menu{position:fixed;left:0;right:0;top:92px;z-index:50;display:block;visibility:hidden;opacity:0;transform:translateY(-10px);transition:opacity .18s ease-in,transform .18s ease-in,visibility 0s linear .18s;background:#F6F8FB;border-top:1px solid #E6EAF1;overflow:hidden;box-shadow:0 0 0 100vmax #0D192E;clip-path:inset(0 0 -100vmax 0)}
-    /* ↑ the page below the open panel is covered by a deep navy veil (86%, like the reference school, so the page behind does not compete); the header stays clear. A click on the veil, Esc, or a second click on the same item closes it (js/site.js). */
+    /* ↑ the page below the open panel is covered by SOLID navy (the user, 2026-11-15: no see-through veil, so the page behind never shows and nobody mixes up which page they are on); the header stays clear. A click on the veil, Esc, or a second click on the same item closes it (js/site.js). */
     .fw.fw-compact .fw-menu .dd-menu{top:64px}
     .fw-menu .dd.is-open .dd-menu,html:not(.js-menu) .fw-menu .dd:focus-within .dd-menu{visibility:visible;opacity:1;transform:translateY(0);transition:opacity .28s cubic-bezier(0,0,.3,1),transform .36s cubic-bezier(0,0,.3,1),visibility 0s}
     /* switching from one open panel to another swaps at once, so the veil never doubles up */
@@ -382,7 +383,7 @@
                 </div>
                 <h3 style="font-size: 19px; font-weight: 600; color: rgb(36, 48, 68);">Elementary School Fire Department Visit</h3>
                 <p style="font-size: 15.3px; line-height: 1.5; color: rgb(94, 104, 120); text-wrap: wrap;">Our elementary students (KG – Grade 5) welcomed the fire department to our Chantilly Campus to learn about fire safety and the people who keep our community safe.</p>
-                <a class="more" href="https://falconacademy.org/elementary-school-fire-department-visit/" style="font-size: 14.5px; margin-top: 1px;">Read More ›</a>
+                <a class="more" href="NewsFireDepartment.html" style="font-size: 14.5px; margin-top: 1px;">Read More ›</a>
               </div>
               <img class="nthumb" src="assets/img/flyer-fire-department-visit-for-elementary-school.jpg" alt="Flyer: Fire Department Visit for Elementary School, with a red fire truck in front of the Chantilly campus" style="object-position: 50% 100%;">
             </article>
@@ -395,7 +396,7 @@
                 </div>
                 <h3 style="font-size: 19px; font-weight: 600; color: rgb(36, 48, 68);">Sky Zone Trampoline Park Field Trip</h3>
                 <p style="font-size: 15.3px; line-height: 1.5; color: rgb(94, 104, 120); text-wrap: wrap;">Our middle and high school girls (Grades 6–11) enjoyed a day of movement, laughter and time together beyond the classroom at Sky Zone Trampoline Park.</p>
-                <a class="more" href="https://falconacademy.org/sky-zone-trampoline-park-field-trip/" style="font-size: 14.5px; margin-top: 1px;">Read More ›</a>
+                <a class="more" href="NewsSkyZone.html" style="font-size: 14.5px; margin-top: 1px;">Read More ›</a>
               </div>
               <img class="nthumb" src="assets/img/flyer-sky-zone-trampoline-park-field-trip.jpg" alt="Flyer: Sky Zone Trampoline Park Field Trip, Take a Break, Take a Leap, with students jumping" style="object-position: 50% 38%;">
             </article>
@@ -405,15 +406,15 @@
         <section data-group="" style="display: flex; flex-direction: column; margin-top: 24px;">
           <h2 class="label rule" style="font-size: 14px; letter-spacing: 0.07em;">September 2026</h2>
           
-            <article class="nrow" data-item="" data-k-topic="team" data-text="Welcome Our 10 New Team Members for 2026–27 Meet the teachers and leaders joining Falcon this year across Arabic, English, computer science, special education, KG and PYP leadership. Our Team" style="border-bottom: 0px;">
+            <article class="nrow" data-item="" data-k-topic="team" data-text="Welcome Our 9 New Team Members for 2026–27 Meet the teachers and leaders joining Falcon this year across Arabic, English, computer science, special education, KG and PYP leadership. Our Team" style="border-bottom: 0px;">
               <time class="ndate" datetime="2026-09-06">Sep 6, 2026</time>
               <div style="flex: 1 1 420px; min-width: 0px; display: flex; flex-direction: column; align-items: flex-start; gap: 5px;">
                 <div style="display: flex; flex-wrap: wrap; gap: 6px;">
                   <span class="tag t-amber" style="min-height: 25px;">Our Team</span>
                 </div>
-                <h3 style="font-size: 19px; font-weight: 600; color: rgb(36, 48, 68);">Welcome Our 10 New Team Members for 2026–27</h3>
+                <h3 style="font-size: 19px; font-weight: 600; color: rgb(36, 48, 68);">Welcome Our 9 New Team Members for 2026–27</h3>
                 <p style="font-size: 15.3px; line-height: 1.5; color: rgb(94, 104, 120); text-wrap: wrap;">Meet the teachers and leaders joining Falcon this year across Arabic, English, computer science, special education, KG and PYP leadership.</p>
-                <a class="more" href="Faculty.html" style="font-size: 14.5px; margin-top: 1px;">Read More ›</a>
+                <a class="more" href="NewsNewTeam.html" style="font-size: 14.5px; margin-top: 1px;">Read More ›</a>
               </div>
               <img class="nthumb" src="assets/img/a-falcon-teacher-with-a-young-student.jpg" alt="A Falcon teacher with a young student at a classroom display" style="object-position: 50% 50%;">
             </article>
@@ -431,7 +432,7 @@
                 </div>
                 <h3 style="font-size: 19px; font-weight: 600; color: rgb(36, 48, 68);">Falcon Academy Achieves College Board Level I &amp; II Approval</h3>
                 <p style="font-size: 15.3px; line-height: 1.5; color: rgb(94, 104, 120); text-wrap: wrap;">A new milestone for our academic program and our students’ path to college.</p>
-                <a class="more" href="https://falconacademy.org/falcon-academy-achieves-college-board-level-i-level-ii-approval-expanding-advanced-academic-opportunities/" style="font-size: 14.5px; margin-top: 1px;">Read More ›</a>
+                <a class="more" href="NewsCollegeBoard.html" style="font-size: 14.5px; margin-top: 1px;">Read More ›</a>
               </div>
               <img class="nthumb" src="assets/img/college-board-level-i-and-level-ii.jpg" alt="Announcement graphic: Falcon Academy achieves College Board Level I and Level II approval" style="object-position: 50% 50%;">
             </article>
@@ -444,7 +445,7 @@
                 </div>
                 <h3 style="font-size: 19px; font-weight: 600; color: rgb(36, 48, 68);">An Evening of Academic Planning and College Readiness</h3>
                 <p style="font-size: 15.3px; line-height: 1.5; color: rgb(94, 104, 120); text-wrap: wrap;">Highlights from our family evening on course planning and preparing for college.</p>
-                <a class="more" href="https://falconacademy.org/an-evening-of-academic-planning-college-readiness-and-family-partnership/" style="font-size: 14.5px; margin-top: 1px;">Read More ›</a>
+                <a class="more" href="NewsCollegeReadiness.html" style="font-size: 14.5px; margin-top: 1px;">Read More ›</a>
               </div>
               <img class="nthumb" src="assets/img/older-students-talking-in-a-group.jpg" alt="Older Falcon students in a group discussion" style="object-position: 50% 50%;">
             </article>
@@ -475,7 +476,7 @@
                 </div>
                 <h3 style="font-size: 19px; font-weight: 600; color: rgb(36, 48, 68);">Independent Dual Enrollment Program with NOVA</h3>
                 <p style="font-size: 15.3px; line-height: 1.5; color: rgb(94, 104, 120); text-wrap: wrap;">Falcon partners with Northern Virginia Community College on a dual enrollment program.</p>
-                <a class="more" href="https://falconacademy.org/independent-dual-enrollment-program-with-northern-virginia-community-college-nova/" style="font-size: 14.5px; margin-top: 1px;">Read More ›</a>
+                <a class="more" href="NewsDualEnrollmentNova.html" style="font-size: 14.5px; margin-top: 1px;">Read More ›</a>
               </div>
               <img class="nthumb" src="assets/img/middle-school-students-in-class.jpg" alt="Middle and high school students in class" style="object-position: 50% 50%;">
             </article>

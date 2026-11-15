@@ -37,7 +37,6 @@
 .art-next{margin-top:8px;padding-top:24px;border-top:1px solid #DCE2EB;display:flex;flex-wrap:wrap;align-items:center;gap:12px 14px}
 .art-next h2{flex:1 1 100%;font-size:18px;font-weight:700}
 
-body{margin:0}
 /* More News under each story (2026-11-15): three latest stories, then See All News */
 .more-news{max-width:880px;width:100%;margin:12px auto 0;display:flex;flex-direction:column;gap:14px}
 .mn-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
@@ -51,3 +50,5 @@ body{margin:0}
 .mn-meta .tag{font-size:13px}
 .mn-title{font-size:17px;font-weight:700;line-height:1.35;color:#1A2740;text-wrap:balance}
 .mn-card:hover .mn-title{color:#1F3659;text-decoration:underline;text-underline-offset:3px}
+
+body{margin:0}

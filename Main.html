@@ -34,6 +34,7 @@
     .fw-menu .dd{position:relative;display:flex;align-items:center}
     .fw-menu .dd + .dd::before{content:"";width:1px;height:14px;background:rgba(255,255,255,.28);margin:0 2px}
     .fw-top{position:relative;display:inline-flex;align-items:center;height:54px;padding:0 13px;box-sizing:border-box;font-size:15px;font-weight:600;letter-spacing:0;white-space:nowrap;transition:color .3s ease}
+    /* Title Case, not all caps (the user, 2026-11-15) */
     .fw-top:hover{color:#F3C664!important}
     button.fw-top{margin:0;border:0;background:none;font-family:inherit;cursor:pointer}
     .fw-top .caret{margin-left:6px;opacity:.75;transition:transform .25s ease}
@@ -44,7 +45,7 @@
     .fw button.fw-top:focus-visible{outline:3px solid #E7A11C;outline-offset:-6px;border-radius:6px}
     /* Full-width menu panel (2026-11-15). It opens under the header across the whole screen. */
     .fw-menu .dd-menu{position:fixed;left:0;right:0;top:92px;z-index:50;display:block;visibility:hidden;opacity:0;transform:translateY(-10px);transition:opacity .18s ease-in,transform .18s ease-in,visibility 0s linear .18s;background:#F6F8FB;border-top:1px solid #E6EAF1;overflow:hidden;box-shadow:0 0 0 100vmax #0D192E;clip-path:inset(0 0 -100vmax 0)}
-    /* ↑ the page below the open panel is covered by a deep navy veil (86%, like the reference school, so the page behind does not compete); the header stays clear. A click on the veil, Esc, or a second click on the same item closes it (js/site.js). */
+    /* ↑ the page below the open panel is covered by SOLID navy (the user, 2026-11-15: no see-through veil, so the page behind never shows and nobody mixes up which page they are on); the header stays clear. A click on the veil, Esc, or a second click on the same item closes it (js/site.js). */
     .fw.fw-compact .fw-menu .dd-menu{top:64px}
     .fw-menu .dd.is-open .dd-menu,html:not(.js-menu) .fw-menu .dd:focus-within .dd-menu{visibility:visible;opacity:1;transform:translateY(0);transition:opacity .28s cubic-bezier(0,0,.3,1),transform .36s cubic-bezier(0,0,.3,1),visibility 0s}
     /* switching from one open panel to another swaps at once, so the veil never doubles up */
@@ -308,6 +309,7 @@
     <a class="fw-burger" href="m/Menu.html?mobile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>Menu</a>
   </div></header></div>
 
+  
   <aside class="nticker" role="region" aria-label="School news"><div class="nticker-track"><div class="nt-set"><a class="nt-item" href="NewsIBWorldSchool.html"><img src="assets/img/falcon-academy.svg" alt="">Falcon Academy is now an IB World School for the Middle Years Programme (MYP).</a><span class="nt-item"><img src="assets/img/falcon-academy.svg" alt="">Falcon Academy is proud to serve as the School Host of the ISLA Leadership Retreat, December 4–6, 2026.</span></div><div class="nt-set" aria-hidden="true"><a class="nt-item" href="NewsIBWorldSchool.html" tabindex="-1"><img src="assets/img/falcon-academy.svg" alt="">Falcon Academy is now an IB World School for the Middle Years Programme (MYP).</a><span class="nt-item"><img src="assets/img/falcon-academy.svg" alt="">Falcon Academy is proud to serve as the School Host of the ISLA Leadership Retreat, December 4–6, 2026.</span></div></div></aside>
 
   <section class="hero" style="position: relative; overflow: hidden; background: linear-gradient(100deg, rgb(12, 34, 66) 0%, rgb(22, 55, 99) 55%, rgb(29, 70, 119) 100%);">
