@@ -16,18 +16,18 @@
 <div><div style="background: rgb(246, 248, 251);">
   <div><header class="fw" style="font-family: Inter, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; line-height: 1.4;">
   <style>
-    /* School alert (2026-11-15): one calm notice above the header on every page, only until its end date (js/site.js removes it after).
+    /* School alert (2026-11-15; navy, option A chosen by the user 2026-11-16): one calm notice above the header on every page, only until its end date (js/site.js removes it after).
        It scrolls away with the page; the header still sticks. Change the text and the date in ALERT below. */
-    .fa-alert{background:#FFF6E0;border-bottom:1px solid #EED39A;color:#3D2E0A;font-family:Inter,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
-    .fa-alert-in{max-width:1224px;margin:0 auto;padding:10px 24px;box-sizing:border-box;display:flex;align-items:center;gap:6px 12px;min-height:44px;font-size:15px;line-height:1.45}
-    .fa-alert-ic{flex:none;color:#B4740A}
-    .fa-alert p{margin:0;flex:1 1 auto;min-width:0}
-    .fa-alert b{font-weight:700;color:#1A2740}
-    .fa-alert-go{flex:none;display:inline-flex;align-items:center;min-height:32px;font-weight:700;color:#7A4F00;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
-    .fa-alert-go:hover{color:#1A2740}
+    .fa-alert{background:#13233F;color:#DCE4F0;font-family:Inter,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+    .fa-alert-in{max-width:1224px;margin:0 auto;padding:6px 24px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;gap:6px 10px;min-height:38px;font-size:14.5px;line-height:1.45}
+    .fa-alert-ic{flex:none;width:18px;height:18px;color:#F3C664}
+    .fa-alert p{margin:0;flex:0 1 auto;min-width:0}
+    .fa-alert b{font-weight:700;color:#FFFFFF}
+    .fa-alert-go{flex:none;display:inline-flex;align-items:center;min-height:32px;font-weight:700;color:#F3C664;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+    .fa-alert-go:hover{color:#FFFFFF}
     .fa-alert-go:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:4px}
     .fa-sr{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-    div:has(> .fa-alert){top:calc(-1 * var(--fa-alert-h, 45px))!important}
+    div:has(> .fa-alert){top:calc(-1 * var(--fa-alert-h, 38px))!important}
     .fw{position:relative;height:92px;background:#FFFFFF;box-shadow:0 6px 16px rgba(19,35,63,.08);z-index:40}
     .fw a{text-decoration:none}
     .fw-logo{position:absolute;left:max(38px, calc(50% - 598px));top:15px;display:block;line-height:0;z-index:2}
@@ -264,7 +264,7 @@
                       
                         <a class="" href="AdmissionsFAQ.html">Admissions FAQ<small>Answers in one place</small></a>
                       
-                    <a class="" href="InternationalStudents.html">International Students<small>Joining from abroad</small></a>
+                        <a class="" href="InternationalStudents.html">International Students<small>Joining from abroad</small></a>
                       
                     </div>
                   
@@ -327,25 +327,18 @@
 
   <main class="wrap" style="padding-bottom: 72px; display: flex; flex-direction: column;">
 
-    <section class="hero" aria-labelledby="as-title">
-      <div class="hero-copy">
-        <p class="eyebrow pg-name">Academic Support</p>
-        <h1 id="as-title">Academic Support That Starts with Your Child’s Strengths</h1>
-        <p class="hero-lede">Falcon teachers plan every lesson to work for different learners from the start, then add tutoring, language support or an individual plan when a child needs more. Families help set the goals at every step.</p>
-        <div class="hero-cta">
-          <a class="btn btn-gold btn-lg" href="VisitTour.html">Book a Tour</a>
-          <a class="btn btn-ghost btn-lg" href="#layers">How Support Works</a>
+    <section class="pb">
+    <div class="pb-w">
+      <div class="pb-in">
+        <img class="pb-img" src="assets/img/a-teacher-helping-students-one-by-one.jpg" alt="A teacher helping students one by one at their desks" style="object-position: 50% 45%;">
+        <div class="pb-text">
+          <h1 id="as-title"><span class="eyebrow pg-name">Academic Support</span>Academic Support That Starts with Your Child’s Strengths</h1>
+          <p class="pb-lede">Falcon teachers plan every lesson to work for different learners from the start, then add tutoring, language support or an individual plan when a child needs more. Families help set the goals at every step.</p>
+          <div class="pb-acts"><a class="btn btn-gold btn-lg" href="VisitTour.html">Book a Tour</a><a class="btn btn-light btn-lg" href="#layers">How Support Works</a></div>
         </div>
       </div>
-      <div class="hero-photo"><img src="assets/img/a-teacher-helping-students-one-by-one.jpg" alt="A teacher helping students one by one at their desks" style="object-position: 50% 45%;"></div>
-    </section>
-
-    <div class="facts">
-      <div class="fact"><h2>Class Size</h2><p>About 10 : 1</p><small>Students for every teacher</small></div>
-      <div class="fact"><h2>Every Lesson</h2><p>Planned for All Learners</p><small>Using Universal Design for Learning</small></div>
-      <div class="fact"><h2>Individual Plans</h2><p>IEP and 504 Plans</p><small>Made together with the family</small></div>
-      <div class="fact"><h2>Two Languages</h2><p>English and Arabic Support</p><small>Plus Arabic translation for families</small></div>
     </div>
+  </section>
 
     <section id="layers" class="sec" aria-labelledby="h-layers">
       <div class="sec-head">
