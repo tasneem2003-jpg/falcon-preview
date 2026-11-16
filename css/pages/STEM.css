@@ -158,4 +158,19 @@ a.scard .go{margin-top:auto;padding-top:6px;font-size:15.5px;font-weight:700;col
 .fq-a a{color:#1F3659;font-weight:600}
 @media (max-width:860px){.fq{grid-template-columns:minmax(0,1fr)}.fq-head{position:static}.fq-head h2{font-size:27px}.fq-item summary{font-size:17.5px}.fq-a{padding-right:0;font-size:16.5px}}
 
+/* Photo-banner hero (2026-11-16): wide photo, marketing headline on it, calm navy fade for contrast */
+.pb{padding:24px 0 8px}
+.pb-in{position:relative;min-height:460px;border-radius:24px;overflow:hidden;display:flex;align-items:flex-end;background:#13233F;isolation:isolate}
+.pb-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:-2}
+.pb-in::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(13,25,46,.88) 0%,rgba(13,25,46,.66) 40%,rgba(13,25,46,.14) 70%,rgba(13,25,46,0) 100%),linear-gradient(0deg,rgba(13,25,46,.5) 0%,rgba(13,25,46,0) 45%)}
+.pb-text{position:relative;max-width:640px;padding:48px 52px;display:flex;flex-direction:column;gap:14px}
+.pb-text h1{margin:0;font-size:46px!important;line-height:1.08!important;font-weight:800!important;letter-spacing:-0.02em;color:#FFFFFF!important;text-wrap:balance}
+.pb-text h1 em{font-style:normal;color:#F3C664!important}
+.pb-lede{margin:0;font-size:18px;line-height:1.55;color:#DCE4F0;max-width:560px}
+.pb-acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.pb-after{display:flex;flex-direction:column;gap:12px;padding-top:20px}
+.pb-w{display:block}
+main.wrap > .pb{padding-top:0}
+@media (max-width:900px){.pb-in{min-height:400px}.pb-text{padding:32px}.pb-text h1{font-size:36px!important}}
+
 body{margin:0}

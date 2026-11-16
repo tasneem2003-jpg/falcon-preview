@@ -192,4 +192,20 @@
 .istep-go{align-self:flex-start;font-weight:700;color:#1F3659;text-decoration:none;min-height:32px;display:inline-flex;align-items:center}.istep-go:hover{text-decoration:underline}
 .isteps-cta{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 0 62px}
 
+/* Photo-banner hero, phone (2026-11-16): full-width photo with the headline on it, intro and buttons below */
+.pb{padding:0 0 8px}
+.pb-in{position:relative;min-height:320px;display:flex;align-items:flex-end;background:#13233F;isolation:isolate}
+.pb-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:-2}
+.pb-in::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(13,25,46,.9) 0%,rgba(13,25,46,.45) 50%,rgba(13,25,46,0) 100%)}
+.pb-text{position:relative;padding:22px 16px 20px}
+.pb-text h1{margin:0;font-size:29px!important;line-height:1.15!important;font-weight:800!important;letter-spacing:-0.01em;color:#FFFFFF!important}
+.pb-text h1 em{font-style:normal;color:#F3C664!important}
+.pb-below{padding:18px 16px 4px;display:flex;flex-direction:column;gap:14px}
+.pb-lede{margin:0;font-size:17px;line-height:1.55;color:#3D4A60}
+.pb-acts{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+.pb-acts .btn{min-height:52px!important;border-radius:12px!important;font-size:17px!important}
+.pb-after{display:flex;flex-direction:column;gap:12px;padding:10px 16px 0}
+main.wrap:has(> .pb){padding-top:0!important}
+main.wrap > .pb{margin-left:-16px;margin-right:-16px}
+
 body{margin:0}

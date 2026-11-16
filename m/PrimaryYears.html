@@ -16,15 +16,15 @@
   <div><div class="mx"><style>
 .mx{font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;color:#243044}
 
-/* School alert (2026-11-15): one calm notice above the header on every page, only until its end date (js/site.js removes it after).
+/* School alert (2026-11-15; navy, option A chosen by the user 2026-11-16): one calm notice above the header on every page, only until its end date (js/site.js removes it after).
    It scrolls away with the page; the header still sticks. Change the text and the date in ALERT below. */
-.fa-alert{background:#FFF6E0;border-bottom:1px solid #EED39A;color:#3D2E0A;font-family:Inter,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+.fa-alert{background:#1F3659;border-bottom:1px solid rgba(255,255,255,.18);color:#DCE4F0;font-family:Inter,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
 .fa-alert-in{max-width:1224px;margin:0 auto;padding:10px 16px;box-sizing:border-box;display:flex;align-items:flex-start;gap:4px 10px;min-height:44px;font-size:14.5px;line-height:1.45}
-.fa-alert-ic{flex:none;color:#B4740A}
+.fa-alert-ic{flex:none;width:18px;height:18px;color:#F3C664}
 .fa-alert p{margin:0;flex:1 1 auto;min-width:0}
-.fa-alert b{font-weight:700;color:#1A2740}
-.fa-alert-go{flex:none;display:inline-flex;align-items:center;min-height:32px;font-weight:700;color:#7A4F00;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
-.fa-alert-go:hover{color:#1A2740}
+.fa-alert b{font-weight:700;color:#FFFFFF}
+.fa-alert-go{flex:none;display:inline-flex;align-items:center;min-height:32px;font-weight:700;color:#F3C664;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.fa-alert-go:hover{color:#FFFFFF}
 .fa-alert-go:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:4px}
 .fa-sr{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 div:has(> .mx > .fa-alert){top:calc(-1 * var(--fa-alert-h, 86px))!important}
@@ -69,22 +69,18 @@ div:has(> .mx > header.hb.hb-compact){margin-bottom:52px}
   </div></header></div></div>
 
 
-  <section class="s-hero" style="padding-top: 20px; padding-bottom: 40px;">
-    <div class="wrap" style="display: flex; flex-direction: column; gap: 14px;">
-      <span class="badge">KG – G5</span>
-      <h1 style="font-size: 38px; font-weight: 700; line-height: 1.15; letter-spacing: -0.015em;">An Elementary School Where Every Child Is Known by Name</h1>
-      <p class="lead-p">Children learn by asking questions, reading, building and exploring together, guided by a homeroom teacher who knows them well. Arabic and Islamic Studies are part of every day.</p>
-      <p class="muted" style="font-size: 15px;">Falcon is an IB Candidate School for the Primary Years Programme (PYP). <a class="more" href="Accreditation.html" style="text-decoration: underline; text-underline-offset: 3px;">What Candidacy Means</a></p>
-      <div class="facts">
-      <div class="icard"><span class="tile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 10 8-6 8 6v10H4z"></path><path d="M10 20v-5h4v5"></path></svg></span><div style="min-width: 0px;"><p class="t">KG – G5</p><p class="s">Chantilly campus · 42851 Smallwood Terrace</p></div></div>
-      <div class="icard"><span class="tile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"></path></svg></span><div style="min-width: 0px;"><p class="t">10 : 1 ratio</p><p class="s">Student-to-teacher ratio</p></div></div>
-      <div class="icard"><span class="tile"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"></path><path d="m17 3 .7 1.6 1.6.7-1.6.7L17 7.6l-.7-1.6-1.6-.7 1.6-.7z"></path></svg></span><div style="min-width: 0px;"><p class="t">Arabic &amp; Islamic daily</p><p class="s">Arabic and Islamic Studies every day</p></div></div>
-      </div>
-      <div class="card hero-pic" style="overflow: hidden; height: 300px; margin-top: 8px;"><img src="assets/img/smiling-primary-students-working-at-a-desk.jpg" alt="Primary students smiling at their desk while making crafts" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 42%; display: block;"></div>
-      <nav aria-label="On this page" class="otp">
-        <span class="label" style="font-size: 12px; margin-right: 6px;">On this page</span><a class="jump" href="#day">A day at Falcon</a><a class="jump" href="#learn">What children learn</a><a class="jump" href="#profile">Learner profile</a><a class="jump" href="#apply">Apply</a>
-      </nav>
+  <section class="pb">
+    <div class="pb-in">
+      <img class="pb-img" src="assets/img/primary-students-working-on-a-craft-project.jpg" alt="Primary students smiling at their desk while making crafts" style="object-position: 50% 42%;">
+      <div class="pb-text"><h1>An Elementary School Where Every Child Is Known by Name</h1></div>
     </div>
+    <div class="pb-below">
+      <p class="pb-lede">Children learn by asking questions, reading, building and exploring together, guided by a homeroom teacher who knows them well. Arabic and Islamic Studies are part of every day.</p>
+      
+    </div>
+      <div class="pb-after">
+        <p class="muted" style="font-size: 15px;">Falcon is an IB Candidate School for the Primary Years Programme (PYP). <a class="more" href="Accreditation.html" style="text-decoration: underline; text-underline-offset: 3px;">What Candidacy Means</a></p>
+      </div>
   </section>
 
   <section id="day" class="s-band" style="background: rgb(246, 248, 251); border-top: 1px solid rgb(220, 226, 235); padding-top: 40px; padding-bottom: 40px;">

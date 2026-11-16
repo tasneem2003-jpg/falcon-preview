@@ -16,18 +16,18 @@
 <div><div style="background: rgb(246, 248, 251);">
   <div><header class="fw" style="font-family: Inter, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif; line-height: 1.4;">
   <style>
-    /* School alert (2026-11-15): one calm notice above the header on every page, only until its end date (js/site.js removes it after).
+    /* School alert (2026-11-15; navy, option A chosen by the user 2026-11-16): one calm notice above the header on every page, only until its end date (js/site.js removes it after).
        It scrolls away with the page; the header still sticks. Change the text and the date in ALERT below. */
-    .fa-alert{background:#FFF6E0;border-bottom:1px solid #EED39A;color:#3D2E0A;font-family:Inter,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
-    .fa-alert-in{max-width:1224px;margin:0 auto;padding:10px 24px;box-sizing:border-box;display:flex;align-items:center;gap:6px 12px;min-height:44px;font-size:15px;line-height:1.45}
-    .fa-alert-ic{flex:none;color:#B4740A}
-    .fa-alert p{margin:0;flex:1 1 auto;min-width:0}
-    .fa-alert b{font-weight:700;color:#1A2740}
-    .fa-alert-go{flex:none;display:inline-flex;align-items:center;min-height:32px;font-weight:700;color:#7A4F00;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
-    .fa-alert-go:hover{color:#1A2740}
+    .fa-alert{background:#13233F;color:#DCE4F0;font-family:Inter,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+    .fa-alert-in{max-width:1224px;margin:0 auto;padding:6px 24px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;gap:6px 10px;min-height:38px;font-size:14.5px;line-height:1.45}
+    .fa-alert-ic{flex:none;width:18px;height:18px;color:#F3C664}
+    .fa-alert p{margin:0;flex:0 1 auto;min-width:0}
+    .fa-alert b{font-weight:700;color:#FFFFFF}
+    .fa-alert-go{flex:none;display:inline-flex;align-items:center;min-height:32px;font-weight:700;color:#F3C664;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+    .fa-alert-go:hover{color:#FFFFFF}
     .fa-alert-go:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:4px}
     .fa-sr{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-    div:has(> .fa-alert){top:calc(-1 * var(--fa-alert-h, 45px))!important}
+    div:has(> .fa-alert){top:calc(-1 * var(--fa-alert-h, 38px))!important}
     .fw{position:relative;height:92px;background:#FFFFFF;box-shadow:0 6px 16px rgba(19,35,63,.08);z-index:40}
     .fw a{text-decoration:none}
     .fw-logo{position:absolute;left:max(38px, calc(50% - 598px));top:15px;display:block;line-height:0;z-index:2}
@@ -264,7 +264,7 @@
                       
                         <a class="" href="AdmissionsFAQ.html">Admissions FAQ<small>Answers in one place</small></a>
                       
-                    <a class="" href="InternationalStudents.html">International Students<small>Joining from abroad</small></a>
+                        <a class="" href="InternationalStudents.html">International Students<small>Joining from abroad</small></a>
                       
                     </div>
                   
@@ -327,25 +327,24 @@
 
 
   <main class="wrap" style="padding-top: 24px; padding-bottom: 72px; display: flex; flex-direction: column;">
-    <section class="hero" aria-labelledby="sc-title">
-      <div class="hero-copy">
-        <p class="eyebrow pg-name">Falcons Summer Camp</p>
-        <h1 id="sc-title">A Summer Camp of Discovery, Friends and <em>Fun</em></h1>
-        <p class="hero-lede">Full-day camp for ages 5 to 13, with themed weeks of STEM, Arabic and Spanish, arts, sports and Friday field trips. Meals and snacks are included.</p>
+    <section class="pb">
+    <div class="pb-w">
+      <div class="pb-in">
+        <img class="pb-img" src="assets/img/smiling-students-wearing-junior-firefighter-helmets.jpg" alt="Smiling young students wearing junior firefighter helmets" style="object-position: 50% 45%;">
+        <div class="pb-text">
+          <h1 id="sc-title"><span class="eyebrow pg-name">Falcons Summer Camp</span>A Summer Camp of Discovery, Friends and <em>Fun</em></h1>
+          <p class="pb-lede">Full-day camp for ages 5 to 13, with themed weeks of STEM, Arabic and Spanish, arts, sports and Friday field trips. Meals and snacks are included.</p>
+          <div class="pb-acts"><a class="btn btn-gold btn-lg" href="Contact.html">Notify Me When It Opens <span aria-hidden="true">→</span></a><a class="btn btn-light btn-lg" href="#weeks">Explore the Program</a></div>
+        </div>
+      </div>
+      <div class="pb-after">
         <div class="soon" role="status">
           <span class="soon-ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path><path d="M16 2v4M8 2v4M3 10h5"></path><circle cx="16" cy="16" r="6"></circle><path d="M16 14v2l1.5 1.5"></path></svg></span>
           <div><p class="soon-t">Registration for Summer 2027 is not open yet</p><p class="soon-d">Dates and prices will be posted here when registration opens. Contact us and we will let you know as soon as it does.</p></div>
         </div>
-        <div class="hero-acts">
-          <a class="btn btn-gold btn-lg" href="Contact.html">Notify Me When It Opens <span aria-hidden="true">→</span></a>
-          <a class="btn btn-ghost btn-lg" href="#weeks">Explore the Program</a>
-        </div>
       </div>
-      <figure class="hero-photo">
-        <img src="assets/img/smiling-students-wearing-junior-firefighter-helmets.jpg" alt="Smiling young students wearing junior firefighter helmets" style="object-position: 50% 45%;">
-        <div class="sticker"><span class="sk-ic" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 17l-6.1 3.4 1.5-6.8L2.2 9l6.9-.7z"></path></svg></span><span><b>Fantastic Fridays</b><small>A field trip or party every week</small></span></div>
-      </figure>
-    </section>
+    </div>
+  </section>
 
     <div class="facts" style="margin-top: 16px;">
       <div class="fact">
