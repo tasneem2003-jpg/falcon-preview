@@ -45,14 +45,14 @@ button,input,select,textarea{font-family:inherit}
 
 /* Summer Camp: warm, sunny, playful but calm (2026-11-15) */
 .eyebrow{margin:0;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00}
-.hero{position:relative;display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,1fr);gap:40px;align-items:center;padding:36px 36px 36px 48px;border-radius:24px;border:1px solid #F0E3C4;background:linear-gradient(135deg,#FFF8EA 0%,#FFFDF8 46%,#EEF7F6 100%);overflow:hidden;isolation:isolate}
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,1fr);gap:40px;align-items:center;padding:36px 36px 36px 48px;border-radius:24px;border:1px solid #DCE2EB;background:linear-gradient(135deg,#EDF2F8 0%,#F7F9FC 45%,#FFFFFF 100%);overflow:hidden;isolation:isolate}
 .hero::before{content:"";position:absolute;z-index:-1;width:340px;height:340px;left:-120px;top:-150px;border-radius:50%;background:radial-gradient(circle,rgba(231,161,28,.20),rgba(231,161,28,0) 70%)}
 .hero::after{content:"";position:absolute;z-index:-1;width:300px;height:300px;right:30%;bottom:-200px;border-radius:50%;background:radial-gradient(circle,rgba(23,105,95,.12),rgba(23,105,95,0) 70%)}
 .hero-copy{display:flex;flex-direction:column;gap:14px;min-width:0}
 .hero-copy h1{font-size:46px;font-weight:800;line-height:1.08;letter-spacing:-0.025em;color:#1A2740}
 .hero-copy h1 em{font-style:normal;color:#B5770A}
 .hero-lede{font-size:18.5px;line-height:1.55;color:#4B5566;max-width:540px}
-.soon{display:flex;align-items:flex-start;gap:14px;margin-top:6px;padding:16px 18px;border-radius:16px;background:#FFFFFF;border:1px solid #EBDDBB;box-shadow:0 8px 24px -16px rgba(138,90,0,.35);max-width:560px}
+.soon{display:flex;align-items:flex-start;gap:14px;margin-top:6px;padding:16px 18px;border-radius:16px;background:#FFFFFF;border:1px solid #DCE2EB;box-shadow:0 8px 24px -16px rgba(19,35,63,.28);max-width:560px}
 .soon-ic{width:42px;height:42px;border-radius:12px;background:#FDF1D8;color:#8A5A00;display:inline-flex;align-items:center;justify-content:center;flex:none}
 .soon-t{font-size:17px;font-weight:700;color:#1A2740;line-height:1.35}
 .soon-d{font-size:15px;line-height:1.5;color:#5E6878;margin-top:3px}
@@ -226,3 +226,5 @@ button,input,select,textarea{font-family:inherit}
 .cta-acts .btn-gold{order:-1}
 
 body{margin:0}
+/* calm brand background instead of the yellow (the user, 2026-11-16) */
+.hero::before,.hero::after{display:none!important}
