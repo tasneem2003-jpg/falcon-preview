@@ -556,3 +556,39 @@
   document.addEventListener("keydown", function (e) { if (open && (e.key === "Escape" || e.key === "Esc")) close(true); });
   nav.addEventListener("focusout", function (e) { if (open && e.relatedTarget && !nav.contains(e.relatedTarget)) close(); });
 })();
+
+/* School alert (2026-11-15): the notice above the header disappears on its own after its end date, and the
+   sticky header lets it scroll away (its height is measured here). The desktop menu panel opens right under the header. */
+(function () {
+  var a = document.querySelector(".fa-alert");
+  var root = document.documentElement;
+  if (a) {
+    var until = a.getAttribute("data-until");
+    if (until && new Date() > new Date(until + "T23:59:59")) { a.parentNode.removeChild(a); a = null; }
+  }
+  function measure() { root.style.setProperty("--fa-alert-h", (a ? a.offsetHeight : 0) + "px"); }
+  measure();
+  window.addEventListener("resize", measure);
+  window.addEventListener("load", measure);
+  var h = document.querySelector("header.fw");
+  if (!h) return;
+  function place() {
+    var open = document.querySelector(".fw-menu .dd.is-open .dd-menu");
+    if (open) { var r = h.getBoundingClientRect(), z = r.height / (h.offsetHeight || r.height || 1); open.style.top = Math.max(0, r.bottom / z) + "px"; }
+  }
+  document.addEventListener("click", function () { requestAnimationFrame(place); });
+  document.addEventListener("keydown", function () { requestAnimationFrame(place); });
+  window.addEventListener("scroll", place, { passive: true });
+  window.addEventListener("resize", place);
+})();
+
+/* Home news ticker: pause and play button (2026-11-15, WCAG 2.2.2) */
+(function () {
+  var t = document.querySelector(".nticker"), b = t && t.querySelector(".nt-pause");
+  if (!b) return;
+  b.addEventListener("click", function () {
+    var on = t.classList.toggle("is-paused");
+    b.setAttribute("aria-pressed", on ? "true" : "false");
+    b.setAttribute("aria-label", on ? "Play school news" : "Pause school news");
+  });
+})();
