@@ -44,7 +44,7 @@ button,input,select,textarea{font-family:inherit}
 .eyebrow.pg-name{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;border:0!important}
 
 .eyebrow{margin:0;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00}
-.hero{position:relative;display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,1fr);gap:40px;align-items:center;padding:36px 36px 36px 48px;border-radius:24px;border:1px solid #F0E3C4;background:linear-gradient(135deg,#FFF8EA 0%,#FFFDF8 46%,#EEF7F6 100%);overflow:hidden;isolation:isolate}
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,1fr);gap:40px;align-items:center;padding:36px 36px 36px 48px;border-radius:24px;border:1px solid #DCE2EB;background:linear-gradient(135deg,#EDF2F8 0%,#F7F9FC 45%,#FFFFFF 100%);overflow:hidden;isolation:isolate}
 .hero::before{content:"";position:absolute;z-index:-1;width:340px;height:340px;left:-120px;top:-150px;border-radius:50%;background:radial-gradient(circle,rgba(231,161,28,.20),rgba(231,161,28,0) 70%)}
 .hero::after{content:"";position:absolute;z-index:-1;width:300px;height:300px;right:30%;bottom:-200px;border-radius:50%;background:radial-gradient(circle,rgba(23,105,95,.12),rgba(23,105,95,0) 70%)}
 .hero-copy{display:flex;flex-direction:column;gap:14px;min-width:0}
@@ -363,3 +363,5 @@ button,input,select,textarea{font-family:inherit}
 .clubs-more{width:100%;min-height:50px!important;margin-top:12px;border-radius:12px!important;background:#FFFFFF!important;border:1px solid #DCE2EB!important;color:#1A2740!important;font-size:16px!important;font-weight:700!important}
 
 body{margin:0}
+/* calm brand background instead of the warm orange (2026-11-16) */
+.hero::before,.hero::after{display:none!important}
