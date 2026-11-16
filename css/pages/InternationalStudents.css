@@ -107,4 +107,15 @@
 @media (max-width:1000px){.offers{grid-template-columns:repeat(2,minmax(0,1fr))}.ifacts ul{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 0}.ifacts li:nth-child(3){border-left:0;padding-left:0}.apply-grid,.settle-grid,.ifaq,.two{grid-template-columns:minmax(0,1fr)}.apply-side{position:static}}
 @media (max-width:640px){.offers,.settle{grid-template-columns:minmax(0,1fr)}.ih-intro h1{font-size:29px}}
 
+/* BASIS-style quick facts and requirements (2026-11-16) */
+.qf{display:flex;flex-direction:column;gap:14px}
+.qf-h{font-size:14px!important;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00!important;padding-top:24px}
+.ifacts .qf ul{padding-top:0!important}
+.qf-l{display:block;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5A6478;margin-bottom:2px}
+.ifacts .muted a{color:#1F3659;font-weight:600;text-decoration:none}.ifacts .muted a:hover{text-decoration:underline}
+.ifacts .ph{font-size:12.5px}
+.opt{display:inline-flex;align-items:center;margin-left:10px;min-height:22px;padding:0 8px;border-radius:999px;background:#EEF2F7;color:#3D4A60;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;vertical-align:middle}
+.istep-go{align-self:flex-start;font-weight:700;color:#1F3659;text-decoration:none;min-height:32px;display:inline-flex;align-items:center}.istep-go:hover{text-decoration:underline}
+.isteps-cta{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 0 62px}
+
 body{margin:0}

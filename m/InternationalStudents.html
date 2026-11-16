@@ -16,15 +16,15 @@
   <div><div class="mx"><style>
 .mx{font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;color:#243044}
 
-/* School alert (2026-11-15): one calm notice above the header on every page, only until its end date (js/site.js removes it after).
+/* School alert (2026-11-15; navy, option A chosen by the user 2026-11-16): one calm notice above the header on every page, only until its end date (js/site.js removes it after).
    It scrolls away with the page; the header still sticks. Change the text and the date in ALERT below. */
-.fa-alert{background:#FFF6E0;border-bottom:1px solid #EED39A;color:#3D2E0A;font-family:Inter,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+.fa-alert{background:#1F3659;border-bottom:1px solid rgba(255,255,255,.18);color:#DCE4F0;font-family:Inter,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
 .fa-alert-in{max-width:1224px;margin:0 auto;padding:10px 16px;box-sizing:border-box;display:flex;align-items:flex-start;gap:4px 10px;min-height:44px;font-size:14.5px;line-height:1.45}
-.fa-alert-ic{flex:none;color:#B4740A}
+.fa-alert-ic{flex:none;width:18px;height:18px;color:#F3C664}
 .fa-alert p{margin:0;flex:1 1 auto;min-width:0}
-.fa-alert b{font-weight:700;color:#1A2740}
-.fa-alert-go{flex:none;display:inline-flex;align-items:center;min-height:32px;font-weight:700;color:#7A4F00;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
-.fa-alert-go:hover{color:#1A2740}
+.fa-alert b{font-weight:700;color:#FFFFFF}
+.fa-alert-go{flex:none;display:inline-flex;align-items:center;min-height:32px;font-weight:700;color:#F3C664;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.fa-alert-go:hover{color:#FFFFFF}
 .fa-alert-go:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:4px}
 .fa-sr{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 div:has(> .mx > .fa-alert){top:calc(-1 * var(--fa-alert-h, 86px))!important}
@@ -76,20 +76,23 @@ div:has(> .mx > header.hb.hb-compact){margin-bottom:52px}
         <p class="ih-lede">Moving to Northern Virginia from abroad? Falcon welcomes families from around the world, including diplomatic and embassy families. Here is what we offer, how to apply from abroad and how we help your child settle in.</p>
         <div class="ih-acts">
           <a class="btn btn-gold btn-lg" href="Contact.html">Contact Admissions <span aria-hidden="true">→</span></a>
-          <a class="btn btn-outline btn-lg" href="#apply">How to Apply from Abroad</a>
+          <a class="btn btn-outline btn-lg" href="#apply">See Admissions Steps</a>
         </div>
       </div>
       <figure class="ih-photo"><img src="assets/img/students-in-a-classroom-with-a-large.jpg" alt="Three older students at a classroom table in front of a large world map"></figure>
     </div>
   </section>
 
-  <section class="ifacts" aria-label="Falcon at a glance">
-    <ul class="wrap">
-      <li><span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M10 21v-5h4v5"></path></svg></span><div><strong>KG – G12</strong><span class="muted">Two campuses in Northern Virginia</span></div></li>
-      <li><span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></span><div><strong>IB World School</strong><span class="muted">Middle Years Programme (MYP)</span></div></li>
-      <li><span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg></span><div><strong>Arabic &amp; English</strong><span class="muted">Bilingual teachers and staff</span></div></li>
-      <li><span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></span><div><strong>Any Address</strong><span class="muted">No district residency requirement</span></div></li>
-    </ul>
+  <section class="ifacts" aria-labelledby="qf-h">
+    <div class="wrap qf">
+      <h2 id="qf-h" class="qf-h">Program Quick Facts</h2>
+      <ul>
+        <li><span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><circle cx="9" cy="12" r="2.2"></circle><path d="M14 10h4M14 14h4"></path></svg></span><div><span class="qf-l">Student Visa (I-20)</span><strong>Ask Admissions</strong><span class="muted"><span class="ph">[Confirm with admissions: I-20 / F-1 sponsorship]</span></span></div></li>
+        <li><span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16" rx="2.5"></rect><path d="M3 9.5h18M8 2.5v4M16 2.5v4"></path></svg></span><div><span class="qf-l">Admissions</span><strong>Rolling</strong><span class="muted">Decisions as space allows</span></div></li>
+        <li><span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg></span><div><span class="qf-l">Grades for 2026–27</span><strong>KG – G11</strong><span class="muted">G12 opens in 2027–28</span></div></li>
+        <li><span class="tile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"></rect><circle cx="12" cy="12" r="2.6"></circle><path d="M6 10v4M18 10v4"></path></svg></span><div><span class="qf-l">Tuition 2026–27</span><strong>$13,350 a year</strong><span class="muted"><a href="Tuition.html">Payment plans and aid ›</a></span></div></li>
+      </ul>
+    </div>
   </section>
 
   <section class="isec isec-alt" aria-labelledby="offer-h">
@@ -121,8 +124,8 @@ div:has(> .mx > header.hb.hb-compact){margin-bottom:52px}
     <div class="wrap apply-grid">
       <div class="apply-side">
         <div class="ihead">
-          <h2 id="apply-h">Applying from Abroad</h2>
-          <p>The application is online, so you can start before you arrive. One application covers all your children.</p>
+          <h2 id="apply-h">Admissions Steps &amp; Requirements</h2>
+          <p>Everything happens online, so you can start before you arrive. One application covers all your children.</p>
         </div>
         <div class="contact-card">
           <h3>Talk to Our Admissions Team</h3>
@@ -133,46 +136,20 @@ div:has(> .mx > header.hb.hb-compact){margin-bottom:52px}
           </ul>
         </div>
       </div>
-      <ol class="isteps">
-          <li class="istep"><span class="inum" aria-hidden="true">1</span><div class="istep-card"><h3><span class="sr">Step 1: </span>Talk to Admissions</h3><p>Email or call our admissions team to talk through timing, grades and which campus fits your child.</p></div></li>
-          <li class="istep"><span class="inum" aria-hidden="true">2</span><div class="istep-card"><h3><span class="sr">Step 2: </span>Apply Online</h3><p>Fill out one application for all your children, and pay the non-refundable $150 fee per child by credit card.</p></div></li>
-          <li class="istep"><span class="inum" aria-hidden="true">3</span><div class="istep-card"><h3><span class="sr">Step 3: </span>Upload Documents</h3><p>Submit the items in your assigned Tasks and upload the required documents in your parent portal.</p></div></li>
-          <li class="istep"><span class="inum" aria-hidden="true">4</span><div class="istep-card"><h3><span class="sr">Step 4: </span>Placement and Interview</h3><p>New students complete a placement test or interview, and we review the last report card.</p><p><span class="ph">[Confirm with admissions: whether the placement test and interview can be done online before you arrive]</span></p></div></li>
-          <li class="istep"><span class="inum" aria-hidden="true">5</span><div class="istep-card"><h3><span class="sr">Step 5: </span>Decision and Contract</h3><p>Your decision letter and enrollment contract arrive electronically, wherever you are.</p></div></li>
+      <div class="isteps-wrap"><ol class="isteps">
+          <li class="istep"><span class="inum" aria-hidden="true">1</span><div class="istep-card"><h3><span class="sr">Step 1: </span>Talk to Admissions<span class="opt">Recommended</span></h3><p>Email or call us to talk through timing, grades and which campus fits your child. We answer within one business day.</p></div></li>
+          <li class="istep"><span class="inum" aria-hidden="true">2</span><div class="istep-card"><h3><span class="sr">Step 2: </span>See the School<span class="opt">Optional</span></h3><p>Watch our 90-second video tour from anywhere. Once you arrive, tours run Sundays at Ashburn and Saturdays at Chantilly, 2–4 PM.</p><a class="istep-go" href="VisitTour.html">Visit Our School ›</a></div></li>
+          <li class="istep"><span class="inum" aria-hidden="true">3</span><div class="istep-card"><h3><span class="sr">Step 3: </span>Apply Online</h3><p>Fill out one application for all your children and pay the non-refundable $150 application fee per child by credit card.</p></div></li>
+          <li class="istep"><span class="inum" aria-hidden="true">4</span><div class="istep-card"><h3><span class="sr">Step 4: </span>Send Your Documents</h3><p>Upload these in your parent portal: birth certificate, last report card, immunization record and any standardized test results.</p><p><span class="ph">[Confirm with admissions: translation and certification rules for documents not in English]</span></p></div></li>
+          <li class="istep"><span class="inum" aria-hidden="true">5</span><div class="istep-card"><h3><span class="sr">Step 5: </span>Placement and Interview</h3><p>New students complete a short placement assessment or interview, and we review the last report card. In G6 – G10, an Arabic placement test sets each student’s level.</p><p><span class="ph">[Confirm with admissions: whether the placement test and interview can be done online before you arrive]</span></p></div></li>
+          <li class="istep"><span class="inum" aria-hidden="true">6</span><div class="istep-card"><h3><span class="sr">Step 6: </span>Decision</h3><p>Once every item is in, your decision letter and enrollment contract arrive electronically, wherever you are.</p></div></li>
+          <li class="istep"><span class="inum" aria-hidden="true">7</span><div class="istep-card"><h3><span class="sr">Step 7: </span>Enroll</h3><p>Sign the enrollment contract to hold your child’s place. The $600 registration fee per student is billed with your first tuition payment.</p></div></li>
       </ol>
+      <div class="isteps-cta"><a class="btn btn-gold btn-lg" href="HowToApply.html">Apply Now <span aria-hidden="true">→</span></a><a class="btn btn-outline btn-lg" href="Contact.html">Contact Admissions</a></div></div>
     </div>
   </section>
 
-  <section class="isec isec-alt" aria-labelledby="prep-h">
-    <div class="wrap">
-      <div class="ihead">
-        <h2 id="prep-h">Documents and Grade Placement</h2>
-        <p>Gather these before you apply, and see where your child will learn.</p>
-      </div>
-      <div class="two">
-        <div class="panel2">
-          <h3><span class="tile"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6M9 15l2 2 4-4"></path></svg></span>Documents to Prepare</h3>
-          <ul class="dlist"><li><span class="tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"></rect><circle cx="9" cy="11" r="2"></circle><path d="M15 10h3M15 14h3M6 16c.5-1.5 1.7-2 3-2s2.5.5 3 2"></path></svg></span>Birth certificate</li><li><span class="tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"></path></svg></span>Last report card</li><li><span class="tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M12 8v6M9 11h6"></path></svg></span>Immunization record</li><li><span class="tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"></path><path d="M7 16v-5M12 16V8M17 16v-3"></path></svg></span>Standardized test results, if your child has them</li></ul>
-          <p class="pnote">You upload every document online in your parent portal.</p>
-          <p class="pnote-ph"><span class="ph">[Confirm with admissions: translation and certification rules for documents not in English]</span></p>
-        </div>
-        <div class="panel2">
-          <h3><span class="tile"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg></span>Grade Placement</h3>
-          <div class="camp-rows">
-            <a class="camp-row" href="AshburnCampus.html"><b>G6 – G12</b><span><strong>Ashburn Campus</strong><small>Middle and high school</small></span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></a>
-            <a class="camp-row" href="ChantillyCampus.html"><b>KG – G5</b><span><strong>Chantilly Campus</strong><small>Primary school</small></span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></a>
-          </div>
-          <ul class="plist">
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>For 2026–27, we are accepting applications from Kindergarten to Grade 11.</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>We review your child’s last report card and run a short placement assessment.</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><span>In G6 – G10, an Arabic placement test places each student in a beginner, intermediate or advanced level, including new students who join mid-year.</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="isec" aria-labelledby="settle-h">
+  <section class="isec isec-alt" aria-labelledby="settle-h">
     <div class="wrap">
       <div class="ihead">
         <h2 id="settle-h">Help Settling In</h2>
@@ -192,7 +169,7 @@ div:has(> .mx > header.hb.hb-compact){margin-bottom:52px}
     </div>
   </section>
 
-  <section class="isec isec-alt" aria-labelledby="ifaq-h">
+  <section class="isec" aria-labelledby="ifaq-h">
     <div class="wrap ifaq">
       <div class="ihead">
         <h2 id="ifaq-h">Questions from International Families</h2>
