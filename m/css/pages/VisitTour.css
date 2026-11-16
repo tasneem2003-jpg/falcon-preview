@@ -126,9 +126,4 @@ aside{gap:12px!important}
   .tf-head > span{padding-left:0!important}
 }
 
-.eyebrow.pg-name{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;border:0!important}
-/* Banner badge + shorter banner on task pages (2026-11-16) */
-.pb-badge{display:inline-flex;align-items:center;min-height:26px;padding:0 10px;margin-bottom:10px;border-radius:999px;background:rgba(13,25,46,.35);border:1px solid rgba(255,255,255,.45);color:#FFFFFF;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
-.pb-in.pb-sm{min-height:250px}
-
 body{margin:0}
