@@ -44,6 +44,10 @@ a.card,a.pcard,a.scard,a.icard,a.acard,a.fcard,a.ccard,a.prog,a.post,a.tl-card,a
   *,*::before,*::after{transition-duration:1ms!important;animation-duration:1ms!important;animation-iteration-count:1!important}
 }
 
+/* Banner badge + shorter banner on task pages (2026-11-16) */
+.pb-badge{display:inline-flex;align-items:center;min-height:26px;padding:0 10px;margin-bottom:10px;border-radius:999px;background:rgba(13,25,46,.35);border:1px solid rgba(255,255,255,.45);color:#FFFFFF;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.pb-in.pb-sm{min-height:250px}
+
 body{margin:0;background:#F1F4F8;color:#243044;font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.55}
 a{color:#1F3659}a:hover{color:#13233F}
 h1,h2,h3,h4{color:#1A2740;margin:0;line-height:1.2;letter-spacing:-0.01em;text-wrap:balance}
@@ -85,26 +89,6 @@ button,input,select,textarea{font-family:inherit}
 .field{display:flex;flex-direction:column;gap:6px}.field label{font-size:15px;font-weight:600;color:#1A2740}
 .input{min-height:46px;padding:0 14px;border:1px solid #CBD3DF;border-radius:8px;background:#FFFFFF;color:#1A2740;font-size:16px;box-sizing:border-box;width:100%}
 .faq{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px}
-
-/* Full-screen photo + intro section, phone (2026-11-16) */
-.eyebrow.pg-name{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;border:0!important}
-.pb2{padding:0}
-.pb2-photo{position:relative;height:460px;display:flex;align-items:flex-end;background:#13233F;isolation:isolate;overflow:hidden}
-.pb2-photo.pb2-sm{height:340px}
-.pb2-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:-2}
-.pb2-photo::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(13,25,46,.8) 0%,rgba(13,25,46,.32) 36%,rgba(13,25,46,0) 62%)}
-.pb2-name{margin:0;padding:0 16px 26px;color:#FFFFFF;font-size:36px;line-height:1.06;font-weight:800;letter-spacing:-0.02em}
-.pb2-name::before{content:"";display:block;width:40px;height:4px;border-radius:2px;background:#E5A823;margin-bottom:14px}
-.pb2-intro{padding:30px 16px 10px;display:flex;flex-direction:column;gap:16px}
-.pb2-head{display:flex;flex-direction:column;gap:12px}
-.pb2-head h1{margin:0;font-size:28px!important;line-height:1.15!important;font-weight:800!important;letter-spacing:-0.01em;color:#13233F!important}
-.pb2-head h1 em{font-style:normal;color:#B07A0E!important}
-.pb2-badge{align-self:flex-start;display:inline-flex;align-items:center;min-height:28px;padding:0 12px;border-radius:999px;border:1.5px solid #E5A823;background:#FFF7E6;color:#8A5A00;font-size:12px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
-.pb2-body{display:flex;flex-direction:column;gap:18px}
-.pb2-body > p{margin:0;font-size:17px;line-height:1.6;color:#3D4A60}
-.pb2-acts{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
-.pb2-acts .btn{min-height:52px!important;border-radius:12px!important;font-size:17px!important}
-.pb2-after{display:flex;flex-direction:column;gap:12px;padding:8px 16px 0}
 
 body{margin:0;background:#F1F4F8;color:#243044;font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.55}
 a{color:#1F3659}a:hover{color:#13233F}
@@ -149,3 +133,35 @@ button,input,select,textarea{font-family:inherit}
 .faq{background:#FFFFFF;border:1px solid #DCE2EB;border-radius:12px}
 .eyebrow{display:block;margin:0 0 8px;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#8A5A00;line-height:1.3}
 .eyebrow.pg-name{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;border:0!important}
+
+/* Photo-banner hero, phone (2026-11-16): full-width photo with the headline on it, intro and buttons below */
+.pb{padding:0 0 8px}
+.pb-in{position:relative;min-height:320px;display:flex;align-items:flex-end;background:#13233F;isolation:isolate}
+.pb-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:-2}
+.pb-in::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(13,25,46,.85) 0%,rgba(13,25,46,.4) 42%,rgba(13,25,46,0) 70%)}
+.pb-text{position:relative;padding:22px 16px 20px}
+.pb-text h1{margin:0;font-size:29px!important;line-height:1.15!important;font-weight:800!important;letter-spacing:-0.01em;color:#FFFFFF!important}
+.pb-text h1 em{font-style:normal;color:#F3C664!important}
+.pb-below{padding:18px 16px 4px;display:flex;flex-direction:column;gap:14px}
+.pb-lede{margin:0;font-size:17px;line-height:1.55;color:#3D4A60}
+.pb-acts{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+.pb-acts .btn{min-height:52px!important;border-radius:12px!important;font-size:17px!important}
+.pb-after{display:flex;flex-direction:column;gap:12px;padding:10px 16px 0}
+main:has(> .pb){padding-top:0!important}
+.pb{width:100vw;margin-left:calc(50% - 50vw)!important}
+
+/* Photo-banner hero, phone (2026-11-16): full-width photo with the headline on it, intro and buttons below */
+.pb{padding:0 0 8px}
+.pb-in{position:relative;min-height:320px;display:flex;align-items:flex-end;background:#13233F;isolation:isolate}
+.pb-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:-2}
+.pb-in::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(13,25,46,.85) 0%,rgba(13,25,46,.4) 42%,rgba(13,25,46,0) 70%)}
+.pb-text{position:relative;padding:22px 16px 20px}
+.pb-text h1{margin:0;font-size:29px!important;line-height:1.15!important;font-weight:800!important;letter-spacing:-0.01em;color:#FFFFFF!important}
+.pb-text h1 em{font-style:normal;color:#F3C664!important}
+.pb-below{padding:18px 16px 4px;display:flex;flex-direction:column;gap:14px}
+.pb-lede{margin:0;font-size:17px;line-height:1.55;color:#3D4A60}
+.pb-acts{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+.pb-acts .btn{min-height:52px!important;border-radius:12px!important;font-size:17px!important}
+.pb-after{display:flex;flex-direction:column;gap:12px;padding:10px 16px 0}
+main:has(> .pb){padding-top:0!important}
+.pb{width:100vw;margin-left:calc(50% - 50vw)!important;margin-right:0!important}

@@ -67,4 +67,14 @@
 .ap-next-q{flex:1 1 100%;margin-left:72px;font-size:15px;font-weight:600;color:#1A2740;text-decoration:underline;text-underline-offset:4px}
 @media (max-width:900px){.ap-steps{grid-template-columns:minmax(0,1fr)}.ap-steps::before{display:none}.ap-next-q{margin-left:0}}
 
+.eyebrow.pg-name{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;border:0!important}
+/* Banner intro row, BASIS style (2026-11-16): short intro left, buttons right, thin rule between */
+.pb-intro{display:flex;flex-direction:column;align-items:flex-start;gap:20px;margin-top:28px;padding:4px 52px 8px}
+.pb-intro .pb-lede{margin:0;font-size:19px;line-height:1.65;color:#3D4A60;max-width:780px}
+.pb-intro .pb-acts{display:flex;flex-direction:row;flex-wrap:wrap;gap:12px;margin:0}
+.pb-intro .pb-acts .btn{justify-content:center}
+.pb-badge{align-self:flex-start;display:inline-flex;align-items:center;min-height:28px;padding:0 12px;border-radius:999px;background:rgba(13,25,46,.35);border:1px solid rgba(255,255,255,.45);color:#FFFFFF;font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.pb-in.pb-sm{min-height:360px}
+@media (max-width:900px){.pb-intro{grid-template-columns:minmax(0,1fr);gap:18px;padding:0 4px}.pb-intro .pb-lede{padding-right:0}.pb-intro .pb-acts{border-left:0;padding-left:0;flex-direction:row;flex-wrap:wrap}}
+
 body{margin:0}
