@@ -16,15 +16,15 @@
   <div><div class="mx"><style>
 .mx{font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;color:#243044}
 
-/* School alert (2026-11-15): one calm notice above the header on every page, only until its end date (js/site.js removes it after).
+/* School alert (2026-11-15; navy, option A chosen by the user 2026-11-16): one calm notice above the header on every page, only until its end date (js/site.js removes it after).
    It scrolls away with the page; the header still sticks. Change the text and the date in ALERT below. */
-.fa-alert{background:#FFF6E0;border-bottom:1px solid #EED39A;color:#3D2E0A;font-family:Inter,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+.fa-alert{background:#1F3659;border-bottom:1px solid rgba(255,255,255,.18);color:#DCE4F0;font-family:Inter,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
 .fa-alert-in{max-width:1224px;margin:0 auto;padding:10px 16px;box-sizing:border-box;display:flex;align-items:flex-start;gap:4px 10px;min-height:44px;font-size:14.5px;line-height:1.45}
-.fa-alert-ic{flex:none;color:#B4740A}
+.fa-alert-ic{flex:none;width:18px;height:18px;color:#F3C664}
 .fa-alert p{margin:0;flex:1 1 auto;min-width:0}
-.fa-alert b{font-weight:700;color:#1A2740}
-.fa-alert-go{flex:none;display:inline-flex;align-items:center;min-height:32px;font-weight:700;color:#7A4F00;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
-.fa-alert-go:hover{color:#1A2740}
+.fa-alert b{font-weight:700;color:#FFFFFF}
+.fa-alert-go{flex:none;display:inline-flex;align-items:center;min-height:32px;font-weight:700;color:#F3C664;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.fa-alert-go:hover{color:#FFFFFF}
 .fa-alert-go:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:4px}
 .fa-sr{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 div:has(> .mx > .fa-alert){top:calc(-1 * var(--fa-alert-h, 86px))!important}
@@ -67,32 +67,19 @@ div:has(> .mx > header.hb.hb-compact){margin-bottom:52px}
     <a href="Main.html" aria-label="Falcon Academy home" style="display: block; line-height: 0;"><img src="assets/img/falcon-academy-2.svg" alt="Falcon Academy" style="height: 60px; width: auto; display: block;"></a>
     <a class="hb-menu" href="Menu.html" aria-label="Open menu"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M4 6.5h16M4 12h16M4 17.5h16"></path></svg></a>
   </div></header></div></div>
-
-
-  <section class="ap-hero">
-    <div class="wrap ap-hero-in">
-      <div class="ap-intro">
-        <span class="badge">Admissions 2026–27</span>
-        <h1>Applying to Falcon, Step by Step</h1>
-        <p class="ap-lead">Falcon Academy is now accepting applications for the 2026–2027 school year, from Kindergarten to Grade 11.</p>
-        <p class="ap-sub">We’re thrilled you’re exploring Falcon for your child. The application is simple, and our admissions team is here to answer your questions at every step.</p>
-        <div class="ap-acts">
-          <a class="btn btn-gold btn-lg" href="https://portal.edumagined.com/falconacademy/admissions-and-enrollment/">Start Application <span aria-hidden="true">→</span></a>
-          <a class="btn btn-outline btn-lg" href="mailto:admissions@falconacademy.org">Email Admissions</a>
-        </div>
-      </div>
-      <aside class="ap-fee" aria-label="Application fee">
-        <span class="ap-fee-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"></path><circle cx="7.5" cy="7.5" r="1.5"></circle></svg></span>
-        <p class="ap-fee-k">Application fee</p>
-        <p class="ap-fee-v">$150 <span>per child</span></p>
-        <ul>
-          <li>Paid with the application form</li>
-          <li>Your application is complete once it is paid</li>
-          <li>Non-refundable</li>
-        </ul>
-      </aside>
+  <section class="pb">
+    <div class="pb-in pb-sm">
+      <img class="pb-img" src="assets/img/students-cheering-and-holding-up-their-artwork.jpg" alt="Falcon primary students cheering and holding up their artwork in class" style="object-position: 50% 35%;">
+      <div class="pb-text"><span class="pb-badge">Admissions 2026–27</span><h1><span class="eyebrow pg-name">How To Apply</span>Applying to Falcon, Step by Step</h1></div>
+    </div>
+    <div class="pb-below">
+      <p class="pb-lede">Falcon Academy is now accepting applications for the 2026–2027 school year, from Kindergarten to Grade 11. We’re thrilled you’re exploring Falcon for your child. The application is simple, and our admissions team is here to answer your questions at every step.</p>
+      <div class="pb-acts"><a class="btn btn-gold btn-lg" href="https://portal.edumagined.com/falconacademy/admissions-and-enrollment/">Start Application <span aria-hidden="true">→</span></a>
+          <a class="btn btn-outline btn-lg" href="mailto:admissions@falconacademy.org">Email Admissions</a></div>
     </div>
   </section>
+
+
 
   <section class="ap-steps-sec" aria-labelledby="ap-steps-h">
     <div class="wrap">

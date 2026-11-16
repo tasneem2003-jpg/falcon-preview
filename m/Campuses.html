@@ -16,15 +16,15 @@
   <div><div class="mx"><style>
 .mx{font-family:Inter,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;color:#243044}
 
-/* School alert (2026-11-15): one calm notice above the header on every page, only until its end date (js/site.js removes it after).
+/* School alert (2026-11-15; navy, option A chosen by the user 2026-11-16): one calm notice above the header on every page, only until its end date (js/site.js removes it after).
    It scrolls away with the page; the header still sticks. Change the text and the date in ALERT below. */
-.fa-alert{background:#FFF6E0;border-bottom:1px solid #EED39A;color:#3D2E0A;font-family:Inter,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+.fa-alert{background:#1F3659;border-bottom:1px solid rgba(255,255,255,.18);color:#DCE4F0;font-family:Inter,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
 .fa-alert-in{max-width:1224px;margin:0 auto;padding:10px 16px;box-sizing:border-box;display:flex;align-items:flex-start;gap:4px 10px;min-height:44px;font-size:14.5px;line-height:1.45}
-.fa-alert-ic{flex:none;color:#B4740A}
+.fa-alert-ic{flex:none;width:18px;height:18px;color:#F3C664}
 .fa-alert p{margin:0;flex:1 1 auto;min-width:0}
-.fa-alert b{font-weight:700;color:#1A2740}
-.fa-alert-go{flex:none;display:inline-flex;align-items:center;min-height:32px;font-weight:700;color:#7A4F00;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
-.fa-alert-go:hover{color:#1A2740}
+.fa-alert b{font-weight:700;color:#FFFFFF}
+.fa-alert-go{flex:none;display:inline-flex;align-items:center;min-height:32px;font-weight:700;color:#F3C664;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.fa-alert-go:hover{color:#FFFFFF}
 .fa-alert-go:focus-visible{outline:3px solid #E7A11C;outline-offset:2px;border-radius:4px}
 .fa-sr{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 div:has(> .mx > .fa-alert){top:calc(-1 * var(--fa-alert-h, 86px))!important}
@@ -67,13 +67,20 @@ div:has(> .mx > header.hb.hb-compact){margin-bottom:52px}
     <a href="Main.html" aria-label="Falcon Academy home" style="display: block; line-height: 0;"><img src="assets/img/falcon-academy-2.svg" alt="Falcon Academy" style="height: 60px; width: auto; display: block;"></a>
     <a class="hb-menu" href="Menu.html" aria-label="Open menu"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M4 6.5h16M4 12h16M4 17.5h16"></path></svg></a>
   </div></header></div></div>
+  <section class="pb">
+    <div class="pb-in">
+      <img class="pb-img" src="assets/img/an-art-class-working-at-a-table.jpg" alt="An art class working at a table on the lawn outside the Ashburn building" style="object-position: 50% 45%;">
+      <div class="pb-text"><h1 id="camp-title"><span class="eyebrow pg-name">Our Campuses</span>Two Campuses, One Falcon Family</h1></div>
+    </div>
+  </section>
+
 
   <main class="wrap-card" style="padding-top: 18px; padding-bottom: 48px; display: flex; flex-direction: column; gap: 14px;">
 
 
     <article class="panel" aria-labelledby="camp-title" style="display: flex; flex-direction: column;">
       <div class="ch-head">
-        <h1 id="camp-title" style="font-size: 30px; font-weight: 700;"><span class="eyebrow pg-name">Our Campuses</span>Two Campuses, One Falcon Family</h1>
+        
         <p>Falcon has two campuses, and your child’s grade decides which one. Middle and high school are in Ashburn, kindergarten to G5 in Chantilly.</p>
       </div>
       <div class="cd-grid">
