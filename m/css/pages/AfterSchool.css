@@ -191,12 +191,13 @@ button,input,select,textarea{font-family:inherit}
 .acts-head h2{font-size:24px;font-weight:700}
 .acts-head p{font-size:15.5px;color:#5E6878}
 .acts-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
-.act-btn{display:flex;align-items:center;gap:14px;min-height:76px;padding:12px 16px;border:1px solid #DCE2EB;border-radius:14px;background:#F6F8FB;color:#1A2740;text-align:left;cursor:pointer;transition:border-color .15s ease,transform .15s ease}
+.act-btn{display:flex;align-items:center;gap:12px;min-height:64px;padding:10px 14px;border:1px solid #DCE2EB;border-radius:14px;background:#F6F8FB;color:#1A2740;text-align:left;cursor:pointer;transition:border-color .15s ease,transform .15s ease}
 .act-btn:hover{border-color:#1F3659;transform:translateY(-2px)}
-.act-ic{width:52px;height:52px;border-radius:14px;background:#FDF1D8;color:#1F3659;display:inline-flex;align-items:center;justify-content:center;flex:none}
+.act-ic{width:40px;height:40px;border-radius:11px;background:#FDF1D8;color:#1F3659;display:inline-flex;align-items:center;justify-content:center;flex:none}
 .act-t{display:flex;flex-direction:column;min-width:0}
-.act-t b{font-size:17px;font-weight:700}
-.act-t small{font-size:13.5px;color:#5E6878}
+.act-t b{font-size:16px;font-weight:700;line-height:1.3}
+.act-ic svg{width:22px;height:22px}
+.act-t small{font-size:13px;color:#5E6878;line-height:1.4}
 .act-on,.act-on:hover{background:#1F3659;border-color:#1F3659;color:#FFFFFF}
 .act-on .act-ic{background:#E7A11C;color:#1A2740}
 .act-on .act-t small{color:#D5DCE7}
@@ -352,10 +353,10 @@ button,input,select,textarea{font-family:inherit}
 .wclub small{font-size:14px!important}
 /* activity areas: single-choice 3x3 grid, "All clubs" first */
 .acts-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px!important;margin:0!important;padding:0!important;overflow:visible}
-.act-btn{flex-direction:column!important;justify-content:center;align-items:center!important;text-align:center!important;min-height:92px!important;padding:12px 6px!important;border-radius:14px!important;gap:6px!important;box-shadow:none!important;transform:none!important;background:#FFFFFF!important}
-.act-ic{width:38px!important;height:38px!important;border-radius:11px!important}
+.act-btn{flex-direction:column!important;justify-content:center;align-items:center!important;text-align:center!important;min-height:82px!important;padding:11px 6px!important;border-radius:14px!important;gap:6px!important;box-shadow:none!important;transform:none!important;background:#FFFFFF!important}
+.act-ic{width:32px!important;height:32px!important;border-radius:9px!important}
 .act-btn:not(.act-on) .act-ic.tint-gold{background:#FDF1D8!important;color:#8A5A00!important}.act-btn:not(.act-on) .act-ic.tint-teal{background:#DFF3F1!important;color:#17695F!important}.act-btn:not(.act-on) .act-ic.tint-blue{background:#E5EDF9!important;color:#2A5BA8!important}
-.act-ic svg{width:21px;height:21px}
+.act-ic svg{width:18px!important;height:18px!important}
 .act-t{flex-direction:column!important;align-items:center!important;gap:1px!important}
 .act-t b{font-size:14px!important;font-weight:700!important;line-height:1.25;white-space:nowrap}
 .act-t small{font-size:12.5px!important;white-space:nowrap}
