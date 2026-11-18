@@ -592,3 +592,15 @@
     b.setAttribute("aria-label", on ? "Play school news" : "Pause school news");
   });
 })();
+
+/* Menu panel (2026-11-18, the user): the page you are on stays gold inside its menu panel */
+(function () {
+  function key(p) { return p.replace(/\/index\.html$/i, "/").replace(/\.html$/i, "").replace(/\/+$/, "").toLowerCase(); }
+  var here = key(location.pathname);
+  [].forEach.call(document.querySelectorAll(".fw-menu .dd-col a"), function (a) {
+    if (a.hostname === location.hostname && key(a.pathname) === here) {
+      a.setAttribute("aria-current", "page");
+      a.style.color = "#B4740A";
+    }
+  });
+})();
