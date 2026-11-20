@@ -2,7 +2,24 @@
   "headers": [
     {
       "source": "/(.*)",
-      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }]
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/AdmissionsOverview.html",
+      "destination": "/HowToApply.html",
+      "permanent": true
+    },
+    {
+      "source": "/m/AdmissionsOverview.html",
+      "destination": "/m/HowToApply.html",
+      "permanent": true
     }
   ]
 }
