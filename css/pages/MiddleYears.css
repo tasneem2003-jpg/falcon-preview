@@ -50,3 +50,7 @@ main.wrap > .pb{padding-top:0}
 main.wrap:has(> .pb){padding-top:24px!important}
 
 body{margin:0}
+
+/* Location line inside the page heading (Edit Map, 2026-11-22) */
+.pg-loc{display:block;margin:0 0 12px;font-size:17px;line-height:1.35;font-weight:700;letter-spacing:0;text-transform:none;color:#F3C664}
+.cpg-ht .pg-loc{margin-bottom:10px;font-size:16px;color:#8A5A00}

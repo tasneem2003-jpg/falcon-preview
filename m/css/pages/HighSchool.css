@@ -116,3 +116,7 @@
 .cta-band p[style*="font-size: 14px"]{font-size:14px!important;color:#C6CEDB!important}
 
 body{margin:0}
+
+/* Location line inside the page heading, phone (Edit Map, 2026-11-22) */
+.pg-loc{display:block;margin:0 0 8px;font-size:14.5px;line-height:1.35;font-weight:700;letter-spacing:0;text-transform:none;color:#F3C664}
+.cpg-ht .pg-loc{color:#8A5A00}
