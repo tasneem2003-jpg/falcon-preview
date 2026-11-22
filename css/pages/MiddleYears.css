@@ -54,3 +54,4 @@ body{margin:0}
 /* Location line inside the page heading (Edit Map, 2026-11-22) */
 .pg-loc{display:block;margin:0 0 12px;font-size:17px;line-height:1.35;font-weight:700;letter-spacing:0;text-transform:none;color:#F3C664}
 .cpg-ht .pg-loc{margin-bottom:10px;font-size:16px;color:#8A5A00}
+.pb-text .pg-loc{text-shadow:0 1px 3px rgba(13,25,46,.75)}
